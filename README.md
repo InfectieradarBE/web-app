@@ -1,3 +1,9 @@
+# Webapp
+
+## Dependencies
+To display some icons this project is using font-awesome free icons.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
