@@ -1,0 +1,18 @@
+{
+    "services": {
+        "title": "Services",
+        "contact": "Contact",
+        "facebook": "Follow us on Facebook",
+        "linkedIn": "Follow us on LinkedIn"
+    },
+    "about": {
+        "title": "About this page",
+        "privacy": "Privacy Statement",
+        "accessibility": "Accessibility"
+    },
+    "languages": {
+        "title": "Languages",
+        "nl": "Netherlands",
+        "en": "English"
+    }
+}

@@ -1,0 +1,14 @@
+.footerLink {
+    &:hover .text {
+        text-decoration: underline;
+    }
+    &:focus .text {
+        text-decoration: underline;
+    }
+}
+
+.footerLinkOpacity {
+    &:hover {
+        opacity: 0.95;
+    }
+}
