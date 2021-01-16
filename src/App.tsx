@@ -3,42 +3,75 @@ import React, { useEffect, useState } from 'react';
 import Footer from './components/footer/Footer';
 import { FooterContentConfig } from './types/config/footerContent';
 
-import { useHistory } from 'react-router';
+import Header from './components/header/Header';
+import Navbar from './components/navbar/Navbar';
+import { HeaderConfig } from './types/config/header';
+import { NavbarConfig } from './types/config/navbar';
+import { PagesConfig } from './types/config/pages';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Pages from './components/pages/Pages';
 
 function App() {
-  const history = useHistory();
-  const [footerContent, setFooterContent] = useState<FooterContentConfig | undefined>();
+  const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
+  const [navbarConfig, setNavbarConfig] = useState<NavbarConfig | undefined>();
+  const [pagesConfig, setPagesConfig] = useState<PagesConfig | undefined>();
+  const [footerConfig, setFooterConfig] = useState<FooterContentConfig | undefined>();
 
 
   useEffect(() => {
-    fetch('/example-content/configs/footer.json')
+    // Header config
+    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/header.json`)
       .then(res => res.json())
-      .then(value => setFooterContent(value))
+      .then(value => setHeaderConfig(value))
+      .catch(error => console.log(error));
+
+    // Navbar config
+    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/navbar.json`)
+      .then(res => res.json())
+      .then(value => setNavbarConfig(value))
+      .catch(error => console.log(error));
+
+    // Pages config
+    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/pages.json`)
+      .then(res => res.json())
+      .then(value => setPagesConfig(value))
+      .catch(error => console.log(error));
+
+    // Footer Config
+    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/footer.json`)
+      .then(res => res.json())
+      .then(value => setFooterConfig(value))
       .catch(error => console.log(error));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const handleLanguageChange = (code: string) => {
+    console.log('todo handle language change: ' + code);
+  }
+
+  const handleOpenExternalPage = (url: string) => {
+    window.open(url, "_blank")
+  }
 
   return (
-    <div>
-      <div>header</div>
-      <div>body
-        <i className="material-icons">face</i>
-
-      </div>
-      <Footer
-        loading={footerContent === undefined}
-        content={footerContent}
-        onChangeLanguage={(code) => console.log(code)}
-        onNavigate={(url, external) => {
-          if (external) {
-            window.open(url, "_blank")
-          } else {
-            history.push(url);
-          }
-        }}
+    <Router basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : undefined}>
+      <Header
+        onChangeLanguage={handleLanguageChange}
+        onOpenExternalPage={handleOpenExternalPage}
       />
-    </div>
+      <Navbar
+        onOpenExternalPage={handleOpenExternalPage}
+      />
+      <Pages
+        onOpenExternalPage={handleOpenExternalPage}
+      />
+      <Footer
+        loading={footerConfig === undefined}
+        content={footerConfig}
+        onChangeLanguage={handleLanguageChange}
+        onOpenExternalPage={handleOpenExternalPage}
+      />
+    </Router>
   );
 }
 

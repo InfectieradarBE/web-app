@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useHistory } from 'react-router-dom';
 import { FooterContentConfig } from '../../types/config/footerContent';
 import FooterColumn from './FooterComponents/FooterColumn';
 
@@ -7,11 +8,20 @@ interface FooterProps {
     loading?: boolean;
     content?: FooterContentConfig;
     onChangeLanguage: (code: string) => void;
-    onNavigate: (url: string, external: boolean) => void;
+    onOpenExternalPage: (url: string) => void;
 }
 
 const Footer: React.FC<FooterProps> = (props) => {
     const { t } = useTranslation(['footer']);
+    const history = useHistory();
+
+    const handleNavigation = (url: string, external?: boolean) => {
+        if (external) {
+            props.onOpenExternalPage(url);
+            return;
+        }
+        history.push(url)
+    }
 
     if (props.loading || !props.content) {
         return <p>loading... </p>
@@ -32,7 +42,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                                     }
                                 })}
                                 onChangeLanguage={props.onChangeLanguage}
-                                onNavigate={props.onNavigate}
+                                onNavigate={handleNavigation}
                             />
                     )}
                 </div>
