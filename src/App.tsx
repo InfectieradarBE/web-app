@@ -56,6 +56,7 @@ function App() {
   return (
     <Router basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : undefined}>
       <Header
+        config={headerConfig}
         onChangeLanguage={handleLanguageChange}
         onOpenExternalPage={handleOpenExternalPage}
       />

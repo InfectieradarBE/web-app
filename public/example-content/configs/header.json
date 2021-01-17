@@ -1,1 +1,22 @@
-{}
+{
+    "layout": "simpleLogo",
+    "config": {
+        "className": "",
+        "image": {
+            "url": "/images/placeholder_image.png",
+            "altKey": "logoAlt",
+            "className": "",
+            "height": 125
+        },
+        "languages": [
+            {
+                "code": "nl-be",
+                "itemKey": "nl"
+            },
+            {
+                "code": "en",
+                "itemKey": "en"
+            }
+        ]
+    }
+}
