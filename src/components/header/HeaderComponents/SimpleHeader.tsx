@@ -18,11 +18,18 @@ const SimpleHeader: React.FC<SimpleHeaderProps> = (props) => {
         <div className="container">
             <div className={clsx("position-relative", props.config.className)}>
                 <img
-                    className={props.config.image.className}
-                    src={process.env.REACT_APP_CONTENT_URL + props.config.image.url}
+                    className={clsx('d-none d-sm-block', props.config.image.lg.className)}
+                    src={process.env.REACT_APP_CONTENT_URL + props.config.image.lg.url}
                     alt={props.config.image.altKey ? t(props.config.image.altKey) : 'App Logo'}
-                    height={props.config.image.height}
-                    width={props.config.image.width}
+                    height={props.config.image.lg.height}
+                    width={props.config.image.lg.width}
+                />
+                <img
+                    className={clsx('d-block d-sm-none', props.config.image.sm.className)}
+                    src={process.env.REACT_APP_CONTENT_URL + props.config.image.sm.url}
+                    alt={props.config.image.altKey ? t(props.config.image.altKey) : 'App Logo'}
+                    height={props.config.image.sm.height}
+                    width={props.config.image.sm.width}
                 />
                 {
                     props.config.languages ?

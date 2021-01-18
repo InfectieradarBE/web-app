@@ -5,11 +5,19 @@ export interface HeaderConfig {
 
 export interface SimpleLogoHeaderConfig {
     image: {
-        url: string;
-        className?: string;
         altKey?: string;
-        height?: number;
-        width?: number;
+        sm: {
+            url: string;
+            className?: string;
+            height?: number;
+            width?: number;
+        },
+        lg: {
+            url: string;
+            className?: string;
+            height?: number;
+            width?: number;
+        }
     };
     className?: string;
     languages?: Array<{
