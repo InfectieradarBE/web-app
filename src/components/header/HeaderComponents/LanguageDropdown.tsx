@@ -11,7 +11,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = (props) => {
     return (
         <div className="dropdown">
             <button
-                className="btn btn-grey-1 dropdown-toggle"
+                className="btn btn-secondary dropdown-toggle"
                 type="button"
                 id="languageMenu"
                 data-bs-toggle="dropdown"

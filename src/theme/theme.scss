@@ -3,13 +3,14 @@
 // Colors:
 // ---------------------------------------------
 $primary: #3464D5;
+$secondary: #EDEFF4;
 $success: #00A733;
 $warning: #FD9644;
 $danger: #DA3659;
 
 $theme-colors: (
   "primary": $primary,
-  //"secondary":  $secondary,
+  "secondary":  $secondary,
   "success": $success,
   //"info":       $info,
   "warning": $warning,
