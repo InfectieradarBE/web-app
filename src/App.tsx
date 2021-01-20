@@ -10,6 +10,7 @@ import { NavbarConfig } from './types/config/navbar';
 import { PagesConfig } from './types/config/pages';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Pages from './components/pages/Pages';
+import ScrollToTop from './components/misc/ScrollToTop';
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
@@ -55,6 +56,7 @@ function App() {
 
   return (
     <Router basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : undefined}>
+      <ScrollToTop />
       <Header
         config={headerConfig}
         onChangeLanguage={handleLanguageChange}
@@ -64,6 +66,7 @@ function App() {
         onOpenExternalPage={handleOpenExternalPage}
       />
       <Pages
+        config={pagesConfig}
         onOpenExternalPage={handleOpenExternalPage}
       />
       <Footer

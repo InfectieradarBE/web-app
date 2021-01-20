@@ -3,10 +3,17 @@
     "config": {
         "className": "",
         "image": {
-            "url": "/images/placeholder_image.png",
             "altKey": "logoAlt",
-            "className": "",
-            "height": 125
+            "sm": {
+                "url": "/images/placeholder_image.png",
+                "className": "",
+                "width": 100
+            },
+            "lg": {
+                "url": "/images/placeholder_image.png",
+                "className": "",
+                "height": 95
+            }
         },
         "languages": [
             {
