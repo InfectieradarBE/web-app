@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
+import { getExternalOrLocalContentURL } from '../../utils/routeUtils';
 import styles from './TeaserImage.module.scss';
 
 interface TeaserImageProps {
@@ -26,7 +27,7 @@ const TeaserImage: React.FC<TeaserImageProps> = (props) => {
             ))}
             style={{
                 minHeight: props.image.height ? props.image.height : 367,
-                backgroundImage: `url(${props.image.url})`,
+                backgroundImage: `url(${getExternalOrLocalContentURL(props.image.url)})`,
                 backgroundPosition: props.image.backgroundPosition,
             }}
         >

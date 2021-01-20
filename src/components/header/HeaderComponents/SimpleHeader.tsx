@@ -3,6 +3,7 @@ import { SimpleLogoHeaderConfig } from '../../../types/config/header';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from './LanguageDropdown';
 import clsx from 'clsx';
+import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
 
 
 interface SimpleHeaderProps {
@@ -18,15 +19,15 @@ const SimpleHeader: React.FC<SimpleHeaderProps> = (props) => {
         <div className="container">
             <div className={clsx("position-relative", props.config.className)}>
                 <img
-                    className={clsx('d-none d-sm-block', props.config.image.lg.className)}
-                    src={process.env.REACT_APP_CONTENT_URL + props.config.image.lg.url}
+                    className={clsx('d-none d-sm-inline-block', props.config.image.lg.className)}
+                    src={getExternalOrLocalContentURL(props.config.image.lg.url)}
                     alt={props.config.image.altKey ? t(props.config.image.altKey) : 'App Logo'}
                     height={props.config.image.lg.height}
                     width={props.config.image.lg.width}
                 />
                 <img
-                    className={clsx('d-block d-sm-none', props.config.image.sm.className)}
-                    src={process.env.REACT_APP_CONTENT_URL + props.config.image.sm.url}
+                    className={clsx('d-inline-block d-sm-none', props.config.image.sm.className)}
+                    src={getExternalOrLocalContentURL(props.config.image.sm.url)}
                     alt={props.config.image.altKey ? t(props.config.image.altKey) : 'App Logo'}
                     height={props.config.image.sm.height}
                     width={props.config.image.sm.width}
