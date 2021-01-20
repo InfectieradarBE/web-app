@@ -19,4 +19,22 @@ export interface PageConfig {
             contentKey?: string;
         }
     };
+    rows: Array<PageRow>;
+}
+
+export interface PageRow {
+    className?: string;
+    columns: Array<PageColumn>;
+}
+
+export interface PageColumn {
+    className?: string;
+    items: Array<PageItem>;
+}
+
+export interface PageItem {
+    itemKey: string;
+    className?: string;
+    type: string;
+    // type
 }
