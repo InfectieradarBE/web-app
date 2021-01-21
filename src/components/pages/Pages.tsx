@@ -1,6 +1,4 @@
 import React from 'react';
-import TeaserImage from '../displays/TeaserImage';
-import TitleBar from '../displays/TitleBar';
 
 import { PageConfig, PagesConfig } from '../../types/config/pages';
 import { Redirect, Route, Switch } from 'react-router-dom';
@@ -20,11 +18,32 @@ const Pages: React.FC<PagesProps> = (props) => {
     }
 
     const pages: Array<PageConfig> = [
-        { path: '/test', pageKey: 'test', layout: "markdown", rows: [] },
         {
-            path: '/privacy',
-            pageKey: 'privacy',
-            layout: "markdown",
+            path: '/privacy', pageKey: 'privacy',
+            rows: [
+                {
+                    className: "my-3",
+                    columns: [
+                        {
+                            className: "col-12 col-sm-10 col-md-8",
+                            items: [
+                                {
+                                    itemKey: "privacyPolicy",
+                                    className: "",
+                                    config: {
+                                        type: "markdown",
+                                        markdownUrl: "privacy.md"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            path: '/test',
+            pageKey: 'test',
             teaserImage: {
                 image: {
                     url: 'http://localhost:3000/example-content/images/placeholder_image.png',
@@ -47,24 +66,14 @@ const Pages: React.FC<PagesProps> = (props) => {
                             {
                                 itemKey: "form",
                                 className: "p-2 bg-grey-1",
-                                type: "markdown"
-                            }
-                        ]
-                    },
-                    {
-
-                        className: "col-4",
-                        items: [
-                            {
-                                itemKey: "loginForm",
-                                className: "bg-primary text-white p-3",
-                                type: "markdown"
+                                config: {
+                                    type: "router",
+                                }
                             }
                         ]
                     }
                 ]
             }]
-
         }
     ]
 

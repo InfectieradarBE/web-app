@@ -5,7 +5,6 @@ export interface PagesConfig {
 export interface PageConfig {
     path: string;
     pageKey: string;
-    layout: string;
     teaserImage?: {
         image: {
             url: string;
@@ -35,6 +34,14 @@ export interface PageColumn {
 export interface PageItem {
     itemKey: string;
     className?: string;
-    type: string;
-    // type
+    config: RouterComponentConfig | MarkdownComponentConfig;
+}
+
+export interface RouterComponentConfig {
+    type: 'router';
+}
+
+export interface MarkdownComponentConfig {
+    type: 'markdown';
+    markdownUrl: string;
 }

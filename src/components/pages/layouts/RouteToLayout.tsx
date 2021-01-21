@@ -37,7 +37,7 @@ const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
                             />
 
                             : null}
-                        <div className="container">
+                        <div className="container" style={{ minHeight: '50vh' }}>
                             <ContentRenderer
                                 pageKey={props.pageConfig.pageKey}
                                 rows={props.pageConfig.rows}

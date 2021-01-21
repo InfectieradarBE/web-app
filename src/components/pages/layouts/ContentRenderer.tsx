@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
-import MarkdownRenderer from '../../displays/MarkdownRenderer';
+import MarkdownLoader from './MarkdownLoader';
 
 interface ContentRendererProps {
     rows: Array<PageRow>;
@@ -10,15 +10,15 @@ interface ContentRendererProps {
 }
 
 const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
-    const { t } = useTranslation([props.pageKey]);
+    const { t, i18n } = useTranslation([props.pageKey]);
 
     const renderItem = (item: PageItem) => {
-        switch (item.type) {
+        switch (item.config.type) {
             case 'markdown':
-                return <MarkdownRenderer
-                    key={item.itemKey}
+                return <MarkdownLoader key={item.itemKey}
                     className={item.className}
-                    markdown={t(item.itemKey)}
+                    languageCode={i18n.language}
+                    markdownUrl={item.config.markdownUrl}
                 />
         }
         return <div
