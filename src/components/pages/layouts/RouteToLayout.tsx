@@ -26,32 +26,57 @@ const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
                         <TitleBar
                             content={t('title')}
                         />
-                        { props.pageConfig.teaserImage ?
-                            <TeaserImage
-                                image={props.pageConfig.teaserImage.image}
-                                textBox={{
-                                    className: props.pageConfig.teaserImage.textBox?.className,
-                                    title: props.pageConfig.teaserImage.textBox?.titleKey ? t(props.pageConfig.teaserImage.textBox?.titleKey) : undefined,
-                                    content: props.pageConfig.teaserImage.textBox?.contentKey ? t(props.pageConfig.teaserImage.textBox?.contentKey) : undefined,
-                                }}
-                            />
 
-                            : null}
+                        <ContentRenderer
+                            pageKey={props.pageConfig.pageKey}
+                            rows={props.pageConfig.rows}
+                        />
+
                         <div className="container" style={{ minHeight: '50vh' }}>
-                            <ContentRenderer
-                                pageKey={props.pageConfig.pageKey}
-                                rows={props.pageConfig.rows}
-                            />
+                            <div className="row">
 
-                            <div className="w-50 m-3">
-                                <ImageCard
-                                    imageSrc={getExternalOrLocalContentURL('/images/placeholder_image.png')}
-                                    title="testcard"
-                                    body="testcontent"
-                                    openActionText="action"
-                                />
+
+                                <div className="col-4 my-3">
+                                    <ImageCard
+                                        imageSrc={getExternalOrLocalContentURL('/images/placeholder_image.png')}
+                                        title="testcard"
+                                        body="testcontent"
+                                        openActionText="action"
+                                    />
+                                </div>                            <div className="col-4 my-3">
+                                    <ImageCard
+                                        imageSrc={getExternalOrLocalContentURL('/images/placeholder_image.png')}
+                                        title="testcard"
+                                        body="testcontent"
+                                        openActionText="action"
+                                    />
+                                </div>                            <div className="col-4 my-3">
+                                    <ImageCard
+                                        imageSrc={getExternalOrLocalContentURL('/images/placeholder_image.png')}
+                                        title="testcard"
+                                        body="testcontent"
+                                        openActionText="action"
+                                    />
+                                </div>
                             </div>
+                        </div>
 
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-5">
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="container my-3">
+                            <div className="row">
+                                <div className="col-7">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit dolorem quos molestias repellat architecto nulla deserunt possimus asperiores aspernatur, numquam necessitatibus sequi qui reiciendis quas autem, fuga optio atque!</p>
+
+                                </div>
+                            </div>
                         </div>
                     </React.Fragment>
 

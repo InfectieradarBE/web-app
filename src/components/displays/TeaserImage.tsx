@@ -34,8 +34,9 @@ const TeaserImage: React.FC<TeaserImageProps> = (props) => {
             { props.textBox ? <div className="container">
                 <div className="row">
                     <div className={clsx(
-                        "col-12 col-md-6 col-lg-4",
-                        props.textBox.className)} >
+                        // "col-12 col-md-6 col-lg-4",
+                        props.textBox.className
+                    )} >
                         <div className={clsx('p-2', styles.textBox)}>
                             {props.textBox && props.textBox.title && props.textBox.title.length > 0 ? <h4>{props.textBox.title}</h4> : null}
                             {props.textBox && props.textBox.content ? <p className="m-0">{props.textBox.content}</p> : null}

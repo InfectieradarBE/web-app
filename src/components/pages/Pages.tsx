@@ -44,36 +44,53 @@ const Pages: React.FC<PagesProps> = (props) => {
         {
             path: '/test',
             pageKey: 'test',
-            teaserImage: {
-                image: {
-                    url: 'http://localhost:3000/example-content/images/placeholder_image.png',
-                    backgroundPosition: "center",
-                    height: 250
-                },
-                textBox: {
-                    className: "py-2",
-                    titleKey: "topImageTitle",
-                    // content: "test"
-                    contentKey: "topImageContent",
-                }
-            },
-            rows: [{
-                className: "mt-3",
-                columns: [
-                    {
-                        className: "col-12 col-sm-6",
-                        items: [
-                            {
-                                itemKey: "form",
-                                className: "p-2 bg-grey-1",
-                                config: {
-                                    type: "router",
+            rows: [
+                {
+                    className: "",
+                    fullWidth: true,
+                    columns: [
+                        {
+                            className: "p-0",
+                            items: [
+                                {
+                                    itemKey: "topImage",
+
+                                    config: {
+                                        type: 'teaserImage',
+                                        image: {
+                                            // url: '/images/placeholder_image.png',
+                                            url: '/images/ANP-371602781-1024.jpg',
+                                            backgroundPosition: "center",
+                                            height: 350
+                                        },
+                                        textBox: {
+                                            className: "col-12 col-sm-8 col-md-5 px-0 py-2",
+                                            titleKey: "title",
+                                            contentKey: "content",
+                                        }
+                                    }
                                 }
-                            }
-                        ]
-                    }
-                ]
-            }]
+                            ]
+                        },
+                    ]
+                },
+                {
+                    className: "mt-3",
+                    columns: [
+                        {
+                            className: "col-12 col-sm-6",
+                            items: [
+                                {
+                                    itemKey: "form",
+                                    className: "p-2 bg-grey-1",
+                                    config: {
+                                        type: "router",
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }]
         }
     ]
 
@@ -81,7 +98,7 @@ const Pages: React.FC<PagesProps> = (props) => {
         <div>
             <Switch >
                 {commonRoutes}
-                {pages.map(pageConfig => {
+                {props.config.pages.map(pageConfig => {
                     return <RouteToLayout
                         key={pageConfig.path}
                         path={pageConfig.path}
@@ -90,7 +107,7 @@ const Pages: React.FC<PagesProps> = (props) => {
                 }
 
                 )}
-                <Redirect to="/test" />
+                <Redirect to="/home" />
             </Switch>
         </div>
     );

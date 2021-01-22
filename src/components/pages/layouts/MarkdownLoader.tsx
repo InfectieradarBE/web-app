@@ -32,6 +32,15 @@ const MarkdownLoader: React.FC<MarkdownLoaderProps> = (props) => {
     return <MarkdownRenderer
         className={props.className}
         markdown={content}
+        renderers={{
+            'inlineCode': (node) => <p className="border-primary border-top-2 border-bottom-2" style={{ fontSize: '1.0rem', color: '#696969' }} >{node.children}</p>,
+            'paragraph': (node) => node.children[0].type.name === "image" || node.children[0].type.name === "inlineCode" ? (
+                <div {...node} />
+            ) : (
+                    <p {...node} />
+                )
+            ,
+        }}
     />
 };
 

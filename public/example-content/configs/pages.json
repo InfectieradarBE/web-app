@@ -1,1 +1,36 @@
-{}
+{
+    "pages": [
+        {
+            "path": "/home",
+            "pageKey": "landing",
+            "rows": [
+                {
+                    "fullWidth": true,
+                    "columns": [
+                        {
+                            "className": "p-0",
+                            "items": [
+                                {
+                                    "itemKey": "topImage",
+                                    "config": {
+                                        "type": "teaserImage",
+                                        "image": {
+                                            "url": "/images/placeholder_image.png",
+                                            "backgroundPosition": "center",
+                                            "height": 270
+                                        },
+                                        "textBox": {
+                                            "className": "col-12 col-sm-10 col-md-7 col-lg-5 px-0 py-2",
+                                            "titleKey": "title",
+                                            "contentKey": "content"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
