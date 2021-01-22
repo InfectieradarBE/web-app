@@ -22,7 +22,8 @@ export interface PageColumn {
 export interface PageItem {
     itemKey: string;
     className?: string;
-    config: TeaserImageConfig | RouterComponentConfig | MarkdownComponentConfig;
+    hideWhen?: 'auth' | 'unauth';
+    config: TeaserImageConfig | RouterComponentConfig | MarkdownComponentConfig | ImageCardConfig;
 }
 
 export interface MarkdownComponentConfig {
@@ -43,6 +44,20 @@ export interface TeaserImageConfig {
         titleKey?: string;
         contentKey?: string;
     }
+}
+
+export interface ImageCardConfig {
+    type: 'imageCard';
+    action: {
+        type: 'navigate' | 'openDialog';
+        value: string;
+    };
+    imageSrc?: string,
+    imageAltKey?: string,
+    titleKey?: string,
+    bodyKey?: string,
+    actionTextKey?: string,
+    className?: string;
 }
 
 export interface RouterComponentConfig {

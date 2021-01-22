@@ -29,6 +29,53 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "className": "mt-3",
+                    "columns": [
+                        {
+                            "className": "col-12 col-md-6 col-lg-4",
+                            "items": [
+                                {
+                                    "itemKey": "currentResultCard",
+                                    "className": "h-100",
+                                    "config": {
+                                        "type": "imageCard",
+                                        "action": {
+                                            "type": "navigate",
+                                            "value": "/results"
+                                        },
+                                        "imageSrc": "/images/placeholder_image.png",
+                                        "imageAlt": "Results teaser image",
+                                        "titleKey": "title",
+                                        "bodyKey": "body",
+                                        "actionTextKey": "actionLabel"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "className": "col-12 col-md-6 col-lg-4 mt-3 mt-md-0",
+                            "items": [
+                                {
+                                    "itemKey": "signupCard",
+                                    "className": "h-100",
+                                    "config": {
+                                        "type": "imageCard",
+                                        "action": {
+                                            "type": "openDialog",
+                                            "value": "signup"
+                                        },
+                                        "imageSrc": "/images/placeholder_image.png",
+                                        "imageAltKey": "imageAlt",
+                                        "titleKey": "title",
+                                        "bodyKey": "body",
+                                        "actionTextKey": "actionLabel"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

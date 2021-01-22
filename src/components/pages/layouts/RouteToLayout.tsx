@@ -16,6 +16,7 @@ interface RouteToLayoutProps {
 
 const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
     const { t } = useTranslation([props.pageConfig.pageKey]);
+    const isAuthenticated = false;
 
     return (
         <Route
@@ -28,13 +29,13 @@ const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
                         />
 
                         <ContentRenderer
+                            isAuthenticated={isAuthenticated}
                             pageKey={props.pageConfig.pageKey}
                             rows={props.pageConfig.rows}
                         />
 
                         <div className="container" style={{ minHeight: '50vh' }}>
                             <div className="row">
-
 
                                 <div className="col-4 my-3">
                                     <ImageCard
@@ -50,31 +51,6 @@ const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
                                         body="testcontent"
                                         openActionText="action"
                                     />
-                                </div>                            <div className="col-4 my-3">
-                                    <ImageCard
-                                        imageSrc={getExternalOrLocalContentURL('/images/placeholder_image.png')}
-                                        title="testcard"
-                                        body="testcontent"
-                                        openActionText="action"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-5">
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="container my-3">
-                            <div className="row">
-                                <div className="col-7">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit dolorem quos molestias repellat architecto nulla deserunt possimus asperiores aspernatur, numquam necessitatibus sequi qui reiciendis quas autem, fuga optio atque!</p>
-
                                 </div>
                             </div>
                         </div>

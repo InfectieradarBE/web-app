@@ -3,5 +3,15 @@
     "topImage": {
         "title": "Test teaser image",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit dolorem quos molestias repellat architecto nulla deserunt possimus asperiores aspernatur, numquam necessitatibus sequi qui reiciendis quas autem, fuga optio atque!"
+    },
+    "currentResultCard": {
+        "title": "Current Results",
+        "body": "Nullam faucibus sit blandit scelerisque lacus, gravida imperdiet turpis. Diam orci ut rhoncus vel enim vitae at.",
+        "actionLabel": "Learn More"
+    },
+    "signupCard": {
+        "title": "I want to participate!",
+        "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
+        "actionLabel": "Sign up"
     }
 }

@@ -2,10 +2,13 @@ import clsx from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
+import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
+import ImageCard from '../../cards/ImageCard/ImageCard';
 import TeaserImage from '../../displays/TeaserImage';
 import MarkdownLoader from './MarkdownLoader';
 
 interface ContentRendererProps {
+    isAuthenticated: boolean;
     rows: Array<PageRow>;
     pageKey: string;
 }
@@ -14,6 +17,12 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
     const { t, i18n } = useTranslation([props.pageKey]);
 
     const renderItem = (item: PageItem) => {
+        if (
+            (item.hideWhen === 'auth' && props.isAuthenticated) ||
+            (item.hideWhen === 'unauth' && !props.isAuthenticated)
+        ) {
+            return null;
+        }
         switch (item.config.type) {
             case 'markdown':
                 return <MarkdownLoader
@@ -31,6 +40,20 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
                         title: item.config.textBox.titleKey ? t(`${item.itemKey}.${item.config.textBox.titleKey}`) : undefined,
                         content: item.config.textBox.contentKey ? t(`${item.itemKey}.${item.config.textBox.contentKey}`) : undefined,
                     } : undefined}
+                />
+            case 'imageCard':
+                const action = item.config.action;
+                return <ImageCard
+                    key={item.itemKey}
+                    className={item.className}
+                    imageSrc={item.config.imageSrc ? getExternalOrLocalContentURL(item.config.imageSrc) : undefined}
+                    imageAlt={item.config.imageAltKey ? t(`${item.itemKey}.${item.config.imageAltKey}`) : undefined}
+                    title={item.config.titleKey ? t(`${item.itemKey}.${item.config.titleKey}`) : undefined}
+                    body={item.config.bodyKey ? t(`${item.itemKey}.${item.config.bodyKey}`) : undefined}
+                    openActionText={item.config.actionTextKey ? t(`${item.itemKey}.${item.config.actionTextKey}`) : undefined}
+                    onClick={() => {
+                        console.log(action);
+                    }}
                 />
         }
         return <div
