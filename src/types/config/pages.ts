@@ -5,16 +5,19 @@ export interface PagesConfig {
 export interface PageConfig {
     path: string;
     pageKey: string;
+    hideWhen?: 'auth' | 'unauth';
     rows: Array<PageRow>;
 }
 
 export interface PageRow {
+    key: string;
     className?: string;
     fullWidth?: boolean;
     columns: Array<PageColumn>;
 }
 
 export interface PageColumn {
+    key?: string;
     className?: string;
     items: Array<PageItem>;
 }
@@ -23,8 +26,11 @@ export interface PageItem {
     itemKey: string;
     className?: string;
     hideWhen?: 'auth' | 'unauth';
-    config: TeaserImageConfig | RouterComponentConfig | MarkdownComponentConfig | ImageCardConfig;
+    config: PageItemConfig;
 }
+
+type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
+    MarkdownComponentConfig | ImageCardConfig | LoginCardConfig;
 
 export interface MarkdownComponentConfig {
     type: 'markdown';
@@ -58,6 +64,11 @@ export interface ImageCardConfig {
     bodyKey?: string,
     actionTextKey?: string,
     className?: string;
+}
+
+interface LoginCardConfig {
+    type: 'loginCard';
+    showInfoText: boolean;
 }
 
 export interface RouterComponentConfig {

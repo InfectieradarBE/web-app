@@ -7,12 +7,13 @@ $secondary: #EDEFF4;
 $success: #00A733;
 $warning: #FD9644;
 $danger: #DA3659;
+$info: #BCE0FA;
 
 $theme-colors: (
   "primary": $primary,
   "secondary":  $secondary,
   "success": $success,
-  //"info":       $info,
+  "info": $info,
   "warning": $warning,
   "danger": $danger,
 );
@@ -44,6 +45,10 @@ p, ul {
   }
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 .fs-btn {
   font-size: 1.125rem !important;
 }
@@ -72,6 +77,9 @@ $enable-negative-margins: true;
 // ---------------------------------------------
 // Form Inputs:
 // ---------------------------------------------
+
+$input-disabled-bg:                     map-get($theme-colors, "grey-2") !default;
+$input-disabled-border-color:           map-get($theme-colors, "grey-2") !default;
 
 // Checkbox
 $form-check-input-width: 1.5em !default;
@@ -175,6 +183,10 @@ $enable-rounded: false !default;
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.border-2 {
+  border-width: 2px !important;
 }
 
 .border-top-2 {

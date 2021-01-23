@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './LinkButton.module.scss';
+import styles from './FooterLinkButton.module.scss';
 
 interface LinkButtonProps {
     text: string;
@@ -9,7 +9,7 @@ interface LinkButtonProps {
     external?: boolean;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = (props) => {
+const FooterLinkButton: React.FC<LinkButtonProps> = (props) => {
     return (
         <button
             className={clsx(
@@ -38,4 +38,4 @@ const LinkButton: React.FC<LinkButtonProps> = (props) => {
     );
 };
 
-export default LinkButton;
+export default FooterLinkButton;

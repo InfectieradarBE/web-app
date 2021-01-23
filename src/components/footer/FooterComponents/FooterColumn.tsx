@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkButton from '../../buttons/LinkButton';
+import LinkButton from './FooterLinkButton';
 
 interface FooterColumnProps {
     title: string;

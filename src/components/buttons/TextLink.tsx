@@ -1,8 +1,9 @@
 import React from 'react';
-
+import clsx from 'clsx';
 
 interface TextLinkProps {
     href?: string;
+    className?: string;
     style?: React.CSSProperties;
 }
 
@@ -11,7 +12,10 @@ const TextLink: React.FC<TextLinkProps> = (props) => {
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a
             role="button"
-            className="d-inline-flex text-decoration-none align-items-center"
+            className={
+                clsx("d-inline-flex text-decoration-none align-items-center",
+                    props.className
+                )}
             style={props.style}
             onClick={() => window.open(props.href, 'blank')}
         >

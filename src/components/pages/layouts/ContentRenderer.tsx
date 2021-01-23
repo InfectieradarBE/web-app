@@ -4,7 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
 import ImageCard from '../../cards/ImageCard/ImageCard';
+import LoginCard from '../../cards/LoginCard';
 import TeaserImage from '../../displays/TeaserImage';
+import TitleBar from '../../displays/TitleBar';
 import MarkdownLoader from './MarkdownLoader';
 
 interface ContentRendererProps {
@@ -55,6 +57,14 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
                         console.log(action);
                     }}
                 />
+            case 'loginCard':
+                return <LoginCard
+                    key={item.itemKey}
+                    className={"todo"}
+                    title={t(`${item.itemKey}.title`)}
+                    infoText={item.config.showInfoText ? t(`${item.itemKey}.info`) : 'teddfadds [http://test](here)'}
+                    loginBtn={t(`${item.itemKey}.btn`)}
+                />
         }
         return <div
             key={item.itemKey}
@@ -66,16 +76,19 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
     const renderColumn = (col: PageColumn, index: number) => {
         return <div
             className={col.className}
-            key={index.toFixed()}>
+            key={col.key ? col.key : index.toFixed()}>
             {col.items.map(item => renderItem(item))}
         </div>
     }
 
     return (
         <React.Fragment>
-            {props.rows.map((row, index) =>
+            <TitleBar
+                content={t('title')}
+            />
+            {props.rows.map(row =>
                 <div
-                    key={index.toFixed()}
+                    key={row.key}
                     className={clsx(
                         {
                             "container": !row.fullWidth,
