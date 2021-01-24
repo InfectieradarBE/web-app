@@ -7,7 +7,14 @@
     "loginCard": {
         "title": "Login",
         "info": "More info [here](https://coneno.com)",
-        "btn": "Login"
+        "emailInputLabel": "Email",
+        "emailInputPlaceholder": "Enter Email",
+        "passwordInputLabel": "Password",
+        "passwordInputPlaceholder": "Enter Password",
+        "rememberMeLabel": "Remember Me",
+        "btn": "Login",
+        "passwordForgottenBtn": "Password forgotten",
+        "signupBtn": "DOn't have an account? Sign up."
     },
     "currentResultCard": {
         "title": "Current Results",

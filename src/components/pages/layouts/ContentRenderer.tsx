@@ -75,10 +75,19 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
             case 'loginCard':
                 return <LoginCard
                     key={item.itemKey}
-                    className={"todo"}
+                    className={item.className}
                     title={t(`${item.itemKey}.title`)}
-                    infoText={item.config.showInfoText ? t(`${item.itemKey}.info`) : 'teddfadds [http://test](here)'}
+                    infoText={item.config.showInfoText ? t(`${item.itemKey}.info`) : undefined}
+                    emailInputLabel={t(`${item.itemKey}.emailInputLabel`)}
+                    emailInputPlaceholder={t(`${item.itemKey}.emailInputPlaceholder`)}
+                    passwordInputLabel={t(`${item.itemKey}.passwordInputLabel`)}
+                    passwordInputPlaceholder={t(`${item.itemKey}.passwordInputPlaceholder`)}
+                    rememberMeLabel={t(`${item.itemKey}.rememberMeLabel`)}
+                    passwordForgottenBtn={t(`${item.itemKey}.passwordForgottenBtn`)}
+                    signupBtn={t(`${item.itemKey}.signupBtn`)}
                     loginBtn={t(`${item.itemKey}.btn`)}
+                    onSubmit={(email, password, rememberMe) => { console.log('todo') }}
+                    onOpenDialog={(dialog) => console.log(dialog)}
                 />
         }
         return <div
