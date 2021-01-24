@@ -30,11 +30,22 @@ export interface PageItem {
 }
 
 type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
-    MarkdownComponentConfig | ImageCardConfig | LoginCardConfig;
+    MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig;
 
 export interface MarkdownComponentConfig {
     type: 'markdown';
     markdownUrl: string;
+}
+
+export interface VideoConfig {
+    type: 'video';
+    minHeight?: number;
+    posterUrlKey?: string;
+    videoSources: Array<{
+        urlKey: string;
+        type: string;
+    }>;
+    fallbackTextKey?: string;
 }
 
 export interface TeaserImageConfig {
@@ -74,4 +85,3 @@ interface LoginCardConfig {
 export interface RouterComponentConfig {
     type: 'router';
 }
-

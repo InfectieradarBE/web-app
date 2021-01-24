@@ -7,6 +7,7 @@ import ImageCard from '../../cards/ImageCard/ImageCard';
 import LoginCard from '../../cards/LoginCard';
 import TeaserImage from '../../displays/TeaserImage';
 import TitleBar from '../../displays/TitleBar';
+import VideoPlayer from '../../displays/VideoPlayer';
 import MarkdownLoader from './MarkdownLoader';
 
 interface ContentRendererProps {
@@ -56,6 +57,20 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
                     onClick={() => {
                         console.log(action);
                     }}
+                />
+            case 'video':
+                return <VideoPlayer
+                    key={item.itemKey}
+                    className={item.className}
+                    minHeight={item.config.minHeight}
+                    posterUrl={item.config.posterUrlKey ? t(`${item.itemKey}.${item.config.posterUrlKey}`) : undefined}
+                    sources={item.config.videoSources.map(vs => {
+                        return {
+                            src: t(`${item.itemKey}.${vs.urlKey}`),
+                            type: t(`${item.itemKey}.${vs.type}`)
+                        }
+                    })}
+                    fallbackText={item.config.fallbackTextKey ? t(`${item.itemKey}.${item.config.fallbackTextKey}`) : undefined}
                 />
             case 'loginCard':
                 return <LoginCard

@@ -23,5 +23,12 @@
         "title": "About Influenzanet",
         "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
         "actionLabel": "Learn more"
+    },
+    "video": {
+        "poster": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-still-middel.jpg",
+        "mp4": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mp4",
+        "mxf": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mxf",
+        "webm": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-web.webm",
+        "fallbackText": "Your browser does not support the video tag."
     }
 }
