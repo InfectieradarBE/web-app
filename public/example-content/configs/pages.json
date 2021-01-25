@@ -38,7 +38,7 @@
           "className": "py-3",
           "columns": [
             {
-              "key": "cardResultsCol",
+              "key": "loginCardCol",
               "className": "col-12 col-md-12 col-lg-4 mb-3 mb-lg-0",
               "items": [
                 {
@@ -52,7 +52,7 @@
               ]
             },
             {
-              "key": "loginCardCol",
+              "key": "cardResultsCol",
               "className": "col-12 col-md-6 col-lg-4",
               "items": [
                 {
@@ -83,6 +83,7 @@
                       "type": "openDialog",
                       "value": "signup"
                     },
+                    "imageSrc": "/images/placeholder_image.png",
                     "showActionBtn": true
                   }
                 }

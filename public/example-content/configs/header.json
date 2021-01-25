@@ -1,29 +1,29 @@
 {
-    "layout": "simpleLogo",
-    "config": {
+  "layout": "simpleLogo",
+  "config": {
+    "className": "",
+    "image": {
+      "altKey": "logoAlt",
+      "sm": {
+        "url": "/images/placeholder_image.png",
         "className": "",
-        "image": {
-            "altKey": "logoAlt",
-            "sm": {
-                "url": "/images/placeholder_image.png",
-                "className": "",
-                "width": 100
-            },
-            "lg": {
-                "url": "/images/placeholder_image.png",
-                "className": "",
-                "height": 95
-            }
-        },
-        "languages": [
-            {
-                "code": "nl-be",
-                "itemKey": "nl"
-            },
-            {
-                "code": "en",
-                "itemKey": "en"
-            }
-        ]
-    }
+        "width": 100
+      },
+      "lg": {
+        "url": "/images/placeholder_image.png",
+        "className": "",
+        "height": 95
+      }
+    },
+    "languages": [
+      {
+        "code": "nl-be",
+        "itemKey": "nl"
+      },
+      {
+        "code": "en",
+        "itemKey": "en"
+      }
+    ]
+  }
 }
