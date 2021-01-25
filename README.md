@@ -4,6 +4,20 @@
 To display some icons this project is using font-awesome free icons.
 
 
+## Configuration
+The project uses environment variables defined through the node js environment.
+
+Add the `.env.local` file for example to define these variables.
+
+Supported variables:
+```
+REACT_APP_DEFAULT_LANGUAGE=<language-code>
+REACT_APP_FALLBACK_LANGUAGE=<language-code>
+
+REACT_APP_CONTENT_URL=<full url of the content hosting>
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
