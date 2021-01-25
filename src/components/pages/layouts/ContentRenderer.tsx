@@ -19,6 +19,7 @@ interface ContentRendererProps {
 const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
   const { t, i18n } = useTranslation([props.pageKey]);
 
+
   const renderItem = (item: PageItem) => {
     if (
       (item.hideWhen === 'auth' && props.isAuthenticated) ||
@@ -49,7 +50,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
         return <ImageCard
           key={item.itemKey}
           className={item.className}
-          imageSrc={item.config.imageSrc ? getExternalOrLocalContentURL(item.config.imageSrc) : undefined}
+          imageSrc={getExternalOrLocalContentURL(item.config.imageSrc ? item.config.imageSrc : t(`${item.itemKey}.imageSrc`))}
           imageAlt={t(`${item.itemKey}.imageAlt`)}
           title={t(`${item.itemKey}.title`)}
           body={t(`${item.itemKey}.body`)}
@@ -64,14 +65,15 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           key={item.itemKey}
           className={item.className}
           minHeight={item.config.minHeight}
-          posterUrl={item.config.posterUrlKey ? t(`${item.itemKey}.${item.config.posterUrlKey} `) : undefined}
+          posterUrl={item.config.posterUrlKey ? t(`${item.itemKey}.${item.config.posterUrlKey}`) : undefined}
           sources={item.config.videoSources.map(vs => {
+            console.log(t(`${item.itemKey}.${vs.type}`))
             return {
-              src: t(`${item.itemKey}.${vs.urlKey} `),
-              type: t(`${item.itemKey}.${vs.type} `)
+              src: t(`${item.itemKey}.${vs.urlKey}`),
+              type: vs.type,
             }
           })}
-          fallbackText={item.config.fallbackTextKey ? t(`${item.itemKey}.${item.config.fallbackTextKey} `) : undefined}
+          fallbackText={item.config.fallbackTextKey ? t(`${item.itemKey}.${item.config.fallbackTextKey}`) : undefined}
         />
       case 'loginCard':
         return <LoginCard

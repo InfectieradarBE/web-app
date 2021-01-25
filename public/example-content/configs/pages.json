@@ -83,7 +83,6 @@
                       "type": "openDialog",
                       "value": "signup"
                     },
-                    "imageSrc": "/images/placeholder_image.png",
                     "showActionBtn": true
                   }
                 }
