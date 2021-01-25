@@ -5,8 +5,8 @@ import clsx from 'clsx';
 interface ImageCardProps {
   imageSrc?: string,
   imageAlt?: string,
-  title?: string,
-  body?: string,
+  title: string,
+  body: string,
   openActionText?: string,
   onClick?: () => void;
   className?: string;

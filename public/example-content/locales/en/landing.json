@@ -1,41 +1,44 @@
 {
-    "title": "Influenzanet",
-    "topImage": {
-        "title": "Test teaser image",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit dolorem quos molestias repellat architecto nulla deserunt possimus asperiores aspernatur, numquam necessitatibus sequi qui reiciendis quas autem, fuga optio atque!"
-    },
-    "loginCard": {
-        "title": "Login",
-        "info": "More info [here](https://coneno.com)",
-        "emailInputLabel": "Email",
-        "emailInputPlaceholder": "Enter Email",
-        "passwordInputLabel": "Password",
-        "passwordInputPlaceholder": "Enter Password",
-        "rememberMeLabel": "Remember Me",
-        "btn": "Login",
-        "passwordForgottenBtn": "Password forgotten",
-        "signupBtn": "DOn't have an account? Sign up."
-    },
-    "currentResultCard": {
-        "title": "Current Results",
-        "body": "Nullam faucibus sit blandit scelerisque lacus, gravida imperdiet turpis. Diam orci ut rhoncus vel enim vitae at.",
-        "actionLabel": "Learn More"
-    },
-    "signupCard": {
-        "title": "I want to participate!",
-        "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
-        "actionLabel": "Sign up"
-    },
-    "aboutCard": {
-        "title": "About Influenzanet",
-        "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
-        "actionLabel": "Learn more"
-    },
-    "video": {
-        "poster": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-still-middel.jpg",
-        "mp4": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mp4",
-        "mxf": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mxf",
-        "webm": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-web.webm",
-        "fallbackText": "Your browser does not support the video tag."
-    }
+  "title": "Influenzanet",
+  "topImage": {
+    "title": "Test teaser image",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, suscipit dolorem quos molestias repellat architecto nulla deserunt possimus asperiores aspernatur, numquam necessitatibus sequi qui reiciendis quas autem, fuga optio atque!"
+  },
+  "loginCard": {
+    "title": "Login",
+    "info": "More info [here](https://coneno.com)",
+    "emailInputLabel": "Email",
+    "emailInputPlaceholder": "Enter Email",
+    "passwordInputLabel": "Password",
+    "passwordInputPlaceholder": "Enter Password",
+    "rememberMeLabel": "Remember Me",
+    "btn": "Login",
+    "passwordForgottenBtn": "Password forgotten",
+    "signupBtn": "DOn't have an account? Sign up."
+  },
+  "currentResultCard": {
+    "imageAlt": "Card image description",
+    "title": "Current Results",
+    "body": "Nullam faucibus sit blandit scelerisque lacus, gravida imperdiet turpis. Diam orci ut rhoncus vel enim vitae at.",
+    "actionLabel": "Learn More"
+  },
+  "signupCard": {
+    "imageAlt": "Card image description",
+    "title": "I want to participate!",
+    "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
+    "actionLabel": "Sign up"
+  },
+  "aboutCard": {
+    "imageAlt": "Card image description",
+    "title": "About Influenzanet",
+    "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
+    "actionLabel": "Learn more"
+  },
+  "video": {
+    "poster": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-still-middel.jpg",
+    "mp4": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mp4",
+    "mxf": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mxf",
+    "webm": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-web.webm",
+    "fallbackText": "Your browser does not support the video tag."
+  }
 }
