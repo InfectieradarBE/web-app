@@ -11,14 +11,13 @@ import { PagesConfig } from './types/config/pages';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Pages from './components/pages/Pages';
 import ScrollToTop from './components/misc/ScrollToTop';
-import { ImageCardConfigs } from './types/config/imageCards';
+
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
   const [navbarConfig, setNavbarConfig] = useState<NavbarConfig | undefined>();
   const [pagesConfig, setPagesConfig] = useState<PagesConfig | undefined>();
   const [footerConfig, setFooterConfig] = useState<FooterContentConfig | undefined>();
-  const [imageCardConfigs, setImageCardConfigs] = useState<ImageCardConfigs | undefined>();
 
 
   useEffect(() => {
@@ -46,11 +45,6 @@ function App() {
       .then(value => setFooterConfig(value))
       .catch(error => console.log(error));
 
-    // Image Card Configs
-    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/image-cards.json`)
-      .then(res => res.json())
-      .then(value => setImageCardConfigs(value))
-      .catch(error => console.log(error));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
