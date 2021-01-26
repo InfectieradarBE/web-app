@@ -31,8 +31,7 @@ export interface PageItem {
 
 type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig |
-  AccordionListConfig
-  ;
+  AccordionListConfig | SimpleCard;
 
 
 export interface MarkdownComponentConfig {
@@ -85,6 +84,13 @@ interface LoginCardConfig {
 export interface AccordionListConfig {
   type: 'accordionList';
   accordionCtrlsKey: string;
+}
+
+export interface SimpleCard {
+  type: 'simpleCard';
+  titleKey?: string;
+  contentKey: string;
+  variant?: 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
 
 export interface RouterComponentConfig {

@@ -5,6 +5,7 @@ import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
 import ImageCard from '../../cards/ImageCard/ImageCard';
 import LoginCard from '../../cards/LoginCard';
+import SimpleCard from '../../cards/SimpleCard';
 import AccordionList from '../../displays/AccordionList';
 import TeaserImage from '../../displays/TeaserImage';
 import TitleBar from '../../displays/TitleBar';
@@ -100,6 +101,14 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           items={items}
           openLabel={t(`${item.config.accordionCtrlsKey}.open`)}
           closeLabel={t(`${item.config.accordionCtrlsKey}.close`)}
+        />
+      case 'simpleCard':
+        return <SimpleCard
+          key={item.itemKey}
+          className={item.className}
+          title={item.config.titleKey ? t(`${item.config.titleKey}`) : undefined}
+          content={t(`${item.config.contentKey}`)}
+          variant={item.config.variant}
         />
     }
     return <div

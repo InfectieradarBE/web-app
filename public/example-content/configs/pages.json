@@ -182,6 +182,16 @@
               "className": "col-12 col-lg-8",
               "items": [
                 {
+                  "itemKey": "faqTop",
+                  "className": "",
+                  "config": {
+                    "type": "simpleCard",
+                    "titleKey": "topCardTitle",
+                    "contentKey": "topCardContent",
+                    "variant": "h2"
+                  }
+                },
+                {
                   "itemKey": "faq",
                   "className": "",
                   "config": {
