@@ -167,6 +167,33 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/faq",
+      "pageKey": "faq",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "faq",
+                  "className": "",
+                  "config": {
+                    "type": "accordionList",
+                    "accordionCtrlsKey": "accordionControls"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
