@@ -1,0 +1,44 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "Test teaser image",
+    "content": "Een onderzoek in de strijd tegen epidemieën"
+  },
+  "loginCard": {
+    "title": "Login",
+    "info": "",
+    "emailInputLabel": "E-mail",
+    "emailInputPlaceholder": "E-mail",
+    "passwordInputLabel": "Wachtwoord",
+    "passwordInputPlaceholder": "Wachtwoord",
+    "rememberMeLabel": "Gegevens onthouden",
+    "btn": "Login",
+    "passwordForgottenBtn": "Wachtwoord vergeten?",
+    "signupBtn": "Heb je nog geen account? Meld je hier aan."
+  },
+  "currentResultCard": {
+    "imageAlt": "Actuele resultaten afbeelding",
+    "title": "Actuele resultaten",
+    "body": "Infectieradar.be brengt in kaart welke klachten mensen in België hebben die kunnen wijzen op het coronavirus.",
+    "actionLabel": "Actuele resultaten"
+  },
+  "signupCard": {
+    "imageAlt": "Deelnemen afbeelding",
+    "title": "Deelnemen",
+    "body": "Help mee het coronavirus in de gaten te houden. Geef wekelijks door of je klachten hebt.",
+    "actionLabel": "Aanmelden"
+  },
+  "aboutCard": {
+    "imageAlt": "Over Infectieradar afbeelding",
+    "title": "Over Infectieradar",
+    "body": "Met Infectieradar volgen we op hoe gezondheidsklachten verspreid zijn over België. Het is een van de instrumenten waarmee het onderzoeksteam de verspreiding van het virus volgt.",
+    "actionLabel": "Lees meer"
+  },
+  "video": {
+    "poster": "",
+    "mp4": "",
+    "mxf": "",
+    "webm": "",
+    "fallbackText": "Your browser does not support the video tag."
+  }
+}

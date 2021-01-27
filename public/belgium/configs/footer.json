@@ -1,0 +1,56 @@
+{
+  "columns": [
+    {
+      "columnKey": "services",
+      "items": [
+        {
+          "type": "internal",
+          "itemKey": "contact",
+          "url": "/contact"
+        },
+        {
+          "type": "external",
+          "itemKey": "facebook",
+          "iconClass": "fab fa-facebook-square",
+          "url": "https://www.facebook.com/RIVMnl"
+        },
+        {
+          "type": "external",
+          "itemKey": "linkedIn",
+          "iconClass": "fab fa-linkedin",
+          "url": "https://nl.linkedin.com/company/rivm"
+        }
+      ]
+    },
+    {
+      "columnKey": "about",
+      "items": [
+        {
+          "type": "internal",
+          "itemKey": "privacy",
+          "url": "/privacy"
+        },
+        {
+          "type": "internal",
+          "itemKey": "accessibility",
+          "url": "/accesibility"
+        }
+      ]
+    },
+    {
+      "columnKey": "languages",
+      "items": [
+        {
+          "type": "language",
+          "itemKey": "nl",
+          "languageCode": "nl"
+        },
+        {
+          "type": "language",
+          "itemKey": "en",
+          "languageCode": "en"
+        }
+      ]
+    }
+  ]
+}
