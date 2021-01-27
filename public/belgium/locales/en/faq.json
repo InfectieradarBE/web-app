@@ -1,0 +1,117 @@
+{
+  "title": "FAQ's",
+  "accordionControls": {
+    "open": "Expand",
+    "close": "Collapse"
+  },
+  "topCardTitle": "Wie heeft Infectieradar.be opgezet?",
+  "topCardContent": "Infectieradar.be is onderdeel van Influenzanet, een Europees samenwerkingsverband tussen verschillende universiteiten en overheden. De Universiteit van Hasselt is ook onderdeel van dit samenwerkingsverband. Het doel van Influenzanet is om de symptomen van infecties, zoals het nieuwe coronavirus (COVID-19) en griep, bij mensen in Europa in kaart te brengen en te volgen. Deze gegevens worden gebruikt voor wetenschappelijk onderzoek naar infecties en op dit moment naar het nieuwe coronavirus.",
+  "signupCard": {
+    "imageAlt": "Deelnemen afbeelding",
+    "title": "Deelnemen",
+    "body": "Help mee het coronavirus in de gaten te houden. Geef wekelijks door of je klachten hebt.",
+    "actionLabel": "Aanmelden"
+  },
+  "faq": [
+    {
+      "title": "Wie kan er deelnemen aan Infectieradar.be?",
+      "content": "Alle mensen die in België wonen en internettoegang hebben kunnen deelnemen aan Infectieradar.be, vrijwillig en zolang zij dat willen."
+    },
+    {
+      "title": "Hoe kan ik deelnemen aan Infectieradar.be?",
+      "content": "Je kunt deelnemen door je aan te melden met een e-mailadres en persoonlijk wachtwoord."
+    },
+    {
+      "title": "Waarom zou ik deelnemen aan Infectieradar.be?",
+      "content": "Om een zo goed mogelijk beeld te krijgen van de situatie op dit moment, is het belangrijk dat iedereen meedoet, ongeacht achtergrond of risicofactoren. Iemand die nooit ziek is, kan net zo goed ziek worden als iemand die vaak ziek is. Het kan ons ook helpen begrijpen waarom sommige mensen minder vaak een infectie krijgen."
+    },
+    {
+      "title": "Is Infectieradar.be hetzelfde als de Corona-studie van de UAntwerpen ?",
+      "content": "Beide studies onderzoeken en monitoren symptomten die gelinkt zijn aan de corona-epidemie in België. Met Infectieradar.be hopen we echter een nationaal surveillancesysteem op te zetten om klachten van infectieziekten te monitoren voor de lange termijn, dus ook voor de periode na COVID-19, en verder doen we dit in een internationale context. Het onderzoek sluit aan bij een Europees initiatief: Influenzanet. Dat is een Europees samenwerkingsverband met verschillende universiteiten en overheden. Het doel van Influenzanet is om symptomen van virusinfecties, zoals griep, bij mensen in de EU European Union  -lidstaten te volgen en in kaart te brengen. Dat maakt het naast nationale monitoring ook mogelijk om op Europees niveau gegevens met elkaar te kunnen vergelijken."
+    },
+    {
+      "title": "Ik ben geen Belg maar woon wel in België, kan ik deelnemen aan Infectieradar.be?",
+      "content": "Jazeker! Infectieradar.be is geïnteresseerd in de situatie in België. Alle mensen die in België wonen kunnen daarom deelnemen ook als ze een andere nationaliteit hebben."
+    },
+    {
+      "title": "Ik ben een Belg, maar woon in het buitenland, kan ik deelnemen?",
+      "content": "Nee. Alleen mensen die in België wonen, kunnen aan dit onderzoek deelnemen. Maar als je in Duitsland, Australië, Oostenrijk, Zwitserland, België, Frankrijk, Italië, Mexico, Portugal, het Verenigd Koninkrijk of Zweden woont, bestaan er in die landen vergelijkbare registraties."
+    },
+    {
+      "title": "Ik heb dit jaar een griepvaccin gehad. Kan ik dan deelnemen?",
+      "content": "Het onderzoek van Infectieradar.be is gericht op alle mensen. Het maakt niet uit of ze zijn gevaccineerd tegen griep of niet."
+    },
+    {
+      "title": "Hoeveel tijd kost het invullen van de vragenlijst op Infectieradar.be?",
+      "content": "Het duurt ongeveer 5 minuten om te registreren en de eerste vragenlijst in te vullen. Elke week duurt het invullen van de wekelijkse vragenlijst vervolgens tussen de 30 seconden (als je geen klachten hebt),  en een paar minuten (als je klachten hebt of in die week hebt gehad)."
+    },
+    {
+      "title": "Hoe lang loopt het onderzoek via Infectieradar.be?",
+      "content": "Het onderzoek heeft geen einddatum, maar je kunt op elk moment stoppen met deelname door je uit te schrijven voor de wekelijkse vragenlijst. Je kunt je later opnieuw registreren als je van gedachten verandert en opnieuw mee wilt doen."
+    },
+    {
+      "title": "Kost deelname aan Infectieradar.be geld?",
+      "content": "Nee, deelname aan het onderzoek is gratis en vrijwillig."
+    },
+    {
+      "title": "Wat gebeurt er nadat ik mij heb geregistreerd?",
+      "content": "In de eerste vragenlijst wordt je gevraagd achtergrondvragen over je gezondheid en dagelijks leven in te vullen. Deze vragenlijst krijg je slechts één keer. Vervolgens ontvang je wekelijks een e-mail voor het invullen van een vragenlijst."
+    },
+    {
+      "title": "Welke vragen worden gesteld in de achtergrondvragenlijst?",
+      "content": "Het doel van de eerste vragenlijst is om elke gebruiker wat beter te leren kennen. Voor de meeste vragen heb  je de optie om niet te antwoorden door het antwoord ‘dat wil ik liever niet zeggen’ of ‘ik weet het niet’ te kiezen. Het invullen van deze vragenlijst duurt ongeveer 5 minuten."
+    },
+    {
+      "title": "Welke vragen worden gesteld in de wekelijkse vragenlijst?",
+      "content": "De wekelijkse vragenlijst vraagt naar de symptomen die je mogelijk hebt gehad sinds je laatste deelname (loopneus, hoest, koorts, enz.). Als je geen klachten hebt gehad, duurt het invullen slechts enkele seconden. Als je  wel klachten hebt of hebt gehad, krijg je optioneel vragen over wanneer de symptomen begonnen, of je een arts zag en of je ziekteverlof had. Het invullen van de vragenlijst duurt dan een paar minuten."
+    },
+    {
+      "title": "Kan ik de vragenlijst voor iemand anders invullen, bijvoorbeeld mijn kind?",
+      "content": "Ja, dat kan. Het is mogelijk om de vragenlijsten in te vullen voor je kind(eren) onder de 18. Echter, andere leden van het huishouden van 18 jaar of ouder moeten een eigen account aanmaken."
+    },
+    {
+      "title": "Ik weet niet of ik altijd de wekelijkse vragenlijst kan invullen, kan ik dan wel deelnemen?",
+      "content": "Ja, je kan gewoon deelnemen. Je kan de vragenlijsten invullen met de frequentie die het beste bij jou past. Hoe vaker je deelneemt, hoe interessanter de verzamelde gegevens. Maar zelfs iemand die slechts om de twee weken deelneemt is nuttig voor het onderzoek."
+    },
+    {
+      "title": "Zijn mijn gegevens wel veilig?",
+      "content": "Wij vinden de veiligheid van de gegevens van deelnemers aan Infectieradar.be heel belangrijk. Het systeem moet voldoen aan strenge eisen, bijvoorbeeld op het gebied van privacy en informatiebeveiliging. Het systeem is zorgvuldig getest op het gebied van veiligheid, privacy en capaciteit, door externe aan de Univeristeit van Hasselt. Risico’s voor de rechten en vrijheden van degenen wiens persoonsgegevens worden verwerkt, zijn zorgvuldig afgewogen."
+    },
+    {
+      "title": "Ik ben al besmet geweest met het nieuwe coronavirus, heeft het nog zin om deel te nemen?",
+      "content": "Ja, doe ook mee als je reeds COVID-19 hebt gehad. Infectieradar.be is opgezet om klachten te bestuderen, ook onder mensen die het nieuwe coronavirus al hebben gehad. Als je je aanmeldt, vragen we je om aan te geven of je al besmet bent geweest."
+    },
+    {
+      "title": "Ik ben mijn wachtwoord vergeten, wat nu?",
+      "content": "Klik bij het inlogvenster op ‘wachtwoord vergeten’. Vul je e-mailadres in en je krijgt een e-mail om een nieuw wachtwoord aan te maken."
+    },
+    {
+      "title": "Kan ik instellen of ik e-mails wil ontvangen van Infectieradar.be?",
+      "content": "Ja dat is mogelijk. Klik in de bovenste blauwe balk rechtsboven op jouw profielnaam. Ga naar instellingen. Daar kan je aangeven of je e-mails wil ontvangen. Bijvoorbeeld als het gaat om de wekelijkse oproep om je klachten door te geven (ook zonder wekelijkse e-mail staat er een nieuwe vragenlijst voor je klaar)."
+    },
+    {
+      "title": "Kan ik ook gegevens voor kinderen doorgeven?",
+      "content": "Ja. Dat kan. Klik in de bovenste blauwe balk rechtsboven op jouw profielnaam. Daar kun je extra profielen van je kind(eren) toevoegen. Als je het nieuwe profiel selecteert, kan je de gegevens invullen voor jouw kind."
+    },
+    {
+      "title": "Ik wil niet meer deelnemen, waar kan ik me afmelden?",
+      "content": "Jammer dat je niet meer wil deelnemen. We kunnen jouw hulp goed gebruiken om het coronavirus onder controle te houden. Maar je mag gewoon stoppen met het invullen van de wekelijkse vragenlijst. Als je je ook volledig wilt afmelden (en je account opheffen) dan kan dat. Dit kan via de instellingen."
+    },
+    {
+      "title": "Ik wil mijn antwoorden aanpassen, kan dat?",
+      "content": "Tijdens het invullen van de vragenlijst is het mogelijk om antwoorden aan te passen. Zodra je op de knop verzenden klikt, is het niet meer mogelijk om antwoorden nog aan te passen. Dit geldt zowel voor de eerste vragenlijst als voor de wekelijkse vragenlijsten."
+    },
+    {
+      "title": "Ik heb klachten, krijg ik een diagnose als ik de vragenlijst invul?",
+      "content": "Nee, de vragenlijst zorgt ervoor dat je de klachten die je hebt kunt opsommen, maar dit is absoluut geen vervanging voor een bezoek aan uw huisarts die wel een diagnose kan stellen."
+    },
+    {
+      "title": "Ik heb een chronische ziekte, hierdoor heb ik vaak symptomen die ook in de wekelijkse vragenlijst staan, wat moet ik invullen?",
+      "content": "Bepaalde ziekten leiden chronisch tot symptomen uit de wekelijkse vragenlijst: chronisch vermoeidheidssyndroom, reumatoïde artritis, enzovoort. Je hoeft deze symptomen niet elke keer aan te vinken, tenzij de symptomen zijn veranderd. Als je bijvoorbeeld reuma hebt, vink dan het vakje “Gewrichtspijn” alleen aan als deze klachten recent zijn verergerd of anders zijn dan gewoonlijk."
+    },
+    {
+      "title": "Ik heb deze week geen klachten gehad, moet ik de wekelijkse vragenlijst invullen?",
+      "content": "Ja, om een betrouwbaar beeld te krijgen van de situatie in België, is het belangrijk om gegevens te hebben over zowel zieke als niet-zieke mensen. Als alleen mensen met klachten deelnemen, kunnen we de ontwikkeling van het nieuwe coronavirus niet goed inschatten. Daarom is de deelname van mensen die niet ziek zijn even belangrijk als de deelname van mensen met klachten. Als je niet ziek bent, kost het invullen van de vragenlijst je slechts enkele seconden."
+    }
+  ]
+}
