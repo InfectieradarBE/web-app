@@ -13,6 +13,8 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 
+import { Provider } from 'react-redux';
+import store from './store/store';
 import './index.scss';
 import './i18n';
 import App from './App';
@@ -20,9 +22,11 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback="loading">
-      <App />
-    </Suspense>
+    <Provider store={store}>
+      <Suspense fallback="loading">
+        <App />
+      </Suspense>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,6 +1,11 @@
 import clsx from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector, useDispatch } from 'react-redux'
+import { useHistory } from 'react-router-dom';
+import { openDialogWithoutPayload, openLoginDialog } from '../../../store/dialogSlice';
+// import { RootState } from '../../../store/rootReducer'
+
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
 import ImageCard from '../../cards/ImageCard/ImageCard';
@@ -12,6 +17,7 @@ import TitleBar from '../../displays/TitleBar';
 import VideoPlayer from '../../displays/VideoPlayer';
 import MarkdownLoader from './MarkdownLoader';
 
+
 interface ContentRendererProps {
   isAuthenticated: boolean;
   rows: Array<PageRow>;
@@ -20,7 +26,8 @@ interface ContentRendererProps {
 
 const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
   const { t, i18n } = useTranslation([props.pageKey]);
-
+  const dispatch = useDispatch()
+  const history = useHistory();
 
   const renderItem = (item: PageItem) => {
     if (
@@ -59,7 +66,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           openActionText={item.config.showActionBtn ? t(`${item.itemKey}.actionLabel`) : undefined}
           onClick={() => {
             if (!action) { return; }
-            console.log(action);
+            if (action.type === 'openDialog') {
+              dispatch(openDialogWithoutPayload(action.value))
+            } else if (action.type === 'navigate') {
+              history.push(action.value);
+            }
           }}
         />
       case 'video':
