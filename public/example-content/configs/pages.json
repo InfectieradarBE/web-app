@@ -167,6 +167,43 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/faq",
+      "pageKey": "faq",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "faqTop",
+                  "className": "",
+                  "config": {
+                    "type": "simpleCard",
+                    "titleKey": "topCardTitle",
+                    "contentKey": "topCardContent",
+                    "variant": "h2"
+                  }
+                },
+                {
+                  "itemKey": "faq",
+                  "className": "",
+                  "config": {
+                    "type": "accordionList",
+                    "accordionCtrlsKey": "accordionControls"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

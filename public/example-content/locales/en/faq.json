@@ -1,0 +1,23 @@
+{
+  "title": "Frequently Asked Questions",
+  "accordionControls": {
+    "open": "Expand",
+    "close": "Collapse"
+  },
+  "topCardTitle": "Top Item Title",
+  "topCardContent": "Aliquet elementum odio nec nisi consectetur. Lobortis id sagittis at ac sed. Sed tortor, eu porttitor quam [Outgoing Link](https://coneno.com) proin aliquam, at. Vitae augue elementum turpis commodo. Auctor est pellentesque amet malesuada turpis eget tortor viverra. Cursus cursus gravida suscipit amet lectus dolor. Non suspendisse malesuada eget tincidunt congue semper.",
+  "faq": [
+    {
+      "title": "Wie kan er meedoen aan Infectieradar?",
+      "content": "Alle mensen die in Nederland wonen en internettoegang hebben, kunnen meedoen aan Infectieradar, geheel vrijwillig en  zo lang zij dat willen."
+    },
+    {
+      "title": "Hoe kan ik meedoen aan Infectieradar?",
+      "content": "Je kunt meedoen door je aan te melden  met een e-mailadres en persoonlijk wachtwoord."
+    },
+    {
+      "title": "Waarom zou ik meedoen aan Infectieradar?",
+      "content": "Om een zo goed mogelijk beeld te krijgen van de situatie op dit moment, is het belangrijk dat iedereen meedoet, ongeacht achtergrond of risicofactoren. Iemand die nooit ziek is, kan net zo goed ziek worden als iemand die vaak ziek is. Het kan ons ook helpen begrijpen waarom sommige mensen minder vaak een infectie krijgen."
+    }
+  ]
+}

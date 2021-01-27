@@ -5,6 +5,8 @@ import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
 import ImageCard from '../../cards/ImageCard/ImageCard';
 import LoginCard from '../../cards/LoginCard';
+import SimpleCard from '../../cards/SimpleCard';
+import AccordionList from '../../displays/AccordionList';
 import TeaserImage from '../../displays/TeaserImage';
 import TitleBar from '../../displays/TitleBar';
 import VideoPlayer from '../../displays/VideoPlayer';
@@ -91,6 +93,22 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           loginBtn={t(`${item.itemKey}.btn`)}
           onSubmit={(email, password, rememberMe) => { console.log('todo') }}
           onOpenDialog={(dialog) => console.log(dialog)}
+        />
+      case 'accordionList':
+        const items = t(`${item.itemKey}`, { returnObjects: true }) as Array<{ title: string; content: string; }>;
+        return <AccordionList
+          key={item.itemKey}
+          items={items}
+          openLabel={t(`${item.config.accordionCtrlsKey}.open`)}
+          closeLabel={t(`${item.config.accordionCtrlsKey}.close`)}
+        />
+      case 'simpleCard':
+        return <SimpleCard
+          key={item.itemKey}
+          className={item.className}
+          title={item.config.titleKey ? t(`${item.config.titleKey}`) : undefined}
+          content={t(`${item.config.contentKey}`)}
+          variant={item.config.variant}
         />
     }
     return <div
