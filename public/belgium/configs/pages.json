@@ -200,6 +200,25 @@
                   }
                 }
               ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "images/participate.jpg",
+                    "showActionBtn": true
+                  }
+                }
+              ]
             }
           ]
         }
