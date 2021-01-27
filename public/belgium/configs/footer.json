@@ -42,8 +42,8 @@
       "items": [
         {
           "type": "language",
-          "itemKey": "nl",
-          "languageCode": "nl"
+          "itemKey": "nl-be",
+          "languageCode": "nl-be"
         },
         {
           "type": "language",
