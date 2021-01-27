@@ -14,6 +14,7 @@ i18n
   .init({
     lng: process.env.REACT_APP_DEFAULT_LANGUAGE,
     fallbackLng: process.env.REACT_APP_FALLBACK_LANGUAGE,
+    lowerCaseLng: true,
     backend: {
       // for all available options read the backend's repository readme file
       loadPath: process.env.REACT_APP_CONTENT_URL + '/locales/{{lng}}/{{ns}}.json'
