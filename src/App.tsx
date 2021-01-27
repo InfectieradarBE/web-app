@@ -12,6 +12,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Pages from './components/pages/Pages';
 import ScrollToTop from './components/misc/ScrollToTop';
 
+import { useTranslation } from 'react-i18next';
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
@@ -19,6 +20,7 @@ function App() {
   const [pagesConfig, setPagesConfig] = useState<PagesConfig | undefined>();
   const [footerConfig, setFooterConfig] = useState<FooterContentConfig | undefined>();
 
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     // Header config
@@ -49,7 +51,8 @@ function App() {
   }, []);
 
   const handleLanguageChange = (code: string) => {
-    console.log('todo handle language change: ' + code);
+    console.log(`Changing language to: ${code}`);
+    i18n.changeLanguage(code);
   }
 
   const handleOpenExternalPage = (url: string) => {
