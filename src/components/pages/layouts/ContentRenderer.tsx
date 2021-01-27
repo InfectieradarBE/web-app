@@ -121,6 +121,38 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           content={t(`${item.config.contentKey}`)}
           variant={item.config.variant}
         />
+      case 'systemInfo':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'accountSettings':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'communicationSettings':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'deleteAccount':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'logoCredits':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'requiredSurveys':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'optionalSurveys':
+        return <p
+          key={item.itemKey}
+        >todo</p>
+      case 'router':
+        return <p
+          key={item.itemKey}
+        >todo</p>
     }
     return <div
       key={item.itemKey}

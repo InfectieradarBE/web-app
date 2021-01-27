@@ -15,6 +15,7 @@ import ScrollToTop from './components/misc/ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from './store/rootReducer';
+import GlobalDialogs from './components/dialogs/GlobalDialogs';
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
@@ -85,6 +86,7 @@ function App() {
         onChangeLanguage={handleLanguageChange}
         onOpenExternalPage={handleOpenExternalPage}
       />
+      <GlobalDialogs />
     </Router>
   );
 }

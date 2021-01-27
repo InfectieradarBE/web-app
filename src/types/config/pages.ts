@@ -31,7 +31,9 @@ export interface PageItem {
 
 type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig |
-  AccordionListConfig | SimpleCard;
+  AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
+  CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
+  RequiredSurveysConfig | OptionalSurveysConfig
 
 
 export interface MarkdownComponentConfig {
@@ -95,4 +97,33 @@ export interface SimpleCard {
 
 export interface RouterComponentConfig {
   type: 'router';
+}
+
+export interface SystemInfoConfig {
+  type: 'systemInfo';
+}
+
+export interface AccountSettingsConfig {
+  type: 'accountSettings';
+}
+
+export interface CommunicationSettingsConfig {
+  type: 'communicationSettings';
+}
+
+export interface DeleteAccountConfig {
+  type: 'deleteAccount';
+  // TODO: delete only account, delete data as well
+}
+
+export interface LogoCreditsConfig {
+  type: 'logoCredits';
+}
+
+export interface RequiredSurveysConfig {
+  type: 'requiredSurveys';
+}
+
+export interface OptionalSurveysConfig {
+  type: 'optionalSurveys';
 }
