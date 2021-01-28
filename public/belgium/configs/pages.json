@@ -279,6 +279,33 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/contact",
+      "pageKey": "contact",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "contact",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "contact.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
