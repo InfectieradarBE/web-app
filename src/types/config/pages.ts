@@ -30,7 +30,7 @@ export interface PageItem {
 }
 
 type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
-  MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig |
+  MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig | ImageConfig |
   AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
   CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
   RequiredSurveysConfig | OptionalSurveysConfig
@@ -39,6 +39,15 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
 export interface MarkdownComponentConfig {
   type: 'markdown';
   markdownUrl: string;
+}
+
+export interface ImageConfig {
+  type: 'image';
+  url?: string;
+  urlKey?: string;
+  altKey?: string;
+  maxWidth?: number;
+  maxHeight?: number;
 }
 
 export interface VideoConfig {

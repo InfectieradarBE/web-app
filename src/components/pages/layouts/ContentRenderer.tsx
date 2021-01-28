@@ -12,9 +12,17 @@ import ImageCard from '../../cards/ImageCard/ImageCard';
 import LoginCard from '../../cards/LoginCard';
 import SimpleCard from '../../cards/SimpleCard';
 import AccordionList from '../../displays/AccordionList';
+import ImageContainer from '../../displays/ImageContainer';
+import LogoCredits from '../../displays/LogoCredits';
+import SystemInfo from '../../displays/SystemInfo';
 import TeaserImage from '../../displays/TeaserImage';
 import TitleBar from '../../displays/TitleBar';
 import VideoPlayer from '../../displays/VideoPlayer';
+import AccountSettings from '../../settings/AccountSettings';
+import CommunicationSettings from '../../settings/CommunicationSettings';
+import DeleteAccount from '../../settings/DeleteAccount';
+import OptionalSurveys from '../../study/OptionalSurveys';
+import RequiredSurveys from '../../study/RequiredSurveys';
 import MarkdownLoader from './MarkdownLoader';
 
 
@@ -72,6 +80,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
               history.push(action.value);
             }
           }}
+        />
+      case 'image':
+        return <ImageContainer
+          key={item.itemKey}
+        // className={item.className}
         />
       case 'video':
         return <VideoPlayer
@@ -131,33 +144,33 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           variant={item.config.variant}
         />
       case 'systemInfo':
-        return <p
+        return <SystemInfo
           key={item.itemKey}
-        >todo</p>
+        />
       case 'accountSettings':
-        return <p
+        return <AccountSettings
           key={item.itemKey}
-        >todo</p>
+        />
       case 'communicationSettings':
-        return <p
+        return <CommunicationSettings
           key={item.itemKey}
-        >todo</p>
+        />
       case 'deleteAccount':
-        return <p
+        return <DeleteAccount
           key={item.itemKey}
-        >todo</p>
+        />
       case 'logoCredits':
-        return <p
+        return <LogoCredits
           key={item.itemKey}
-        >todo</p>
+        />
       case 'requiredSurveys':
-        return <p
+        return <RequiredSurveys
           key={item.itemKey}
-        >todo</p>
+        />
       case 'optionalSurveys':
-        return <p
+        return <OptionalSurveys
           key={item.itemKey}
-        >todo</p>
+        />
       case 'router':
         return <p
           key={item.itemKey}
