@@ -5,93 +5,13 @@
       "pageKey": "landing",
       "rows": [
         {
-          "key": "teaserImage",
-          "fullWidth": true,
-          "columns": [
-            {
-              "key": "ti",
-              "className": "p-0",
-              "items": [
-                {
-                  "itemKey": "topImage",
-                  "config": {
-                    "type": "teaserImage",
-                    "image": {
-                      "url": "/images/landing_image.png",
-                      "backgroundPosition": "center",
-                      "height": 467
-                    },
-                    "textBox": {
-                      "className": "col-12 col-sm-10 col-md-7 col-lg-5 px-0 py-2",
-                      "titleKey": "title",
-                      "contentKey": "content"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
           "key": "content",
           "fullWidth": false,
           "className": "py-3",
           "columns": [
             {
-              "key": "loginCardCol",
-              "className": "col-12 col-md-12 col-lg-4 mb-3 mb-lg-0",
-              "items": [
-                {
-                  "itemKey": "loginCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "loginCard",
-                    "showInfoText": false
-                  }
-                }
-              ]
-            },
-            {
-              "key": "cardResultsCol",
-              "className": "col-12 col-md-6 col-lg-4",
-              "items": [
-                {
-                  "itemKey": "currentResultCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "navigate",
-                      "value": "/results"
-                    },
-                    "imageSrc": "/images/results.jpg",
-                    "showActionBtn": true
-                  }
-                }
-              ]
-            },
-            {
-              "key": "cardSignupCol",
-              "className": "col-12 col-md-6 col-lg-4 mt-3 mt-md-0",
-              "items": [
-                {
-                  "itemKey": "signupCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "openDialog",
-                      "value": "signup"
-                    },
-                    "imageSrc": "images/participate.jpg",
-                    "showActionBtn": true
-                  }
-                }
-              ]
-            },
-            {
               "key": "videoCol",
-              "className": "col-12 col-lg-8 mt-3",
+              "className": "col-12 col-lg-8",
               "items": [
                 {
                   "itemKey": "video",
@@ -120,7 +40,7 @@
             },
             {
               "key": "aboutCardCol",
-              "className": "col-12 col-lg-4 mt-3",
+              "className": "col-12 col-lg-4 mt-3 mt-md-0",
               "items": [
                 {
                   "itemKey": "aboutCard",
@@ -133,6 +53,58 @@
                     },
                     "imageSrc": "/images/about.jpeg",
                     "showActionBtn": true
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardResultsCol",
+              "className": "col-12 col-md-6 col-lg-4 mt-3",
+              "items": [
+                {
+                  "itemKey": "currentResultCard",
+                  "className": "h-100",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/results"
+                    },
+                    "imageSrc": "/images/results.jpg",
+                    "showActionBtn": true
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-md-6 col-lg-4 mt-3",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "className": "h-100",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "images/participate.jpg",
+                    "showActionBtn": true
+                  }
+                }
+              ]
+            },
+            {
+              "key": "loginCardCol",
+              "className": "col-12 col-md-12 col-lg-4 mb-3 mb-lg-0 mt-3",
+              "items": [
+                {
+                  "itemKey": "loginCard",
+                  "className": "h-100",
+                  "config": {
+                    "type": "loginCard",
+                    "showInfoText": false
                   }
                 }
               ]
