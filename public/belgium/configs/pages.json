@@ -48,8 +48,8 @@
                   "config": {
                     "type": "imageCard",
                     "action": {
-                      "type": "openDialog",
-                      "value": "signup"
+                      "type": "navigate",
+                      "value": "/about"
                     },
                     "imageSrc": "/images/about.jpeg",
                     "showActionBtn": true
