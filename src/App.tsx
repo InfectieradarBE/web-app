@@ -13,8 +13,6 @@ import Pages from './components/pages/Pages';
 import ScrollToTop from './components/misc/ScrollToTop';
 
 import { useTranslation } from 'react-i18next';
-import { useSelector, useDispatch } from 'react-redux'
-import { RootState } from './store/rootReducer';
 import GlobalDialogs from './components/dialogs/GlobalDialogs';
 
 function App() {
@@ -24,9 +22,6 @@ function App() {
   const [footerConfig, setFooterConfig] = useState<FooterContentConfig | undefined>();
 
   const { i18n } = useTranslation();
-
-  const dialogState = useSelector((state: RootState) => state.dialog)
-  console.log(dialogState)
 
   useEffect(() => {
     // Header config

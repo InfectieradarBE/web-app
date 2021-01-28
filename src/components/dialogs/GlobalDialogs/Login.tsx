@@ -9,6 +9,7 @@ import TextField from '../../inputs/TextField';
 import AlertBox from '../../displays/AlertBox';
 import { useTranslation } from 'react-i18next';
 import DialogBtn from '../../buttons/DialogBtn';
+import Checkbox from '../../inputs/Checkbox';
 
 const marginBottomClass = "mb-2";
 const loginFormI18nPrefix = 'login.credentials';
@@ -49,34 +50,21 @@ const LoginForm: React.FC<LoginFormProps> = (props) => {
     return loginData.email.length < 3 || loginData.password.length < 6;
   }
 
-  const rememberMeCheckbox = <div
-    className={clsx("form-check d-flex align-items-center m-0", marginBottomClass)}
-  >
-
-    <input
-      className="form-check-input cursor-pointer me-2"
-      type="checkbox"
-      name="rememberMe"
-      id={"loginDialogRememberMe"}
-      // value={option.key}
-      checked={loginData.rememberMe}
-      onChange={(event) => {
-        const checked = event.target.checked;
-        setLoginData(prev => {
-          return {
-            ...prev,
-            rememberMe: checked,
-          }
-        })
-      }}
-    />
-
-    <label
-      className="form-check-label cursor-pointer w-100"
-      htmlFor={"loginDialogRememberMe"}>
-      {t(`${loginFormI18nPrefix}.rememberMeLabel`)}
-    </label>
-  </div>
+  const rememberMeCheckbox = <Checkbox
+    id="loginDialogRememberMe"
+    className={marginBottomClass}
+    name="rememberMe"
+    checked={loginData.rememberMe}
+    label={t(`${loginFormI18nPrefix}.rememberMeLabel`)}
+    onChange={(checked) => {
+      setLoginData(prev => {
+        return {
+          ...prev,
+          rememberMe: checked,
+        }
+      })
+    }}
+  />
 
   const infoText: string = t(`${loginFormI18nPrefix}.info`);
   const emailInputLabel = t(`${loginFormI18nPrefix}.emailInputLabel`);
@@ -175,7 +163,7 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
 
 const getInitialLoginData = (dialogState: DialogState) => {
   const payload = (dialogState as LoginDialog).payload;
-  console.log(dialogState);
+
   if (!payload) {
     return undefined;
   }
@@ -191,9 +179,6 @@ const Login: React.FC<LoginProps> = (props) => {
   const open = dialogState.config?.type === 'login';
 
   const initialLoginData = open ? (dialogState.config as LoginDialog).payload : undefined;
-
-  console.log(initialLoginData)
-
 
 
   const [verificationStep, setVerificationStep] = useState(false);

@@ -7,7 +7,8 @@ import clsx from 'clsx';
 import { dialogPaddingXClass } from '../contants';
 import { useTranslatedMarkdown } from '../../../hooks/useTranslatedMarkdown';
 import ConsentDialog from '../DialogTypes/ConsentDialog';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
+import Checkbox from '../../inputs/Checkbox';
 
 
 interface SignupFormProps {
@@ -21,17 +22,72 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
   const [openPrivacyConsent, setOpenPrivacyConsent] = useState(false);
   const [openRecaptchaConsent, setOpenRecaptchaConsent] = useState(false);
 
+  const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
+  const [reCaptchaAccepted, setReCaptchaAccepted] = useState(false);
+
+
   return (
     <React.Fragment>
       <button onClick={() => setOpenPrivacyConsent(true)}> Open</button>
+      <form onSubmit={(event) => {
+        event.preventDefault();
+      }}>
+
+        <Checkbox
+          id="acceptPrivacyConsent"
+          name="privacyConsent"
+          checked={acceptedPrivacyPolicy}
+          label=""
+          onClick={() => {
+            if (!acceptedPrivacyPolicy) {
+              setOpenPrivacyConsent(true);
+            }
+          }}
+          onChange={(checked) => {
+            if (!checked) {
+              setAcceptedPrivacyPolicy(checked);
+            }
+          }}
+        >
+          <Trans
+            t={t}
+            i18nKey="signup.informedConsentCheckbox">
+            {'...'}
+            <span
+              className="text-primary text-decoration-none"
+              onClick={() => {
+                //if (readPrivacyPolicy) {
+                //  setOpenPC(true)
+                // }
+              }}
+            >{'...'}</span>
+            {'...'}
+          </Trans>
+        </Checkbox>
+      </form>
       <ConsentDialog
         open={openPrivacyConsent}
         title={t("privacyConsent.title")}
         content={privacyConsentText}
         cancelBtn={t("privacyConsent.cancelBtn")}
         acceptBtn={t("privacyConsent.acceptBtn")}
-        onCancelled={() => setOpenPrivacyConsent(false)}
-        onConfirmed={() => setOpenPrivacyConsent(false)}
+        onCancelled={() => {
+          setAcceptedPrivacyPolicy(false)
+          setOpenPrivacyConsent(false)
+        }}
+        onConfirmed={() => {
+          setAcceptedPrivacyPolicy(true)
+          setOpenPrivacyConsent(false)
+        }}
+      />
+      <ConsentDialog
+        open={openRecaptchaConsent}
+        title={t("recaptchaConsent.title")}
+        content={recaptchaConsentText}
+        cancelBtn={t("recaptchaConsent.cancelBtn")}
+        acceptBtn={t("recaptchaConsent.acceptBtn")}
+        onCancelled={() => setOpenRecaptchaConsent(false)}
+        onConfirmed={() => setOpenRecaptchaConsent(false)}
       />
     </React.Fragment>
   )
