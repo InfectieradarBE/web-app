@@ -1,0 +1,20 @@
+{
+  "loadingMsg": "Loading",
+  "login": {
+    "credentials": {
+      "title": "Login",
+      "info": "",
+      "emailInputLabel": "Email",
+      "emailInputPlaceholder": "Enter Email",
+      "passwordInputLabel": "Password",
+      "passwordInputPlaceholder": "Enter Password",
+      "rememberMeLabel": "Remember Me",
+      "btn": "Login",
+      "passwordForgottenBtn": "Password forgotten",
+      "signupBtn": "Don't have an account? Sign up."
+    },
+    "verificationCode": {
+      "title": "Verify your identity"
+    }
+  }
+}

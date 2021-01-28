@@ -4,15 +4,16 @@ interface DialogWithoutPayload {
   type: string;
 }
 
-interface LoginDialog {
+export interface LoginDialog {
   type: 'login'
   payload: {
     email: string
     password: string
+    rememberMe: boolean
   }
 }
 
-interface DialogState {
+export interface DialogState {
   config?: DialogWithoutPayload | LoginDialog
 }
 

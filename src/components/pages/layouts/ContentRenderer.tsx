@@ -102,7 +102,16 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           passwordForgottenBtn={t(`${item.itemKey}.passwordForgottenBtn`)}
           signupBtn={t(`${item.itemKey}.signupBtn`)}
           loginBtn={t(`${item.itemKey}.btn`)}
-          onSubmit={(email, password, rememberMe) => { console.log('todo') }}
+          onSubmit={(email, password, rememberMe) => {
+            dispatch(openLoginDialog({
+              type: 'login',
+              payload: {
+                email,
+                password,
+                rememberMe,
+              }
+            }))
+          }}
           onOpenDialog={(dialog) => console.log(dialog)}
         />
       case 'accordionList':

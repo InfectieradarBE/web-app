@@ -45,14 +45,16 @@ const Dialog: React.FC<DialogProps> = (props) => {
         >
           {props.title}
         </h4>
-        <button type="button"
-          onClick={props.onClose}
-          className={clsx(
-            "btn-close",
-            {
-              "btn-close-white": isTextColorWhite
-            }
-          )} aria-label="Exit"></button>
+        <div className="ps-2">
+          <button type="button"
+            onClick={props.onClose}
+            className={clsx(
+              "btn-close",
+              {
+                "btn-close-white": isTextColorWhite
+              }
+            )} aria-label="Exit"></button>
+        </div>
       </div>
       {props.children}
     </MuiDialog>
