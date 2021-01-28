@@ -288,6 +288,87 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/contact",
+      "pageKey": "contact",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "contact",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "contact.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/disclaimer",
+      "pageKey": "disclaimer",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "disclaimer",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "disclaimer.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/accessibility",
+      "pageKey": "accessibility",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "accessibility",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "accessibility.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
