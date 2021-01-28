@@ -1,16 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Dialog from '../Dialog';
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '../../../store/rootReducer';
 import { closeDialog, openDialogWithoutPayload } from '../../../store/dialogSlice';
 import clsx from 'clsx';
 import { dialogPaddingXClass } from '../contants';
+import { useTranslatedMarkdown } from '../../../hooks/useTranslatedMarkdown';
+import ConsentDialog from '../DialogTypes/ConsentDialog';
+import { useTranslation } from 'react-i18next';
 
 
-interface SignupProps {
+interface SignupFormProps {
 }
 
-const Signup: React.FC<SignupProps> = (props) => {
+const SignupForm: React.FC<SignupFormProps> = (props) => {
+  const { t } = useTranslation(['dialogs']);
+  const privacyConsentText = useTranslatedMarkdown('consent/privacy.md');
+  const recaptchaConsentText = useTranslatedMarkdown('consent/recaptcha.md');
+
+  const [openPrivacyConsent, setOpenPrivacyConsent] = useState(false);
+  const [openRecaptchaConsent, setOpenRecaptchaConsent] = useState(false);
+
+  return (
+    <React.Fragment>
+      <button onClick={() => setOpenPrivacyConsent(true)}> Open</button>
+      <ConsentDialog
+        open={openPrivacyConsent}
+        title={t("privacyConsent.title")}
+        content={privacyConsentText}
+        cancelBtn={t("privacyConsent.cancelBtn")}
+        acceptBtn={t("privacyConsent.acceptBtn")}
+        onCancelled={() => setOpenPrivacyConsent(false)}
+        onConfirmed={() => setOpenPrivacyConsent(false)}
+      />
+    </React.Fragment>
+  )
+}
+
+const Signup: React.FC = () => {
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'signup';
 
@@ -32,8 +59,7 @@ const Signup: React.FC<SignupProps> = (props) => {
         dialogPaddingXClass,
         'py-3'
       )}>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur exercitationem laudantium, quia placeat necessitatibus amet libero nemo facere. Amet laudantium perspiciatis saepe rerum pariatur voluptates consequatur totam libero quam magnam.</p>
-        <button onClick={() => dispatch(openDialogWithoutPayload('login'))}>Go to login</button>
+        <SignupForm />
       </div>
     </Dialog>
   );

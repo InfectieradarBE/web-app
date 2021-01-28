@@ -16,5 +16,10 @@
     "verificationCode": {
       "title": "Verify your identity"
     }
+  },
+  "privacyConsent": {
+    "title": "Privacy Consent",
+    "acceptBtn": "I read and accept the above statement.",
+    "cancelBtn": "Cancel"
   }
 }
