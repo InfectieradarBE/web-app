@@ -93,7 +93,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           minHeight={item.config.minHeight}
           posterUrl={item.config.posterUrlKey ? t(`${item.itemKey}.${item.config.posterUrlKey}`) : undefined}
           sources={item.config.videoSources.map(vs => {
-            console.log(t(`${item.itemKey}.${vs.type}`))
+            // console.log(t(`${item.itemKey}.${vs.type}`))
             return {
               src: t(`${item.itemKey}.${vs.urlKey}`),
               type: vs.type,
@@ -125,7 +125,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
               }
             }))
           }}
-          onOpenDialog={(dialog) => console.log(dialog)}
+          onOpenDialog={(dialog) => dispatch(openDialogWithoutPayload(dialog))}
         />
       case 'accordionList':
         const items = t(`${item.itemKey}`, { returnObjects: true }) as Array<{ title: string; content: string; }>;
