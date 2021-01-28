@@ -204,6 +204,90 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/about",
+      "pageKey": "about",
+      "rows": [
+		    {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": [
+                {
+                  "itemKey": "topImage",
+                  "config": {
+                    "type": "teaserImage",
+                    "image": {
+                      "url": "/images/placeholder_image.png",
+                      "backgroundPosition": "50% 14%",
+                      "height": 367
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "aboutPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "about.md"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "className": "",
+                  "hideWhen": "auth",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "images/placeholder_image.png",
+                    "showActionBtn": true
+                  }
+                },
+                {
+                  "itemKey": "surveyCard",
+                  "className": "",
+                  "hideWhen": "unauth",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/home"
+                    },
+                    "imageSrc": "images/placeholder_image.png",
+                    "showActionBtn": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
