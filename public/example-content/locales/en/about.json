@@ -1,0 +1,17 @@
+{
+  "title": "About Influenzanet",
+  "signupCard": {
+    "imageAlt": "Card image description",
+    "imageSrc": "images/placeholder_image.png",
+    "title": "I want to participate!",
+    "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
+    "actionLabel": "Sign up"
+  },
+  "surveyCard": {
+    "imageAlt": "Card image description",
+    "imageSrc": "images/placeholder_image.png",
+    "title": "Join a study now!",
+    "body": "Eget quam phasellus ut posuere est iaculis. Ut vel mattis ullamcorper sed neque, bibendum.",
+    "actionLabel": "Go to Surveys"
+  }
+}
