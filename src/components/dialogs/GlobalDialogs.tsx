@@ -1,5 +1,6 @@
 import React from 'react';
 import Login from './GlobalDialogs/Login';
+import Signup from './GlobalDialogs/Signup';
 
 interface GlobalDialogsProps {
 }
@@ -8,7 +9,8 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
   return (
     <React.Fragment>
       <Login />
-      {/*<SignupDialog />
+      <Signup />
+      {/*
       <SignupSuccessDialog />
       <PasswordForgottenDialog />
       <ResetPasswordDialog />
