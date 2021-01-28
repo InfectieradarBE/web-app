@@ -258,7 +258,7 @@
                 {
                   "itemKey": "signupCard",
                   "className": "",
-                  "hideWhen": "unauth",
+                  "hideWhen": "auth",
                   "config": {
                     "type": "imageCard",
                     "action": {
@@ -272,7 +272,7 @@
                 {
                   "itemKey": "surveyCard",
                   "className": "",
-                  "hideWhen": "auth",
+                  "hideWhen": "unauth",
                   "config": {
                     "type": "imageCard",
                     "action": {
