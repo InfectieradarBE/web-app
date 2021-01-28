@@ -128,8 +128,8 @@
                   "config": {
                     "type": "imageCard",
                     "action": {
-                      "type": "openDialog",
-                      "value": "signup"
+                      "type": "navigate",
+                      "value": "/about"
                     },
                     "imageSrc": "/images/placeholder_image.png",
                     "showActionBtn": true
