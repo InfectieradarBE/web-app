@@ -180,7 +180,7 @@ select.custom-select:focus {
 // Nav:
 // ---------------------------------------------
 
-.layerIn{
+.BackdropIn{
   position:fixed;
   padding:0;
   margin:0;
@@ -191,23 +191,73 @@ select.custom-select:focus {
   background:rgb(0,0,0);
   z-index: 1;
   opacity: 0.75;
-  animation: fadein 0.5s;
+  animation: Backdropin 0.5s;
 }
-@keyframes fadein
+@keyframes Backdropin
 {
 from{opacity: 0;}
 to {opacity: 0.75;}
 }
-.layerOut{
+.BackdropOut{
 
   opacity:0;
-  animation: fadeout 0.5s;
+  animation: Backdropout 0.5s;
 
 }
-@keyframes fadeout
+@keyframes Backdropout
 {
 from{opacity: 0.75;}
 to {opacity: 0;}
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    border: 0 !important;
+    outline: 0 !important;
+  }
+  .navbar-collapse {
+      z-index:1;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      width: 200px !important;
+      height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+      left: -75%;
+      transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+      left: 0;
+      transition: left 500ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+      height:100%;
+      transition: left 500ms ease-in-out;
+  }
+}
+
+$navbar-text-font-size: 1.125rem !important;
+$navbar-text-padding-top: 10px;
+$nav-link-color: white;
+$nav-link-font-size:1.125rem ;
+$nav-link-hover-color: white ;
+$nav-tabs-border-width: 0px;
+$navbar-toggler-border-radius:0px;
+$nav-tabs-link-active-bg:$secondary;
+
+.nav-link:hover{
+  background-color: darken($primary,10%);
+  text-decoration: underline;
+}
+.nav-link.active{
+  font-weight: bold;
 }
 
 // ---------------------------------------------
