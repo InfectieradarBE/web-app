@@ -30,7 +30,14 @@
     "reCaptchaCookieCheckbox": "I agree to this site utilizing <1>Google’s tracking cookies</1> for spam protection using reCAPTCHA.*",
     "signupBtn": "Signup",
     "loginLink": "Have an account already? Login in here.",
-    "reCaptchaLinks": "This site is protected by reCAPTCHA and the Google <1>Privacy Policy</1> and <3>Terms of Service</3> apply."
+    "reCaptchaLinks": "This site is protected by reCAPTCHA and the Google <1>Privacy Policy</1> and <3>Terms of Service</3> apply.",
+    "errors": {
+      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
+      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
+      "invalidEmail": "Je e-mailadres lijkt niet correct",
+      "userCreationFailed": "Er gaat iets verkeerd.",
+      "unknown": "Er gaat iets verkeerd."
+    }
   },
   "privacyConsent": {
     "title": "Privacy Consent",
