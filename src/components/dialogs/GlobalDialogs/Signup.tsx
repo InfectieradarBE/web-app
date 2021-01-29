@@ -9,10 +9,14 @@ import { useTranslatedMarkdown } from '../../../hooks/useTranslatedMarkdown';
 import ConsentDialog from '../DialogTypes/ConsentDialog';
 import { Trans, useTranslation } from 'react-i18next';
 import Checkbox from '../../inputs/Checkbox';
+import DialogBtn from '../../buttons/DialogBtn';
+import TextLink from '../../buttons/TextLink';
 
 const marginBottomClass = "mb-2";
 
 interface SignupFormProps {
+  isLoading?: boolean;
+  onOpenDialog: (dialog: 'login') => void;
 }
 
 const SignupForm: React.FC<SignupFormProps> = (props) => {
@@ -25,6 +29,10 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 
   const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
   const [reCaptchaAccepted, setReCaptchaAccepted] = useState(false);
+
+  const isDisabled = (): boolean => {
+    return true;
+  }
 
 
   return (
@@ -56,8 +64,9 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
               className="text-primary text-decoration-none">{'...'}</span>{'...'}
           </Trans>
         </Checkbox>
-        {/*  */}
+
         <Checkbox
+          className={marginBottomClass}
           id="recaptchaConsent"
           name="recaptchaConsent"
           checked={reCaptchaAccepted}
@@ -78,6 +87,47 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
               className="text-primary text-decoration-none">{'...'}</span>{'...'}
           </Trans>
         </Checkbox>
+
+        <DialogBtn
+          className={marginBottomClass}
+          type="submit"
+          label={t('signup.signupBtn')}
+          disabled={isDisabled() || props.isLoading}
+          loading={props.isLoading}
+          loadingLabel={t('loadingMsg')}
+        />
+
+        <div className={marginBottomClass}>
+          <button
+            type="button"
+            className="btn btn-link p-0 text-decoration-none text-start text-uppercase"
+            onClick={(event) => {
+              event.preventDefault();
+              props.onOpenDialog('login');
+            }}
+          >{t('signup.loginLink')}</button>
+        </div>
+
+        <div className="mt-2 captchaBadgeAlt">
+          <Trans t={t} i18nKey="signup.reCaptchaLinks">
+            Intro Text
+            <TextLink
+              href="https://policies.google.com/privacy"
+              style={{ textDecoration: 'none' }}
+            >
+              Privacy link
+            </TextLink>
+            and
+            <TextLink
+              href="https://policies.google.com/terms"
+              style={{ textDecoration: 'none' }}
+            >
+              Terms of Service
+            </TextLink>
+            apply.
+          </Trans>
+        </div>
+
       </form>
       <ConsentDialog
         open={openPrivacyConsent}
@@ -114,6 +164,8 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 }
 
 const Signup: React.FC = () => {
+  const { t } = useTranslation(['dialogs']);
+
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'signup';
 
@@ -124,10 +176,12 @@ const Signup: React.FC = () => {
     dispatch(closeDialog())
   }
 
+  const isLoading = true;
+
   return (
     <Dialog
       open={open}
-      title={'TODO: Signup'}
+      title={t('signup.title')}
       onClose={handleClose}
       ariaLabelledBy="signupDialogTitle"
     >
@@ -135,7 +189,10 @@ const Signup: React.FC = () => {
         dialogPaddingXClass,
         'py-3'
       )}>
-        <SignupForm />
+        <SignupForm
+          isLoading={isLoading}
+          onOpenDialog={(dialog) => dispatch(openDialogWithoutPayload(dialog))}
+        />
       </div>
     </Dialog>
   );

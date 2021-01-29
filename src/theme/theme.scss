@@ -282,3 +282,9 @@ $enable-rounded: false !default;
   border-bottom-width: 2px !important;
 }
 
+.captchaBadgeAlt {
+  color: map-get($theme-colors, "grey-7");
+  & a {
+    color: #000;
+  }
+}
