@@ -39,6 +39,12 @@ interface LoginFormProps {
 }
 
 interface VerificationCodeFormProps {
+  isLoading: boolean;
+  onSubmit: (code: string) => void;
+  onResendVerificationCode: () => void;
+  resendEnabled: boolean;
+  errors?: string;
+  clearError?: () => void;
 }
 
 const LoginForm: React.FC<LoginFormProps> = (props) => {
@@ -183,8 +189,80 @@ const LoginForm: React.FC<LoginFormProps> = (props) => {
 }
 
 const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
+  const [verificationCode, setVerificationCode] = useState("");
+  const { t } = useTranslation(['dialogs']);
 
-  return (<p>todo</p>)
+  const handleVerificationCodeChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setVerificationCode(event.target.value);
+  }
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    props.onSubmit(verificationCode);
+  }
+
+  const submitButtonEnabled = () => {
+    return !props.isLoading && verificationCode.length === 6;
+  }
+
+
+  const isDisabled = () => {
+    return true;
+  }
+
+  const submitBtnLabel = t(`${verificationFormI18nPrefix}.submitBtn`)
+  const resendBtnLabel = t(`${verificationFormI18nPrefix}.resendBtn`)
+  const infoText: string = t(`${verificationFormI18nPrefix}.info`);
+  const codeInputLabel = t(`${verificationFormI18nPrefix}.codeInputLabel`);
+  const codeInputPlaceholder = t(`${verificationFormI18nPrefix}.codeInputPlaceholder`);
+
+  return (
+    <React.Fragment>
+      <TextField
+        id="twoFACode"
+        label={codeInputLabel}
+        placeholder={codeInputPlaceholder}
+        type="text"
+        name="twoFACode"
+        className={marginBottomClass}
+        value={verificationCode}
+        required={true}
+        disabled={false}
+        autoComplete="off"
+        onChange={(event) => {
+          const value = event.target.value;
+          setVerificationCode(value);
+        }}
+      />
+
+      <DialogBtn
+        className={marginBottomClass}
+        type="submit"
+        label={submitBtnLabel}
+        disabled={!submitButtonEnabled()}
+        loading={props.isLoading}
+        loadingLabel={t('loadingMsg')}
+      />
+
+      {infoText ? <AlertBox
+        className={marginBottomClass}
+        type="info"
+        content={infoText}
+      /> : null}
+
+
+      <div>
+        <button
+          type="button"
+          className="btn btn-link p-0 text-decoration-none text-start text-uppercase"
+          onClick={(event) => {
+            event.preventDefault();
+            props.onResendVerificationCode();
+          }}
+        >{resendBtnLabel}</button>
+      </div>
+    </React.Fragment>
+  )
 }
 
 
@@ -200,7 +278,7 @@ const Login: React.FC<LoginProps> = (props) => {
   const open = dialogState.config?.type === 'login';
   const initialLoginData = open ? (dialogState.config as LoginDialog).payload : undefined;
 
-  const [verificationStep, setVerificationStep] = useState(false);
+  const [verificationStep, setVerificationStep] = useState(true);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [resendEnabled, setResetEnabled] = useState(false);
@@ -269,7 +347,7 @@ const Login: React.FC<LoginProps> = (props) => {
         // setAuthState(response.token, response.user);
         closeDialog();
         /*if (history) {
-          history.push(AppRoutes.Home);
+              history.push(AppRoutes.Home);
         }*/
         if (!response.user.account.accountConfirmedAt || response.user.account.accountConfirmedAt <= 0) {
           // dispatch(navigationActions.openSignupSuccessDialog());
@@ -332,7 +410,24 @@ const Login: React.FC<LoginProps> = (props) => {
         'bg-grey-1'
       )}>
         {verificationStep ?
-          <VerificationCodeForm /> :
+          <VerificationCodeForm
+            isLoading={loading}
+            onSubmit={(code) => console.log('todo')}
+            onResendVerificationCode={() => {
+              if (!resendEnabled) {
+                console.log('resend not enabled, please wait');
+                return;
+              }
+              /*callResendCode({
+                instanceId: instanceId,
+                email: emailAddress,
+                password: password
+              });*/
+            }}
+            resendEnabled={resendEnabled}
+            errors={errorMessage}
+            clearError={() => setErrorMessage('')}
+          /> :
           <LoginForm
             isLoading={loading}
             email={emailAddress}

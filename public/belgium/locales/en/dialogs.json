@@ -14,7 +14,12 @@
       "signupBtn": "Don't have an account? Sign up."
     },
     "verificationCode": {
-      "title": "Verify your identity"
+      "title": "Verify your identity",
+      "info": "Please enter the six digit code we have sent to your email address. If you cannot find it in your inbox, please also check the SPAM folder or send a new code with the button below.",
+      "codeInputLabel": "6 digit verification code",
+      "codeInputPlaceholder": "Enter Your Code",
+      "submitBtn": "SUBMIT",
+      "resendBtn": "SEND A NEW CODE"
     }
   },
   "signup": {
