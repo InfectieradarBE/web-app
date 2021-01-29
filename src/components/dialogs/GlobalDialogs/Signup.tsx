@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Dialog from '../Dialog';
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '../../../store/rootReducer';
@@ -13,21 +13,33 @@ import DialogBtn from '../../buttons/DialogBtn';
 import TextLink from '../../buttons/TextLink';
 import AlertBox from '../../displays/AlertBox';
 import TextField from '../../inputs/TextField';
+import { checkPasswordRules } from '../../../utils/passwordRules';
+
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const marginBottomClass = "mb-2";
 
+interface SignupData {
+  email: string;
+  password: string;
+  confirmPassword: string;
+  captchaToken?: string;
+}
+
 interface SignupFormProps {
   isLoading?: boolean;
+  initialSignupData?: SignupData;
+  onSubmit: (data: SignupData) => void;
   onOpenDialog: (dialog: 'login') => void;
 }
 
 const SignupForm: React.FC<SignupFormProps> = (props) => {
-  const { t } = useTranslation(['dialogs']);
-  const [signupData, setSignupData] = useState({
+  const { t, i18n } = useTranslation(['dialogs']);
+  const [signupData, setSignupData] = useState(props.initialSignupData ? props.initialSignupData : {
     email: '',
     password: '',
-    confirmPassword: ''
-  })
+    confirmPassword: '',
+  });
 
   const privacyConsentText = useTranslatedMarkdown('consent/privacy.md');
   const recaptchaConsentText = useTranslatedMarkdown('consent/recaptcha.md');
@@ -38,8 +50,41 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
   const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
   const [reCaptchaAccepted, setReCaptchaAccepted] = useState(false);
 
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  useEffect(() => {
+    setSignupData(props.initialSignupData ? props.initialSignupData : {
+      email: '',
+      password: '',
+      confirmPassword: '',
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.initialSignupData])
+
+  const passwordsMatch = () => {
+    return signupData.password === signupData.confirmPassword;
+  }
+
   const isDisabled = (): boolean => {
-    return true;
+    const passwordRuleOk = checkPasswordRules(signupData.password);
+    return !(!props.isLoading && reCaptchaAccepted && acceptedPrivacyPolicy && signupData.email.length > 4 && passwordRuleOk && passwordsMatch());
+  }
+
+  const submit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!recaptchaRef.current) {
+      console.error('issue with recaptcha');
+      // props.onFormError('issue with recaptcha');
+      return;
+    }
+
+    try {
+      recaptchaRef.current?.reset();
+      const token = await recaptchaRef.current?.executeAsync();
+      props.onSubmit({ ...signupData, captchaToken: token ? token : '' });
+    } catch (err) {
+      // props.onFormError("unexpected error with recaptcha");
+    }
   }
 
   const infoText: string = t('signup.info');
@@ -59,15 +104,14 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           content={infoText}
         /> : null}
 
-      <form onSubmit={(event) => {
-        event.preventDefault();
-      }}>
+      <form onSubmit={submit}>
         <TextField
           id="signupEmail"
           label={emailInputLabel}
           placeholder={emailInputPlaceholder}
           type="email"
           name="email"
+          autoComplete="off"
           className={marginBottomClass}
           value={signupData.email}
           required={true}
@@ -155,7 +199,7 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           className={marginBottomClass}
           type="submit"
           label={t('signup.signupBtn')}
-          disabled={isDisabled() || props.isLoading}
+          disabled={isDisabled()}
           loading={props.isLoading}
           loadingLabel={t('loadingMsg')}
         />
@@ -190,6 +234,17 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
             apply.
           </Trans>
         </div>
+        {
+          reCaptchaAccepted ? <div>
+            {process.env.REACT_APP_RECAPTCHA_SITEKEY ?
+              <ReCAPTCHA
+                sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
+                size="invisible"
+                hl={i18n.language}
+                ref={recaptchaRef} />
+              : null}
+          </div> : null
+        }
 
       </form>
       <ConsentDialog
@@ -239,7 +294,7 @@ const Signup: React.FC = () => {
     dispatch(closeDialog())
   }
 
-  const isLoading = true;
+  const isLoading = false;
 
   return (
     <Dialog
@@ -255,6 +310,7 @@ const Signup: React.FC = () => {
       )}>
         <SignupForm
           isLoading={isLoading}
+          onSubmit={(data) => console.log(data)}
           onOpenDialog={(dialog) => dispatch(openDialogWithoutPayload(dialog))}
         />
       </div>
