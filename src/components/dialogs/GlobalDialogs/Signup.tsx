@@ -313,6 +313,7 @@ const Signup: React.FC = () => {
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'signup';
 
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   const dispatch = useDispatch();
@@ -320,10 +321,13 @@ const Signup: React.FC = () => {
 
   const handleClose = () => {
     setError('')
+    setLoading(false)
     dispatch(closeDialog())
   }
 
-  const isLoading = false;
+  const handleSignup = () => {
+    setError('todo')
+  }
 
   return (
     <Dialog
@@ -338,8 +342,8 @@ const Signup: React.FC = () => {
         'bg-grey-1'
       )}>
         <SignupForm
-          isLoading={isLoading}
-          onSubmit={(data) => console.log(data)}
+          isLoading={loading}
+          onSubmit={(data) => handleSignup()}
           onOpenDialog={(dialog) => dispatch(openDialogWithoutPayload(dialog))}
           error={error}
           clearError={() => setError('')}

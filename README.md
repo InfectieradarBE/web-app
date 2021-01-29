@@ -11,10 +11,15 @@ Add the `.env.local` file for example to define these variables.
 
 Supported variables:
 ```
+REACT_APP_DEFAULT_INSTANCE=<instance name>
+REACT_APP_API_BASE_URL=<participant API url>
+
 REACT_APP_DEFAULT_LANGUAGE=<language-code>
 REACT_APP_FALLBACK_LANGUAGE=<language-code>
 
 REACT_APP_CONTENT_URL=<full url of the content hosting>
+
+REACT_APP_RECAPTCHA_SITEKEY=<you receive the site key from Google>
 ```
 
 

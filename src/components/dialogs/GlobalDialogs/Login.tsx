@@ -10,6 +10,9 @@ import AlertBox from '../../displays/AlertBox';
 import { useTranslation } from 'react-i18next';
 import DialogBtn from '../../buttons/DialogBtn';
 import Checkbox from '../../inputs/Checkbox';
+import { loginWithEmailRequest } from '../../../api/authAPI';
+import { setPersistState } from '../../../store/appSlice';
+import { LoginResponse } from '../../../api/types/authAPI';
 
 const marginBottomClass = "mb-2";
 const loginFormI18nPrefix = 'login.credentials';
@@ -26,7 +29,11 @@ interface LoginData {
 
 interface LoginFormProps {
   isLoading: boolean;
-  loginData: LoginData;
+  email: string;
+  password: string;
+  rememberMe: boolean;
+  error: string;
+  clearError: () => void;
   onSubmit: (email: string, password: string, rememberMe: boolean) => void;
   onOpenDialog: (dialog: 'passwordForgotten' | 'signup') => void;
 }
@@ -36,15 +43,24 @@ interface VerificationCodeFormProps {
 
 const LoginForm: React.FC<LoginFormProps> = (props) => {
   const { t } = useTranslation(['dialogs']);
-  const [loginData, setLoginData] = useState(props.loginData);
+  const [loginData, setLoginData] = useState<LoginData>({
+    email: props.email,
+    password: props.password,
+    rememberMe: props.rememberMe,
+  });
 
   useEffect(() => {
-    setLoginData({ ...props.loginData });
-    if (!isDisabled(props.loginData)) {
-      props.onSubmit(props.loginData.email, props.loginData.password, props.loginData.rememberMe);
+    const newData = {
+      email: props.email,
+      password: props.password,
+      rememberMe: props.rememberMe,
+    }
+    setLoginData(newData);
+    if (!isDisabled(newData)) {
+      props.onSubmit(newData.email, newData.password, newData.rememberMe);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [props.loginData])
+  }, [props.email, props.password])
 
   const isDisabled = (loginData: LoginData) => {
     return loginData.email.length < 3 || loginData.password.length < 6;
@@ -90,6 +106,16 @@ const LoginForm: React.FC<LoginFormProps> = (props) => {
           props.onSubmit(loginData.email, loginData.password, loginData.rememberMe);
         }}
       >
+        <AlertBox
+          className={marginBottomClass}
+          hide={!props.error}
+          content={props.error ? props.error : ''}
+          type="danger"
+          useIcon={true}
+          iconSize="2rem"
+          closable={true}
+          onClose={() => props.clearError()}
+        />
         <TextField
           id="loginDialogEmail"
           label={emailInputLabel}
@@ -161,34 +187,134 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
   return (<p>todo</p>)
 }
 
-const getInitialLoginData = (dialogState: DialogState) => {
-  const payload = (dialogState as LoginDialog).payload;
-
-  if (!payload) {
-    return undefined;
-  }
-  return { ...payload };
-}
 
 /**
  * Login Dialog with logic to handle callbacks from the forms
  * @param props
  */
 const Login: React.FC<LoginProps> = (props) => {
+  const instanceId = useSelector((state: RootState) => state.app.instanceId);
+  const persistState = useSelector((state: RootState) => state.app.persistState);
   const dialogState = useSelector((state: RootState) => state.dialog)
-  const open = dialogState.config?.type === 'login';
 
+  const open = dialogState.config?.type === 'login';
   const initialLoginData = open ? (dialogState.config as LoginDialog).payload : undefined;
 
-
   const [verificationStep, setVerificationStep] = useState(false);
-  const [loginData, setLoginData] = useState<LoginData | undefined>(open ? getInitialLoginData(dialogState) : undefined);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [resendEnabled, setResetEnabled] = useState(false);
+
+  const [emailAddress, setEmailAddress] = useState<string>(initialLoginData ? initialLoginData.email : "");
+  const [password, setPassword] = useState<string>(initialLoginData ? initialLoginData.password : "");
+
   const dispatch = useDispatch();
 
   const { t } = useTranslation(['dialogs']);
 
+  useEffect(() => {
+    setResetEnabled(false);
+    if (open && initialLoginData) {
+      setEmailAddress(initialLoginData.email);
+      setPassword(initialLoginData.password);
+      dispatch(setPersistState(initialLoginData.rememberMe));
+      // setVerificationCode(dialogState.content.verificationCode);
+    }
+  }, [open, initialLoginData]);
+
+  useEffect(() => {
+    if (loading) {
+      setResetEnabled(false);
+    } else {
+      if (verificationStep) {
+        setTimeout(() => {
+          setResetEnabled(true);
+        }, 20000);
+      }
+    }
+  }, [loading, open, verificationStep])
+
+  const setAuthFields = (email: string, password: string, rememberMe: boolean) => {
+    setEmailAddress(email);
+    setPassword(password);
+    setErrorMessage('');
+    dispatch(setPersistState(rememberMe));
+  }
+
   const handleClose = () => {
+    setEmailAddress("");
+    setPassword("");
+    // setVerificationCode("");
+    setErrorMessage('');
+    setVerificationStep(false);
     dispatch(closeDialog())
+  }
+
+  const login = async (creds: LoginData) => {
+    console.log('login')
+    if (loading) return;
+    setAuthFields(creds.email, creds.password, creds.rememberMe);
+    setLoading(true);
+
+    try {
+      const resp = await loginWithEmailRequest({
+        email: creds.email,
+        password: creds.password,
+        instanceId: instanceId,
+      });
+      const response = resp.data as LoginResponse;
+      if (response.secondFactorNeeded) {
+        setVerificationStep(true);
+      } else {
+        // setAuthState(response.token, response.user);
+        closeDialog();
+        /*if (history) {
+          history.push(AppRoutes.Home);
+        }*/
+        if (!response.user.account.accountConfirmedAt || response.user.account.accountConfirmedAt <= 0) {
+          // dispatch(navigationActions.openSignupSuccessDialog());
+        }
+      }
+
+      console.log(resp);
+    } catch (e) {
+      console.log(e);
+      if (e.response) {
+        console.error(e.response);
+        if (e.response.data && e.response.data.error) {
+          handleError(e.response.data.error);
+        } else {
+          handleError('no response data');
+        }
+      } else {
+        handleError('no response data');
+      }
+    } finally {
+      setLoading(false);
+    }
+
+  }
+
+  const handleError = (errorResponse?: string) => {
+    let error: string;
+    switch (errorResponse) {
+      case 'invalid username and/or password':
+        error = t('dialogs:login.errors.accountOrPassword');
+        break;
+      case 'wrong verfication code':
+        error = t('dialogs:login.errors.wrongCode');
+        break;
+      case 'new verfication code':
+        error = t('dialogs:login.errors.newCodeSent');
+        break;
+      case 'cannot generate verification code so often':
+        error = t('dialogs:login.errors.rateLimit');
+        break;
+      default:
+        error = t(`${loginFormI18nPrefix}.erros.unknown`);
+        break;
+    }
+    setErrorMessage(error);
   }
 
   return (
@@ -208,14 +334,21 @@ const Login: React.FC<LoginProps> = (props) => {
         {verificationStep ?
           <VerificationCodeForm /> :
           <LoginForm
-            isLoading={true}
-            loginData={initialLoginData ? initialLoginData : {
-              email: '',
-              password: '',
-              rememberMe: true
+            isLoading={loading}
+            email={emailAddress}
+            password={password}
+            rememberMe={persistState}
+            error={errorMessage}
+            clearError={() => setErrorMessage('')}
+            onSubmit={(email, password, rememberMe) => {
+              login({
+                email: email,
+                password: password,
+                rememberMe: rememberMe,
+              })
             }}
-            onSubmit={(loginData) => console.log(loginData)}
             onOpenDialog={(dialog) => {
+              handleClose();
               dispatch(openDialogWithoutPayload(dialog));
             }}
           />
