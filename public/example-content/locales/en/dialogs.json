@@ -1,0 +1,45 @@
+{
+  "loadingMsg": "Loading",
+  "login": {
+    "credentials": {
+      "title": "Login",
+      "info": "",
+      "emailInputLabel": "Email",
+      "emailInputPlaceholder": "Enter Email",
+      "passwordInputLabel": "Password",
+      "passwordInputPlaceholder": "Enter Password",
+      "rememberMeLabel": "Remember Me",
+      "btn": "Login",
+      "passwordForgottenBtn": "Password forgotten",
+      "signupBtn": "Don't have an account? Sign up."
+    },
+    "verificationCode": {
+      "title": "Verify your identity"
+    }
+  },
+  "signup": {
+    "title": "Signup",
+    "info": "",
+    "emailInputLabel": "Email",
+    "emailInputPlaceholder": "Enter Email",
+    "passwordInputLabel": "Password",
+    "passwordInputPlaceholder": "Enter Password",
+    "confirmPasswordInputLabel": "Password",
+    "confirmPasswordInputPlaceholder": "Enter Password",
+    "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
+    "reCaptchaCookieCheckbox": "I agree to this site utilizing <1>Google’s tracking cookies</1> for spam protection using reCAPTCHA.*",
+    "signupBtn": "Signup",
+    "loginLink": "Have an account already? Login in here.",
+    "reCaptchaLinks": "This site is protected by reCAPTCHA and the Google <1>Privacy Policy</1> and <3>Terms of Service</3> apply."
+  },
+  "privacyConsent": {
+    "title": "Privacy Consent",
+    "acceptBtn": "I read and accept the above statement.",
+    "cancelBtn": "Cancel"
+  },
+  "recaptchaConsent": {
+    "title": "ReCaptcha Cookie Consent",
+    "acceptBtn": "I read and accept the above statement.",
+    "cancelBtn": "Cancel"
+  }
+}
