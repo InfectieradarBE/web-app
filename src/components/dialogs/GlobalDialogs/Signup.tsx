@@ -11,6 +11,8 @@ import { Trans, useTranslation } from 'react-i18next';
 import Checkbox from '../../inputs/Checkbox';
 import DialogBtn from '../../buttons/DialogBtn';
 import TextLink from '../../buttons/TextLink';
+import AlertBox from '../../displays/AlertBox';
+import TextField from '../../inputs/TextField';
 
 const marginBottomClass = "mb-2";
 
@@ -21,6 +23,12 @@ interface SignupFormProps {
 
 const SignupForm: React.FC<SignupFormProps> = (props) => {
   const { t } = useTranslation(['dialogs']);
+  const [signupData, setSignupData] = useState({
+    email: '',
+    password: '',
+    confirmPassword: ''
+  })
+
   const privacyConsentText = useTranslatedMarkdown('consent/privacy.md');
   const recaptchaConsentText = useTranslatedMarkdown('consent/recaptcha.md');
 
@@ -34,13 +42,68 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
     return true;
   }
 
+  const infoText: string = t('signup.info');
+  const emailInputLabel = t('signup.emailInputLabel');
+  const emailInputPlaceholder = t('signup.emailInputPlaceholder');
+  const passwordInputLabel = t('signup.passwordInputLabel');
+  const passwordInputPlaceholder = t('signup.passwordInputPlaceholder');
+  const confirmPasswordInputLabel = t('signup.confirmPasswordInputLabel');
+  const confirmPasswordPlaceholder = t('signup.confirmPasswordInputLabel');
 
   return (
     <React.Fragment>
-      <button onClick={() => setOpenPrivacyConsent(true)}> Open</button>
+      {infoText && infoText.length > 0 ?
+        <AlertBox
+          type="info"
+          className={marginBottomClass}
+          content={infoText}
+        /> : null}
+
       <form onSubmit={(event) => {
         event.preventDefault();
       }}>
+        <TextField
+          id="signupEmail"
+          label={emailInputLabel}
+          placeholder={emailInputPlaceholder}
+          type="email"
+          name="email"
+          className={marginBottomClass}
+          value={signupData.email}
+          required={true}
+          onChange={(event) => {
+            const value = event.target.value;
+            setSignupData(prev => { return { ...prev, email: value } })
+          }}
+        />
+        <TextField
+          id="signupPW"
+          label={passwordInputLabel}
+          placeholder={passwordInputPlaceholder}
+          type="password"
+          name="password"
+          className={marginBottomClass}
+          value={signupData.password}
+          required={true}
+          onChange={(event) => {
+            const value = event.target.value;
+            setSignupData(prev => { return { ...prev, password: value } })
+          }}
+        />
+        <TextField
+          id="signupConfirmPw"
+          label={confirmPasswordInputLabel}
+          placeholder={confirmPasswordPlaceholder}
+          type="password"
+          name="confirmPassword"
+          className={marginBottomClass}
+          value={signupData.confirmPassword}
+          required={true}
+          onChange={(event) => {
+            const value = event.target.value;
+            setSignupData(prev => { return { ...prev, confirmPassword: value } })
+          }}
+        />
 
         <Checkbox
           className={marginBottomClass}
@@ -187,7 +250,8 @@ const Signup: React.FC = () => {
     >
       <div className={clsx(
         dialogPaddingXClass,
-        'py-3'
+        'py-3',
+        'bg-grey-1'
       )}>
         <SignupForm
           isLoading={isLoading}

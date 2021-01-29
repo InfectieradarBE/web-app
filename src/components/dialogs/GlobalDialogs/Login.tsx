@@ -203,7 +203,7 @@ const Login: React.FC<LoginProps> = (props) => {
       <div className={clsx(
         dialogPaddingXClass,
         'py-3',
-        'bg-secondary'
+        'bg-grey-1'
       )}>
         {verificationStep ?
           <VerificationCodeForm /> :

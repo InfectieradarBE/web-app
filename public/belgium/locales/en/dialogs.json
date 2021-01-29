@@ -19,6 +19,13 @@
   },
   "signup": {
     "title": "Signup",
+    "info": "",
+    "emailInputLabel": "Email",
+    "emailInputPlaceholder": "Enter Email",
+    "passwordInputLabel": "Password",
+    "passwordInputPlaceholder": "Enter Password",
+    "confirmPasswordInputLabel": "Password",
+    "confirmPasswordInputPlaceholder": "Enter Password",
     "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
     "reCaptchaCookieCheckbox": "I agree to this site utilizing <1>Google’s tracking cookies</1> for spam protection using reCAPTCHA.*",
     "signupBtn": "Signup",
