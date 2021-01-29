@@ -20,10 +20,15 @@
   "signup": {
     "title": "Signup",
     "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
-    "reCaptchaCookieCheckbox": "Naar de <1>cookie verklaring</1>."
+    "reCaptchaCookieCheckbox": "I agree to this site utilizing <1>Google’s tracking cookies</1> for spam protection using reCAPTCHA.*"
   },
   "privacyConsent": {
     "title": "Privacy Consent",
+    "acceptBtn": "I read and accept the above statement.",
+    "cancelBtn": "Cancel"
+  },
+  "recaptchaConsent": {
+    "title": "ReCaptcha Cookie Consent",
     "acceptBtn": "I read and accept the above statement.",
     "cancelBtn": "Cancel"
   }

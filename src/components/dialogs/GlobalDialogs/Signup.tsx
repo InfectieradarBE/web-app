@@ -10,6 +10,7 @@ import ConsentDialog from '../DialogTypes/ConsentDialog';
 import { Trans, useTranslation } from 'react-i18next';
 import Checkbox from '../../inputs/Checkbox';
 
+const marginBottomClass = "mb-2";
 
 interface SignupFormProps {
 }
@@ -34,10 +35,10 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
       }}>
 
         <Checkbox
+          className={marginBottomClass}
           id="acceptPrivacyConsent"
           name="privacyConsent"
           checked={acceptedPrivacyPolicy}
-          label=""
           onClick={() => {
             if (!acceptedPrivacyPolicy) {
               setOpenPrivacyConsent(true);
@@ -49,19 +50,32 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
             }
           }}
         >
-          <Trans
-            t={t}
-            i18nKey="signup.informedConsentCheckbox">
-            {'...'}
-            <span
-              className="text-primary text-decoration-none"
-              onClick={() => {
-                //if (readPrivacyPolicy) {
-                //  setOpenPC(true)
-                // }
-              }}
-            >{'...'}</span>
-            {'...'}
+          <Trans t={t} i18nKey="signup.informedConsentCheckbox">
+            {'...'}<span
+              onClick={() => setOpenPrivacyConsent(true)}
+              className="text-primary text-decoration-none">{'...'}</span>{'...'}
+          </Trans>
+        </Checkbox>
+        {/*  */}
+        <Checkbox
+          id="recaptchaConsent"
+          name="recaptchaConsent"
+          checked={reCaptchaAccepted}
+          onClick={() => {
+            if (!reCaptchaAccepted) {
+              setOpenRecaptchaConsent(true);
+            }
+          }}
+          onChange={(checked) => {
+            if (!checked) {
+              setReCaptchaAccepted(checked);
+            }
+          }}
+        >
+          <Trans t={t} i18nKey="signup.reCaptchaCookieCheckbox">
+            {'...'}<span
+              onClick={() => setOpenRecaptchaConsent(true)}
+              className="text-primary text-decoration-none">{'...'}</span>{'...'}
           </Trans>
         </Checkbox>
       </form>
@@ -86,8 +100,14 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
         content={recaptchaConsentText}
         cancelBtn={t("recaptchaConsent.cancelBtn")}
         acceptBtn={t("recaptchaConsent.acceptBtn")}
-        onCancelled={() => setOpenRecaptchaConsent(false)}
-        onConfirmed={() => setOpenRecaptchaConsent(false)}
+        onCancelled={() => {
+          setReCaptchaAccepted(false)
+          setOpenRecaptchaConsent(false)
+        }}
+        onConfirmed={() => {
+          setReCaptchaAccepted(true)
+          setOpenRecaptchaConsent(false)
+        }}
       />
     </React.Fragment>
   )
