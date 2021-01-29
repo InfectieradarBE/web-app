@@ -39,5 +39,18 @@
     "title": "Afmelden Infectieradar.be / intrekken toestemming",
       "warning": "Afmelden Infectieradar.be/intrekken toestemming houdt in dat je accountgegevens worden verwijderd.\nNa het verwijderen van het account kunnnen wij door jou opgegeven informatie (zoals leeftijd en gezondheidsklachten) niet meer aan je koppelen.",
       "deleteBtn": "Afmelden"
+  },
+  "references": {
+    "title": "Hulp nodig?",
+    "faqLink": "Vraag en antwoord",
+    "privacyStatementLink": "Privacyverklaring",
+    "contactLink": "Contact Infectieradar.be"
+  },
+  "systemInfo": {
+    "title": "Systeem informatie",
+    "appnameLabel": "Applicatie naam",
+    "versionLabel": "Versie",
+    "browserNameLabel": "Browsername",
+    "browserVersionLabel": "Browser versie"
   }
 }
