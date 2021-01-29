@@ -1,13 +1,21 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+export interface AuthInfo {
+  accessToken: string;
+  refreshToken: string;
+  expiresAt: number;
+}
+
 export interface AppState {
   instanceId: string;
   persistState: boolean;
+  auth?: AuthInfo;
 }
 
 export const initialState: AppState = {
   instanceId: process.env.REACT_APP_DEFAULT_INSTANCE ? process.env.REACT_APP_DEFAULT_INSTANCE : 'default',
   persistState: false,
+  auth: undefined
 };
 
 const appSlice = createSlice({
@@ -16,7 +24,6 @@ const appSlice = createSlice({
   reducers: {
     reset: (state) => {
       state = initialState;
-      return state;
     },
     setPersistState: (state, action: PayloadAction<boolean>) => {
       state.persistState = action.payload;

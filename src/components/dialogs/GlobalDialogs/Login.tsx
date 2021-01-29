@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Dialog from '../Dialog';
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '../../../store/rootReducer';
-import { closeDialog, DialogState, LoginDialog, openDialogWithoutPayload } from '../../../store/dialogSlice';
+import { closeDialog, LoginDialog, openDialogWithoutPayload } from '../../../store/dialogSlice';
 import clsx from 'clsx';
 import { dialogPaddingXClass } from '../contants';
 import TextField from '../../inputs/TextField';
@@ -21,7 +21,7 @@ const verificationFormI18nPrefix = 'login.verificationCode';
 interface LoginProps {
 }
 
-interface LoginData {
+interface LoginFormData {
   email: string,
   password: string,
   rememberMe: boolean,
@@ -43,7 +43,7 @@ interface VerificationCodeFormProps {
 
 const LoginForm: React.FC<LoginFormProps> = (props) => {
   const { t } = useTranslation(['dialogs']);
-  const [loginData, setLoginData] = useState<LoginData>({
+  const [loginData, setLoginData] = useState<LoginFormData>({
     email: props.email,
     password: props.password,
     rememberMe: props.rememberMe,
@@ -62,7 +62,7 @@ const LoginForm: React.FC<LoginFormProps> = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.email, props.password])
 
-  const isDisabled = (loginData: LoginData) => {
+  const isDisabled = (loginData: LoginFormData) => {
     return loginData.email.length < 3 || loginData.password.length < 6;
   }
 
@@ -250,7 +250,7 @@ const Login: React.FC<LoginProps> = (props) => {
     dispatch(closeDialog())
   }
 
-  const login = async (creds: LoginData) => {
+  const login = async (creds: LoginFormData) => {
     console.log('login')
     if (loading) return;
     setAuthFields(creds.email, creds.password, creds.rememberMe);
