@@ -33,7 +33,12 @@
         {
           "type": "internal",
           "itemKey": "accessibility",
-          "url": "/accesibility"
+          "url": "/accessibility"
+        },
+        {
+          "type": "internal",
+          "itemKey": "disclaimer",
+          "url": "/disclaimer"
         }
       ]
     },
