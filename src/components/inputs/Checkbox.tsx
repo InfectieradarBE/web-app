@@ -6,7 +6,7 @@ interface CheckboxProps {
   className?: string;
   name: string;
   checked: boolean;
-  label: string;
+  label?: string;
   onChange: (value: boolean) => void;
   onClick?: () => void;
 }
