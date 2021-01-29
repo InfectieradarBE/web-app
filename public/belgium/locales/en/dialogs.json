@@ -16,5 +16,15 @@
     "verificationCode": {
       "title": "Verify your identity"
     }
+  },
+  "signup": {
+    "title": "Signup",
+    "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
+    "reCaptchaCookieCheckbox": "Naar de <1>cookie verklaring</1>."
+  },
+  "privacyConsent": {
+    "title": "Privacy Consent",
+    "acceptBtn": "I read and accept the above statement.",
+    "cancelBtn": "Cancel"
   }
 }

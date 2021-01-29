@@ -33,7 +33,7 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig | ImageConfig |
   AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
   CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
-  RequiredSurveysConfig | OptionalSurveysConfig
+  RequiredSurveysConfig | OptionalSurveysConfig | LinkListConfig
 
 
 export interface MarkdownComponentConfig {
@@ -104,20 +104,31 @@ export interface SimpleCard {
   variant?: 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
 
-export interface RouterComponentConfig {
-  type: 'router';
+export interface LinkListConfig {
+  type: 'linkList';
+  links: Array<{
+    linkKey: string;
+    type: 'internal' | 'external' | 'language' | 'dialog';
+    value: string;
+  }>;
 }
 
 export interface SystemInfoConfig {
   type: 'systemInfo';
+  showBrowserInfo: boolean;
 }
 
 export interface AccountSettingsConfig {
   type: 'accountSettings';
+  allowProfileSettings: boolean;
 }
 
 export interface CommunicationSettingsConfig {
   type: 'communicationSettings';
+  languages?: Array<{
+    code: string;
+    itemKey: string;
+  }>;
 }
 
 export interface DeleteAccountConfig {
@@ -127,6 +138,14 @@ export interface DeleteAccountConfig {
 
 export interface LogoCreditsConfig {
   type: 'logoCredits';
+  useTitle?: boolean;
+  images: Array<{
+    url: string;
+    altKey: string;
+    width?: number | string;
+    height?: number | string;
+    containerClassName?: string;
+  }>;
 }
 
 export interface RequiredSurveysConfig {
@@ -135,4 +154,8 @@ export interface RequiredSurveysConfig {
 
 export interface OptionalSurveysConfig {
   type: 'optionalSurveys';
+}
+
+export interface RouterComponentConfig {
+  type: 'router';
 }
