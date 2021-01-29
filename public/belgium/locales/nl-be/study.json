@@ -1,0 +1,30 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "",
+    "content": "Door mee te doen aan Infectieradar.be help je mee om de verspreiding van infectieziekten mee in kaart te brengen en zien we snel wat de huidige situatie in België is."
+  },
+  "requiredSurveys": {
+    "title": "In te vullen vragenlijsten",
+    "info": "Hieronder staan de verschillende vragenlijsten voor het onderzoek.",
+    "successMsg": "Dank je wel! Je hebt alle vragenlijsten ingevuld. Volgende week vragen we je weer."
+  },
+  "optionalSurveys": {
+    "title": "Wijzigen achtergrondinformatie",
+    "info": "Als je situatie veranderd is, kan je hieronder opnieuw de achtergrondvragenlijst(en) invullen. We kunnen helaas niet laten zien wat je de laatste keer hebt ingevuld, of je alleen specifieke vragen laten aanpassen.",
+    "showBtn": "Is je achtergrondinformatie veranderd?",
+    "hideBtn": "Verbergen"
+  },
+  "referencesBox": {
+    "title": "Zie ook",
+    "faqLink": "Vraag en antwoord",
+    "resultsLink": "Actuele resultaten",
+    "aboutLink": "Over Infectierader"
+  },
+  "quickSettingsBox": {
+    "title": "Instellingen",
+    "manageProfiles": "Voeg een profiel toe van je kind, of wijzig je profiel",
+    "emailReminders": "Aanpassen van communicatie instellingen",
+    "language": "Taal"
+  }
+}
