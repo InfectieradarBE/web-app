@@ -1,5 +1,6 @@
 import React, { InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
+import AlertBox from '../displays/AlertBox';
 // import Error from '../alerts/Error';
 
 interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -51,13 +52,15 @@ const TextField: React.FC<TextFieldProps> = (props) => {
         disabled={inputProps.disabled}
       />
 
-      {/* errorMsg ?
-        <Error
+      { errorMsg ?
+        <AlertBox
           hide={!errorOpen}
-          permanent={true} >
-          {errorOpen ? errorMsg : null}
-        </Error>
-      : null */}
+          pyClass='py-1'
+          type="danger"
+          useIcon={true}
+          content={errorMsg}
+        />
+        : null}
     </div>
   );
 };

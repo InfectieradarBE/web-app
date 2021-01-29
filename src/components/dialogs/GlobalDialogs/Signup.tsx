@@ -31,6 +31,8 @@ interface SignupFormProps {
   initialSignupData?: SignupData;
   onSubmit: (data: SignupData) => void;
   onOpenDialog: (dialog: 'login') => void;
+  error?: string;
+  clearError: () => void;
 }
 
 const SignupForm: React.FC<SignupFormProps> = (props) => {
@@ -49,6 +51,9 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 
   const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
   const [reCaptchaAccepted, setReCaptchaAccepted] = useState(false);
+
+  const [showPasswordError, setShowPasswordError] = useState(false);
+  const [showConfirmPasswordError, setShowConfirmPasswordError] = useState(false);
 
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
@@ -129,6 +134,11 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           className={marginBottomClass}
           value={signupData.password}
           required={true}
+          hasError={!checkPasswordRules(signupData.password) && showPasswordError}
+          errorMsg={t("dialogs:signup.errors.passwordRules")}
+          onBlur={() => {
+            setShowPasswordError(true)
+          }}
           onChange={(event) => {
             const value = event.target.value;
             setSignupData(prev => { return { ...prev, password: value } })
@@ -143,6 +153,11 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           className={marginBottomClass}
           value={signupData.confirmPassword}
           required={true}
+          errorMsg={t("dialogs:signup.errors.passwordMatch")}
+          hasError={!passwordsMatch() && showConfirmPasswordError}
+          onBlur={() => {
+            setShowConfirmPasswordError(true)
+          }}
           onChange={(event) => {
             const value = event.target.value;
             setSignupData(prev => { return { ...prev, confirmPassword: value } })
@@ -194,6 +209,17 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
               className="text-primary text-decoration-none">{'...'}</span>{'...'}
           </Trans>
         </Checkbox>
+
+        <AlertBox
+          className={marginBottomClass}
+          hide={!props.error}
+          content={props.error ? props.error : ''}
+          type="danger"
+          useIcon={true}
+          iconSize="2rem"
+          closable={true}
+          onClose={() => props.clearError()}
+        />
 
         <DialogBtn
           className={marginBottomClass}
@@ -287,10 +313,13 @@ const Signup: React.FC = () => {
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'signup';
 
+  const [error, setError] = useState('');
+
   const dispatch = useDispatch();
 
 
   const handleClose = () => {
+    setError('')
     dispatch(closeDialog())
   }
 
@@ -312,6 +341,8 @@ const Signup: React.FC = () => {
           isLoading={isLoading}
           onSubmit={(data) => console.log(data)}
           onOpenDialog={(dialog) => dispatch(openDialogWithoutPayload(dialog))}
+          error={error}
+          clearError={() => setError('')}
         />
       </div>
     </Dialog>
