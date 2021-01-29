@@ -1,0 +1,12 @@
+.animatedBox {
+  display: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s ease-out;
+}
+
+.animatedBoxOpen {
+  display: block;
+  max-height: 100vh;
+  transition: max-height 0.2s ease-in-out;
+}
