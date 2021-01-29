@@ -1,0 +1,45 @@
+{
+	"loadingMsg": "Loading",
+	"login": {
+		"credentials": {
+			"title": "Login",
+			"info": "",
+			"emailInputLabel": "E-mail",
+			"emailInputPlaceholder": "E-mail",
+			"passwordInputLabel": "Wachtwoord",
+			"passwordInputPlaceholder": "Wachtwoord",
+			"rememberMeLabel": "Gegevens onthouden",
+			"btn": "Login",
+			"passwordForgottenBtn": "Wachtwoord vergeten?",
+			"signupBtn": "Heb je nog geen account? Meld je hier aan."
+		},
+		"verificationCode": {
+			"title": "6-cijferige verificatiecode"
+		}
+	},
+	"signup": {
+		"title": "Aanmelden",
+		"info": "Meld je aan en help mee om het coronavirus in de gaten te houden.",
+		"emailInputLabel": "E-mailadres",
+		"emailInputPlaceholder": "E-mailadres",
+		"passwordInputLabel": "Wachtwoord",
+		"passwordInputPlaceholder": "Wachtwoord",
+		"confirmPasswordInputLabel": "Bevestig wachtwoord",
+		"confirmPasswordInputPlaceholder": "Bevestig wachtwoord",
+		"informedConsentCheckbox": "Naar de <1>toestemmingsverklaring</1>.*",
+		"reCaptchaCookieCheckbox": "Naar de <1>cookie verklaring</1>.*",
+		"signupBtn": "Aanmelden",
+		"loginLink": "Heb je al een account? Log hier in.",
+		"reCaptchaLinks": "This site is protected by reCAPTCHA and the Google <1>Privacy Policy</1> and <3>Terms of Service</3> apply."
+	},
+	"privacyConsent": {
+		"title": "Toestemmingsverklaring",
+		"acceptBtn": "Ik geef toestemming",
+		"cancelBtn": "Ik geef geen toestemming"
+	},
+	"recaptchaConsent": {
+		"title": "Cookie verklaring",
+		"cancelBtn": "Cancel",
+		"acceptBtn": "Akkoord"
+	}
+}
