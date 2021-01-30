@@ -1,4 +1,8 @@
 {
+  "defaultRoutes": {
+    "auth": "/home",
+    "unauth": "/home"
+  },
   "pages": [
     {
       "path": "/home",
@@ -200,7 +204,7 @@
       "path": "/about",
       "pageKey": "about",
       "rows": [
-		    {
+        {
           "key": "teaserImage",
           "fullWidth": true,
           "columns": [

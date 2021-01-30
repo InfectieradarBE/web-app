@@ -1,5 +1,9 @@
 export interface PagesConfig {
   pages: Array<PageConfig>;
+  defaultRoutes?: {
+    auth: string;
+    unauth: string;
+  }
 }
 
 export interface PageConfig {
