@@ -13,18 +13,22 @@ import Checkbox from '../../inputs/Checkbox';
 import { loginWithEmailRequest } from '../../../api/authAPI';
 import { setPersistState } from '../../../store/appSlice';
 import { LoginResponse } from '../../../api/types/authAPI';
+import { useSetAuthState } from '../../../hooks/useSetAuthState';
+import { useHistory } from 'react-router-dom';
 
 const marginBottomClass = "mb-2";
 const loginFormI18nPrefix = 'login.credentials';
 const verificationFormI18nPrefix = 'login.verificationCode';
 
+
 interface LoginProps {
 }
 
 interface LoginFormData {
-  email: string,
-  password: string,
-  rememberMe: boolean,
+  email: string;
+  password: string;
+  rememberMe: boolean;
+  verificationCode?: string;
 }
 
 interface LoginFormProps {
@@ -288,9 +292,12 @@ const Login: React.FC<LoginProps> = (props) => {
   const open = dialogState.config?.type === 'login';
   const initialLoginData = open ? (dialogState.config as LoginDialog).payload : undefined;
 
-  const [verificationStep, setVerificationStep] = useState(true);
+  const setAuthState = useSetAuthState();
+  const history = useHistory();
+
+  const [verificationStep, setVerificationStep] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('test');
+  const [errorMessage, setErrorMessage] = useState('');
   const [resendEnabled, setResetEnabled] = useState(false);
 
   const [emailAddress, setEmailAddress] = useState<string>(initialLoginData ? initialLoginData.email : "");
@@ -306,8 +313,8 @@ const Login: React.FC<LoginProps> = (props) => {
       setEmailAddress(initialLoginData.email);
       setPassword(initialLoginData.password);
       dispatch(setPersistState(initialLoginData.rememberMe));
-      // setVerificationCode(dialogState.content.verificationCode);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, initialLoginData]);
 
   useEffect(() => {
@@ -332,14 +339,12 @@ const Login: React.FC<LoginProps> = (props) => {
   const handleClose = () => {
     setEmailAddress("");
     setPassword("");
-    // setVerificationCode("");
     setErrorMessage('');
     setVerificationStep(false);
     dispatch(closeDialog())
   }
 
   const login = async (creds: LoginFormData) => {
-    console.log('login')
     if (loading) return;
     setAuthFields(creds.email, creds.password, creds.rememberMe);
     setLoading(true);
@@ -351,20 +356,20 @@ const Login: React.FC<LoginProps> = (props) => {
         instanceId: instanceId,
       });
       const response = resp.data as LoginResponse;
+      console.log(response);
       if (response.secondFactorNeeded) {
         setVerificationStep(true);
       } else {
-        // setAuthState(response.token, response.user);
-        closeDialog();
-        /*if (history) {
-              history.push(AppRoutes.Home);
-        }*/
+        response.user.account.accountConfirmedAt = +response.user.account.accountConfirmedAt
+        setAuthState(response.token, response.user);
+        handleClose();
+        if (history) {
+          history.push('/');
+        }
         if (!response.user.account.accountConfirmedAt || response.user.account.accountConfirmedAt <= 0) {
-          // dispatch(navigationActions.openSignupSuccessDialog());
+          dispatch(openDialogWithoutPayload('signupSuccess'));
         }
       }
-
-      console.log(resp);
     } catch (e) {
       console.log(e);
       if (e.response) {
@@ -393,13 +398,13 @@ const Login: React.FC<LoginProps> = (props) => {
         error = t('dialogs:login.errors.wrongCode');
         break;
       case 'new verfication code':
-        error = t('dialogs:login.errors.newCodeSent');
+        error = t('login.errors.newCodeSent');
         break;
       case 'cannot generate verification code so often':
-        error = t('dialogs:login.errors.rateLimit');
+        error = t('login.errors.rateLimit');
         break;
       default:
-        error = t(`${loginFormI18nPrefix}.erros.unknown`);
+        error = t('login.errors.unknown');
         break;
     }
     setErrorMessage(error);

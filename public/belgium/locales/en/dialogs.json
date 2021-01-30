@@ -20,6 +20,13 @@
       "codeInputPlaceholder": "Enter Your Code",
       "submitBtn": "SUBMIT",
       "resendBtn": "SEND A NEW CODE"
+    },
+    "errors": {
+      "accountOrPassword": "Er gaat iets verkeerd. Controleer je e-mailadres en wachtwoord.",
+      "wrongCode": "Verkeerde code. Controleer de code die we je hebben gemaild",
+      "newCodeSent": "Verkeerde code. We hebben je een nieuwe code gemaild.",
+      "rateLimit": "Je moet even wachten voordat je weer een code kan aanvragen.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
   },
   "signup": {

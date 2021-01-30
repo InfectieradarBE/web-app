@@ -1,36 +1,37 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import { useIsAuthenticated } from '../../../hooks/useIsAuthenticated';
 import { PageConfig } from '../../../types/config/pages';
 import ContentRenderer from './ContentRenderer';
 
 
 interface RouteToLayoutProps {
-    path: string;
-    pageConfig: PageConfig;
+  path: string;
+  pageConfig: PageConfig;
 }
 
 const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
-    // const { t } = useTranslation([props.pageConfig.pageKey]);
-    const isAuthenticated = false;
+  // const { t } = useTranslation([props.pageConfig.pageKey]);
+  const isAuthenticated = useIsAuthenticated();
 
-    if (
-        (props.pageConfig.hideWhen === 'auth' && isAuthenticated) ||
-        (props.pageConfig.hideWhen === 'unauth' && !isAuthenticated)
-    ) {
-        return null;
-    }
-    return (
-        <Route
-            path={props.path}
-            render={routeProps =>
-                <ContentRenderer
-                    isAuthenticated={isAuthenticated}
-                    pageKey={props.pageConfig.pageKey}
-                    rows={props.pageConfig.rows}
-                />
-            }
+  if (
+    (props.pageConfig.hideWhen === 'auth' && isAuthenticated) ||
+    (props.pageConfig.hideWhen === 'unauth' && !isAuthenticated)
+  ) {
+    return null;
+  }
+  return (
+    <Route
+      path={props.path}
+      render={routeProps =>
+        <ContentRenderer
+          isAuthenticated={isAuthenticated}
+          pageKey={props.pageConfig.pageKey}
+          rows={props.pageConfig.rows}
         />
-    );
+      }
+    />
+  );
 };
 
 export default RouteToLayout;

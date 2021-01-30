@@ -4,8 +4,7 @@ import { TokenResponse } from '../api/types/authAPI';
 
 
 export interface UserState {
-  currentUser: User,
-  selectedProfileId: string,
+  currentUser: User
 }
 
 export const initialState: UserState = {
@@ -52,13 +51,9 @@ const userSlice = createSlice({
         return state;
       }
     },
-    setState: (state, action: PayloadAction<UserState>) => {
-      state = action.payload
-    },
     setFromTokenResponse: (state, action: PayloadAction<TokenResponse>) => {
       state.currentUser.profiles = action.payload.profiles;
       state.currentUser.account.preferredLanguage = action.payload.preferredLanguage;
-      state.selectedProfileId = action.payload.selectedProfileId;
     },
     setUser: (state, action: PayloadAction<User>) => {
       state.currentUser = action.payload;
@@ -69,9 +64,6 @@ const userSlice = createSlice({
     setPreferredLanguage: (state, action: PayloadAction<string>) => {
       state.currentUser.account.preferredLanguage = action.payload;
     },
-    setSelectedProfileID: (state, action: PayloadAction<string>) => {
-      state.selectedProfileId = action.payload;
-    }
   },
 });
 
