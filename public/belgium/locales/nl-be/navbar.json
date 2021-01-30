@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "Welkom"
+  },
+  "results": {
+    "title": "Actuele resultaten"
+  },
+  "about": {
+    "title": "Over Infectieradar"
+  },
+  "faq": {
+    "title": "Vraag en antwoord"
+  },
+  "mystudies": {
+    "title": "Mijn Infectieradar"
+  }
+}
