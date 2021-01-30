@@ -10,7 +10,6 @@ import NavbarItem from './NavbarComponents/NavbarItem'
 interface NavbarProps {
    loading?: boolean;
     content?: NavbarConfig;
-    onChangeLanguage: (code: string) => void;
     onOpenExternalPage: (url: string) => void;
 }
 
