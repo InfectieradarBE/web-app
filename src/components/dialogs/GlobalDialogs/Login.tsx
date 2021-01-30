@@ -43,8 +43,8 @@ interface VerificationCodeFormProps {
   onSubmit: (code: string) => void;
   onResendVerificationCode: () => void;
   resendEnabled: boolean;
-  errors?: string;
-  clearError?: () => void;
+  error?: string;
+  clearError: () => void;
 }
 
 const LoginForm: React.FC<LoginFormProps> = (props) => {
@@ -218,6 +218,16 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
 
   return (
     <React.Fragment>
+      <AlertBox
+        className={marginBottomClass}
+        hide={!props.error}
+        content={props.error ? props.error : ''}
+        type="danger"
+        useIcon={true}
+        iconSize="2rem"
+        closable={true}
+        onClose={() => props.clearError()}
+      />
       <TextField
         id="twoFACode"
         label={codeInputLabel}
@@ -280,7 +290,7 @@ const Login: React.FC<LoginProps> = (props) => {
 
   const [verificationStep, setVerificationStep] = useState(true);
   const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('test');
   const [resendEnabled, setResetEnabled] = useState(false);
 
   const [emailAddress, setEmailAddress] = useState<string>(initialLoginData ? initialLoginData.email : "");
@@ -425,7 +435,7 @@ const Login: React.FC<LoginProps> = (props) => {
               });*/
             }}
             resendEnabled={resendEnabled}
-            errors={errorMessage}
+            error={errorMessage}
             clearError={() => setErrorMessage('')}
           /> :
           <LoginForm
