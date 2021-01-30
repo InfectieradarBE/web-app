@@ -28,9 +28,16 @@ const appSlice = createSlice({
     setPersistState: (state, action: PayloadAction<boolean>) => {
       state.persistState = action.payload;
     },
+    setAppAuth: (state, action: PayloadAction<AuthInfo>) => {
+      state.auth = action.payload;
+    }
   },
 });
 
-export const { setPersistState } = appSlice.actions;
+export const {
+  setPersistState,
+  setAppAuth,
+  reset,
+} = appSlice.actions;
 
 export default appSlice.reducer;

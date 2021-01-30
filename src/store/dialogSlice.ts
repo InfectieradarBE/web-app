@@ -17,7 +17,7 @@ export interface DialogState {
   config?: DialogWithoutPayload | LoginDialog
 }
 
-let initialState: DialogState = {
+export let initialState: DialogState = {
   config: undefined
 }
 
@@ -46,6 +46,7 @@ const dialogSlice = createSlice({
 })
 
 export const {
+  reset,
   closeDialog,
   openDialogWithoutPayload,
   openLoginDialog,
