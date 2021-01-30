@@ -1,5 +1,6 @@
 import React from 'react';
 import MuiDialog from '@material-ui/core/Dialog';
+import useMediaQuery from '@material-ui/core/useMediaQuery/useMediaQuery';
 import clsx from 'clsx';
 import { dialogHeaderPaddingYClass, dialogPaddingXClass } from './contants';
 
@@ -15,17 +16,24 @@ interface DialogProps {
 
 const Dialog: React.FC<DialogProps> = (props) => {
   const color = props.color ? props.color : 'primary';
+  const fullScreen = useMediaQuery('(max-width:600px)');
 
   const isTextColorWhite = ['primary', 'danger'].includes(color);
   return (
     <MuiDialog onClose={props.onClose}
       aria-labelledby={props.ariaLabelledBy}
       open={props.open}
-      // fullScreen={true}
+      fullScreen={fullScreen}
       PaperProps={{
         style: {
-          borderRadius: 0
+          borderRadius: 0,
+          width: 450,
+          maxWidth: 600,
         }
+      }}
+      classes={{
+        paper: 'd-flex flex-column',
+        // paperFullScreen: ,
       }}
     >
       <div className={clsx(
@@ -33,7 +41,13 @@ const Dialog: React.FC<DialogProps> = (props) => {
         dialogHeaderPaddingYClass,
         'd-flex align-items-center',
         `bg-${color}`,
+        {
+          'position-fixed w-100': fullScreen
+        }
       )}
+        style={{
+          minHeight: 75
+        }}
       >
         <h4 id={props.ariaLabelledBy}
           className={clsx(
@@ -56,7 +70,9 @@ const Dialog: React.FC<DialogProps> = (props) => {
             )} aria-label="Exit"></button>
         </div>
       </div>
-      {props.children}
+      <div className="flex-grow-1 bg-grey-1 pt-4 mt-3 mt-sm-0 pt-sm-0">
+        {props.children}
+      </div>
     </MuiDialog>
   );
 };
