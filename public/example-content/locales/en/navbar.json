@@ -1,0 +1,15 @@
+{
+  "home":{
+    "title":"Home"
+  },
+  "results":{
+    "title":"Current Results"
+  },
+  "about":{
+    "title":"About CASE"
+  },
+  "faq":{
+    "title":"FAQ"
+  }
+
+}
