@@ -1,4 +1,8 @@
 {
+  "defaultRoutes": {
+    "auth": "/home",
+    "unauth": "/home"
+  },
   "pages": [
     {
       "path": "/home",
