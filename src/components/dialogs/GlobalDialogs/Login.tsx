@@ -10,7 +10,7 @@ import AlertBox from '../../displays/AlertBox';
 import { useTranslation } from 'react-i18next';
 import DialogBtn from '../../buttons/DialogBtn';
 import Checkbox from '../../inputs/Checkbox';
-import { loginWithEmailRequest } from '../../../api/authAPI';
+import { loginWithEmailRequest, resend2FAVerificationCodeRequest } from '../../../api/authAPI';
 import { setPersistState } from '../../../store/appSlice';
 import { LoginResponse } from '../../../api/types/authAPI';
 import { useSetAuthState } from '../../../hooks/useSetAuthState';
@@ -196,10 +196,6 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
   const [verificationCode, setVerificationCode] = useState("");
   const { t } = useTranslation(['dialogs']);
 
-  const handleVerificationCodeChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setVerificationCode(event.target.value);
-  }
-
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     props.onSubmit(verificationCode);
@@ -209,11 +205,6 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
     return !props.isLoading && verificationCode.length === 6;
   }
 
-
-  const isDisabled = () => {
-    return true;
-  }
-
   const submitBtnLabel = t(`${verificationFormI18nPrefix}.submitBtn`)
   const resendBtnLabel = t(`${verificationFormI18nPrefix}.resendBtn`)
   const infoText: string = t(`${verificationFormI18nPrefix}.info`);
@@ -221,7 +212,7 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
   const codeInputPlaceholder = t(`${verificationFormI18nPrefix}.codeInputPlaceholder`);
 
   return (
-    <React.Fragment>
+    <form noValidate={true} onSubmit={onSubmit}>
       <AlertBox
         className={marginBottomClass}
         hide={!props.error}
@@ -268,6 +259,7 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
       <div>
         <button
           type="button"
+          disabled={!props.resendEnabled}
           className="btn btn-link p-0 text-decoration-none text-start text-uppercase"
           onClick={(event) => {
             event.preventDefault();
@@ -275,7 +267,7 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
           }}
         >{resendBtnLabel}</button>
       </div>
-    </React.Fragment>
+    </form>
   )
 }
 
@@ -354,9 +346,9 @@ const Login: React.FC<LoginProps> = (props) => {
         email: creds.email,
         password: creds.password,
         instanceId: instanceId,
+        verificationCode: creds.verificationCode,
       });
       const response = resp.data as LoginResponse;
-      console.log(response);
       if (response.secondFactorNeeded) {
         setVerificationStep(true);
       } else {
@@ -376,6 +368,31 @@ const Login: React.FC<LoginProps> = (props) => {
         console.error(e.response);
         if (e.response.data && e.response.data.error) {
           handleError(e.response.data.error);
+        } else {
+          handleError('no response data');
+        }
+      } else {
+        handleError('no response data');
+      }
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const resendCode = async () => {
+    setLoading(true);
+    try {
+      await resend2FAVerificationCodeRequest({
+        email: emailAddress,
+        password: password,
+        instanceId: instanceId,
+      });
+      console.log("success sending new code");
+    } catch (err) {
+      if (err.response) {
+        console.error(err.response);
+        if (err.response.data && err.response.data.error) {
+          handleError(err.response.data.error);
         } else {
           handleError('no response data');
         }
@@ -427,19 +444,22 @@ const Login: React.FC<LoginProps> = (props) => {
         {verificationStep ?
           <VerificationCodeForm
             isLoading={loading}
-            onSubmit={(code) => console.log('todo')}
+            onSubmit={(code) => {
+              login({
+                email: emailAddress,
+                password: password,
+                rememberMe: persistState,
+                verificationCode: code
+              })
+            }}
             onResendVerificationCode={() => {
               if (!resendEnabled) {
                 console.log('resend not enabled, please wait');
                 return;
               }
-              /*callResendCode({
-                instanceId: instanceId,
-                email: emailAddress,
-                password: password
-              });*/
+              resendCode();
             }}
-            resendEnabled={resendEnabled}
+            resendEnabled={!loading && resendEnabled}
             error={errorMessage}
             clearError={() => setErrorMessage('')}
           /> :
