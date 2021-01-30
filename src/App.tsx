@@ -69,6 +69,9 @@ function App() {
         onOpenExternalPage={handleOpenExternalPage}
       />
       <Navbar
+        loading={navbarConfig === undefined}
+        content={navbarConfig}
+        onChangeLanguage={handleLanguageChange}
         onOpenExternalPage={handleOpenExternalPage}
       />
       <Pages
