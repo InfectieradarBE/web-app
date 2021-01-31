@@ -2,8 +2,7 @@ import React from 'react';
 
 import { PageConfig, PagesConfig } from '../../types/config/pages';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import RouteToLayout from './layouts/RouteToLayout';
-import { commonRoutes } from './routes/DefaultRoutes';
+import RouteToLayout from './components/RouteToLayout';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 
 
@@ -34,7 +33,6 @@ const Pages: React.FC<PagesProps> = (props) => {
   return (
     <div>
       <Switch >
-        {commonRoutes}
         {props.config.pages.map(pageConfig => {
           return <RouteToLayout
             key={pageConfig.path}

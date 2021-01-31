@@ -284,7 +284,7 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
       <ConsentDialog
         open={openPrivacyConsent}
         title={t("privacyConsent.title")}
-        content={privacyConsentText}
+        content={privacyConsentText.content}
         cancelBtn={t("privacyConsent.cancelBtn")}
         acceptBtn={t("privacyConsent.acceptBtn")}
         onCancelled={() => {
@@ -299,7 +299,7 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
       <ConsentDialog
         open={openRecaptchaConsent}
         title={t("recaptchaConsent.title")}
-        content={recaptchaConsentText}
+        content={recaptchaConsentText.content}
         cancelBtn={t("recaptchaConsent.cancelBtn")}
         acceptBtn={t("recaptchaConsent.acceptBtn")}
         onCancelled={() => {

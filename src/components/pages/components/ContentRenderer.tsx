@@ -1,10 +1,9 @@
 import clsx from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom';
 import { openDialogWithoutPayload, openLoginDialog } from '../../../store/dialogSlice';
-// import { RootState } from '../../../store/rootReducer'
 
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
@@ -23,7 +22,7 @@ import CommunicationSettings from '../../settings/CommunicationSettings';
 import DeleteAccount from '../../settings/DeleteAccount';
 import OptionalSurveys from '../../study/OptionalSurveys';
 import RequiredSurveys from '../../study/RequiredSurveys';
-import MarkdownLoader from './MarkdownLoader';
+import MarkdownLoader from '../../displays/MarkdownLoader';
 
 
 interface ContentRendererProps {

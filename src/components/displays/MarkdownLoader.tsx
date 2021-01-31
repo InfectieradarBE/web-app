@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTranslatedMarkdown } from '../../../hooks/useTranslatedMarkdown';
-import MarkdownRenderer from '../../displays/MarkdownRenderer';
+import { useTranslatedMarkdown } from '../../hooks/useTranslatedMarkdown';
+import MarkdownRenderer from './MarkdownRenderer';
 
 interface MarkdownLoaderProps {
   className?: string;
@@ -9,8 +9,17 @@ interface MarkdownLoaderProps {
 }
 
 const MarkdownLoader: React.FC<MarkdownLoaderProps> = (props) => {
-  const content = useTranslatedMarkdown(props.markdownUrl);
+  const { content, loading } = useTranslatedMarkdown(props.markdownUrl);
 
+  if (loading) {
+    return <div className="container">
+      <div className="d-flex align-items-center my-3 bg-secondary justify-content-center h-100" style={{ minHeight: 300 }}>
+        <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+  }
   if (!content) {
     return null;
   }
