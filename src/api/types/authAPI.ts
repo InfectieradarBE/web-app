@@ -36,3 +36,7 @@ export interface AutoTokenValidationResponse {
   verificationCode: string;
   isSameUser: boolean;
 }
+
+export interface PasswordResetInfos {
+  accountId: string;
+}

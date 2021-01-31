@@ -1,9 +1,9 @@
 import authApiInstance from './instances/authenticatedApi';
-/*
-import { PasswordResetInfos } from '../types/user-management-api';
-import { ServiceStatus } from '../types/general';
-import { User, Profile, ContactPreferences, ContactInfo } from '../types/user';
-import apiInstance from './instances/api-instance';
+
+import { PasswordResetInfos } from './types/authAPI';
+import { ServiceStatus } from './types/general';
+import { User, Profile, ContactPreferences, ContactInfo } from './types/user';
+import apiInstance from './instances/authenticatedApi';
 
 // Password Reset API
 export const initiatePasswordResetReq = (instanceId: string, accountId: string) => apiInstance.post<ServiceStatus>('/v1/user/password-reset/initiate', { instanceId, accountId });
@@ -27,4 +27,4 @@ export const addEmailReq = (contactInfo: ContactInfo) => authApiInstance.post<Us
 export const removeEmailReq = (contactInfoID: string) => authApiInstance.post<User>('/v1/user/contact/remove-email', { contactInfo: { id: contactInfoID } });
 export const revokeAllRefreshTokensReq = () => authApiInstance.post<ServiceStatus>('/v1/user/revoke-refresh-tokens', {});
 export const deleteAccountReq = (userId: string) => authApiInstance.post<ServiceStatus>('/v1/user/delete', { userId });
-*/
+

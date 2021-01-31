@@ -15,6 +15,7 @@ import { setPersistState } from '../../../store/appSlice';
 import { LoginResponse } from '../../../api/types/authAPI';
 import { useSetAuthState } from '../../../hooks/useSetAuthState';
 import { useHistory } from 'react-router-dom';
+import { getErrorMsg } from '../../../api/utils';
 
 const marginBottomClass = "mb-2";
 const loginFormI18nPrefix = 'login.credentials';
@@ -363,17 +364,9 @@ const Login: React.FC<LoginProps> = (props) => {
         }
       }
     } catch (e) {
-      console.log(e);
-      if (e.response) {
-        console.error(e.response);
-        if (e.response.data && e.response.data.error) {
-          handleError(e.response.data.error);
-        } else {
-          handleError('no response data');
-        }
-      } else {
-        handleError('no response data');
-      }
+      const errMsg = getErrorMsg(e);
+      console.error(errMsg);
+      handleError(errMsg);
     } finally {
       setLoading(false);
     }
@@ -389,16 +382,9 @@ const Login: React.FC<LoginProps> = (props) => {
       });
       console.log("success sending new code");
     } catch (err) {
-      if (err.response) {
-        console.error(err.response);
-        if (err.response.data && err.response.data.error) {
-          handleError(err.response.data.error);
-        } else {
-          handleError('no response data');
-        }
-      } else {
-        handleError('no response data');
-      }
+      const errMsg = getErrorMsg(err);
+      console.error(errMsg);
+      handleError(errMsg);
     } finally {
       setLoading(false);
     }

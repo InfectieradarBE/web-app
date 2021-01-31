@@ -24,6 +24,7 @@ const Dialog: React.FC<DialogProps> = (props) => {
       aria-labelledby={props.ariaLabelledBy}
       open={props.open}
       fullScreen={fullScreen}
+      scroll='paper'
       PaperProps={{
         style: {
           borderRadius: 0,

@@ -60,5 +60,15 @@
     "title": "ReCaptcha Cookie Consent",
     "acceptBtn": "I read and accept the above statement.",
     "cancelBtn": "Cancel"
+  },
+  "signupSuccess": {
+    "title": "Welkom!",
+    "successMsg": "Je bent bijna aangemeld voor Infectieradar! \n\n Bevestig eerst nog je e-mailadres door op de link in de bevestigingsmail te klikken die we je hebben toegezonden \n Kan je de e-mail niet vinden controleer eerst je spam-folder. Je kan hieronder ook een nieuwe e-mail aanvragen.",
+    "emailSentMsg": "E-mail is verstuurd.",
+    "resendVerificationEmailBtn": "Verstuur nogmaals een bevestigingsmail",
+    "wrongEmailBtn": "Heb je een verkeerd e-mailadres gebruikt? Verander deze dan hier.",
+    "errors": {
+      "unknown": "Er gaat iets verkeerd."
+    }
   }
 }
