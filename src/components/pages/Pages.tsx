@@ -4,6 +4,8 @@ import { PageConfig, PagesConfig } from '../../types/config/pages';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import RouteToLayout from './components/RouteToLayout';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
+import LinkResolver, { linkResolverRootUrl } from './components/LinkResolver/LinkResolver';
+import { DefaultRoutes } from '../../types/config/routing';
 
 
 interface PagesProps {
@@ -25,9 +27,10 @@ const Pages: React.FC<PagesProps> = (props) => {
     </div>
   }
 
-  const defaultRoutes = props.config.defaultRoutes ? props.config.defaultRoutes : {
+  const defaultRoutes: DefaultRoutes = props.config.defaultRoutes ? props.config.defaultRoutes : {
     auth: '/home',
-    unauth: '/home'
+    unauth: '/home',
+    studyPage: '/home',
   }
 
   return (
@@ -40,6 +43,7 @@ const Pages: React.FC<PagesProps> = (props) => {
             pageConfig={pageConfig}
           />
         })}
+        <Route path={linkResolverRootUrl} render={() => <LinkResolver defaultRoutes={defaultRoutes} />} />,
         <Redirect to={isAuth ? defaultRoutes.auth : defaultRoutes.unauth} />
       </Switch>
     </div>

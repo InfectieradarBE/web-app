@@ -1,9 +1,8 @@
+import { DefaultRoutes } from "./routing";
+
 export interface PagesConfig {
   pages: Array<PageConfig>;
-  defaultRoutes?: {
-    auth: string;
-    unauth: string;
-  }
+  defaultRoutes?: DefaultRoutes;
 }
 
 export interface PageConfig {
