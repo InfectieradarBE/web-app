@@ -16,10 +16,18 @@ import TextField from '../../inputs/TextField';
 import { checkPasswordRules } from '../../../utils/passwordRules';
 
 import ReCAPTCHA from 'react-google-recaptcha';
+import { useLogout } from '../../../hooks/useLogout';
+import { signupWithEmailRequest } from '../../../api/authAPI';
+import { minuteToMillisecondFactor } from '../../../constants';
+import { useSetAuthState } from '../../../hooks/useSetAuthState';
+import { setAppAuth } from '../../../store/appSlice';
+import { setDefaultAccessTokenHeader } from '../../../api/instances/authenticatedApi';
+import { userActions } from '../../../store/userSlice';
+import { getErrorMsg } from '../../../api/utils';
 
 const marginBottomClass = "mb-2";
 
-interface SignupData {
+interface SignupFormData {
   email: string;
   password: string;
   confirmPassword: string;
@@ -28,8 +36,8 @@ interface SignupData {
 
 interface SignupFormProps {
   isLoading?: boolean;
-  initialSignupData?: SignupData;
-  onSubmit: (data: SignupData) => void;
+  initialSignupData?: SignupFormData;
+  onSubmit: (data: SignupFormData) => void;
   onOpenDialog: (dialog: 'login') => void;
   error?: string;
   clearError: () => void;
@@ -308,8 +316,9 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 }
 
 const Signup: React.FC = () => {
-  const { t } = useTranslation(['dialogs']);
+  const { t, i18n } = useTranslation(['dialogs']);
 
+  const instanceId = useSelector((state: RootState) => state.app.instanceId);
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'signup';
 
@@ -317,6 +326,8 @@ const Signup: React.FC = () => {
   const [error, setError] = useState('');
 
   const dispatch = useDispatch();
+  const setAuthState = useSetAuthState();
+  const logout = useLogout();
 
 
   const handleClose = () => {
@@ -325,8 +336,92 @@ const Signup: React.FC = () => {
     dispatch(closeDialog())
   }
 
-  const handleSignup = () => {
-    setError('todo')
+  const closeWithSuccess = () => {
+    setError('')
+    setLoading(false)
+    dispatch(openDialogWithoutPayload('signupSuccess'));
+  }
+
+
+  const handleSignup = async (data: SignupFormData) => {
+    if (loading) return;
+    logout();
+    try {
+      setLoading(true);
+
+      const response = await signupWithEmailRequest({
+        email: data.email,
+        password: data.password,
+        instanceId: instanceId,
+        preferredLanguage: i18n.language,
+        wantsNewsletter: true,
+        use2fa: true
+      }, data.captchaToken);
+
+      // TODO: update user correctly
+      setAuthState(response.data, {
+        id: '',
+        account: {
+          type: 'email',
+          accountId: data.email,
+          accountConfirmedAt: 0,
+          preferredLanguage: "en",
+        },
+        roles: [],
+        contactPreferences: { subscribedToNewsletter: false, sendNewsletterTo: [], subscribedToWeekly: true, receiveWeeklyMessageDayOfWeek: 0 },
+        contactInfos: [],
+        profiles: [],
+        timestamps: {
+          createdAt: 0,
+          updatedAt: 0,
+          lastLogin: 0,
+          lastTokenRefresh: 0,
+        },
+      })
+      let tokenRefreshedAt = new Date().getTime();
+
+      dispatch(setAppAuth({
+        accessToken: response.data.accessToken,
+        refreshToken: response.data.refreshToken,
+        expiresAt: tokenRefreshedAt + response.data.expiresIn * minuteToMillisecondFactor,
+      }));
+
+      setDefaultAccessTokenHeader(response.data.accessToken);
+
+      dispatch(userActions.setFromTokenResponse(response.data));
+      setLoading(false);
+      closeWithSuccess();
+    } catch (e) {
+      console.log(e.response);
+      if (!e.response) {
+        handleError('request failed');
+      } else if (e.response.status === 404) {
+        handleError('not found');
+      } else {
+        const errMsg = getErrorMsg(e);
+        handleError(errMsg);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleError = (error?: string) => {
+    switch (error) {
+      case 'email not valid':
+        setError(t("dialogs:signup.errors.invalidEmail"));
+        break;
+      case 'user creation failed':
+        setError(t("dialogs:signup.errors.userCreationFailed"));
+        break;
+      case 'not found':
+        setError(t("dialogs:signup.errors.noRegistrationAllowed"));
+        break;
+      default:
+        setError(t("dialogs:signup.errors.unknown"));
+        break;
+    }
+
   }
 
   return (
@@ -343,7 +438,7 @@ const Signup: React.FC = () => {
       )}>
         <SignupForm
           isLoading={loading}
-          onSubmit={(data) => handleSignup()}
+          onSubmit={(data) => handleSignup(data)}
           onOpenDialog={(dialog) => dispatch(openDialogWithoutPayload(dialog))}
           error={error}
           clearError={() => setError('')}

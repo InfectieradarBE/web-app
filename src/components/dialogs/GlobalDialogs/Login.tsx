@@ -16,6 +16,7 @@ import { LoginResponse } from '../../../api/types/authAPI';
 import { useSetAuthState } from '../../../hooks/useSetAuthState';
 import { useHistory } from 'react-router-dom';
 import { getErrorMsg } from '../../../api/utils';
+import { useLogout } from '../../../hooks/useLogout';
 
 const marginBottomClass = "mb-2";
 const loginFormI18nPrefix = 'login.credentials';
@@ -286,6 +287,7 @@ const Login: React.FC<LoginProps> = (props) => {
   const initialLoginData = open ? (dialogState.config as LoginDialog).payload : undefined;
 
   const setAuthState = useSetAuthState();
+  const logout = useLogout();
   const history = useHistory();
 
   const [verificationStep, setVerificationStep] = useState(false);
@@ -341,6 +343,7 @@ const Login: React.FC<LoginProps> = (props) => {
     if (loading) return;
     setAuthFields(creds.email, creds.password, creds.rememberMe);
     setLoading(true);
+    logout();
 
     try {
       const resp = await loginWithEmailRequest({
