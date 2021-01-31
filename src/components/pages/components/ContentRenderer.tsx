@@ -149,6 +149,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'accountSettings':
         return <AccountSettings
           key={item.itemKey}
+          itemKey={item.itemKey}
         />
       case 'communicationSettings':
         return <CommunicationSettings

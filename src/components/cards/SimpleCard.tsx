@@ -13,7 +13,7 @@ const SimpleCard: React.FC<SimpleCardProps> = (props) => {
   return (
     <div className={props.className}>
       {props.title ?
-        <Variant className="py-1 px-2 bg-primary text-white m-0">{props.title}</Variant> : null}
+        <Variant className="py-1a px-2 bg-primary text-white m-0">{props.title}</Variant> : null}
       <MarkdownRenderer
         className="p-2 bg-secondary"
         markdown={props.content}
