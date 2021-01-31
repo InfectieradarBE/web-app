@@ -158,6 +158,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'deleteAccount':
         return <DeleteAccount
           key={item.itemKey}
+          itemKey={item.itemKey}
         />
       case 'logoCredits':
         return <LogoCredits
