@@ -70,5 +70,17 @@
     "errors": {
       "unknown": "Er gaat iets verkeerd."
     }
+  },
+  "passwordForgotten": {
+    "title": "Wachtwoord wijzigen",
+    "info": "Geef het e-mailadres van uw account.",
+    "successMessage": "Volg de link in de e-mail die we u op het onderstaande adres hebben gestuurd.\n Heeft u geen e-mail ontvangen, kijk in uw spam-folder of probeer opnieuw als dit weer kan.",
+    "emailInputLabel": "E-mailadres",
+    "emailInputPlaceholder": "E-mailadres",
+    "submitBtn": "Wijzig wachtwoord",
+    "errors": {
+      "invalidId": "Er gaat iets verkeerd. Controleer je e-mailadres of connectie.\nJe kan het nogmaals proberen wanneer de knop weer zichtbaar is.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    }
   }
 }

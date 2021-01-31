@@ -1,5 +1,6 @@
 import React from 'react';
 import Login from './GlobalDialogs/Login';
+import PasswordForgotten from './GlobalDialogs/PasswordForgotten';
 import Signup from './GlobalDialogs/Signup';
 import SignupSuccess from './GlobalDialogs/SignupSuccess';
 
@@ -12,9 +13,8 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
       <Login />
       <Signup />
       <SignupSuccess />
+      <PasswordForgotten />
       {/*
-
-      <PasswordForgottenDialog />
       <ResetPasswordDialog />
       <EmailVerificationSuccess />
       <SuccessDialog />
