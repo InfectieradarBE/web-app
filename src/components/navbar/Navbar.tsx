@@ -23,6 +23,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
   const dispatch = useDispatch();
   const [backdrop, setBackdrop] = React.useState(false);
   const isLoggedIn = useIsAuthenticated();
+  const logout = useLogout();
   const loggedInUser = useSelector((state: RootState) => state.user.currentUser.account);
 
   const handleNavigation = (url: string, backdrop: boolean) => {
@@ -81,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   {t(`${'userDropdown'}.settings`)}
                   <i className={clsx('fas fa-cog', 'ms-1')}></i>
                 </button>
-                <button className="dropdown-item text-center" onClick={() => useLogout} >
+                <button className="dropdown-item text-center" onClick={logout} >
                   {t(`${'userDropdown'}.logout`)}
                   <i className={clsx('fas fa-sign-out-alt', 'ms-1')}></i>
                 </button>
