@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Switch, Route, useLocation, useHistory } from 'react-router-dom';
+import { Switch, Route, useLocation, useHistory, Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { DefaultRoutes } from '../../../../types/config/routing';
 import { useUrlQuery } from '../../../../hooks/useUrlQuery';
@@ -11,6 +11,10 @@ import TitleBar from '../../../displays/TitleBar';
 import { useTranslation } from 'react-i18next';
 import AlertBox from '../../../displays/AlertBox';
 import { useIsAuthenticated } from '../../../../hooks/useIsAuthenticated';
+import ContactVerification from './Resolvers/ContactVerification';
+import Invitation from './Resolvers/Invitation';
+import StudyLogin from './Resolvers/StudyLogin';
+import PasswordReset from './Resolvers/PasswordReset';
 
 
 export const linkResolverRootUrl = '/link';
@@ -28,7 +32,8 @@ interface LinkResolverProps {
 
 
 const LinkResolver: React.FC<LinkResolverProps> = (props) => {
-  const query = useUrlQuery();
+  const isLoggedIn = useIsAuthenticated();
+  /*const query = useUrlQuery();
   const location = useLocation();
   const history = useHistory();
   const hasToken = useAuthTokenCheck();
@@ -38,12 +43,13 @@ const LinkResolver: React.FC<LinkResolverProps> = (props) => {
   const logedInUser = useSelector((state: RootState) => state.user.currentUser.account.accountId);
   const logout = useLogout();
   const { t } = useTranslation(["linkresolvers"]);
+  const [loading, setLoading] = useState(true);
 
   const [translationKey, setTranslationKey] = useState('');
   const [errorKey, setErrorKey] = useState('');
   const [success, setSuccess] = useState(false);
 
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const type = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
@@ -138,18 +144,16 @@ const LinkResolver: React.FC<LinkResolverProps> = (props) => {
       </div>
     </div>
   </div>
-
+  */
   return (
-    <React.Fragment>
-      <TitleBar
-        content={t('title')}
-      />
-      <div className="container">
-        <div className="d-flex align-items-center my-3 justify-content-center h-100" style={{ minHeight: '60vh' }}>
-          {loading ? loadingContent : resolvedContent}
-        </div>
-      </div>
-    </React.Fragment>
+    <Switch>
+      <Route path={LinkResolverPaths.ContactVerification} render={() => <ContactVerification defaultRoutes={props.defaultRoutes} />} />
+      <Route path={LinkResolverPaths.PasswordReset} render={() => <PasswordReset defaultRoutes={props.defaultRoutes} />} />
+      <Route path={LinkResolverPaths.StudyLogin} render={() => <StudyLogin defaultRoutes={props.defaultRoutes} />} />
+      <Route path={LinkResolverPaths.Invitation} render={() => <Invitation defaultRoutes={props.defaultRoutes} />} />
+      {/* todo: unsubscribe */}
+      <Redirect to={isLoggedIn ? props.defaultRoutes.auth : props.defaultRoutes.unauth} />
+    </Switch>
   );
 };
 

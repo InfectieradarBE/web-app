@@ -10,6 +10,7 @@ export interface LoginDialog {
     email: string
     password: string
     rememberMe: boolean
+    verificationCode?: string
   }
 }
 

@@ -5,10 +5,10 @@ import { resetApiAuth } from '../api/instances/authenticatedApi';
 export const useLogout = () => {
   const history = useHistory();
 
-  return () => {
+  return (withoutRedirect?: boolean) => {
     resetApiAuth();
     removePersistedState();
-    if (history) {
+    if (history && !withoutRedirect) {
       history.push('/');
     }
   }

@@ -297,6 +297,7 @@ const Login: React.FC<LoginProps> = (props) => {
 
   const [emailAddress, setEmailAddress] = useState<string>(initialLoginData ? initialLoginData.email : "");
   const [password, setPassword] = useState<string>(initialLoginData ? initialLoginData.password : "");
+  const [verificationCode, setVerificationCode] = useState<string>(initialLoginData && initialLoginData.verificationCode ? initialLoginData.verificationCode : "");
 
   const dispatch = useDispatch();
 
@@ -307,6 +308,7 @@ const Login: React.FC<LoginProps> = (props) => {
     if (open && initialLoginData) {
       setEmailAddress(initialLoginData.email);
       setPassword(initialLoginData.password);
+      setVerificationCode(initialLoginData.verificationCode ? initialLoginData.verificationCode : '');
       dispatch(setPersistState(initialLoginData.rememberMe));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -335,6 +337,7 @@ const Login: React.FC<LoginProps> = (props) => {
     setEmailAddress("");
     setPassword("");
     setErrorMessage('');
+    setVerificationCode('');
     setVerificationStep(false);
     dispatch(closeDialog())
   }
@@ -464,6 +467,7 @@ const Login: React.FC<LoginProps> = (props) => {
                 email: email,
                 password: password,
                 rememberMe: rememberMe,
+                verificationCode: verificationCode,
               })
             }}
             onOpenDialog={(dialog) => {

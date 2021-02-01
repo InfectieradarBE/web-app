@@ -19,6 +19,13 @@ import './index.scss';
 import './i18n';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { setDefaultAccessTokenHeader } from './api/instances/authenticatedApi';
+
+const token = store.getState().app.auth?.accessToken;
+if (token) {
+  setDefaultAccessTokenHeader(token);
+}
+
 
 ReactDOM.render(
   <React.StrictMode>
