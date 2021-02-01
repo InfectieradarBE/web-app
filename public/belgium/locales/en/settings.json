@@ -48,7 +48,8 @@
   },
   "systemInfo": {
     "title": "Systeem informatie",
-    "appnameLabel": "Applicatie naam",
+    "appNameLabel": "Applicatie naam",
+    "appName": "Infectieradar",
     "versionLabel": "Versie",
     "browserNameLabel": "Browsername",
     "browserVersionLabel": "Browser versie"
