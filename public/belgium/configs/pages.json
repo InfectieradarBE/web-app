@@ -365,6 +365,33 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/results",
+      "pageKey": "results",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "results",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "results/results-0.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
