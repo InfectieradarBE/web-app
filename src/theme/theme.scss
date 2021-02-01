@@ -211,7 +211,15 @@ from{opacity: 0.75;}
 to {opacity: 0;}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+  .nav-item{
+    width:100%;
+  }
+  .customDropDown{
+    width:100%;
+    text-align: left !important;
+
+  }
   .navbar-toggler {
     border: 0 !important;
     outline: 0 !important;
@@ -224,7 +232,7 @@ to {opacity: 0;}
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 10px;
-      width: 200px !important;
+      width: 250px !important;
       height: 100%;
   }
 
@@ -243,7 +251,6 @@ to {opacity: 0;}
       transition: left 500ms ease-in-out;
   }
 }
-
 $navbar-text-font-size: 1.125rem ;
 $navbar-text-padding-top: 10px;
 $nav-link-color: white;
@@ -252,6 +259,9 @@ $nav-link-hover-color: white ;
 $nav-tabs-border-width: 0px;
 $navbar-toggler-border-radius:0px;
 $nav-tabs-link-active-bg:$secondary;
+
+$dropdown-border-width:0;
+$dropdown-border-color:$primary;
 
 .nav-link:hover{
   background-color: darken($primary,10%);

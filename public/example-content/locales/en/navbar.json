@@ -1,15 +1,19 @@
 {
-  "home":{
-    "title":"Home"
+  "home": "Home",
+  "my": "My Influenzanet",
+  "results": "Current Results",
+  "about": "About CASE",
+  "faq": "FAQ",
+  "drop": {
+    "title": "Dropdown",
+    "item1": "Item 1 content",
+    "item2": "Item 2 content"
   },
-  "results":{
-    "title":"Current Results"
-  },
-  "about":{
-    "title":"About CASE"
-  },
-  "faq":{
-    "title":"FAQ"
+  "login": "Login",
+  "signup": "Signup",
+  "userDropdown": {
+    "settings": "Settings",
+    "logout": "Logout",
+    "verified": "Account not verified"
   }
-
 }
