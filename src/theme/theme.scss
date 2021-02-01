@@ -181,93 +181,92 @@ select.custom-select:focus {
 // ---------------------------------------------
 // Nav:
 // ---------------------------------------------
+
 .BackdropIn{
-  position:fixed;
-  padding:0;
-  margin:0;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgb(0,0,0);
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
   z-index: 1;
   opacity: 0.75;
   animation: Backdropin 0.5s;
 }
-@keyframes Backdropin
-{
-from{opacity: 0;}
-to {opacity: 0.75;}
+
+@keyframes Backdropin{
+  from{opacity: 0;}
+  to {opacity: 0.75;}
 }
+
 .BackdropOut{
-
-  opacity:0;
+  opacity: 0;
   animation: Backdropout 0.5s;
-
 }
-@keyframes Backdropout
-{
-from{opacity: 0.75;}
-to {opacity: 0;}
+
+@keyframes Backdropout{
+  from{opacity: 0.75;}
+  to {opacity: 0;}
 }
 
 @media (max-width: 992px) {
   .nav-item{
-    width:100%;
+    width: 100%;
   }
-  .customDropDown{
-    width:100%;
-    text-align: left !important;
 
+  .customDropDown{
+    width: 100%;
+    text-align: left !important;
   }
+
   .navbar-toggler {
     border: 0 !important;
     outline: 0 !important;
   }
+
   .navbar-collapse {
-      z-index:1;
-      position: fixed;
-      top: 0px;
-      left: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      width: 250px !important;
-      height: 100%;
+    z-index:1;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 250px !important;
+    height: 100%;
   }
 
   .navbar-collapse.collapsing {
-      left: -75%;
-      transition: height 0s ease;
+    left: -75%;
+    transition: height 0s ease;
   }
 
   .navbar-collapse.show {
-      left: 0;
-      transition: left 500ms ease-in-out;
+    left: 0;
+    transition: left 500ms ease-in-out;
   }
 
   .navbar-toggler.collapsed ~ .navbar-collapse {
-      height:100%;
-      transition: left 500ms ease-in-out;
+    height: 100%;
+    transition: left 500ms ease-in-out;
   }
 }
-$navbar-text-font-size: 1.125rem ;
-$navbar-text-padding-top: 10px;
-$nav-link-color: white;
-$nav-link-font-size:1.125rem ;
-$nav-link-hover-color: white ;
-$nav-tabs-border-width: 0px;
-$navbar-toggler-border-radius:0px;
-$nav-tabs-link-active-bg:$secondary;
-
-$dropdown-border-width:0;
-$dropdown-border-color:$primary;
 
 .nav-link:hover{
   background-color: darken($primary,10%);
   text-decoration: underline;
 }
 
+$navbar-text-font-size: 1.125rem !default;
+$navbar-text-padding-top: 10px !default;
+$nav-link-color: white !default;
+$nav-link-font-size: 1.125rem !default;
+$nav-link-hover-color: white !default;
+$nav-tabs-border-width: 0px !default;
+$navbar-toggler-border-radius: 0px !default;
+$nav-tabs-link-active-bg: $secondary !default;
 
 // ---------------------------------------------
 // Other:
