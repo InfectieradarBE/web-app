@@ -1,0 +1,11 @@
+{
+  "title": "Actuele resultaten Infectieradar",
+  "defaultRoute": "kaarten",
+  "pages": [
+    {
+      "linkName": "Actuele resultaten",
+      "route": "kaarten",
+      "markdown": "results/results-0.md"
+    }
+  ]
+}
