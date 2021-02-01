@@ -82,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   {t(`${'userDropdown'}.settings`)}
                   <i className={clsx('fas fa-cog', 'ms-1')}></i>
                 </button>
-                <button className="dropdown-item text-center" onClick={logout} >
+                <button className="dropdown-item text-center" onClick={() => logout()} >
                   {t(`${'userDropdown'}.logout`)}
                   <i className={clsx('fas fa-sign-out-alt', 'ms-1')}></i>
                 </button>
