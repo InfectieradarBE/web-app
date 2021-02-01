@@ -13,7 +13,7 @@ import SimpleCard from '../../cards/SimpleCard';
 import AccordionList from '../../displays/AccordionList';
 import ImageContainer from '../../displays/ImageContainer';
 import LogoCredits from '../../displays/LogoCredits';
-import SystemInfo from '../../displays/SystemInfo';
+import SystemInfo from '../../settings/SystemInfo';
 import TeaserImage from '../../displays/TeaserImage';
 import TitleBar from '../../displays/TitleBar';
 import VideoPlayer from '../../displays/VideoPlayer';
@@ -145,6 +145,8 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'systemInfo':
         return <SystemInfo
           key={item.itemKey}
+          itemKey={item.itemKey}
+          showBrowserInfo={item.config.showBrowserInfo}
         />
       case 'accountSettings':
         return <AccountSettings
