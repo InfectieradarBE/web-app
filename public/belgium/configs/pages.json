@@ -292,7 +292,7 @@
         {
           "key": "content",
           "fullWidth": false,
-          "className": "my-3",
+          "className": "my-3 min-vh-60",
           "columns": [
             {
               "key": "pCol",
@@ -319,7 +319,7 @@
         {
           "key": "content",
           "fullWidth": false,
-          "className": "my-3",
+          "className": "my-3 min-vh-60",
           "columns": [
             {
               "key": "pCol",
@@ -346,7 +346,7 @@
         {
           "key": "content",
           "fullWidth": false,
-          "className": "my-3",
+          "className": "my-3 min-vh-60",
           "columns": [
             {
               "key": "pCol",
@@ -373,7 +373,7 @@
         {
           "key": "content",
           "fullWidth": false,
-          "className": "my-3",
+          "className": "my-3 min-vh-60",
           "columns": [
             {
               "key": "pCol",

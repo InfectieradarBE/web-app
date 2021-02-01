@@ -288,3 +288,36 @@ $enable-rounded: false !default;
     color: #000;
   }
 }
+
+.min-vh-25 {
+  min-height: 25vh;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.min-vh-60 {
+  min-height: 50vh;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.min-vw-25 {
+  min-height: 25vw;
+}
+
+.min-vw-50 {
+  min-height: 50vw;
+}
+
+.min-vw-60 {
+  min-height: 50vw;
+}
+
+.min-vw-75 {
+  min-height: 75vw;
+}
+
