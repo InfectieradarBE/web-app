@@ -1,8 +1,8 @@
 {
   "title": "Vraag en antwoord",
   "accordionControls": {
-    "open": "Expand",
-    "close": "Collapse"
+    "open": "Lees verder",
+    "close": "Verbergen"
   },
   "topCardTitle": "Wie heeft Infectieradar.be opgezet?",
   "topCardContent": "Infectieradar.be is onderdeel van Influenzanet, een Europees samenwerkingsverband tussen verschillende universiteiten en overheden. De Universiteit van Hasselt is ook onderdeel van dit samenwerkingsverband. Het doel van Influenzanet is om de symptomen van infecties, zoals het nieuwe coronavirus (COVID-19) en griep, bij mensen in Europa in kaart te brengen en te volgen. Deze gegevens worden gebruikt voor wetenschappelijk onderzoek naar infecties en op dit moment naar het nieuwe coronavirus.",
