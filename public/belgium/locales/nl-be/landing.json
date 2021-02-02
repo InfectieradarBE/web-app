@@ -5,14 +5,14 @@
     "content": "Een onderzoek in de strijd tegen epidemieën"
   },
   "loginCard": {
-    "title": "Aanmelden",
+    "title": "Inloggen",
     "info": "",
     "emailInputLabel": "E-mail",
     "emailInputPlaceholder": "E-mail",
     "passwordInputLabel": "Wachtwoord",
     "passwordInputPlaceholder": "Wachtwoord",
     "rememberMeLabel": "Gegevens onthouden",
-    "btn": "Aanmelden",
+    "btn": "Inloggen",
     "passwordForgottenBtn": "Wachtwoord vergeten?",
     "signupBtn": "Heb je nog geen account? Meld je hier aan."
   },
