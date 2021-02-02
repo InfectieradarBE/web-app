@@ -1,0 +1,41 @@
+{
+  "verifyEmail": {
+    "title": "E-mailadres verificatie",
+    "content": {
+      "info": "",
+      "success": "Het is gelukt! Je e-mailadres is bevestigd. \n\n Log nu in.",
+      "btn": {
+        "successWithAuth": "Ok",
+        "successWithoutAuth": "Ga naar login",
+        "errorWithAuth": "Home",
+        "errorWithoutAuth": "Ga naar login"
+      }
+    },
+    "errors": {
+      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    }
+  },
+  "passwordReset": {
+    "title": "Wachtwoord wijzigen",
+    "content": {
+      "info": "",
+      "emailLabel": "Email",
+      "emailPlaceholder": "",
+      "newPasswordLabel": "Wachtwoord",
+      "newPasswordPlaceholder": "Nieuw wachtwoord",
+      "confirmPasswordLabel": "Bevestig wachtwoord",
+      "confirmPasswordPlaceholder": "Bevestig nieuw wachtwoord",
+      "btn": "Wijzig wachtwoord",
+      "restartBtn": "Opnieuw",
+      "successMsg": "Wachtwoord gewijzigd",
+      "successBtn": "Inloggen"
+    },
+    "errors": {
+      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
+      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
+      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    }
+  }
+}
