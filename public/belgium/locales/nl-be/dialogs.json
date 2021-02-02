@@ -2,14 +2,14 @@
   "loadingMsg": "Loading",
   "login": {
     "credentials": {
-      "title": "Login",
+      "title": "Aanmelden",
       "info": "",
       "emailInputLabel": "E-mail",
       "emailInputPlaceholder": "E-mail",
       "passwordInputLabel": "Wachtwoord",
       "passwordInputPlaceholder": "Wachtwoord",
       "rememberMeLabel": "Gegevens onthouden",
-      "btn": "Login",
+      "btn": "Aanmelden",
       "passwordForgottenBtn": "Wachtwoord vergeten?",
       "signupBtn": "Heb je nog geen account? Meld je hier aan."
     },
@@ -17,7 +17,7 @@
       "title": "6-cijferige verificatiecode",
       "info": "Voer hier de 6-cijferige code in die we je hebben toegestuurd. \nNiets ontvangen? Kijk eerst in je spam-folder. Via de knop hieronder kan je een nieuwe code aanvragen.",
       "codeInputLabel": "6-cijferige verificatiecode",
-      "codeInputPlaceholder": "Enter Your Code",
+      "codeInputPlaceholder": "Verificatiecode ingeven",
       "submitBtn": "Verstuur",
       "resendBtn": "Aanvragen nieuwe code"
     },
@@ -42,7 +42,7 @@
     "reCaptchaCookieCheckbox": "Naar de <1>cookie verklaring</1>.*",
     "signupBtn": "Aanmelden",
     "loginLink": "Heb je al een account? Log hier in.",
-    "reCaptchaLinks": "This site is protected by reCAPTCHA and the Google <1>Privacy Policy</1> and <3>Terms of Service</3> apply.",
+    "reCaptchaLinks": "Deze site gebruikt reCAPTCHA and the Google privacy verklaring <1>Privacy Policy</1> en voorwaarden gelden <3>Terms of Service</3>.",
     "errors": {
       "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
       "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
@@ -58,7 +58,7 @@
   },
   "recaptchaConsent": {
     "title": "Cookie verklaring",
-    "cancelBtn": "Cancel",
+    "cancelBtn": "Annuleer",
     "acceptBtn": "Akkoord"
   },
   "signupSuccess": {
