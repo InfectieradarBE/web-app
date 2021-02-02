@@ -5,14 +5,14 @@
     "content": "Een onderzoek in de strijd tegen epidemieën"
   },
   "loginCard": {
-    "title": "Login",
+    "title": "Inloggen",
     "info": "",
     "emailInputLabel": "E-mail",
     "emailInputPlaceholder": "E-mail",
     "passwordInputLabel": "Wachtwoord",
     "passwordInputPlaceholder": "Wachtwoord",
     "rememberMeLabel": "Gegevens onthouden",
-    "btn": "Login",
+    "btn": "Inloggen",
     "passwordForgottenBtn": "Wachtwoord vergeten?",
     "signupBtn": "Heb je nog geen account? Meld je hier aan."
   },
@@ -39,6 +39,6 @@
     "mp4": "",
     "mxf": "",
     "webm": "",
-    "fallbackText": "Your browser does not support the video tag."
+    "fallbackText": "Jouw browser ondersteunt deze video niet."
   }
 }

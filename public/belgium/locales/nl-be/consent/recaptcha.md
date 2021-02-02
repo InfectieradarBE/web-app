@@ -6,6 +6,6 @@ Deze dienst maakt gebruik van zogenaamde “tracking cookies”. Deze Cookies vo
 * Inlog status Google account
 * Het scroll-gedrag van de bezoeker op Infectieradar.be
 
-Zie voor meer informatie over het gebruik van deze dienst en de verwerking van je gegevens de [privacyverklaring](https://www.survey.infectieradar.be/privacy).
+Zie voor meer informatie over het gebruik van deze dienst en de verwerking van je gegevens de [privacyverklaring](https://survey.infectieradar.be/privacy).
 
 Door op “Akkoord” te klikken geef je toestemming voor het plaatsen van de tracking cookies en de verwerking van de genoemde gegevens door Google.

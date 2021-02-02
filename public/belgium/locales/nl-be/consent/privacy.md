@@ -1,6 +1,6 @@
 Door de  knop “ik geef toestemming” aan te klikken stem je in met deelname aan het  onderzoek “Infectieradar.be” en ga je akkoord dat de onderzoekers je gegevens voor dit onderzoek zullen verwerken. 
 
-Het onderzoek is gericht op het in kaart brengen van gezondheidsklachten die kunnen wijzen op infectieziekten, zoals het nieuwe coronavirus. Dit onderzoek is van belang om na te gaan of het aantal mensen met klachten toe- of afneemt. Meer informatie over onder andere het doel van het onderzoek en je rechten kun je vinden in de [privacyverklaring](https://www.survey.infectieradar.be/privacy).
+Het onderzoek is gericht op het in kaart brengen van gezondheidsklachten die kunnen wijzen op infectieziekten, zoals het nieuwe coronavirus. Dit onderzoek is van belang om na te gaan of het aantal mensen met klachten toe- of afneemt. Meer informatie over onder andere het doel van het onderzoek en je rechten kun je vinden in de [privacyverklaring](https://survey.infectieradar.be/privacy).
 
 #### VEREISTEN VOOR JE DEELNAME AAN DE STUDIE
 

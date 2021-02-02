@@ -4,8 +4,8 @@
     "open": "Lees verder",
     "close": "Verbergen"
   },
-  "topCardTitle": "Wie heeft Infectieradar.be opgezet?",
-  "topCardContent": "Infectieradar.be is onderdeel van Influenzanet, een Europees samenwerkingsverband tussen verschillende universiteiten en overheden. De Universiteit van Hasselt is ook onderdeel van dit samenwerkingsverband. Het doel van Influenzanet is om de symptomen van infecties, zoals het nieuwe coronavirus (COVID-19) en griep, bij mensen in Europa in kaart te brengen en te volgen. Deze gegevens worden gebruikt voor wetenschappelijk onderzoek naar infecties en op dit moment naar het nieuwe coronavirus.",
+  "topCardTitle": "Veelgestelde vragen over Infectieradar.be",
+  "topCardContent": "",
   "signupCard": {
     "imageAlt": "Deelnemen afbeelding",
     "title": "Deelnemen",
@@ -13,6 +13,10 @@
     "actionLabel": "Aanmelden"
   },
   "faq": [
+    {
+      "title": "Wie heeft Infectieradar.be opgezet?",
+      "content": "Infectieradar.be is onderdeel van Influenzanet, een Europees samenwerkingsverband tussen verschillende universiteiten en overheden. De Universiteit van Hasselt is ook onderdeel van dit samenwerkingsverband. Het doel van Influenzanet is om de symptomen van infecties, zoals het nieuwe coronavirus (COVID-19) en griep, bij mensen in Europa in kaart te brengen en te volgen. Deze gegevens worden gebruikt voor wetenschappelijk onderzoek naar infecties en op dit moment naar het nieuwe coronavirus."
+    },
     {
       "title": "Wie kan er deelnemen aan Infectieradar.be?",
       "content": "Alle mensen die in België wonen en internettoegang hebben kunnen deelnemen aan Infectieradar.be, vrijwillig en zolang zij dat willen."
@@ -63,7 +67,7 @@
     },
     {
       "title": "Welke vragen worden gesteld in de wekelijkse vragenlijst?",
-      "content": "De wekelijkse vragenlijst vraagt naar de symptomen die je mogelijk hebt gehad sinds je laatste deelname (loopneus, hoest, koorts, enz.). Als je geen klachten hebt gehad, duurt het invullen slechts enkele seconden. Als je  wel klachten hebt of hebt gehad, krijg je optioneel vragen over wanneer de symptomen begonnen, of je een arts zag en of je ziekteverlof had. Het invullen van de vragenlijst duurt dan een paar minuten."
+      "content": "De wekelijkse vragenlijst vraagt naar de symptomen die je mogelijk hebt gehad sinds je laatste deelname (loopneus, hoest, koorts, enz.). Als je geen klachten hebt gehad, duurt het invullen slechts enkele seconden. Als je wel klachten hebt of hebt gehad, krijg je optioneel vragen over wanneer de symptomen begonnen, of je een arts zag en of je ziekteverlof had. Het invullen van de vragenlijst duurt dan een paar minuten."
     },
     {
       "title": "Kan ik de vragenlijst voor iemand anders invullen, bijvoorbeeld mijn kind?",
@@ -90,8 +94,8 @@
       "content": "Ja dat is mogelijk. Klik in de bovenste blauwe balk rechtsboven op jouw profielnaam. Ga naar instellingen. Daar kan je aangeven of je e-mails wil ontvangen. Bijvoorbeeld als het gaat om de wekelijkse oproep om je klachten door te geven (ook zonder wekelijkse e-mail staat er een nieuwe vragenlijst voor je klaar)."
     },
     {
-      "title": "Kan ik ook gegevens voor kinderen doorgeven?",
-      "content": "Ja. Dat kan. Klik in de bovenste blauwe balk rechtsboven op jouw profielnaam. Daar kun je extra profielen van je kind(eren) toevoegen. Als je het nieuwe profiel selecteert, kan je de gegevens invullen voor jouw kind."
+      "title": "Hoe kan ik een profiel aanmaken voor mijn kind(eren)?",
+      "content": "Klik in de bovenste blauwe balk rechtsboven op jouw profielnaam. Daar kun je extra profielen van je kind(eren) toevoegen. Als je het nieuwe profiel selecteert, kan je de gegevens invullen voor jouw kind."
     },
     {
       "title": "Ik wil niet meer deelnemen, waar kan ik me afmelden?",

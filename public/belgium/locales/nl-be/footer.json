@@ -3,14 +3,13 @@
       "title": "Services",
       "agenda": "Agenda",
       "follow": "Volg ons op",
-      "facebook": "Volg ons op Facebook",
-      "linkedIn": "Volg ons op LinkedIn",
+      "twitter": "Volg ons op Twitter",
       "contact": "Contact Infectieradar"
     },
     "about": {
       "title": "Over deze site",
       "privacy": "Privacyverklaring",
-      "disclaimer": "Geen medische functie *",
+      "disclaimer": "Geen medische functie",
       "accessibility": "Toegankelijksheidsverklaring"
     },
     "languages": {
