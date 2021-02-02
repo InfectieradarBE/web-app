@@ -1,7 +1,6 @@
 import React, { InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 import AlertBox from '../displays/AlertBox';
-// import Error from '../alerts/Error';
 
 interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   value?: string;
