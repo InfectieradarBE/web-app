@@ -10,15 +10,9 @@
         },
         {
           "type": "external",
-          "itemKey": "facebook",
-          "iconClass": "fab fa-facebook-square",
-          "url": "https://www.facebook.com/RIVMnl"
-        },
-        {
-          "type": "external",
-          "itemKey": "linkedIn",
-          "iconClass": "fab fa-linkedin",
-          "url": "https://nl.linkedin.com/company/rivm"
+          "itemKey": "twitter",
+          "iconClass": "fab fa-twitter",
+          "url": "https://www.twitter.com"
         }
       ]
     },
@@ -32,13 +26,13 @@
         },
         {
           "type": "internal",
-          "itemKey": "accessibility",
-          "url": "/accessibility"
+          "itemKey": "disclaimer",
+          "url": "/disclaimer"
         },
         {
           "type": "internal",
-          "itemKey": "disclaimer",
-          "url": "/disclaimer"
+          "itemKey": "accessibility",
+          "url": "/accessibility"
         }
       ]
     },
@@ -52,8 +46,8 @@
         },
         {
           "type": "language",
-          "itemKey": "en",
-          "languageCode": "en"
+          "itemKey": "en-be",
+          "languageCode": "en-be"
         }
       ]
     }
