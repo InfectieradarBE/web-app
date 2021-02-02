@@ -1,29 +1,36 @@
 {
   "items": [
-  {
-    "type": "internal",
-    "url": "/home",
-    "itemkey": "home",
-    "hideWhen": "auth",
-    "iconClass": "fas fa-home"
-  },
-  {
-    "type": "internal",
-    "url": "/results",
-    "itemkey": "results",
-    "hideWhen": ""
-  },
-  {
-    "type": "internal",
-    "url": "/about",
-    "itemkey": "about",
-    "hideWhen": ""
-  },
-  {
-    "type": "internal",
-    "url": "/faq",
-    "itemkey": "faq",
-    "hideWhen": ""
-  }
-]
+    {
+      "type": "internal",
+      "url": "/home",
+      "itemkey": "home",
+      "hideWhen": "auth",
+      "iconClass": "fas fa-home"
+    },
+    {
+      "type": "internal",
+      "url": "/home",
+      "itemkey": "authhome",
+      "hideWhen": "unauth",
+      "iconClass": "fas fa-home"
+    },
+    {
+      "type": "internal",
+      "url": "/results",
+      "itemkey": "results",
+      "hideWhen": ""
+    },
+    {
+      "type": "internal",
+      "url": "/about",
+      "itemkey": "about",
+      "hideWhen": ""
+    },
+    {
+      "type": "internal",
+      "url": "/faq",
+      "itemkey": "faq",
+      "hideWhen": ""
+    }
+  ]
 }
