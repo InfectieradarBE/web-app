@@ -1,17 +1,14 @@
 {
-  "home": {
-    "title": "Welkom"
-  },
-  "results": {
-    "title": "Actuele resultaten"
-  },
-  "about": {
-    "title": "Over Infectieradar"
-  },
-  "faq": {
-    "title": "Vraag en antwoord"
-  },
-  "mystudies": {
-    "title": "Mijn Infectieradar"
+  "home": "Welkom",
+  "authhome": "Mijn Infectieradar",
+  "results": "Actuele resultaten",
+  "about": "Over Infectieradar",
+  "faq": "Vraag en antwoord",
+  "login": "Inloggen",
+  "signup": "Aanmelden",
+  "userDropdown": {
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "verified": "Account niet geverifieerd"
   }
 }
