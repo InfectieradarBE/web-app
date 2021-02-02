@@ -37,5 +37,33 @@
       "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
+  },
+  "invitation": {
+    "title": "Welcome!",
+    "content": {
+      "info": "## Welcome! \n\n Before starting to use the system, you need to set a password.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "",
+      "newPasswordLabel": "Password",
+      "newPasswordPlaceholder": "Enter new PW",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Enter PW again",
+      "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
+      "btn": "Change password",
+      "restartBtn": "Opnieuw",
+      "successMsg": "Wachtwoord gewijzigd",
+      "successBtn": "Open Login"
+    },
+    "privacyConsent": {
+      "title": "Privacy Consent",
+      "acceptBtn": "I read and accept the above statement.",
+      "cancelBtn": "Cancel"
+    },
+    "errors": {
+      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
+      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
+      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    }
   }
 }

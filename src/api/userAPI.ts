@@ -3,7 +3,7 @@ import authApiInstance from './instances/authenticatedApi';
 import { PasswordResetInfos } from './types/authAPI';
 import { ServiceStatus } from './types/general';
 import { User, Profile, ContactPreferences, ContactInfo } from './types/user';
-import apiInstance from './instances/authenticatedApi';
+import apiInstance from './instances/defaultApi';
 
 // Password Reset API
 export const initiatePasswordResetReq = (instanceId: string, accountId: string) => apiInstance.post<ServiceStatus>('/v1/user/password-reset/initiate', { instanceId, accountId });

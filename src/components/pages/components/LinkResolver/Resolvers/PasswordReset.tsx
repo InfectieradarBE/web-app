@@ -114,7 +114,7 @@ const PasswordReset: React.FC<PasswordResetProps> = (props) => {
     setLoading(true);
     try {
       const response = await resetPasswordReq(token, password);
-      console.log(response);
+      // console.log(response);
       if (response.status === 200) {
         setSuccess(true);
         setPassword("");
