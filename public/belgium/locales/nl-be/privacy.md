@@ -6,6 +6,41 @@ In aanvulling op de algemene privacyverklaring, lees je in deze privacyverklarin
 
 Deelname aan het onderzoek is vrijwillig. Wij willen je er met klem op wijzen dat de vragenlijsten en het gebruik van de website voor jou **geen** medisch doel dienen. Als je zorgen hebt over je gezondheid zoek dan altijd hulp via de gebruikelijke medische instanties.
 
+#### Studie in een oogopslag
+**Waarom Infectieradar.be?**
+We weten dat veel mensen met een besmetting met het nieuwe SARS-CoV-2 virus (“coronavirus” in de volksmond) milde of weinig gezondheidsklachten hebben en niet naar de huisarts gaan. Ook wordt niet iedereen getest. Dit maakt het moeilijk om na te gaan hoe het nieuwe coronavirus zich verspreidt in België. Het is belangrijk om gezondheidsklachten op te volgen die niet bij de huisarts worden gemeld. 
+
+**Wie kan deelnemen?**
+Iedereen die in België woont en 18 jaar of ouder is, kan op vrijwillige basis deelnemen aan de studie. Om ook informatie te bekomen over de verspreiding van infectieziekten bij kinderen en jongeren, kunnen ouders of voogden van een minderjarig kind de vragenlijsten ook voor hun kinderen invullen. Dit is niet verplicht maar het helpt het onderzoek wel vooruit.
+
+**Hoe werkt Infectieradar.be?**
+Deelnemers ontvangen eerst een registratie met vragen over hun achtergrond, leeftijd, en bestaande ziekten en aandoeningen. Daarna krijgen zij elke week een email met een link naar een vragenlijst met de vraag welke gezondheidsklachten zij in de afgelopen week hadden. Het gaat dan om gezondheidsklachten zoals een loopneus, hoesten, niezen en/of koorts. Ook als de deelnemer geen gezondheidsklachten heeft moet dit ingevuld worden. Het invullen van de vragenlijst duurt ongeveer 30 seconden wanneer de deelnemer geen gezondheidsklachten heeft en ongeveer drie tot vijf minuten indien de deelnemer gezondheidsklachten heeft.
+
+Door deze vragenlijst in te vullen zullen we volgen hoe bepaalde gezondheidsklachten verspreid zijn in België en hoe deze zich ontwikkelen in de tijd. Deze gegevens zullen gebruikt worden voor wetenschappelijk onderzoek naar de verspreiding van het nieuwe coronavirus. In de toekomst kunnen we dat ook voor andere virussen en infectieziekten gebruiken.
+
+**Gegevens**
+De gegevens worden verzameld en verwerkt vanuit het oogpunt van wetenschappelijk onderzoek, uitsluitend voor de volgende doelen:
+
+- Uitvoeren van wetenschappelijk onderzoek en statistische analyses over de verspreiding van infectieziekten in België en Europa
+
+- Publiceren van statistische analyses, inclusief grafische weergaven van de resultaten;
+
+- Het verstrekken van informatie aan u, de gebruiker, over de resultaten van de enquête (bijvoorbeeld: hoeveel geregistreerde  gebruikers in uw regio hebben griep of andere infectieziekten);
+
+De persoonsgegevens die wij voor deze doelen mogelijk verwerken zijn:
+
+- Geboortejaar, geboortemaand, uw postcode, geslacht, gezinssamenstelling;
+- Gegevens betreffende relevante achtergrond voor het risico op infecties namelijk, gegevens over of u behoort tot een risicogroep voor griepvaccinatie, beroep en levensstijl;
+- Gegevens omtrent symptomen gegeven tijdens de symptomen vragenlijst;
+
+De gegevens verkregen in deze studie zullen worden verwerkt door de Universiteit Hasselt en Universiteit Antwerpen voor de genoemde doelen. Wij informeren u ook dat wij uw gegevens zullen verwerken in overeenstemming met de toepasselijke wetgeving en voorschriften en met volledige eerbiediging van uw rechten en, in het bijzonder, uw privacy.
+
+**Deelname**
+Na registratie, zal je elke week per email uitgenodigd worden om een vragenlijst in te vullen. Jouw deelname aan dit onderzoek is vrijwillig en je kan je op elk moment, zonder opgave van reden, terugtrekken uit het onderzoek.
+
+De studie wordt gefinancierd door de Europese Unie en werd geëvalueerd door een ethisch comité. Hun financiering en goedkeuring betekent niet dat je je verplicht moet voelen om deel te nemen.
+
+
 #### 1.  Welke gegevens worden tijdens de studie verzameld en verwerkt?
     
 De verzamelde en verwerkte persoonsgegevens gaan over je gezondheid en medische toestand, met inbegrip van je medische geschiedenis, een deel van je achtergrondinformatie (bv. je leeftijd, geslacht, etc.) en de informatie over medische hulp die je zocht.

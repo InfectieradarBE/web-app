@@ -2,11 +2,11 @@
   "home": {
     "title": "Welkom"
   },
-  "results": {
-    "title": "Actuele resultaten"
-  },
   "about": {
     "title": "Over Infectieradar"
+  },
+  "results": {
+    "title": "Actuele resultaten"
   },
   "faq": {
     "title": "Vraag en antwoord"
