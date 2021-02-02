@@ -6,7 +6,9 @@ In aanvulling op de algemene privacyverklaring, lees je in deze privacyverklarin
 
 Deelname aan het onderzoek is vrijwillig. Wij willen je er met klem op wijzen dat de vragenlijsten en het gebruik van de website voor jou **geen** medisch doel dienen. Als je zorgen hebt over je gezondheid zoek dan altijd hulp via de gebruikelijke medische instanties.
 
-#### Studie in een oogopslag
+---
+
+### Studie in een oogopslag
 **Waarom Infectieradar.be?**
 We weten dat veel mensen met een besmetting met het nieuwe SARS-CoV-2 virus (“coronavirus” in de volksmond) milde of weinig gezondheidsklachten hebben en niet naar de huisarts gaan. Ook wordt niet iedereen getest. Dit maakt het moeilijk om na te gaan hoe het nieuwe coronavirus zich verspreidt in België. Het is belangrijk om gezondheidsklachten op te volgen die niet bij de huisarts worden gemeld. 
 
@@ -40,6 +42,7 @@ Na registratie, zal je elke week per email uitgenodigd worden om een vragenlijst
 
 De studie wordt gefinancierd door de Europese Unie en werd geëvalueerd door een ethisch comité. Hun financiering en goedkeuring betekent niet dat je je verplicht moet voelen om deel te nemen.
 
+---
 
 #### 1.  Welke gegevens worden tijdens de studie verzameld en verwerkt?
     
@@ -141,6 +144,8 @@ De resultaten van de studie zullen alleen worden gebruikt om een antwoord te gev
     
 Na afloop van de studie zullen je gecodeerde gegevens minstens 25 jaar worden bijgehouden (Ref. ) om de geldigheid van het onderzoek te verzekeren. Dat zal ook het geval zijn indien je voortijdig met je deelname aan de studie stopt.
 
+---
+
 ### Gebruik van Google Recaptcha
 
 Voor de beveiliging van Infectieradar.be maken wij gebruik van Google Recaptcha. Dit is een dienst die wordt geleverd door Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA. Hierna “Google”. Deze dienst wordt ingezet voor het vermijden van geautomatiseerde interacties op de website bijvoorbeeld door zogenaamde “bots”.
@@ -153,6 +158,8 @@ Voor het uitvoeren van deze dienst verwerkt Google de volgende gegevens:
 -   Het scroll-gedrag van de bezoeker op Infectieradar.nl
 
 Google geeft onder de volgende [link] (https://policies.google.com/privacy) informatie over hoe Google omgaat met je gegevens als gebruiker. De grondslag voor de inzet van Google Recaptcha is een gerechtvaardigd belang volgens artikel 6 lid 1 sub f. AVG. Wij hebben een gerechtvaardigd belang om  www.infectieradar.be  te beveiligen.
+
+---
 
 ### Wijziging privacyverklaring
 Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij het gewijzigde [Formulier Gïnformeerde Toestemming](https://infectieradar.be/project/)publiceren.
