@@ -160,9 +160,9 @@ Voor het uitvoeren van deze dienst verwerkt Google de volgende gegevens:
 Google geeft onder de volgende [link] (https://policies.google.com/privacy) informatie over hoe Google omgaat met je gegevens als gebruiker. De grondslag voor de inzet van Google Recaptcha is een gerechtvaardigd belang volgens artikel 6 lid 1 sub f. AVG. Wij hebben een gerechtvaardigd belang om  www.infectieradar.be  te beveiligen.
 
 ---
-
+ 
 ### Wijziging privacyverklaring
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij het gewijzigde [Formulier Gïnformeerde Toestemming](https://infectieradar.be/project/)publiceren.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij het gewijzigde [Formulier Gïnformeerde Toestemming](https://infectieradar.be/project/) publiceren.
 
 
 ##### Versie 2.0 2-10-2020
