@@ -26,11 +26,15 @@
       "newPasswordPlaceholder": "Enter new PW",
       "confirmPasswordLabel": "Confirm Password",
       "confirmPasswordPlaceholder": "Enter PW again",
-      "btn": "Change password"
+      "btn": "Change password",
+      "restartBtn": "Opnieuw",
+      "successMsg": "Wachtwoord gewijzigd",
+      "successBtn": "Open Login"
     },
     "errors": {
       "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
       "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
+      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
   }

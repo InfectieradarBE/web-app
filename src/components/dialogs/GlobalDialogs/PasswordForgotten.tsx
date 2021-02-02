@@ -92,7 +92,7 @@ const PasswordForgotten: React.FC = () => {
       )}>
         <AlertBox
           className="mb-2"
-          type="success"
+          type="info"
           useIcon={false}
           content={t('passwordForgotten.info')}
         />
