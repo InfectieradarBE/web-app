@@ -1,5 +1,5 @@
 {
-  "title": "Infectieradar Settings",
+  "title": "Infectieradar Instellingen",
   "account": {
     "title": "Account instellingen",
     "email": {
@@ -12,7 +12,7 @@
     },
     "profiles": {
       "title": "Profielen",
-      "info": "Bewerk je eigen profiel of voeg als ouder of wettelijke vertegenwoordiger een profiel toe van je kinderen in de leeftijd tot en met 15 jaar.",
+      "info": "Bewerk je eigen profiel of voeg als ouder of wettelijke vertegenwoordiger een profiel toe van je kinderen in de leeftijd tot en met 17 jaar.",
       "btn": "{{count}} profiel",
       "btn_plural": "{{count}} profielen"
     }
@@ -28,7 +28,7 @@
         "title": "Taal",
         "info": "Je kan hier de taal wijzigen.",
         "languages": {
-          "en": "English",
+          "en-be": "English",
           "nl-be": "Nederlands",
           "fr": "Français",
           "de": "Deutsch"
