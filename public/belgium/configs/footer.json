@@ -46,8 +46,8 @@
         },
         {
           "type": "language",
-          "itemKey": "en-be",
-          "languageCode": "en-be"
+          "itemKey": "en",
+          "languageCode": "en"
         }
       ]
     }

@@ -28,7 +28,7 @@
         "title": "Taal",
         "info": "Je kan hier de taal wijzigen.",
         "languages": {
-          "en-be": "English",
+          "en": "English",
           "nl-be": "Nederlands",
           "fr": "Français",
           "de": "Deutsch"
