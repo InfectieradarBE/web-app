@@ -1,0 +1,15 @@
+{
+  "title": "About Infectieradar",
+  "signupCard": {
+    "imageAlt": "Participate image",
+    "title": "Participate",
+    "body": "Help us keep an eye on coronavirus. Report weekly whether you have any symptoms.",
+    "actionLabel": "Sign Up"
+  },
+  "surveyCard": {
+    "imageAlt": "Register now!",
+    "title": "Register now!",
+    "body": "Report whether you have any symptoms.",
+    "actionLabel": "Questionnaires"
+  }
+}
