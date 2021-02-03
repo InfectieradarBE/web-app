@@ -1,0 +1,44 @@
+{
+  "title": "Influenzanet",
+  "topImage": {
+    "title": "Test teaser image",
+    "content": "Citizen Science for Infectious Disease Surveillance"
+  },
+  "loginCard": {
+    "title": "Login",
+    "info": "",
+    "emailInputLabel": "Email",
+    "emailInputPlaceholder": "Enter Email",
+    "passwordInputLabel": "Password",
+    "passwordInputPlaceholder": "Enter Password",
+    "rememberMeLabel": "Remember Me",
+    "btn": "Login",
+    "passwordForgottenBtn": "Forgot password?",
+    "signupBtn": "Don't yet have an account? Sign up here."
+  },
+  "currentResultCard": {
+    "imageAlt": "Current results image",
+    "title": "Current results",
+    "body": "Infectieradar.be identifies which symptoms people in Belgium have that could indicate coronavirus.",
+    "actionLabel": "Current results"
+  },
+  "signupCard": {
+    "imageAlt": "Participate image",
+    "title": "Participate",
+    "body": "Help us keep an eye on coronavirus. Report weekly whether you have any symptoms.",
+    "actionLabel": "Sign up"
+  },
+  "aboutCard": {
+    "imageAlt": "About Influenzanet image",
+    "title": "About Influenzanet",
+    "body": "With Infectieradar.be, we monitor the spread of  symptoms across Belgium. It is one of the tools the research team uses to monitor the spread of the virus.",
+    "actionLabel": "Learn more"
+  },
+  "video": {
+    "poster": "",
+    "mp4": "",
+    "mxf": "",
+    "webm": "",
+    "fallbackText": "Your browser does not support the video tag."
+  }
+}
