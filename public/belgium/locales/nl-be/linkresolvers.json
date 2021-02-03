@@ -6,9 +6,9 @@
       "success": "Het is gelukt! Je e-mailadres is bevestigd. \n\n Log nu in.",
       "btn": {
         "successWithAuth": "Ok",
-        "successWithoutAuth": "Ga naar login",
+        "successWithoutAuth": "Ga naar inloggen",
         "errorWithAuth": "Home",
-        "errorWithoutAuth": "Ga naar login"
+        "errorWithoutAuth": "Ga naar inloggen"
       }
     },
     "errors": {
@@ -21,7 +21,7 @@
     "content": {
       "info": "",
       "emailLabel": "Email",
-      "emailPlaceholder": "",
+      "emailPlaceholder": "Email",
       "newPasswordLabel": "Wachtwoord",
       "newPasswordPlaceholder": "Nieuw wachtwoord",
       "confirmPasswordLabel": "Bevestig wachtwoord",
@@ -39,7 +39,7 @@
     }
   },
   "studyLogin": {
-    "title": "Welcome back!",
+    "title": "Welkom terug!",
     "content": {
       "cardTitle": "Inloggen",
       "info": "",
