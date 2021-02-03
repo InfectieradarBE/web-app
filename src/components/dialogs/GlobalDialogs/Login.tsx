@@ -346,7 +346,7 @@ const Login: React.FC<LoginProps> = (props) => {
     if (loading) return;
     setAuthFields(creds.email, creds.password, creds.rememberMe);
     setLoading(true);
-    logout();
+    logout(true);
 
     try {
       const resp = await loginWithEmailRequest({
