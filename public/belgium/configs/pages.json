@@ -392,6 +392,84 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/settings",
+      "pageKey": "settings",
+      "hideWhen": "unauth",
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "className": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "account",
+                  "className": "",
+                  "config": {
+                    "type": "accountSettings"
+                  }
+                },
+                {
+                  "itemKey": "communication",
+                  "className": "",
+                  "config": {
+                    "type": "communicationSettings"
+                  }
+                },
+                {
+                  "itemKey": "deletion",
+                  "className": "",
+                  "config": {
+                    "type": "deleteAccount"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "sideCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "references",
+                  "className": "",
+                  "config": {
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "key": "faqLink",
+                        "type": "internal",
+                        "value": "/faq"
+                      },
+                      {
+                        "key": "privacyStatementLink",
+                        "type": "internal",
+                        "value": "/privacy"
+                      },
+                      {
+                        "key": "contactLink",
+                        "type": "internal",
+                        "value": "/contact"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "itemKey": "systemInfo",
+                  "className": "",
+                  "config": {
+                    "type": "systemInfo"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

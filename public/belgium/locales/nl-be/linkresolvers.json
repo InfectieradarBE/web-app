@@ -37,5 +37,20 @@
       "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
+  },
+  "studyLogin": {
+    "title": "Welcome back!",
+    "content": {
+      "cardTitle": "Inloggen",
+      "info": "",
+      "emailInputLabel": "E-mail",
+      "emailInputPlaceholder": "E-mail",
+      "passwordInputLabel": "Wachtwoord",
+      "passwordInputPlaceholder": "Wachtwoord",
+      "rememberMeLabel": "Gegevens onthouden",
+      "btn": "Inloggen",
+      "passwordForgottenBtn": "Wachtwoord vergeten?",
+      "signupBtn": "Heb je nog geen account? Meld je hier aan."
+    }
   }
 }
