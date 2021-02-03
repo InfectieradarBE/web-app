@@ -19,26 +19,26 @@
   },
   "communication": {
     "title": "Communicatie instellingen",
-      "emailReminders": {
-        "title": "Wekelijkse e-mail en nieuwsbrief",
-        "info": "Je kan het ontvangen van de wekelijkse herinneringsmail of de nieuwsbrief uitschakelen.",
-        "btnManageNotifications": "Instellingen aanpassen"
-      },
-      "defaultLanguage": {
-        "title": "Taal",
-        "info": "Je kan hier de taal wijzigen.",
-        "languages": {
-          "en": "English",
-          "nl-be": "Nederlands",
-          "fr": "Français",
-          "de": "Deutsch"
-        }
+    "emailReminders": {
+      "title": "Wekelijkse e-mail en nieuwsbrief",
+      "info": "Je kan het ontvangen van de wekelijkse herinneringsmail of de nieuwsbrief uitschakelen.",
+      "btnManageNotifications": "Instellingen aanpassen"
+    },
+    "defaultLanguage": {
+      "title": "Taal",
+      "info": "Je kan hier de taal wijzigen.",
+      "languages": {
+        "en": "English",
+        "nl-be": "Nederlands",
+        "fr": "Français",
+        "de": "Deutsch"
       }
+    }
   },
   "deletion": {
     "title": "Afmelden Infectieradar.be / intrekken toestemming",
-      "warning": "Afmelden Infectieradar.be/intrekken toestemming houdt in dat je accountgegevens worden verwijderd.\nNa het verwijderen van het account kunnnen wij door jou opgegeven informatie (zoals leeftijd en gezondheidsklachten) niet meer aan je koppelen.",
-      "deleteBtn": "Afmelden"
+    "warning": "Afmelden Infectieradar.be/intrekken toestemming houdt in dat je accountgegevens worden verwijderd.\nNa het verwijderen van het account kunnnen wij door jou opgegeven informatie (zoals leeftijd en gezondheidsklachten) niet meer aan je koppelen.",
+    "deleteBtn": "Afmelden"
   },
   "references": {
     "title": "Hulp nodig?",
@@ -48,7 +48,8 @@
   },
   "systemInfo": {
     "title": "Systeem informatie",
-    "appnameLabel": "Applicatie naam",
+    "appNameLabel": "Applicatie naam",
+    "appName": "Infectieradar",
     "versionLabel": "Versie",
     "browserNameLabel": "Browsername",
     "browserVersionLabel": "Browser versie"
