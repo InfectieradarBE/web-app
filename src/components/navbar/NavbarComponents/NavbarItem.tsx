@@ -2,10 +2,11 @@ import React from 'react';
 import clsx from 'clsx';
 import { NavLink } from 'react-router-dom'
 import { useIsAuthenticated } from '../../../hooks/useIsAuthenticated';
-import { DropdownItemConfig } from '../../../types/config/navbar';
 import { useTranslation } from 'react-i18next';
 import DropdownItem from './DropdownItem'
 import { useHistory } from 'react-router-dom';
+import { NavbarItemConfig } from '../../../types/config/navbar';
+
 
 interface NavbarItemProps {
   itemkey: string;
@@ -15,7 +16,7 @@ interface NavbarItemProps {
   onNavigate: (url: string, backdrop: boolean) => void;
   hideWhen?: string;
   type: string;
-  dropdownItems?: Array<DropdownItemConfig>
+  dropdownItems?: Array<NavbarItemConfig>
 }
 
 const NavbarItem: React.FC<NavbarItemProps> = (props) => {
@@ -64,9 +65,9 @@ const NavbarItem: React.FC<NavbarItemProps> = (props) => {
               {props.dropdownItems!.slice(0).map(
                 item =>
                   <DropdownItem
-                    key={item.itemkey}
-                    title={t(`${props.itemkey}.${item.itemkey}`)}
-                    itemkey={item.itemkey}
+                    key={item.itemKey}
+                    title={t(`${props.itemkey}.${item.itemKey}`)}
+                    itemkey={item.itemKey}
                     iconClass={item.iconClass}
                     url={item.url}
                     onNavigate={handleNavigation}

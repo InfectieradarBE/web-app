@@ -1,35 +1,36 @@
 {
-  "items": [
+  "breakpoint": "xl",
+  "leftItems": [
     {
       "type": "internal",
       "url": "/home",
-      "itemkey": "home",
+      "itemKey": "home",
       "hideWhen": "auth",
       "iconClass": "fas fa-home"
     },
     {
       "type": "internal",
       "url": "/home",
-      "itemkey": "authhome",
+      "itemKey": "authhome",
       "hideWhen": "unauth",
       "iconClass": "fas fa-home"
     },
     {
       "type": "internal",
       "url": "/results",
-      "itemkey": "results",
+      "itemKey": "results",
       "hideWhen": ""
     },
     {
       "type": "internal",
       "url": "/about",
-      "itemkey": "about",
+      "itemKey": "about",
       "hideWhen": ""
     },
     {
       "type": "internal",
       "url": "/faq",
-      "itemkey": "faq",
+      "itemKey": "faq",
       "hideWhen": ""
     }
   ]
