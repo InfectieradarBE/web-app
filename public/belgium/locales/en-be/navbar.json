@@ -1,0 +1,15 @@
+{
+  "home": "Home",
+  "authhome": "My Influenzanet",
+  "results": "Current Results",
+  "about": "About Infectieradar",
+  "faq": "FAQ",
+  "login": "Login",
+  "signup": "Signup",
+  "userDropdown": {
+    "settings": "Settings",
+    "logout": "Logout",
+    "verified": "Account not verified"
+  }
+}
+
