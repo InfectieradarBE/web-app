@@ -6,7 +6,7 @@
   "faq": "FAQ",
   "login": "Login",
   "signup": "Sign up",
-  "userDropdown": {
+  "rightMenu": {
     "settings": "Settings",
     "logout": "Logout",
     "verified": "Account not verified"
