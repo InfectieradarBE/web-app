@@ -67,6 +67,55 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     return normalLeftNav
   }
 
+  const navbarRight = () => {
+    if (isLoggedIn) {
+      return <div className="dropdown nav-tabs">
+        <button
+          className="btn btn-primary dropdown-toggle text-lightest fs-btn "
+          type="button"
+          id="DropMenu"
+          data-bs-toggle="dropdown"
+          aria-expanded="false" >
+          <i className={clsx('fas fa-user', 'me-1')}></i>
+          {loggedInUser.accountId}
+        </button >
+
+        <div className="dropdown-menu dropdown-menu-end text-end ">
+          {
+            props.content?.rightItems.map(item =>
+              <button
+                key={item.itemKey}
+                className="dropdown-item" type="button"
+                onClick={() => {
+                  history.push(item.url);
+                }}
+              >
+                {t(`rightMenu.${item.itemKey}`)}
+                <i className={clsx(item.iconClass, 'ms-1')}></i>
+              </button>
+            )
+          }
+
+          <button
+            className="dropdown-item"
+            onClick={() => logout()} >
+            {t(`rightMenu.logout`)}
+            <i className={clsx('fas fa-sign-out-alt', 'ms-1')}></i>
+          </button>
+        </div>
+      </div>
+    }
+    return <div className="row">
+      <ul className="nav nav-tabs justify-content-end  ">
+        <li className="nav item">
+          <button className="nav-link btn" onClick={() => dispatch(openDialogWithoutPayload("login"))} >{t(`${'login'}`)}</button>
+        </li>
+        <li className="nav item">
+          <button className="nav-link btn " onClick={() => dispatch(openDialogWithoutPayload("signup"))} >{t(`${'signup'}`)}</button>
+        </li>
+      </ul>
+    </div>
+  }
 
   return (
     <React.Fragment>
@@ -84,40 +133,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             <div className="row" >
               {navbarLeft()}
             </div>
-            {isLoggedIn ?
-              <div className="dropdown nav-tabs">
-                <button
-                  className="btn btn-primary dropdown-toggle text-lightest fs-btn "
-                  type="button"
-                  id="DropMenu"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <i className={clsx('fas fa-user', 'me-1')}></i>
-                  {loggedInUser.accountId}
-                </button>
-                <div className="dropdown-menu dropdown-menu-end ">
-                  <button className="dropdown-item text-center" type="button" >
-                    {t(`${'userDropdown'}.settings`)}
-                    <i className={clsx('fas fa-cog', 'ms-1')}></i>
-                  </button>
-                  <button className="dropdown-item text-center" onClick={() => logout()} >
-                    {t(`${'userDropdown'}.logout`)}
-                    <i className={clsx('fas fa-sign-out-alt', 'ms-1')}></i>
-                  </button>
-                </div>
-              </div>
-              :
-              <div className="row">
-                <ul className="nav nav-tabs justify-content-end  ">
-                  <li className="nav item">
-                    <button className="nav-link btn" onClick={() => dispatch(openDialogWithoutPayload("login"))} >{t(`${'login'}`)}</button>
-                  </li>
-                  <li className="nav item">
-                    <button className="nav-link btn " onClick={() => dispatch(openDialogWithoutPayload("signup"))} >{t(`${'signup'}`)}</button>
-                  </li>
-                </ul>
-              </div>
-            }
+            {navbarRight()}
           </div>
         </nav>
       </div>

@@ -33,5 +33,13 @@
       "itemKey": "faq",
       "hideWhen": ""
     }
+  ],
+  "rightItems": [
+    {
+      "type": "internal",
+      "url": "/settings",
+      "itemKey": "settings",
+      "iconClass": "fas fa-cog"
+    }
   ]
 }

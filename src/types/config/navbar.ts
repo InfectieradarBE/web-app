@@ -1,6 +1,6 @@
 export interface NavbarConfig {
   leftItems: Array<NavbarItemConfig>;
-  rightItem: Array<NavbarItemConfig>;
+  rightItems: Array<NavbarItemConfig>;
   breakpoint?: string;
 }
 
