@@ -14,8 +14,18 @@ export interface LoginDialog {
   }
 }
 
+export interface AlertDialog {
+  type: 'alertDialog'
+  payload: {
+    color: 'danger' | 'warning' | 'success'
+    title: string
+    content: string
+    btn: string
+  }
+}
+
 export interface DialogState {
-  config?: DialogWithoutPayload | LoginDialog
+  config?: DialogWithoutPayload | LoginDialog | AlertDialog
 }
 
 export let initialState: DialogState = {
@@ -43,6 +53,12 @@ const dialogSlice = createSlice({
         payload: action.payload.payload
       }
     },
+    openAlertDialog(state, action: PayloadAction<AlertDialog>) {
+      state.config = {
+        type: action.payload.type,
+        payload: action.payload.payload
+      }
+    },
   }
 })
 
@@ -51,6 +67,7 @@ export const {
   closeDialog,
   openDialogWithoutPayload,
   openLoginDialog,
+  openAlertDialog,
 } = dialogSlice.actions
 
 export default dialogSlice.reducer

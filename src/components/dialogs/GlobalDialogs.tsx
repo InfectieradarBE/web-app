@@ -1,4 +1,6 @@
 import React from 'react';
+import AlertDialog from './GlobalDialogs/AlertDialog';
+import DeleteAccount from './GlobalDialogs/DeleteAccount';
 import Login from './GlobalDialogs/Login';
 import PasswordForgotten from './GlobalDialogs/PasswordForgotten';
 import Signup from './GlobalDialogs/Signup';
@@ -14,11 +16,12 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
       <Signup />
       <SignupSuccess />
       <PasswordForgotten />
+      <DeleteAccount />
+      <AlertDialog />
       {/*
-      <ResetPasswordDialog />
+
       <EmailVerificationSuccess />
-      <SuccessDialog />
-      <ErrorDialog />*/}
+      */}
     </React.Fragment>
   );
 };
