@@ -30,7 +30,7 @@
     }
   },
   "signup": {
-    "title": "Signup",
+    "title": "Sign up",
     "info": "",
     "emailInputLabel": "Email",
     "emailInputPlaceholder": "Enter Email",
@@ -40,7 +40,7 @@
     "confirmPasswordInputPlaceholder": "Enter Password Again",
     "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
     "reCaptchaCookieCheckbox": "I agree to this site utilizing <1>Google’s tracking cookies</1> for spam protection using reCAPTCHA.*",
-    "signupBtn": "Signup",
+    "signupBtn": "Sign up",
     "loginLink": "Have an account already? Login in here.",
     "reCaptchaLinks": "This site is protected by reCAPTCHA and the Google <1>Privacy Policy</1> and <3>Terms of Service</3> apply.",
     "errors": {
