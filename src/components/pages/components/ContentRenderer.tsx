@@ -156,6 +156,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'communicationSettings':
         return <CommunicationSettings
           key={item.itemKey}
+          itemKey={item.itemKey}
         />
       case 'deleteAccount':
         return <DeleteAccount
