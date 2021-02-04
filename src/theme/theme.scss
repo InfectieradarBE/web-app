@@ -83,6 +83,11 @@ $enable-negative-margins: true;
 $input-disabled-bg:                     map-get($theme-colors, "grey-2") !default;
 $input-disabled-border-color:           map-get($theme-colors, "grey-2") !default;
 
+.input-padding-custom {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
 // Checkbox
 $form-check-input-width: 1.5em !default;
 $form-check-input-border: 2px solid  map-get($theme-colors, "grey-7") !default;
