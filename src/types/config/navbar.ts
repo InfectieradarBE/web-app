@@ -1,18 +1,14 @@
 export interface NavbarConfig {
-  items: Array<NavbarItemConfig>;
+  leftItems: Array<NavbarItemConfig>;
+  rightItems: Array<NavbarItemConfig>;
+  breakpoint?: string;
 }
 
 export interface NavbarItemConfig {
-  type: 'internal' | 'dropdown';
+  type: 'internal' | 'dropdown' | 'dialog';
   url: string;
-  itemkey: string;
+  itemKey: string;
   hideWhen?: 'auth' | 'unauth';
   iconClass?: string;
-  dropdownItems?: Array<DropdownItemConfig>;
-}
-
-export interface DropdownItemConfig {
-  url: string;
-  itemkey: string;
-  iconClass?: string;
+  dropdownItems?: Array<NavbarItemConfig>;
 }

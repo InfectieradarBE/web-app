@@ -462,7 +462,8 @@
                   "itemKey": "systemInfo",
                   "className": "",
                   "config": {
-                    "type": "systemInfo"
+                    "type": "systemInfo",
+                    "showBrowserInfo": true
                   }
                 }
               ]

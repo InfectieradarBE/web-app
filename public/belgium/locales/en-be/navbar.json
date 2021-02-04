@@ -5,10 +5,11 @@
   "about": "About Infectieradar",
   "faq": "FAQ",
   "login": "Login",
-  "signup": "Signup",
-  "rightMenu": {
+  "signup": "Sign up",
+  "userDropdown": {
     "settings": "Settings",
-    "verified": "Account not verified",
-    "logout": "Logout"
+    "logout": "Logout",
+    "verified": "Account not verified"
   }
 }
+
