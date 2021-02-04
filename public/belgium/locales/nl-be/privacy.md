@@ -59,7 +59,6 @@ Daardoor zal de database administrator, onder de verantwoordelijkheid van de hoo
 De gegevens die de onderzoekers analyseren stellen hen niet in staat je identiteit te achterhalen.
 
 #### 3. Wat zal er gebeuren met de informatie over mij die tijdens de studie verzameld wordt?
-    
 
 Je deelname aan de studie betekent dat je persoonsgegevens
 
@@ -97,7 +96,8 @@ Je hebt het recht om
 -   de verwerking van je gegevens te beperken
     
 -   je te verzetten tegen het verwerken van je persoonsgegevens
-- je toestemming in te trekken voor de verwerking van persoonsgegevens. Je persoonsgegevens die al verzameld werden vóór je terugtrekking, zullen bewaard blijven om een foutieve interpretatie van de studieresultaten te vermijden
+
+-   je toestemming in te trekken voor de verwerking van persoonsgegevens. Je persoonsgegevens die al verzameld werden vóór je terugtrekking, zullen bewaard blijven om een foutieve interpretatie van de studieresultaten te vermijden
 
 #### 6. Wie anders dan de onderzoeker en zijn personeel heeft toegang tot mijn persoonsgegevens?
     
@@ -112,7 +112,6 @@ Om de kwaliteit van de studie te controleren kan het gebeuren dat je niet-gecode
     
 -   personen aangeduid door het Ethisch Comité.
     
-
 Indien nodig voor de studie mogen de gecodeerde studiegegevens naar andere landen binnen en buiten de Europese Unie (EU) worden gestuurd en worden nagekeken door:
 
 -   personeel (andere dan de inspecteurs) van de bevoegde gezondheidsautoriteiten van België (Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten, FAGG) of andere landen binnen en buiten de EU,
@@ -120,14 +119,11 @@ Indien nodig voor de studie mogen de gecodeerde studiegegevens naar andere lande
 -   het/de Belgisch(e) evaluerend(e) Ethisch(e) Comité(s),
     
 -   externe onderzoekers,
-    
 
 -   de opdrachtgever van de studie, door de opdrachtgever aangeduid personeel en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever, en/of
-    
 
 -   bedrijven uit de groep van de opdrachtgever in België en in andere landen binnen en buiten de EU.
     
-
 De Europese regelgeving en de Belgische wetgeving over gegevensbescherming leggen beperkingen op voor de overdracht van gegevens naar niet-EU landen. De opdrachtgever moet altijd verzekeren dat je gecodeerde studiegegevens gelijkwaardig beschermd worden bij overdracht naar een niet-EU land. Indien de opdrachtgever hiervoor een overeenkomst over databescherming afsluit, kan een kopie van deze overeenkomst worden verkregen via de onderzoeker.
 
 #### 7. Wat zal er gebeuren met de resultaten van de studie?
@@ -142,7 +138,7 @@ De resultaten van de studie zullen alleen worden gebruikt om een antwoord te gev
 
 #### 9. Hoe lang worden mijn gegevens bijgehouden?
     
-Na afloop van de studie zullen je gecodeerde gegevens minstens 25 jaar worden bijgehouden (Ref. ) om de geldigheid van het onderzoek te verzekeren. Dat zal ook het geval zijn indien je voortijdig met je deelname aan de studie stopt.
+Na afloop van de studie zullen je gecodeerde gegevens minstens 25 jaar worden bijgehouden om de geldigheid van het onderzoek te verzekeren. Dat zal ook het geval zijn indien je voortijdig met je deelname aan de studie stopt.
 
 ---
 
