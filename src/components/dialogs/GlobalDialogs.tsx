@@ -1,5 +1,7 @@
 import React from 'react';
 import AlertDialog from './GlobalDialogs/AlertDialog';
+import ChangeEmail from './GlobalDialogs/ChangeEmail';
+import ChangePassword from './GlobalDialogs/ChangePassword';
 import DeleteAccount from './GlobalDialogs/DeleteAccount';
 import Login from './GlobalDialogs/Login';
 import PasswordForgotten from './GlobalDialogs/PasswordForgotten';
@@ -18,6 +20,8 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
       <PasswordForgotten />
       <DeleteAccount />
       <AlertDialog />
+      <ChangeEmail />
+      <ChangePassword />
       {/*
 
       <EmailVerificationSuccess />
