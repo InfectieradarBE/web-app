@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PageConfig, PagesConfig } from '../../types/config/pages';
+import { PagesConfig } from '../../types/config/pages';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import RouteToLayout from './components/RouteToLayout';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
@@ -41,6 +41,7 @@ const Pages: React.FC<PagesProps> = (props) => {
             key={pageConfig.path}
             path={pageConfig.path}
             pageConfig={pageConfig}
+            defaultRoutes={defaultRoutes}
           />
         })}
         <Route path={linkResolverRootUrl} render={() => <LinkResolver defaultRoutes={defaultRoutes} />} />,
