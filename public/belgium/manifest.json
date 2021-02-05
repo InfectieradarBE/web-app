@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Infectieradar Belgium",
+  "name": "Infectieradar belgie",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,9 +13,9 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo270.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "270x270"
     }
   ],
   "start_url": ".",
