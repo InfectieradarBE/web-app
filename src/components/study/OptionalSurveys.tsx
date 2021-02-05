@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import React, { useState } from 'react';
+import SurveyCard, { SurveyCardProps } from '../cards/SurveyCard';
 import ChevronDown from '../icons/Arrows/ChevronDown';
 import ChevronUp from '../icons/Arrows/ChevronUp';
 
@@ -8,11 +8,19 @@ interface OptionalSurveysProps {
   hideBtn: string;
   showBtn: string;
   info: string;
-  surveys: Array<{}>;
+  surveys: Array<SurveyCardProps>;
+  openSurvey: (studyKey: string, surveyKey: string, profileId: string) => void;
 }
 
 const OptionalSurveys: React.FC<OptionalSurveysProps> = (props) => {
   const [showOptional, setShowOptional] = useState(false);
+
+  const surveyCards = () => props.surveys.map(s => <SurveyCard
+    key={s.studyKey + s.surveyKey + s.profiles[0].id}
+    {...s}
+    onClick={props.openSurvey}
+  />)
+
 
   return (
     <React.Fragment>
@@ -39,13 +47,7 @@ const OptionalSurveys: React.FC<OptionalSurveysProps> = (props) => {
             </h2>
           </div>
           {props.info ? <p>{props.info}</p> : null}
-
-          {props.surveys.map(s => <p>{'todo'}</p>)}
-          {/*<SurveyCard
-              key={s.studyKey + s.surveyKey + s.profiles[0].id}
-              {...s}
-              onClick={openSurvey}
-            />)*/}
+          {surveyCards()}
         </div> : null
       }
     </React.Fragment >
