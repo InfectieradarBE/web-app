@@ -278,6 +278,31 @@
                     "imageSrc": "images/questionnaire.jpg",
                     "showActionBtn": true
                   }
+                },
+                {
+                  "itemKey": "logoCredits",
+                  "className": "",
+                  "hideWhen": "",
+                  "config": {
+                    "type": "logoCredits",
+                    "useTitle": true,
+                    "className": "mb-2",
+                    "images": [
+                      {
+                        "key": "uhasselt",
+                        "altKey": "hasseltLogo",
+                        "url": "images/uhasselt.png",
+                        "width": 260
+                      },
+                      {
+                        "key": "epipose",
+                        "altKey": "epiposeLogo",
+                        "url": "images/epipose.jpg",
+                        "className": "",
+                        "width": 260
+                      }
+                    ]
+                  }
                 }
               ]
             }

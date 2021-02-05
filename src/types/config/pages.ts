@@ -142,12 +142,14 @@ export interface DeleteAccountConfig {
 export interface LogoCreditsConfig {
   type: 'logoCredits';
   useTitle?: boolean;
+  className?: string;
   images: Array<{
+    key: string;
     url: string;
     altKey: string;
     width?: number | string;
     height?: number | string;
-    containerClassName?: string;
+    className?: string;
   }>;
 }
 
