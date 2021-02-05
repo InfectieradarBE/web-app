@@ -21,6 +21,8 @@ REACT_APP_CONTENT_URL=<full url of the content hosting>
 
 REACT_APP_RECAPTCHA_SITEKEY=<you receive the site key from Google>
 
+REACT_APP_TITLE=<Your application name>
+REACT_APP_DESCRIPTION=<your application description>
 # CSP Header sources
 REACT_APP_CSP_DEFAULT_SRC="'self'"
 REACT_APP_CSP_MEDIA_SRC="'self'"
