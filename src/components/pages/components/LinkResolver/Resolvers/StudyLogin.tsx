@@ -82,7 +82,7 @@ const StudyLogin: React.FC<StudyLoginProps> = (props) => {
     return true;
   };
 
-  const resolvedContent = () => <div style={{ width: 500 }}>
+  const resolvedContent = () => <div style={{ width: 450 }}>
     <LoginCard
       title={t(`${translationRootKey}.content.cardTitle`)}
       infoText={t(`${translationRootKey}.content.info`)}

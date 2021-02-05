@@ -25,7 +25,7 @@ const Drawer: React.FC<DrawerProps> = (props) => {
       disableBackdropTransition={!isIOS && isMobile}
       disableDiscovery={isIOS}
       classes={{
-        paper: "bg-primary text-white"
+        paper: "bg-primary text-white py-2"
       }}
     >
       {props.items.map(item => {
