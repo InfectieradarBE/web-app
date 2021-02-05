@@ -11,6 +11,7 @@ import { useHistory } from 'react-router-dom';
 import { NavbarConfig } from '../../types/config/navbar'
 import NavbarItem from './NavbarComponents/NavbarItem'
 import Drawer from './NavbarComponents/Drawer';
+import { Profile } from '../../api/types/user';
 
 interface NavbarProps {
   loading?: boolean;
@@ -25,9 +26,12 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   const isLoggedIn = useIsAuthenticated();
   const logout = useLogout();
-  const loggedInUser = useSelector((state: RootState) => state.user.currentUser.account);
 
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const profileList = useSelector((state: RootState) => state.user.currentUser.profiles);
+  const currentProfile: Profile | undefined = profileList.find((profile: Profile) => profile.mainProfile === true);
+
 
   const handleNavigation = (url: string, backdrop: boolean) => {
     history.push(url);
@@ -77,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           data-bs-toggle="dropdown"
           aria-expanded="false" >
           <i className={clsx('fas fa-user', 'me-1')}></i>
-          {loggedInUser.accountId}
+          {currentProfile?.alias}
         </button >
 
         <div className="dropdown-menu dropdown-menu-end text-end ">
