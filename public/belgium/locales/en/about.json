@@ -11,5 +11,10 @@
     "title": "Registreer nu!",
     "body": "Geef door of je klachten hebt.",
     "actionLabel": "Vragenlijsten"
+  },
+  "logoCredits": {
+    "title": "In Collaboration with:",
+    "hasseltLogo": "Logo for the University of Hasselt",
+    "epiposeLogo": "Logo for the Epipose Project"
   }
 }

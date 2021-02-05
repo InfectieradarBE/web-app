@@ -166,6 +166,15 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'logoCredits':
         return <LogoCredits
           key={item.itemKey}
+          itemKey={item.itemKey}
+          className={item.className}
+          containerClassName={item.config.className}
+          useTitle={item.config.useTitle}
+          images={item.config.images.map(image => {
+            image.altKey = t(`${item.itemKey}.${image.altKey}`);
+            return image
+          })}
+          title={item.config.useTitle ? t(`${item.itemKey}.title`) : undefined}
         />
       case 'requiredSurveys':
         return <RequiredSurveys

@@ -11,5 +11,10 @@
     "title": "Register now!",
     "body": "Report whether you have any symptoms.",
     "actionLabel": "Questionnaires"
+  },
+  "logoCredits": {
+    "title": "In Collaboration with:",
+    "hasseltLogo": "Logo for the University of Hasselt",
+    "epiposeLogo": "Logo for the Epipose Project"
   }
 }
