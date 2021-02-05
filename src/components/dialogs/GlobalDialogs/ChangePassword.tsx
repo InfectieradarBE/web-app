@@ -166,13 +166,12 @@ const ChangePassword: React.FC<ChangePasswordProps> = (props) => {
 
           <AlertBox
             type="info"
-            className="mb-2"
             content={t('changePassword.info')}
           />
 
           <AlertBox
             type="danger"
-            className="mb-2"
+            className="mt-2"
             hide={!error}
             closable={true}
             onClose={() => setError('')}
@@ -180,8 +179,9 @@ const ChangePassword: React.FC<ChangePasswordProps> = (props) => {
             content={error}
           />
 
-          <div className="d-flex flex-wrap gap-2">
+          <div className="d-flex flex-wrap">
             <DialogBtn
+              className="mt-2 me-2"
               type="button"
               color="primary"
               outlined={true}
@@ -189,6 +189,7 @@ const ChangePassword: React.FC<ChangePasswordProps> = (props) => {
               onClick={() => handleClose()}
             />
             <DialogBtn
+              className="mt-2"
               type="submit"
               color="primary"
               loading={loading}

@@ -69,20 +69,20 @@ const DeleteAccount: React.FC<DeleteAccountProps> = (props) => {
         'bg-grey-1'
       )}>
         <AlertBox
-          className="mb-2"
           type="danger"
           content={t('dialogs:deleteAccount.info')}
         />
         <AlertBox
-          className="mb-2"
+          className="mt-2"
           type="danger"
           hide={!error}
           closable={true}
           onClose={() => setError('')}
           content={error}
         />
-        <div className="d-flex flex-wrap gap-2">
+        <div className="d-flex flex-wrap">
           <DialogBtn
+            className="mt-2 me-2"
             type="button"
             color="primary"
             label={t('deleteAccount.cancelBtn')}
@@ -91,6 +91,7 @@ const DeleteAccount: React.FC<DeleteAccountProps> = (props) => {
           <DialogBtn
             type="button"
             color="danger"
+            className="mt-2"
             loading={loading}
             outlined={true}
             label={t('deleteAccount.confirmBtn')}

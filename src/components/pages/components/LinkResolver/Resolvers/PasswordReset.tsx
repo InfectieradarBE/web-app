@@ -156,7 +156,7 @@ const PasswordReset: React.FC<PasswordResetProps> = (props) => {
     <span className="visually-hidden">Loading...</span>
   </div>
 
-  const errorCase = () => <div className="bg-grey-1 p-2" style={{ width: 500 }}>
+  const errorCase = () => <div className="p-2" style={{ width: 500 }}>
     <AlertBox
       type="danger"
       className="mb-2"

@@ -147,13 +147,12 @@ const ChangeEmail: React.FC<ChangeEmailProps> = (props) => {
 
           <AlertBox
             type="info"
-            className="mb-2"
             content={t('changeEmail.info')}
           />
 
           <AlertBox
             type="danger"
-            className="mb-2"
+            className="mt-2"
             hide={!error}
             closable={true}
             useIcon={true}
@@ -161,8 +160,9 @@ const ChangeEmail: React.FC<ChangeEmailProps> = (props) => {
             content={error}
           />
 
-          <div className="d-flex flex-wrap gap-2">
+          <div className="d-flex flex-wrap">
             <DialogBtn
+              className="mt-2 me-2"
               type="button"
               color="primary"
               outlined={true}
@@ -170,6 +170,7 @@ const ChangeEmail: React.FC<ChangeEmailProps> = (props) => {
               onClick={() => handleClose()}
             />
             <DialogBtn
+              className="mt-2"
               type="submit"
               color="primary"
               loading={loading}
@@ -194,7 +195,6 @@ const ChangeEmail: React.FC<ChangeEmailProps> = (props) => {
         >
           <AlertBox
             type="warning"
-            className="mb-2"
             content={t('changeEmail.warningDialog.content')}
           />
         </ConfirmDialog>
