@@ -82,5 +82,51 @@
       "invalidId": "Er gaat iets verkeerd. Controleer je e-mailadres of connectie.\nJe kan het nogmaals proberen wanneer de knop weer zichtbaar is.",
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
+  },
+  "changePassword": {
+    "title": "Wachtwoord wijzigen",
+    "currentPasswordInputLabel": "Huidig wachtwoord",
+    "currentPasswordInputPlaceholder": "Huidig wachtwoord",
+    "newPasswordInputLabel": "Nieuw wachtwoord",
+    "newPasswordInputPlaceholder": "Nieuw wachtwoord",
+    "confirmPasswordInputLabel": "Bevestig nieuw wachtwoord",
+    "confirmPasswordInputPlaceholder": "Bevestig nieuw wachtwoord",
+    "info": "Vanwege veiligheid moet je eerst je huidige wachtwoord geven.",
+    "cancelBtn": "Cancel",
+    "confirmBtn": "Wijzig wachtwoord",
+    "errors": {
+      "wrongCurrentPassword": "Verkeerd wachtwoord",
+      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
+      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    },
+    "successDialog": {
+      "title": "Wachtwoord gewijzigd",
+      "content": "Gelukt! Je wachtwoord is gewijzigd.",
+      "btn": "Ok."
+    }
+  },
+  "manageProfiles": {
+    "title": "Profielen",
+    "mainProfileLabel": "Ik",
+    "cancelBtn": "Cancel",
+    "newProfileBtn": "Nieuw profiel voor je kind",
+    "warningDialog": {
+      "title": "Verwijderen profiel",
+      "content": "Het verwijderen van het profiel {{ alias }} kan niet ongedaan worden gemaakt.",
+      "cancelBtn": "Cancel",
+      "confirmBtn": "Verwijder profiel"
+    }
+  },
+  "deleteAccount": {
+    "title": "Afmelden onderzoek",
+    "info": "Weet je zeker dat je jouw account wilt verwijderen?\nDit is een actie die je niet ongedaan kunt maken.",
+    "cancelBtn": "Cancel",
+    "confirmBtn": "Afmelden onderzoek",
+    "successDialog": {
+      "title": "Account verwijderd",
+      "content": "Gelukt! Je account is verwijderd. Dank voor je bijdrage. Je kunt altijd weer mee doen door een nieuw account aan te maken.",
+      "btn": "Dismiss."
+    }
   }
 }
