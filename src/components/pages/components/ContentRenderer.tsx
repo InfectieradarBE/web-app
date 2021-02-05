@@ -20,9 +20,8 @@ import VideoPlayer from '../../displays/VideoPlayer';
 import AccountSettings from '../../settings/AccountSettings';
 import CommunicationSettings from '../../settings/CommunicationSettings';
 import DeleteAccount from '../../settings/DeleteAccount';
-import OptionalSurveys from '../../study/OptionalSurveys';
-import RequiredSurveys from '../../study/RequiredSurveys';
 import MarkdownLoader from '../../displays/MarkdownLoader';
+import SurveyList from '../../study/SurveyList';
 
 
 interface ContentRendererProps {
@@ -176,13 +175,12 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           })}
           title={item.config.useTitle ? t(`${item.itemKey}.title`) : undefined}
         />
-      case 'requiredSurveys':
-        return <RequiredSurveys
+      case 'surveyList':
+        return <SurveyList
           key={item.itemKey}
-        />
-      case 'optionalSurveys':
-        return <OptionalSurveys
-          key={item.itemKey}
+          className={item.className}
+          pageKey={props.pageKey}
+          itemKey={item.itemKey}
         />
       case 'router':
         return <p

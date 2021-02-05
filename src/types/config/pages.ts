@@ -36,7 +36,7 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig | ImageConfig |
   AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
   CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
-  RequiredSurveysConfig | OptionalSurveysConfig | LinkListConfig
+  SurveyListConfig | LinkListConfig
 
 
 export interface MarkdownComponentConfig {
@@ -153,12 +153,8 @@ export interface LogoCreditsConfig {
   }>;
 }
 
-export interface RequiredSurveysConfig {
-  type: 'requiredSurveys';
-}
-
-export interface OptionalSurveysConfig {
-  type: 'optionalSurveys';
+export interface SurveyListConfig {
+  type: 'surveyList';
 }
 
 export interface RouterComponentConfig {
