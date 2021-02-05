@@ -15,8 +15,8 @@ const AvatarPreview: React.FC<AvatarPreviewProps> = (props) => {
       style={{
         fontSize: props.fontSize,
         lineHeight: props.fontSize,
-        minWidth: 24,
-        minHeight: 24
+        minWidth: 28,
+        minHeight: 28
       }}>
       {/*getAvatarIconFromID(props.avatarId)*/}
     </i>

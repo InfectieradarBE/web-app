@@ -15,6 +15,7 @@ import AvatarPreview from '../../displays/AvatarPreview';
 import { dialogPaddingXClass } from '../contants';
 import Dialog from '../Dialog';
 import ConfirmDialog from '../DialogTypes/ConfirmDialog';
+import EditProfile from '../DialogTypes/EditProfile';
 
 
 interface ManageProfilesProps {
@@ -177,8 +178,17 @@ const ManageProfiles: React.FC<ManageProfilesProps> = (props) => {
             color="primary"
             loading={loading}
             label={t('manageProfiles.newProfileBtn')}
+            onClick={() => setNewProfileDialog(true)}
           />
         </div>
+        <EditProfile
+          open={openNewProfileDialog}
+          selectedProfile={selectedProfile}
+          onClose={() => {
+            setSelectedProfile({ ...emptyProfile });
+            setNewProfileDialog(false)
+          }}
+        />
         <ConfirmDialog
           open={openConfirmDialog}
           color="warning"

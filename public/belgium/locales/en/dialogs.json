@@ -144,6 +144,23 @@
       "confirmBtn": "Verwijder profiel"
     }
   },
+  "editProfile": {
+    "new": {
+      "title": "Nieuw profiel",
+      "cancelBtn": "Cancel",
+      "submitBtn": "Maak Profiel voor je kind"
+    },
+    "edit": {
+      "title": "Wijzig profiel",
+      "cancelBtn": "Cancel",
+      "submitBtn": "Wijzigingen Opslaan"
+    },
+    "aliasInputLabel": "Bijnaam",
+    "aliasInputPlaceholder": "Bijnaam",
+    "consentCheckboxLabel": "Toestemming",
+    "consentCheckboxText": "Je mag uitsluitend van jezelf of als ouder of wettelijk vertegenwoordiger van je kind dat de leeftijd van 16 jaar nog niet heeft bereikt een profiel aanmaken en vragenlijsten invullen",
+    "avatarSelectorLabel": "Kies een plaatje"
+  },
   "deleteAccount": {
     "title": "Afmelden onderzoek",
     "info": "Weet je zeker dat je jouw account wilt verwijderen?\nDit is een actie die je niet ongedaan kunt maken.",
