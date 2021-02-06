@@ -14,6 +14,7 @@ import ScrollToTop from './components/misc/ScrollToTop';
 
 import { useTranslation } from 'react-i18next';
 import GlobalDialogs from './components/dialogs/GlobalDialogs';
+import { handleOpenExternalPage } from './utils/routeUtils';
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
@@ -54,10 +55,6 @@ function App() {
   const handleLanguageChange = (code: string) => {
     console.log(`Changing language to: ${code}`);
     i18n.changeLanguage(code);
-  }
-
-  const handleOpenExternalPage = (url: string) => {
-    window.open(url, "_blank")
   }
 
   return (

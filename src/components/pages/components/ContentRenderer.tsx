@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { openDialogWithoutPayload, openLoginDialog } from '../../../store/dialogSlice';
 
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
-import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
+import { getExternalOrLocalContentURL, handleOpenExternalPage } from '../../../utils/routeUtils';
 import ImageCard from '../../cards/ImageCard/ImageCard';
 import LoginCard from '../../cards/LoginCard';
 import SimpleCard from '../../cards/SimpleCard';
@@ -22,6 +22,7 @@ import CommunicationSettings from '../../settings/CommunicationSettings';
 import DeleteAccount from '../../settings/DeleteAccount';
 import MarkdownLoader from '../../displays/MarkdownLoader';
 import SurveyList from '../../study/SurveyList';
+import LinkList from '../../misc/LinkList';
 
 
 interface ContentRendererProps {
@@ -174,6 +175,23 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
             return image
           })}
           title={item.config.useTitle ? t(`${item.itemKey}.title`) : undefined}
+        />
+      case 'linkList':
+        return <LinkList
+          key={item.itemKey}
+          className={item.className}
+          title={t(`${item.itemKey}.title`)}
+          items={item.config.links.map(link => {
+            return {
+              label: t(`${item.itemKey}.${link.linkKey}`),
+              type: link.type,
+              value: link.value
+            }
+          })}
+          onChangeLanguage={(code: string) => i18n.changeLanguage(code)}
+          onNavigate={(url) => history.push(url)}
+          onOpenExternalPage={handleOpenExternalPage}
+          onOpenDialog={dialog => dispatch(openDialogWithoutPayload(dialog))}
         />
       case 'surveyList':
         return <SurveyList
