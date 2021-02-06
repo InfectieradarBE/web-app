@@ -7,8 +7,8 @@
   },
   "noSurveyLoaded": "Loading failed. refresh the page",
   "submittingSurveyResponsesMsg": "Reacties indienen ...",
-  "notValidPage": "Selecteer een geldig antwoord voor alle vragen",
   "notValidQuestion": "Selecteer een geldig antwoord.",
+  "backBtn": "Back",
   "nextBtn": "Volgende",
   "submitBtn": "Verzenden"
 }

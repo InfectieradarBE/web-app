@@ -16,6 +16,7 @@ import { SurveyResponse, SurveySingleItemResponse } from 'survey-engine/lib/data
 import { closeSurveyMode, openSurveyMode } from '../../../store/appSlice';
 import ConfirmDialog from '../../dialogs/DialogTypes/ConfirmDialog';
 import AlertBox from '../../displays/AlertBox';
+import SurveyView from '../../survey/SurveyView/SurveyView';
 
 
 interface SurveyPageProps {
@@ -105,7 +106,7 @@ const SurveyPage: React.FC<SurveyPageProps> = (props) => {
 
   const onSurveySubmit = async (responses: SurveySingleItemResponse[]) => {
     console.log(process.env.REACT_APP_SURVEY_ENGINE_VERSION);
-    const now = new Date().getTime() / 1000;
+    const now = Math.round(new Date().getTime() / 1000);
     const surveyResponse: SurveyResponse = {
       key: surveyKey,
       submittedAt: now,
@@ -163,6 +164,23 @@ const SurveyPage: React.FC<SurveyPageProps> = (props) => {
         content={t('exitSurveyWarningDialog.warning')}
       />
     </ConfirmDialog> : null}
+    {surveyAndContext ?
+      <SurveyView
+        loading={loading}
+        survey={surveyAndContext.survey}
+        context={surveyAndContext.context}
+        languageCode={i18n.language}
+        onSubmit={onSurveySubmit}
+        nextBtnText={t('nextBtn')}
+        backBtnText={t('backBtn')}
+        submitBtnText={t('submitBtn')}
+        invalidResponseText={t('notValidQuestion')}
+      /> :
+      <AlertBox type="danger"
+        useIcon={true}
+        content={t('noSurveyLoaded')}
+      />
+    }
   </React.Fragment>
 
   const loadingContent = () => <div
