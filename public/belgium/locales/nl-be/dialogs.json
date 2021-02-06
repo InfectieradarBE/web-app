@@ -83,6 +83,32 @@
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
   },
+  "changeEmail": {
+    "title": "E-mailadres wijzigen",
+    "emailInputLabel": "Nieuw e-mailadres",
+    "emailInputPlaceholder": "Nieuwe e-mailadres",
+    "passwordInputLabel": "Wachtwoord",
+    "passwordInputPlaceholder": "Wachtwoord",
+    "info": "Wil je een ander e-mailadres gebruiken? Pas je e-mailadres aan door op onderstaande knop te klikken. Let op: pas na bevestiging van het e-mailadres kun je weer inloggen op Infectieradar.",
+    "cancelBtn": "Cancel",
+    "confirmBtn": "Wijzig e-mailadres",
+    "errors": {
+      "wrongPasswordOrAccountId": "Er gaat iets verkeerd. Controleer je informatie. (e-mailadres of wachtwoord kan fout zijn.)",
+      "wrongEmailFormat": "Geen geldig e-mailadres.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    },
+    "warningDialog": {
+      "title": "Bevestig nieuwe e-mailadres",
+      "content": "Let op: pas na bevestiging van het nieuwe e-mailadres via de link in de bevestigingsmail die we je hebben gestuurd kun je weer inloggen op Infectieradar",
+      "cancelBtn": "Cancel",
+      "confirmBtn": "Wijzig e-mailadres"
+    },
+    "successDialog": {
+      "title": "E-mailadres gewijzigd",
+      "content": "Gelukt! Je e-mailadres is gewijzigd.",
+      "btn": "Ok"
+    }
+  },
   "changePassword": {
     "title": "Wachtwoord wijzigen",
     "currentPasswordInputLabel": "Huidig wachtwoord",
