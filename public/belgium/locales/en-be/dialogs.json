@@ -83,7 +83,6 @@
       "unknown": "Something has gone wrong. Check your information or try again later."
     }
   },
-
   "changePassword": {
     "title": "Wachtwoord wijzigen",
     "currentPasswordInputLabel": "Huidig wachtwoord",
@@ -118,6 +117,23 @@
       "cancelBtn": "Cancel",
       "confirmBtn": "Verwijder profiel"
     }
+  },
+  "editProfile": {
+    "new": {
+      "title": "New Profile",
+      "cancelBtn": "Cancel",
+      "submitBtn": "Create Profile for your child"
+    },
+    "edit": {
+      "title": "Edit Profile",
+      "cancelBtn": "Cancel",
+      "submitBtn": "Save Changes"
+    },
+    "aliasInputLabel": "Nickname",
+    "aliasInputPlaceholder": "Nickname",
+    "consentCheckboxLabel": "Consent",
+    "consentCheckboxText": "You may only create a profile and complete questionnaires of yourself or as a parent or legal representative of your child who has not yet reached the age of 16",
+    "avatarSelectorLabel": "Choose a picture"
   },
   "deleteAccount": {
     "title": "Afmelden onderzoek",

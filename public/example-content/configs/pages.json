@@ -422,17 +422,17 @@
                     "type": "linkList",
                     "links": [
                       {
-                        "key": "faqLink",
+                        "linkKey": "faqLink",
                         "type": "internal",
                         "value": "/faq"
                       },
                       {
-                        "key": "privacyStatementLink",
+                        "linkKey": "privacyStatementLink",
                         "type": "internal",
                         "value": "/privacy"
                       },
                       {
-                        "key": "contactLink",
+                        "linkKey": "contactLink",
                         "type": "internal",
                         "value": "/contact"
                       }
