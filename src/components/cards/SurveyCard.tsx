@@ -3,6 +3,8 @@ import React from 'react';
 import { SurveyInfo } from '../../api/types/studyAPI';
 import { Profile } from '../../api/types/user';
 import { useLocalization } from '../../hooks/useLocalization';
+import SurveyCardBtn from '../buttons/SurveyCardBtn';
+import styles from './SurveyCard.module.scss';
 
 export interface SurveyCardProps {
   surveyKey: string;
@@ -17,10 +19,10 @@ export interface SurveyCardProps {
 
 const SurveyCard: React.FC<SurveyCardProps> = (props) => {
   const localize = useLocalization();
-  console.log(localize(props.surveyInfos?.name))
+
   const surveyCard = () => <div
     className={clsx("p-2 my-2",
-      // styles.card,
+      styles.card,
       {
         "bg-primary text-white": props.category === 'prio',
         "bg-secondary text-body": ['normal', 'optional'].includes(props.category),
@@ -34,8 +36,10 @@ const SurveyCard: React.FC<SurveyCardProps> = (props) => {
       }
     }}
   >
-    <h5 className="fw-bold">
-      {localize(props.surveyInfos?.name)}
+    <h6 className="fw-bold">
+      <span className="fs-btn">
+        {localize(props.surveyInfos?.name)}
+      </span>
       <span className={
         clsx("ms-1 fw-light", {
           // "text-primary": props.category === 'normal',
@@ -45,22 +49,25 @@ const SurveyCard: React.FC<SurveyCardProps> = (props) => {
       }>
         {localize(props.surveyInfos?.typicalDuration)}
       </span>
-    </h5>
-    <p className="font-italic">
+    </h6>
+    <p className="fst-italic">
       {localize(props.surveyInfos?.description)}
     </p>
     <div className="d-flex justify-content-end">
-      {/*props.profiles.map(p =>
-          <SurveyCardButton key={p.id}
-            category={props.category}
-            profile={p}
-            onClick={() => {
-              if (props.onClick) {
-                props.onClick(props.studyKey, props.surveyKey, p.id)
-              }
-            }}
 
-          />)*/}
+      {props.profiles.map(p =>
+        <SurveyCardBtn
+          key={p.id}
+          category={props.category}
+          profile={p}
+          onClick={() => {
+            if (props.onClick) {
+              props.onClick(props.studyKey, props.surveyKey, p.id)
+            }
+          }}
+
+        />
+      )}
     </div>
   </div>
 
