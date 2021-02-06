@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { enterStudyReq, getAllAssignedSurveysReq, getAllAvailableStudiesReq, getStudiesForUserReq } from '../../api/studyAPI';
 import { AssignedSurvey, StudyInfoForUser, StudyInfos, SurveyInfo } from '../../api/types/studyAPI';
 import { RootState } from '../../store/rootReducer';
+import { DefaultRoutes } from '../../types/config/routing';
 import { SurveyCardProps } from '../cards/SurveyCard';
 import OptionalSurveys from './OptionalSurveys';
 import RequiredSurveys from './RequiredSurveys';
@@ -13,6 +14,7 @@ interface SurveyListProps {
   pageKey: string;
   itemKey: string;
   className?: string;
+  defaultRoutes: DefaultRoutes;
 }
 
 const SurveyList: React.FC<SurveyListProps> = (props) => {
@@ -147,8 +149,7 @@ const SurveyList: React.FC<SurveyListProps> = (props) => {
 
 
   const openSurvey = (studyKey: string, surveyKey: string, profileId: string) => {
-    console.log('todo');
-    //history.push(AppRoutes.Survey + `/${studyKey}/${surveyKey}?pid=${profileId}`);
+    history.push(props.defaultRoutes.surveyPage + `/${studyKey}/${surveyKey}?pid=${profileId}`);
   }
 
   const renderContent = () => <div className={props.className}>

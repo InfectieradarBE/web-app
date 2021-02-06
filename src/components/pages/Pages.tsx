@@ -6,6 +6,7 @@ import RouteToLayout from './components/RouteToLayout';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import LinkResolver, { linkResolverRootUrl } from './components/LinkResolver/LinkResolver';
 import { DefaultRoutes } from '../../types/config/routing';
+import SurveyPage from './components/SurveyPage';
 
 
 interface PagesProps {
@@ -31,6 +32,7 @@ const Pages: React.FC<PagesProps> = (props) => {
     auth: '/home',
     unauth: '/home',
     studyPage: '/home',
+    surveyPage: '/surveys',
   }
 
   return (
@@ -44,6 +46,7 @@ const Pages: React.FC<PagesProps> = (props) => {
             defaultRoutes={defaultRoutes}
           />
         })}
+        <Route path={defaultRoutes.surveyPage} render={() => <SurveyPage />} />
         <Route path={linkResolverRootUrl} render={() => <LinkResolver defaultRoutes={defaultRoutes} />} />,
         <Redirect to={isAuth ? defaultRoutes.auth : defaultRoutes.unauth} />
       </Switch>

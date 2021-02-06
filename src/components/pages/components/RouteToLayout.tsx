@@ -36,6 +36,7 @@ const RouteToLayout: React.FC<RouteToLayoutProps> = (props) => {
           isAuthenticated={isAuthenticated}
           pageKey={props.pageConfig.pageKey}
           rows={props.pageConfig.rows}
+          defaultRoutes={props.defaultRoutes}
         />
       }
     />

@@ -23,12 +23,14 @@ import DeleteAccount from '../../settings/DeleteAccount';
 import MarkdownLoader from '../../displays/MarkdownLoader';
 import SurveyList from '../../study/SurveyList';
 import LinkList from '../../misc/LinkList';
+import { DefaultRoutes } from '../../../types/config/routing';
 
 
 interface ContentRendererProps {
   isAuthenticated: boolean;
   rows: Array<PageRow>;
   pageKey: string;
+  defaultRoutes: DefaultRoutes;
 }
 
 const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
@@ -199,6 +201,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           className={item.className}
           pageKey={props.pageKey}
           itemKey={item.itemKey}
+          defaultRoutes={props.defaultRoutes}
         />
       case 'router':
         return <p
