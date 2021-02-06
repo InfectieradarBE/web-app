@@ -46,7 +46,7 @@ const Pages: React.FC<PagesProps> = (props) => {
             defaultRoutes={defaultRoutes}
           />
         })}
-        <Route path={defaultRoutes.surveyPage} render={() => <SurveyPage />} />
+        <Route path={defaultRoutes.surveyPage + '/:studyKey/:surveyKey'} render={() => <SurveyPage defaultRoutes={defaultRoutes} />} />
         <Route path={linkResolverRootUrl} render={() => <LinkResolver defaultRoutes={defaultRoutes} />} />,
         <Redirect to={isAuth ? defaultRoutes.auth : defaultRoutes.unauth} />
       </Switch>

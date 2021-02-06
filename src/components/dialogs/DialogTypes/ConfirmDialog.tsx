@@ -29,7 +29,7 @@ const ConfirmDialog: React.FC<ConfirmDialogProps> = (props) => {
         'bg-grey-1'
       )}>
         {props.children}
-        <div className="d-flex">
+        <div className="d-flex flex-wrap">
           <DialogBtn
             type="button"
             className="mt-2 me-2"
