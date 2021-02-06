@@ -49,13 +49,13 @@ const AccordionList: React.FC<AccordionListProps> = (props) => {
             >
               {isOpened ?
                 <React.Fragment>
-                  <span className="text-decoration-underline  d-none d-sm-inline">{props.closeLabel}</span>
+                  <span className="text-decoration-underline text-nowrap d-none d-sm-inline">{props.closeLabel}</span>
                   <span className="ps-1 d-flex align-items-center">
                     <ChevronUp />
                   </span>
                 </React.Fragment> :
                 <React.Fragment>
-                  <span className="text-decoration-underline d-none d-sm-inline">{props.openLabel}</span>
+                  <span className="text-decoration-underline text-nowrap  d-none d-sm-inline">{props.openLabel}</span>
                   <span className="ps-1 d-flex align-items-center">
                     <ChevronDown />
                   </span>
