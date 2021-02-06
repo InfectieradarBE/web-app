@@ -7,11 +7,12 @@ import { RootState } from '../../store/rootReducer'
 import { useTranslation } from 'react-i18next';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import { useLogout } from '../../hooks/useLogout';
-import { useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { NavbarConfig } from '../../types/config/navbar'
 import NavbarItem from './NavbarComponents/NavbarItem'
 import Drawer from './NavbarComponents/Drawer';
 import { Profile } from '../../api/types/user';
+import AvatarPreview from '../displays/AvatarPreview';
 
 interface NavbarProps {
   loading?: boolean;
@@ -29,6 +30,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
+  const surveyMode = useSelector((state: RootState) => state.app.surveyMode);
   const profileList = useSelector((state: RootState) => state.user.currentUser.profiles);
   const currentProfile: Profile | undefined = profileList.find((profile: Profile) => profile.mainProfile === true);
 
@@ -43,32 +45,33 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   const breakpoint = props.content.breakpoint ? props.content.breakpoint : 'md';
 
-  const normalLeftNav = <React.Fragment>
-    <button className="navbar-toggler nav-link btn h-100" onClick={() => setDrawerOpen(true)}>
-      <i className="fas fa-bars" ></i>
-      <span className="navbar-text  ps-1 text-white ">Menu</span>
-    </button>
-    <div className="collapse navbar-collapse bg-primary no-transition" id="navbarSupportedContent" >
-      <ul className="nav nav-tabs" >
-        {props.content.leftItems.map(
-          item =>
-            <NavbarItem
-              key={item.itemKey}
-              itemkey={item.itemKey}
-              title={t(`${item.itemKey}`)}
-              iconClass={item.iconClass}
-              url={item.url}
-              onNavigate={handleNavigation}
-              hideWhen={item.hideWhen}
-              type={item.type}
-              dropdownItems={item.dropdownItems}
-            />)}
-      </ul>
-    </div>
-  </React.Fragment>
 
   const navbarLeft = () => {
-    return normalLeftNav
+    if (!props.content) { return null; }
+
+    return <React.Fragment>
+      <button className="navbar-toggler nav-link btn h-100" onClick={() => setDrawerOpen(true)}>
+        <i className="fas fa-bars" ></i>
+        <span className="navbar-text  ps-1 text-white ">Menu</span>
+      </button>
+      <div className="collapse navbar-collapse bg-primary no-transition" id="navbarSupportedContent" >
+        <ul className="nav nav-tabs" >
+          {props.content.leftItems.map(
+            item =>
+              <NavbarItem
+                key={item.itemKey}
+                itemkey={item.itemKey}
+                title={t(`${item.itemKey}`)}
+                iconClass={item.iconClass}
+                url={item.url}
+                onNavigate={handleNavigation}
+                hideWhen={item.hideWhen}
+                type={item.type}
+                dropdownItems={item.dropdownItems}
+              />)}
+        </ul>
+      </div>
+    </React.Fragment>
   }
 
   const navbarRight = () => {
@@ -110,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       </div>
     }
     return <div className="row">
-      <ul className="nav nav-tabs justify-content-end  ">
+      <ul className="nav nav-tabs justify-content-end">
         <li className="nav item">
           <button className="nav-link btn" onClick={() => dispatch(openDialogWithoutPayload("login"))} >{t(`${'login'}`)}</button>
         </li>
@@ -120,6 +123,64 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       </ul>
     </div>
   }
+
+  const normalModeHeader = () =>
+    <div className="d-flex align-items-center w-100">
+      <div className="flex-grow-1">
+        {navbarLeft()}
+      </div>
+
+      {navbarRight()}
+    </div>
+
+
+  const surveyModeHeader = () => <div className="d-flex align-items-center w-100">
+    <button
+      type="button"
+      className="btn nav-link d-flex align-items-center text-decoration-none ps-0"
+      style={{
+        height: 44
+      }}
+      onClick={() =>
+        history.replace('/')
+      }>
+      <span className="material-icons me-1">{'keyboard_backspace'}</span>
+      {t('exitSurveyMode')}
+    </button>
+    <div className="flex-grow-1" ></div>
+
+    <div className={clsx("d-none d-sm-inline px-2 d-flex align-items-center text-white fs-btn",
+      //styles.navText
+    )}>
+      {t('selectedProfilePrefixInSurveyMode')}
+    </div>
+
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <div className="nav-link active border-2 border-secondary d-flex align-items-center text-decoration-none"
+          style={{
+            height: 44
+          }}>
+
+          <AvatarPreview
+            avatarId={surveyMode.profile?.avatarId ? surveyMode.profile?.avatarId : 'default'}
+            //fontSize="1.8rem"
+            className="m-0 me-md-2"
+          />
+
+          <span className="d-none d-md-inline-block text-truncate"
+            style={{ maxWidth: 200 }}
+          >
+            {surveyMode.profile?.alias}
+          </span>
+        </div>
+
+      </li>
+    </ul>
+
+
+
+  </div>
 
   return (
     <React.Fragment>
@@ -131,16 +192,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           onClose={() => { setDrawerOpen(false) }}
         />
       </div>
-      <div>
-        <nav className={`navbar navbar-expand-${breakpoint}  bg-primary p-0`}>
-          <div className="container">
-            <div className="row" >
-              {navbarLeft()}
-            </div>
-            {navbarRight()}
-          </div>
-        </nav>
-      </div>
+      <nav className={`navbar navbar-expand-${breakpoint} bg-primary p-0`}>
+        <div className="container">
+          {surveyMode.active ? surveyModeHeader() : normalModeHeader()}
+        </div>
+      </nav>
+
+
     </React.Fragment>
   );
 };

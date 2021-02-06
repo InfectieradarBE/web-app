@@ -11,7 +11,7 @@ interface AvatarPreviewProps {
 const AvatarPreview: React.FC<AvatarPreviewProps> = (props) => {
   return (
     <i
-      className={clsx("bg-white text-body", props.className)}
+      className={clsx("d-inline-block bg-white text-body", props.className)}
       style={{
         fontSize: props.fontSize,
         lineHeight: props.fontSize,

@@ -10,5 +10,7 @@
     "settings": "Settings",
     "verified": "Account not verified",
     "logout": "Logout"
-  }
+  },
+  "exitSurveyMode": "Exit",
+  "selectedProfilePrefixInSurveyMode": "Answering for: "
 }
