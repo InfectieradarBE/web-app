@@ -33,16 +33,23 @@ interface ContentRendererProps {
   defaultRoutes: DefaultRoutes;
 }
 
+const shouldHide = (hideWhen?: string, isAuth?: boolean): boolean => {
+  if (
+    (hideWhen === 'auth' && isAuth) ||
+    (hideWhen === 'unauth' && !isAuth)
+  ) {
+    return true;
+  }
+  return false;
+}
+
 const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
   const { t, i18n } = useTranslation([props.pageKey]);
   const dispatch = useDispatch()
   const history = useHistory();
 
   const renderItem = (item: PageItem) => {
-    if (
-      (item.hideWhen === 'auth' && props.isAuthenticated) ||
-      (item.hideWhen === 'unauth' && !props.isAuthenticated)
-    ) {
+    if (shouldHide(item.hideWhen, props.isAuthenticated)) {
       return null;
     }
     switch (item.config.type) {
@@ -216,6 +223,9 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
   }
 
   const renderColumn = (col: PageColumn, index: number) => {
+    if (shouldHide(col.hideWhen, props.isAuthenticated)) {
+      return null;
+    }
     return <div
       className={col.className}
       key={col.key ? col.key : index.toFixed()}>
@@ -228,8 +238,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       <TitleBar
         content={t('title')}
       />
-      {props.rows.map(row =>
-        <div
+      {props.rows.map(row => {
+        if (shouldHide(row.hideWhen, props.isAuthenticated)) {
+          return null;
+        }
+        return <div
           key={row.key}
           className={clsx(
             {
@@ -241,7 +254,9 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           <div className="row">
             {row.columns.map((col, index) => renderColumn(col, index))}
           </div>
-        </div>)}
+        </div>
+      }
+      )}
     </React.Fragment>
   );
 };

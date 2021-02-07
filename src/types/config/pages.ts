@@ -16,12 +16,14 @@ export interface PageRow {
   key: string;
   className?: string;
   fullWidth?: boolean;
+  hideWhen?: 'auth' | 'unauth';
   columns: Array<PageColumn>;
 }
 
 export interface PageColumn {
   key?: string;
   className?: string;
+  hideWhen?: 'auth' | 'unauth';
   items: Array<PageItem>;
 }
 
