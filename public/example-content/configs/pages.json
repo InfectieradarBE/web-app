@@ -1,7 +1,9 @@
 {
   "defaultRoutes": {
     "auth": "/home",
-    "unauth": "/home"
+    "unauth": "/home",
+    "studyPage": "/home",
+    "surveyPage": "/surveys"
   },
   "pages": [
     {
