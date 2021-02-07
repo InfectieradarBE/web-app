@@ -40,5 +40,17 @@
     "mxf": "",
     "webm": "",
     "fallbackText": "Jouw browser ondersteunt deze video niet."
+  },
+  "references": {
+    "title": "Lees verder",
+    "faqLink": "Vraag en antwoord",
+    "aboutLink": "Over Infectieradar",
+    "resultsLink": "Actuele resultaten"
+  },
+  "settingsReferences": {
+    "title": "Snelle instellingen",
+    "profileSettings": "Beheer profielen",
+    "communicationSettings": "E-mailherinneringen",
+    "languageSettings": "Talen"
   }
 }

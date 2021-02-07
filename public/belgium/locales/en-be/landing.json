@@ -40,5 +40,17 @@
     "mxf": "",
     "webm": "",
     "fallbackText": "Your browser does not support the video tag."
+  },
+  "references": {
+    "title": "Read More",
+    "faqLink": "FAQ",
+    "aboutLink": "About Infectieradar",
+    "resultsLink": "Results"
+  },
+  "settingsReferences": {
+    "title": "Quick Settings",
+    "profileSettings": "Manage Profiles",
+    "communicationSettings": "Email Reminders",
+    "languageSettings": "Languages"
   }
 }

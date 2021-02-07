@@ -13,6 +13,7 @@
         {
           "key": "content",
           "fullWidth": false,
+          "hideWhen": "auth",
           "className": "py-3",
           "columns": [
             {
@@ -111,6 +112,81 @@
                   "config": {
                     "type": "loginCard",
                     "showInfoText": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "content2",
+          "fullWidth": false,
+          "hideWhen": "unauth",
+          "className": "py-3",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "surveyList",
+                  "className": "",
+                  "config": {
+                    "type": "surveyList"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "sideCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "references",
+                  "className": "",
+                  "config": {
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "linkKey": "resultsLink",
+                        "type": "internal",
+                        "value": "/results"
+                      },
+                      {
+                        "linkKey": "aboutLink",
+                        "type": "internal",
+                        "value": "/about"
+                      },
+                      {
+                        "linkKey": "faqLink",
+                        "type": "internal",
+                        "value": "/faq"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "itemKey": "settingsReferences",
+                  "className": "",
+                  "config": {
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "linkKey": "profileSettings",
+                        "type": "dialog",
+                        "value": "manageProfiles"
+                      },
+                      {
+                        "linkKey": "communicationSettings",
+                        "type": "dialog",
+                        "value": "changeEmailReminder"
+                      },
+                      {
+                        "linkKey": "languageSettings",
+                        "type": "dialog",
+                        "value": "language"
+                      }
+                    ]
                   }
                 }
               ]
