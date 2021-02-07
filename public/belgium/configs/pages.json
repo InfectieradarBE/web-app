@@ -22,7 +22,6 @@
               "items": [
                 {
                   "itemKey": "video",
-                  "hideWhen": "auth",
                   "className": "bg-grey-7 w-100 h-100 text-white justify-content-center text-center d-flex align-items-center",
                   "config": {
                     "type": "video",
@@ -52,7 +51,6 @@
               "items": [
                 {
                   "itemKey": "aboutCard",
-                  "hideWhen": "auth",
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
@@ -72,7 +70,6 @@
               "items": [
                 {
                   "itemKey": "currentResultCard",
-                  "hideWhen": "auth",
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
@@ -92,7 +89,6 @@
               "items": [
                 {
                   "itemKey": "signupCard",
-                  "hideWhen": "auth",
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
@@ -112,7 +108,6 @@
               "items": [
                 {
                   "itemKey": "loginCard",
-                  "hideWhen": "auth",
                   "className": "h-100",
                   "config": {
                     "type": "loginCard",
@@ -135,7 +130,6 @@
               "items": [
                 {
                   "itemKey": "surveyList",
-                  "hideWhen": "unauth",
                   "className": "",
                   "config": {
                     "type": "surveyList"
@@ -149,7 +143,6 @@
               "items": [
                 {
                   "itemKey": "references",
-                  "hideWhen": "unauth",
                   "className": "",
                   "config": {
                     "type": "linkList",
@@ -174,7 +167,6 @@
                 },
                 {
                   "itemKey": "settingsReferences",
-                  "hideWhen": "unauth",
                   "className": "",
                   "config": {
                     "type": "linkList",
