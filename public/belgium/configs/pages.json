@@ -122,7 +122,7 @@
           "key": "content2",
           "fullWidth": false,
           "hideWhen": "unauth",
-          "className": "py-3",
+          "className": "py-3 min-vh-60",
           "columns": [
             {
               "key": "mainCol",
@@ -184,7 +184,7 @@
                       {
                         "linkKey": "languageSettings",
                         "type": "dialog",
-                        "value": "language"
+                        "value": "changeLanguage"
                       }
                     ]
                   }

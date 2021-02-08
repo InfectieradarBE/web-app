@@ -1,19 +1,21 @@
 import React from 'react';
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import EditBtn from '../buttons/EditBtn';
 import { openDialogWithoutPayload } from '../../store/dialogSlice';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
+import { RootState } from '../../store/rootReducer';
 
 interface CommunicationSettingsProps {
   itemKey: string;
 }
 
 const CommunicationSettings: React.FC<CommunicationSettingsProps> = (props) => {
-  const { t, i18n } = useTranslation(['settings']);
+  const { t } = useTranslation(['settings']);
   const isAuth = useIsAuthenticated();
   const dispatch = useDispatch();
+  const userLanguage = useSelector((state: RootState) => state.user.currentUser.account.preferredLanguage);
 
   if (!isAuth) {
     return <div className="bg-warning-light p-3">
@@ -48,9 +50,9 @@ const CommunicationSettings: React.FC<CommunicationSettingsProps> = (props) => {
         {t(`${props.itemKey}.defaultLanguage.info`)}
       </p>
       <EditBtn
-        onClick={() => dispatch(openDialogWithoutPayload('changeDefaultLanguage'))}
+        onClick={() => dispatch(openDialogWithoutPayload('changeLanguage'))}
       >
-        {t(`${props.itemKey}.defaultLanguage.languages.${i18n.language}`)}
+        {t(`${props.itemKey}.defaultLanguage.languages.${userLanguage}`)}
       </EditBtn>
     </div>
   );

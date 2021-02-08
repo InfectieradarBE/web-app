@@ -161,6 +161,25 @@
     "consentCheckboxText": "You may only create a profile and complete questionnaires for yourself or as a parent or legal representative of your child who has not yet reached the age of 18",
     "avatarSelectorLabel": "Choose a picture"
   },
+  "changeLanguage": {
+    "title": "Talen",
+    "defaultLanguageLabel": "Standaard taal",
+    "info": "U kunt de standaardtaal van de applicatie wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
+    "languages": {
+      "nl-be": "Nederlands",
+      "en": "Engels"
+    },
+    "cancelBtn": "Annuleer",
+    "confirmBtn": "Update taal",
+    "errors": {
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    },
+    "successDialog": {
+      "title": "Taal gewijzigd",
+      "content": "Gelukt! Je Taal is gewijzigd.",
+      "btn": "Ok"
+    }
+  },
   "deleteAccount": {
     "title": "Withdraw from study",
     "info": "Are you sure you want to delete your account? \nThis action cannot be undone.",

@@ -15,12 +15,14 @@ import ScrollToTop from './components/misc/ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import GlobalDialogs from './components/dialogs/GlobalDialogs';
 import { handleOpenExternalPage } from './utils/routeUtils';
+import { DialogConfig } from './types/config/dialogs';
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
   const [navbarConfig, setNavbarConfig] = useState<NavbarConfig | undefined>();
   const [pagesConfig, setPagesConfig] = useState<PagesConfig | undefined>();
   const [footerConfig, setFooterConfig] = useState<FooterContentConfig | undefined>();
+  const [dialogConfig, setDialogConfig] = useState<DialogConfig | undefined>();
 
   const { i18n } = useTranslation();
 
@@ -48,6 +50,12 @@ function App() {
       .then(res => res.json())
       .then(value => setFooterConfig(value))
       .catch(error => console.log(error));
+
+    // Dialog Config
+    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/dialogs.json`)
+    .then(res => res.json())
+    .then(value => setDialogConfig(value))
+    .catch(error => console.log(error));
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -80,7 +88,10 @@ function App() {
         onChangeLanguage={handleLanguageChange}
         onOpenExternalPage={handleOpenExternalPage}
       />
-      <GlobalDialogs />
+      <GlobalDialogs
+        config={dialogConfig}
+        onChangeLanguage={handleLanguageChange}
+       />
     </Router>
   );
 }

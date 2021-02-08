@@ -161,6 +161,26 @@
     "consentCheckboxText": "Je mag uitsluitend van jezelf of als ouder of wettelijk vertegenwoordiger van je kind dat de leeftijd van 16 jaar nog niet heeft bereikt een profiel aanmaken en vragenlijsten invullen",
     "avatarSelectorLabel": "Kies een plaatje"
   },
+  "changeLanguage": {
+    "title": "Talen",
+    "defaultLanguageLabel": "Standaard taal",
+    "info": "U kunt de standaardtaal van de applicatie wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
+    "languages": {
+      "nl-be": "Nederlands",
+      "en": "English"
+    },
+    "cancelBtn": "Annuleer",
+    "confirmBtn": "Update taal",
+    "errors": {
+      "emtyLanguages": "Failed to load languages. Please try again later",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    },
+    "successDialog": {
+      "title": "Taal gewijzigd",
+      "content": "Gelukt! Je Taal is gewijzigd.",
+      "btn": "Ok"
+    }
+  },
   "changeNotifications": {
     "title": "Wekelijkse herinneringsmail",
     "info": "Je kan hier instellen of je de wekelijkse herinneringsmail wilt ontvangen.",

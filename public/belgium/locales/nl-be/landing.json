@@ -52,5 +52,18 @@
     "profileSettings": "Beheer profielen",
     "communicationSettings": "E-mailherinneringen",
     "languageSettings": "Talen"
+  },
+  "surveyList": {
+    "requiredSurveys": {
+      "title": "In te vullen vragenlijsten",
+      "info": "Hieronder staan de verschillende vragenlijsten voor het onderzoek.",
+      "successMsg": "Dank je wel! Je hebt alle vragenlijsten ingevuld. Volgende week vragen we je weer."
+    },
+    "optionalSurveys": {
+      "title": "Wijzigen achtergrondinformatie",
+      "info": "Als je situatie veranderd is, kan je hieronder opnieuw de achtergrondvragenlijst(en) invullen. We kunnen helaas niet laten zien wat je de laatste keer hebt ingevuld, of je alleen specifieke vragen laten aanpassen.",
+      "hideBtn": "Verbergen",
+      "showBtn": "Is je achtergrondinformatie veranderd?"
+    }
   }
 }
