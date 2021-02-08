@@ -5,10 +5,10 @@
     "cancelBtn": "Ga door met invullen",
     "confirmBtn": "Verlaat vragenlijst"
   },
-  "noSurveyLoaded": "Loading failed. refresh the page",
-  "submittingSurveyResponsesMsg": "Reacties indienen ...",
-  "notValidQuestion": "Selecteer een geldig antwoord.",
-  "backBtn": "Back",
+  "noSurveyLoaded": "Fout bij laden enquête. Vernieuw de pagina",
+  "submittingSurveyResponsesMsg": "Vragenlijst indienen",
+  "notValidQuestion": "Selecteer een geldig antwoord",
+  "backBtn": "Terug",
   "nextBtn": "Volgende",
   "submitBtn": "Verzenden"
 }
