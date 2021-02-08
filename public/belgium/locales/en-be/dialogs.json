@@ -84,71 +84,71 @@
     }
   },
   "changeEmail": {
-    "title": "E-mailadres wijzigen",
-    "emailInputLabel": "Nieuw e-mailadres",
-    "emailInputPlaceholder": "Nieuwe e-mailadres",
-    "passwordInputLabel": "Wachtwoord",
-    "passwordInputPlaceholder": "Wachtwoord",
-    "info": "Wil je een ander e-mailadres gebruiken? Pas je e-mailadres aan door op onderstaande knop te klikken. Let op: pas na bevestiging van het e-mailadres kun je weer inloggen op Infectieradar.",
+    "title": "Change email address",
+    "emailInputLabel": "New email address",
+    "emailInputPlaceholder": "New email address",
+    "passwordInputLabel": "Password",
+    "passwordInputPlaceholder": "Password",
+    "info": "Do you want to use a different email address? Change your email address by clicking on the button below. Note: you cannot log back in to Infectieradar.be until you have confirmed the email address.",
     "cancelBtn": "Cancel",
-    "confirmBtn": "Wijzig e-mailadres",
+    "confirmBtn": "Change email address",
     "errors": {
-      "wrongPasswordOrAccountId": "Er gaat iets verkeerd. Controleer je informatie. (e-mailadres of wachtwoord kan fout zijn.)",
-      "wrongEmailFormat": "Geen geldig e-mailadres.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "wrongPasswordOrAccountId": "Something has gone wrong. Check your information. (email address or password may be wrong)",
+      "wrongEmailFormat": "Not a valid email address.",
+      "unknown": "Something has gone wrong. Check your information or try again later."
     },
     "warningDialog": {
-      "title": "Bevestig nieuwe e-mailadres",
-      "content": "Let op: pas na bevestiging van het nieuwe e-mailadres via de link in de bevestigingsmail die we je hebben gestuurd kun je weer inloggen op Infectieradar",
+      "title": "Confirm new email address",
+      "content": "Note: you cannot log back in to Infectieradar.be until you have confirmed the new email address via the link in the confirmation email that we have sent you.",
       "cancelBtn": "Cancel",
-      "confirmBtn": "Wijzig e-mailadres"
+      "confirmBtn": "Confirm"
     },
     "successDialog": {
-      "title": "E-mailadres gewijzigd",
-      "content": "Gelukt! Je e-mailadres is gewijzigd.",
+      "title": "Email address changed",
+      "content": "Success! Your email address has been changed.",
       "btn": "Ok"
     }
   },
   "changePassword": {
-    "title": "Wachtwoord wijzigen",
-    "currentPasswordInputLabel": "Huidig wachtwoord",
-    "currentPasswordInputPlaceholder": "Huidig wachtwoord",
-    "newPasswordInputLabel": "Nieuw wachtwoord",
-    "newPasswordInputPlaceholder": "Nieuw wachtwoord",
-    "confirmPasswordInputLabel": "Bevestig nieuw wachtwoord",
-    "confirmPasswordInputPlaceholder": "Bevestig nieuw wachtwoord",
-    "info": "Vanwege veiligheid moet je eerst je huidige wachtwoord geven.",
+    "title": "Change password",
+    "currentPasswordInputLabel": "Current password",
+    "currentPasswordInputPlaceholder": "Current password",
+    "newPasswordInputLabel": "New password",
+    "newPasswordInputPlaceholder": "New password",
+    "confirmPasswordInputLabel": "Confirm new password",
+    "confirmPasswordInputPlaceholder": "Confirm new password",
+    "info": "For security reasons, you must first provide your current password.",
     "cancelBtn": "Cancel",
-    "confirmBtn": "Wijzig wachtwoord",
+    "confirmBtn": "Confirm",
     "errors": {
-      "wrongCurrentPassword": "Verkeerd wachtwoord",
-      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
-      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "wrongCurrentPassword": "Wrong password",
+      "passwordRules": "Your password must have at least 8 characters and contain 3 of the following 4 elements: lowercase letters, capital letters, numbers, punctuation marks.",
+      "passwordMatch": "The passwords are not the same",
+      "unknown": "Something has gone wrong. Check your information or try again later."
     },
     "successDialog": {
-      "title": "Wachtwoord gewijzigd",
-      "content": "Gelukt! Je wachtwoord is gewijzigd.",
-      "btn": "Ok."
+      "title": "Password changed",
+      "content": "Success! Your password has been changed",
+      "btn": "Ok"
     }
   },
   "manageProfiles": {
-    "title": "Profielen",
-    "mainProfileLabel": "Ik",
+    "title": "Profiles",
+    "mainProfileLabel": "Me",
     "cancelBtn": "Cancel",
-    "newProfileBtn": "Nieuw profiel voor je kind",
+    "newProfileBtn": "New profile for your child",
     "warningDialog": {
-      "title": "Verwijderen profiel",
-      "content": "Het verwijderen van het profiel {{ alias }} kan niet ongedaan worden gemaakt.",
+      "title": "Delete profile",
+      "content": "The removal of the profile {{ alias }} cannot be undone.",
       "cancelBtn": "Cancel",
-      "confirmBtn": "Verwijder profiel"
+      "confirmBtn": "Delete profile"
     }
   },
   "editProfile": {
     "new": {
       "title": "New Profile",
       "cancelBtn": "Cancel",
-      "submitBtn": "Create Profile for your child"
+      "submitBtn": "Create profile for your child"
     },
     "edit": {
       "title": "Edit Profile",
@@ -158,18 +158,18 @@
     "aliasInputLabel": "Nickname",
     "aliasInputPlaceholder": "Nickname",
     "consentCheckboxLabel": "Consent",
-    "consentCheckboxText": "You may only create a profile and complete questionnaires of yourself or as a parent or legal representative of your child who has not yet reached the age of 16",
+    "consentCheckboxText": "You may only create a profile and complete questionnaires for yourself or as a parent or legal representative of your child who has not yet reached the age of 18",
     "avatarSelectorLabel": "Choose a picture"
   },
   "deleteAccount": {
-    "title": "Afmelden onderzoek",
-    "info": "Weet je zeker dat je jouw account wilt verwijderen?\nDit is een actie die je niet ongedaan kunt maken.",
+    "title": "Withdraw from study",
+    "info": "Are you sure you want to delete your account? \nThis action cannot be undone.",
     "cancelBtn": "Cancel",
-    "confirmBtn": "Afmelden onderzoek",
+    "confirmBtn": "Withdraw",
     "successDialog": {
-      "title": "Account verwijderd",
-      "content": "Gelukt! Je account is verwijderd. Dank voor je bijdrage. Je kunt altijd weer mee doen door een nieuw account aan te maken.",
-      "btn": "Dismiss."
+      "title": "Account deleted",
+      "content": "Done! Your account has been deleted. Thank you for your contribution. You can always participate again by creating a new account.",
+      "btn": "Ok"
     }
   }
 }
