@@ -20,6 +20,17 @@ REACT_APP_FALLBACK_LANGUAGE=<language-code>
 REACT_APP_CONTENT_URL=<full url of the content hosting>
 
 REACT_APP_RECAPTCHA_SITEKEY=<you receive the site key from Google>
+
+REACT_APP_TITLE=<Your application name>
+REACT_APP_DESCRIPTION=<your application description>
+# CSP Header sources
+REACT_APP_CSP_DEFAULT_SRC="'self'"
+REACT_APP_CSP_MEDIA_SRC="'self'"
+REACT_APP_CSP_IMG_SRC="'self'"
+REACT_APP_CSP_STYLE_SRC="'unsafe-inline' 'self'"
+REACT_APP_CSP_SCRIPT_SRC="https://www.gstatic.com/ https://www.google.com/ 'self' 'unsafe-eval'"
+REACT_APP_CSP_CHILD_SRC="https://www.google.com/"
+REACT_APP_CSP_CONNECT_URLS="<all urls which must be allowed in CSP connect-src, including PARTICIPANT-API SERVICE address, separated by spaces>"
 ```
 
 

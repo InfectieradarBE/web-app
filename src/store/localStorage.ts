@@ -22,6 +22,9 @@ export const loadState = (): RootState => {
     }
     const loadedState = JSON.parse(serializedState);
     initialRootState = merge(initialRootState, loadedState);
+    initialRootState.app.surveyMode = {
+      active: false,
+    }
     // Object.assign(initialRootState, loadedState);
     return initialRootState;
   } catch (err) {

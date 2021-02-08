@@ -2,7 +2,8 @@
   "defaultRoutes": {
     "auth": "/home",
     "unauth": "/home",
-    "studyPage": "/home"
+    "studyPage": "/home",
+    "surveyPage": "/surveys"
   },
   "pages": [
     {
@@ -12,6 +13,7 @@
         {
           "key": "content",
           "fullWidth": false,
+          "hideWhen": "auth",
           "className": "py-3",
           "columns": [
             {
@@ -56,7 +58,7 @@
                       "type": "navigate",
                       "value": "/about"
                     },
-                    "imageSrc": "/images/about.jpeg",
+                    "imageSrc": "/images/about.jpg",
                     "showActionBtn": true
                   }
                 }
@@ -110,6 +112,81 @@
                   "config": {
                     "type": "loginCard",
                     "showInfoText": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "content2",
+          "fullWidth": false,
+          "hideWhen": "unauth",
+          "className": "py-3",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "surveyList",
+                  "className": "",
+                  "config": {
+                    "type": "surveyList"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "sideCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "references",
+                  "className": "",
+                  "config": {
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "linkKey": "resultsLink",
+                        "type": "internal",
+                        "value": "/results"
+                      },
+                      {
+                        "linkKey": "aboutLink",
+                        "type": "internal",
+                        "value": "/about"
+                      },
+                      {
+                        "linkKey": "faqLink",
+                        "type": "internal",
+                        "value": "/faq"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "itemKey": "settingsReferences",
+                  "className": "",
+                  "config": {
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "linkKey": "profileSettings",
+                        "type": "dialog",
+                        "value": "manageProfiles"
+                      },
+                      {
+                        "linkKey": "communicationSettings",
+                        "type": "dialog",
+                        "value": "changeEmailReminder"
+                      },
+                      {
+                        "linkKey": "languageSettings",
+                        "type": "dialog",
+                        "value": "language"
+                      }
+                    ]
                   }
                 }
               ]
@@ -218,9 +295,9 @@
                   "config": {
                     "type": "teaserImage",
                     "image": {
-                      "url": "/images/about.jpeg",
-                      "backgroundPosition": "50% 14%",
-                      "height": 367
+                      "url": "/images/about2.jpg",
+                      "backgroundPosition": "50% 43%",
+                      "height": 420
                     }
                   }
                 }
@@ -277,6 +354,31 @@
                     },
                     "imageSrc": "images/questionnaire.jpg",
                     "showActionBtn": true
+                  }
+                },
+                {
+                  "itemKey": "logoCredits",
+                  "className": "",
+                  "hideWhen": "",
+                  "config": {
+                    "type": "logoCredits",
+                    "useTitle": true,
+                    "className": "mb-2",
+                    "images": [
+                      {
+                        "key": "uhasselt",
+                        "altKey": "hasseltLogo",
+                        "url": "images/uhasselt.png",
+                        "width": 260
+                      },
+                      {
+                        "key": "epipose",
+                        "altKey": "epiposeLogo",
+                        "url": "images/epipose.jpg",
+                        "className": "",
+                        "width": 260
+                      }
+                    ]
                   }
                 }
               ]
@@ -441,17 +543,17 @@
                     "type": "linkList",
                     "links": [
                       {
-                        "key": "faqLink",
+                        "linkKey": "faqLink",
                         "type": "internal",
                         "value": "/faq"
                       },
                       {
-                        "key": "privacyStatementLink",
+                        "linkKey": "privacyStatementLink",
                         "type": "internal",
                         "value": "/privacy"
                       },
                       {
-                        "key": "contactLink",
+                        "linkKey": "contactLink",
                         "type": "internal",
                         "value": "/contact"
                       }
@@ -462,7 +564,8 @@
                   "itemKey": "systemInfo",
                   "className": "",
                   "config": {
-                    "type": "systemInfo"
+                    "type": "systemInfo",
+                    "showBrowserInfo": true
                   }
                 }
               ]

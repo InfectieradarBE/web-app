@@ -1,5 +1,10 @@
 import React from 'react';
+import AlertDialog from './GlobalDialogs/AlertDialog';
+import ChangeEmail from './GlobalDialogs/ChangeEmail';
+import ChangePassword from './GlobalDialogs/ChangePassword';
+import DeleteAccount from './GlobalDialogs/DeleteAccount';
 import Login from './GlobalDialogs/Login';
+import ManageProfiles from './GlobalDialogs/ManageProfiles';
 import PasswordForgotten from './GlobalDialogs/PasswordForgotten';
 import Signup from './GlobalDialogs/Signup';
 import SignupSuccess from './GlobalDialogs/SignupSuccess';
@@ -14,11 +19,15 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
       <Signup />
       <SignupSuccess />
       <PasswordForgotten />
+      <DeleteAccount />
+      <AlertDialog />
+      <ChangeEmail />
+      <ChangePassword />
+      <ManageProfiles />
       {/*
-      <ResetPasswordDialog />
+
       <EmailVerificationSuccess />
-      <SuccessDialog />
-      <ErrorDialog />*/}
+      */}
     </React.Fragment>
   );
 };

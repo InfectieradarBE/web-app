@@ -16,12 +16,14 @@ export interface PageRow {
   key: string;
   className?: string;
   fullWidth?: boolean;
+  hideWhen?: 'auth' | 'unauth';
   columns: Array<PageColumn>;
 }
 
 export interface PageColumn {
   key?: string;
   className?: string;
+  hideWhen?: 'auth' | 'unauth';
   items: Array<PageItem>;
 }
 
@@ -36,7 +38,7 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig | ImageConfig |
   AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
   CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
-  RequiredSurveysConfig | OptionalSurveysConfig | LinkListConfig
+  SurveyListConfig | LinkListConfig
 
 
 export interface MarkdownComponentConfig {
@@ -142,21 +144,19 @@ export interface DeleteAccountConfig {
 export interface LogoCreditsConfig {
   type: 'logoCredits';
   useTitle?: boolean;
+  className?: string;
   images: Array<{
+    key: string;
     url: string;
     altKey: string;
     width?: number | string;
     height?: number | string;
-    containerClassName?: string;
+    className?: string;
   }>;
 }
 
-export interface RequiredSurveysConfig {
-  type: 'requiredSurveys';
-}
-
-export interface OptionalSurveysConfig {
-  type: 'optionalSurveys';
+export interface SurveyListConfig {
+  type: 'surveyList';
 }
 
 export interface RouterComponentConfig {

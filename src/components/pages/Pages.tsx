@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { PageConfig, PagesConfig } from '../../types/config/pages';
+import { PagesConfig } from '../../types/config/pages';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import RouteToLayout from './components/RouteToLayout';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import LinkResolver, { linkResolverRootUrl } from './components/LinkResolver/LinkResolver';
 import { DefaultRoutes } from '../../types/config/routing';
+import SurveyPage from './components/SurveyPage';
 
 
 interface PagesProps {
@@ -31,6 +32,7 @@ const Pages: React.FC<PagesProps> = (props) => {
     auth: '/home',
     unauth: '/home',
     studyPage: '/home',
+    surveyPage: '/surveys',
   }
 
   return (
@@ -41,8 +43,10 @@ const Pages: React.FC<PagesProps> = (props) => {
             key={pageConfig.path}
             path={pageConfig.path}
             pageConfig={pageConfig}
+            defaultRoutes={defaultRoutes}
           />
         })}
+        <Route path={defaultRoutes.surveyPage + '/:studyKey/:surveyKey'} render={() => <SurveyPage defaultRoutes={defaultRoutes} />} />
         <Route path={linkResolverRootUrl} render={() => <LinkResolver defaultRoutes={defaultRoutes} />} />,
         <Redirect to={isAuth ? defaultRoutes.auth : defaultRoutes.unauth} />
       </Switch>

@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { openDialogWithoutPayload, openLoginDialog } from '../../../store/dialogSlice';
 
 import { PageColumn, PageItem, PageRow } from '../../../types/config/pages';
-import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
+import { getExternalOrLocalContentURL, handleOpenExternalPage } from '../../../utils/routeUtils';
 import ImageCard from '../../cards/ImageCard/ImageCard';
 import LoginCard from '../../cards/LoginCard';
 import SimpleCard from '../../cards/SimpleCard';
@@ -20,15 +20,27 @@ import VideoPlayer from '../../displays/VideoPlayer';
 import AccountSettings from '../../settings/AccountSettings';
 import CommunicationSettings from '../../settings/CommunicationSettings';
 import DeleteAccount from '../../settings/DeleteAccount';
-import OptionalSurveys from '../../study/OptionalSurveys';
-import RequiredSurveys from '../../study/RequiredSurveys';
 import MarkdownLoader from '../../displays/MarkdownLoader';
+import SurveyList from '../../study/SurveyList';
+import LinkList from '../../misc/LinkList';
+import { DefaultRoutes } from '../../../types/config/routing';
 
 
 interface ContentRendererProps {
   isAuthenticated: boolean;
   rows: Array<PageRow>;
   pageKey: string;
+  defaultRoutes: DefaultRoutes;
+}
+
+const shouldHide = (hideWhen?: string, isAuth?: boolean): boolean => {
+  if (
+    (hideWhen === 'auth' && isAuth) ||
+    (hideWhen === 'unauth' && !isAuth)
+  ) {
+    return true;
+  }
+  return false;
 }
 
 const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
@@ -37,10 +49,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
   const history = useHistory();
 
   const renderItem = (item: PageItem) => {
-    if (
-      (item.hideWhen === 'auth' && props.isAuthenticated) ||
-      (item.hideWhen === 'unauth' && !props.isAuthenticated)
-    ) {
+    if (shouldHide(item.hideWhen, props.isAuthenticated)) {
       return null;
     }
     switch (item.config.type) {
@@ -156,6 +165,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'communicationSettings':
         return <CommunicationSettings
           key={item.itemKey}
+          itemKey={item.itemKey}
         />
       case 'deleteAccount':
         return <DeleteAccount
@@ -165,14 +175,40 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       case 'logoCredits':
         return <LogoCredits
           key={item.itemKey}
+          itemKey={item.itemKey}
+          className={item.className}
+          containerClassName={item.config.className}
+          useTitle={item.config.useTitle}
+          images={item.config.images.map(image => {
+            image.altKey = t(`${item.itemKey}.${image.altKey}`);
+            return image
+          })}
+          title={item.config.useTitle ? t(`${item.itemKey}.title`) : undefined}
         />
-      case 'requiredSurveys':
-        return <RequiredSurveys
+      case 'linkList':
+        return <LinkList
           key={item.itemKey}
+          className={item.className}
+          title={t(`${item.itemKey}.title`)}
+          items={item.config.links.map(link => {
+            return {
+              label: t(`${item.itemKey}.${link.linkKey}`),
+              type: link.type,
+              value: link.value
+            }
+          })}
+          onChangeLanguage={(code: string) => i18n.changeLanguage(code)}
+          onNavigate={(url) => history.push(url)}
+          onOpenExternalPage={handleOpenExternalPage}
+          onOpenDialog={dialog => dispatch(openDialogWithoutPayload(dialog))}
         />
-      case 'optionalSurveys':
-        return <OptionalSurveys
+      case 'surveyList':
+        return <SurveyList
           key={item.itemKey}
+          className={item.className}
+          pageKey={props.pageKey}
+          itemKey={item.itemKey}
+          defaultRoutes={props.defaultRoutes}
         />
       case 'router':
         return <p
@@ -187,6 +223,9 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
   }
 
   const renderColumn = (col: PageColumn, index: number) => {
+    if (shouldHide(col.hideWhen, props.isAuthenticated)) {
+      return null;
+    }
     return <div
       className={col.className}
       key={col.key ? col.key : index.toFixed()}>
@@ -199,8 +238,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
       <TitleBar
         content={t('title')}
       />
-      {props.rows.map(row =>
-        <div
+      {props.rows.map(row => {
+        if (shouldHide(row.hideWhen, props.isAuthenticated)) {
+          return null;
+        }
+        return <div
           key={row.key}
           className={clsx(
             {
@@ -212,7 +254,9 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           <div className="row">
             {row.columns.map((col, index) => renderColumn(col, index))}
           </div>
-        </div>)}
+        </div>
+      }
+      )}
     </React.Fragment>
   );
 };

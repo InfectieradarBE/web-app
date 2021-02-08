@@ -22,7 +22,7 @@ const TextField: React.FC<TextFieldProps> = (props) => {
       {inputProps.label ?
         <label
           className={
-            "form-label fw-bold w-100"
+            "form-label w-100"
             //styles.inputLabel
           }
           htmlFor={inputProps.id}>
@@ -36,7 +36,8 @@ const TextField: React.FC<TextFieldProps> = (props) => {
           "form-control border-2",
           {
             "border-danger": hasError && !props.disabled,
-            "border-white": !hasError && !props.disabled,
+            "border-0": !hasError,
+            "input-padding-custom": !hasError,
             // "border-2 border-grey-2": props.disabled,
 
             // [styles.inputError]: hasError

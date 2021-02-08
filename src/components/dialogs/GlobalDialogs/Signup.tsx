@@ -249,7 +249,7 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           >{t('signup.loginLink')}</button>
         </div>
 
-        <div className="mt-2 captchaBadgeAlt">
+        <div className="mt-2 captcha-badge-alt">
           <Trans t={t} i18nKey="signup.reCaptchaLinks">
             Intro Text
             <TextLink

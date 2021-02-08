@@ -6,9 +6,11 @@
   "faq": "Vraag en antwoord",
   "login": "Inloggen",
   "signup": "Aanmelden",
-  "userDropdown": {
+  "rightMenu": {
     "settings": "Instellingen",
     "logout": "Uitloggen",
     "verified": "Account niet geverifieerd"
-  }
+  },
+  "exitSurveyMode": "Uitgang",
+  "selectedProfilePrefixInSurveyMode": "Beantwoorden voor :"
 }

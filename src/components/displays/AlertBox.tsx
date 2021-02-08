@@ -46,7 +46,7 @@ const AlertBox: React.FC<AlertBoxProps> = (props) => {
   }
 
   return (
-    <div className={clsx(styles.animatedBox,
+    <div className={clsx(styles['animated-box'],
       {
         [styles.animatedBoxOpen]: !props.hide,
       })}>

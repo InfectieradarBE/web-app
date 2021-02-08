@@ -6,10 +6,11 @@
   "faq": "FAQ",
   "login": "Login",
   "signup": "Signup",
-  "userDropdown": {
+  "rightMenu": {
     "settings": "Settings",
-    "logout": "Logout",
-    "verified": "Account not verified"
-  }
+    "verified": "Account not verified",
+    "logout": "Logout"
+  },
+  "exitSurveyMode": "Exit",
+  "selectedProfilePrefixInSurveyMode": "Answering for: "
 }
-
