@@ -3,6 +3,7 @@ import { DialogConfig } from '../../types/config/dialogs';
 import AlertDialog from './GlobalDialogs/AlertDialog';
 import ChangeEmail from './GlobalDialogs/ChangeEmail';
 import ChangeLanguage from './GlobalDialogs/ChangeLanguage';
+import ChangeEmailReminder from './GlobalDialogs/ChangeNotifications';
 import ChangePassword from './GlobalDialogs/ChangePassword';
 import DeleteAccount from './GlobalDialogs/DeleteAccount';
 import Login from './GlobalDialogs/Login';
@@ -33,10 +34,7 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
         availableLanguages={props.config? props.config.languages : undefined}
         onChangeLanguage={props.onChangeLanguage}
       />
-      {/*
-
-      <EmailVerificationSuccess />
-      */}
+      <ChangeEmailReminder />
     </React.Fragment>
   );
 };
