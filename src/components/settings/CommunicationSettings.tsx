@@ -35,7 +35,7 @@ const CommunicationSettings: React.FC<CommunicationSettingsProps> = (props) => {
         {t(`${props.itemKey}.emailReminders.info`)}
       </p>
       <EditBtn
-        onClick={() => dispatch(openDialogWithoutPayload('changeEmailReminder'))}
+        onClick={() => dispatch(openDialogWithoutPayload('changeNotifications'))}
       >
         {t(`${props.itemKey}.emailReminders.btnManageNotifications`)}
       </EditBtn>

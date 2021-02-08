@@ -1,6 +1,7 @@
 import React from 'react';
 import AlertDialog from './GlobalDialogs/AlertDialog';
 import ChangeEmail from './GlobalDialogs/ChangeEmail';
+import ChangeEmailReminder from './GlobalDialogs/ChangeNotifications';
 import ChangePassword from './GlobalDialogs/ChangePassword';
 import DeleteAccount from './GlobalDialogs/DeleteAccount';
 import Login from './GlobalDialogs/Login';
@@ -24,10 +25,7 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
       <ChangeEmail />
       <ChangePassword />
       <ManageProfiles />
-      {/*
-
-      <EmailVerificationSuccess />
-      */}
+      <ChangeEmailReminder />
     </React.Fragment>
   );
 };
