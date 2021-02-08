@@ -1,8 +1,8 @@
 import clsx from 'clsx';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { setPreferredLanguageReq } from '../../../api/userAPI';
+import { getUserReq, setPreferredLanguageReq } from '../../../api/userAPI';
 import { getErrorMsg } from '../../../api/utils';
 import { closeDialog } from '../../../store/dialogSlice';
 import { RootState } from '../../../store/rootReducer';
@@ -25,17 +25,40 @@ const ChangeLanguage: React.FC<ChangeLanguageProps> = (props) => {
   const dispatch = useDispatch();
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'changeLanguage';
-  const userLanguage = useSelector((state: RootState) => state.user.currentUser.account.preferredLanguage);
+  const currentUser = useSelector((state: RootState) => state.user.currentUser);
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const [formData, setFormData] = useState({
-    currentLanguage: userLanguage
-  });
+  const [selectedLanguage, setSelectedLanguage] = useState(currentUser.account.preferredLanguage);
+
+  useEffect(() => {
+    if (open) {
+      fetchUser();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
+
+  const fetchUser = async () => {
+    if (loading) { return; }
+    setLoading(true);
+    try {
+      const user = (await getUserReq()).data;
+      dispatch(userActions.setUser(user));
+      setLoading(false);
+    } catch (e) {
+      console.log(e.respomse);
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    setSelectedLanguage(currentUser.account.preferredLanguage);
+  }, [currentUser]);
 
   const resetState = () => {
     setError('');
+    setSelectedLanguage(currentUser.account.preferredLanguage);
     setLoading(false);
   }
 
@@ -44,17 +67,16 @@ const ChangeLanguage: React.FC<ChangeLanguageProps> = (props) => {
     dispatch(closeDialog());
   }
 
-  const changeLanguage = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const changeLanguage = async () => {
     setLoading(true);
     setError("");
     try {
-      const response = await setPreferredLanguageReq(formData.currentLanguage);
+      const response = await setPreferredLanguageReq(selectedLanguage);
       if (response.status === 200) {
         if (response.data) {
           dispatch(userActions.setUser(response.data));
         }
-        props.onChangeLanguage(formData.currentLanguage);
+        props.onChangeLanguage(selectedLanguage);
         handleClose();
       }
     } catch (e) {
@@ -70,7 +92,7 @@ const ChangeLanguage: React.FC<ChangeLanguageProps> = (props) => {
     switch (errorMsg) {
       case 'no error response':
       case 'error during token validation':
-        setFormData({currentLanguage: userLanguage})
+        setSelectedLanguage(selectedLanguage)
         dispatch(closeDialog());
         break;
       default:
@@ -91,7 +113,6 @@ const ChangeLanguage: React.FC<ChangeLanguageProps> = (props) => {
         'py-3',
         'bg-grey-1'
       )}>
-        <form onSubmit={changeLanguage}>
           {
             props.availableLanguages && props.availableLanguages.length > 0 ?
               <SelectField
@@ -100,12 +121,12 @@ const ChangeLanguage: React.FC<ChangeLanguageProps> = (props) => {
                 name="defaultLanguage"
                 autoComplete="off"
                 className="mb-2"
-                value={formData.currentLanguage}
+                value={selectedLanguage}
                 values={props.availableLanguages.map(language => { return { 'code': language.code, 'label': t(`dialogs:changeLanguage.languages.${language.itemKey}`) } })}
                 required={true}
                 onChange={(event) => {
                   const value = event.target.value;
-                  setFormData(prev => { return { ...prev, currentLanguage: value } });
+                  setSelectedLanguage(value);
                 }}
                 hasError={error!==""}
               />
@@ -143,9 +164,9 @@ const ChangeLanguage: React.FC<ChangeLanguageProps> = (props) => {
               loading={loading}
               disabled={loading}
               label={t('changeLanguage.confirmBtn')}
+              onClick={() => changeLanguage()}
             />
           </div>
-        </form>
       </div>
     </Dialog>
   );
