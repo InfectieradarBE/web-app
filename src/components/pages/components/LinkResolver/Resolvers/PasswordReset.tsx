@@ -194,7 +194,7 @@ const PasswordReset: React.FC<PasswordResetProps> = (props) => {
         content={error}
       />
       <TextField
-        id="email"
+        id="emailPwReset"
         className="mb-2"
         disabled={true}
         name="email"
@@ -203,7 +203,7 @@ const PasswordReset: React.FC<PasswordResetProps> = (props) => {
         placeholder={t(`${translationRootKey}.content.emailPlaceholder`)}
       />
       <TextField
-        id="password"
+        id="passwordPwReset"
         type="password"
         className="mb-2"
         required
@@ -219,7 +219,7 @@ const PasswordReset: React.FC<PasswordResetProps> = (props) => {
         }}
       />
       <TextField
-        id="confirmPassword"
+        id="confirmPasswordPwReset"
         type="password"
         className="mb-2"
         required
