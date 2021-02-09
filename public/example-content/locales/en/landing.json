@@ -41,5 +41,30 @@
     "mxf": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-bron.mxf",
     "webm": "https://www.rovid.nl/rivm/aco/2020/rivm-aco-20201007-idonqekt3-web.webm",
     "fallbackText": "Your browser does not support the video tag."
+  },
+  "references": {
+    "title": "Read More",
+    "faqLink": "FAQ",
+    "aboutLink": "About Infectieradar",
+    "resultsLink": "Results"
+  },
+  "settingsReferences": {
+    "title": "Quick Settings",
+    "profileSettings": "Manage Profiles",
+    "communicationSettings": "Email Reminders",
+    "languageSettings": "Languages"
+  },
+  "surveyList": {
+    "requiredSurveys": {
+      "title": "In te vullen vragenlijsten",
+      "info": "Hieronder staan de verschillende vragenlijsten voor het onderzoek.",
+      "successMsg": "Dank je wel! Je hebt alle vragenlijsten ingevuld. Volgende week vragen we je weer."
+    },
+    "optionalSurveys": {
+      "title": "Wijzigen achtergrondinformatie",
+      "info": "Als je situatie veranderd is, kan je hieronder opnieuw de achtergrondvragenlijst(en) invullen. We kunnen helaas niet laten zien wat je de laatste keer hebt ingevuld, of je alleen specifieke vragen laten aanpassen.",
+      "hideBtn": "Verbergen",
+      "showBtn": "Is je achtergrondinformatie veranderd?"
+    }
   }
 }

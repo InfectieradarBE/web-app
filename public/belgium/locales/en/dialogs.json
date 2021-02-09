@@ -161,6 +161,47 @@
     "consentCheckboxText": "Je mag uitsluitend van jezelf of als ouder of wettelijk vertegenwoordiger van je kind dat de leeftijd van 16 jaar nog niet heeft bereikt een profiel aanmaken en vragenlijsten invullen",
     "avatarSelectorLabel": "Kies een plaatje"
   },
+  "changeLanguage": {
+    "title": "Talen",
+    "defaultLanguageLabel": "Standaard taal",
+    "info": "U kunt de standaardtaal van de applicatie wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
+    "languages": {
+      "nl-be": "Nederlands",
+      "en": "English"
+    },
+    "cancelBtn": "Annuleer",
+    "confirmBtn": "Update taal",
+    "errors": {
+      "emtyLanguages": "Failed to load languages. Please try again later",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    },
+    "successDialog": {
+      "title": "Taal gewijzigd",
+      "content": "Gelukt! Je Taal is gewijzigd.",
+      "btn": "Ok"
+    }
+  },
+  "changeNotifications": {
+    "title": "Wekelijkse herinneringsmail",
+    "info": "Je kan hier instellen of je de wekelijkse herinneringsmail wilt ontvangen.",
+    "weeklyReminder": {
+      "label": "Wekelijkse herinneringsmail",
+      "on": "Wel de wekelijkse herinneringsmail",
+      "off": "Geen wekelijkse herinneringsmail"
+    },
+    "newsletter": {
+      "label": "E-mail naar alle deelnemers. Soms zal het nodig zijn om een e-mail te sturen naar alle deelnemers met informatie over het onderzoek.",
+      "on": "Wel deze e-mails naar alle deelnemers ontvangen",
+      "off": "Niet deze e-mails naar alle deelnemers ontvangen"
+    },
+    "cancelBtn": "Cancel",
+    "submitBtn": "Aanpassen",
+    "successDialog": {
+      "title": "Instellingen aangepast",
+      "content": "Gelukt! Je e-mail instellingen zijn aangepast.",
+      "btn": "Gelukt! Je e-mail instellingen zijn aangepast."
+    }
+  },
   "deleteAccount": {
     "title": "Afmelden onderzoek",
     "info": "Weet je zeker dat je jouw account wilt verwijderen?\nDit is een actie die je niet ongedaan kunt maken.",
