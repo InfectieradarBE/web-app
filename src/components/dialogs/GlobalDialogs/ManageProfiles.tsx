@@ -96,7 +96,7 @@ const ManageProfiles: React.FC<ManageProfilesProps> = (props) => {
     >
       <AvatarPreview
         avatarId={p.avatarId}
-        fontSize="2.25rem"
+        size="28px"
         className="me-2"
       />
       <p className="m-0 flex-grow-1 d-flex fs-btn">

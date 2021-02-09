@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 import { Profile } from '../../api/types/user';
+import AvatarPreview from '../displays/AvatarPreview';
 
 interface SurveyCardBtnProps {
   profile: Profile;
@@ -22,16 +23,10 @@ const SurveyCardBtn: React.FC<SurveyCardBtnProps> = (props) => {
         )
       }
     >
-      <i className={clsx("me-1",
-        'bg-white'
-      )}
-        style={{
-          minWidth: 28,
-          minHeight: 28
-        }}
-      >
-        {/*getAvatarIconFromID(props.profile.avatarId)*/}
-      </i>
+      <AvatarPreview
+        className="me-1"
+        avatarId={props.profile.avatarId}
+      />
       <span
         className="d-inline-block text-truncate align-self-center"
         style={{ maxWidth: 200 }}

@@ -1,25 +1,23 @@
 import React from 'react';
 // import { getAvatarIconFromID } from '../../avatars/ProfileUtils';
 import clsx from 'clsx';
+import { getExternalOrLocalContentURL } from '../../utils/routeUtils';
 
 interface AvatarPreviewProps {
   avatarId: string;
-  fontSize?: string;
+  size?: string;
   className?: string;
 }
 
 const AvatarPreview: React.FC<AvatarPreviewProps> = (props) => {
+  const size = props.size ? props.size : 28;
   return (
-    <i
-      className={clsx("d-inline-block bg-white text-body", props.className)}
-      style={{
-        fontSize: props.fontSize,
-        lineHeight: props.fontSize,
-        minWidth: 28,
-        minHeight: 28
-      }}>
-      {/*getAvatarIconFromID(props.avatarId)*/}
-    </i>
+    <img
+      alt="avatar"
+      src={getExternalOrLocalContentURL('/images/avatars/Unknown_schwaz.png')}
+      className={clsx("d-inline-block bg-white text-body overflow-hidden", props.className)}
+      width={size}
+    />
   );
 };
 
