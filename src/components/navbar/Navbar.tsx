@@ -12,7 +12,7 @@ import { NavbarConfig } from '../../types/config/navbar'
 import NavbarItem from './NavbarComponents/NavbarItem'
 import Drawer from './NavbarComponents/Drawer';
 import { Profile } from '../../api/types/user';
-import AvatarPreview from '../displays/AvatarPreview';
+import Avatar from '../displays/Avatar';
 
 interface NavbarProps {
   loading?: boolean;
@@ -162,7 +162,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             height: 44
           }}>
 
-          <AvatarPreview
+          <Avatar
             avatarId={surveyMode.profile?.avatarId ? surveyMode.profile?.avatarId : 'default'}
             //fontSize="1.8rem"
             className="m-0 me-md-2"
