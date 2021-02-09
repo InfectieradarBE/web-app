@@ -76,14 +76,17 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   const navbarRight = () => {
     if (isLoggedIn) {
-      return <div className="dropdown nav-tabs">
+      return <div className="dropdown nav-tabs d-flex align-items-center">
         <button
           className="btn btn-primary dropdown-toggle text-lightest fs-btn "
           type="button"
           id="DropMenu"
           data-bs-toggle="dropdown"
           aria-expanded="false" >
-          <i className={clsx('fas fa-user', 'me-1')}></i>
+          {currentProfile ? <Avatar
+            className="me-1"
+            avatarId={currentProfile.avatarId}
+          /> : null}
           {currentProfile?.alias}
         </button >
 

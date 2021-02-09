@@ -97,7 +97,7 @@ const ManageProfiles: React.FC<ManageProfilesProps> = (props) => {
       <Avatar
         avatarId={p.avatarId}
         size="28px"
-        className="me-2"
+        className="me-1"
       />
       <p className="m-0 flex-grow-1 d-flex align-items-center fs-btn">
         <span

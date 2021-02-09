@@ -1,0 +1,29 @@
+
+.avatar {
+  padding: 2px;
+}
+
+.avatar:hover {
+  padding: 0;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.selected {
+  padding: 0;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.selected:before {
+  --notchSize: 15px;
+    content: '';
+    position: absolute;
+    top: -1px; right: -1px;
+
+    border-top-width: var(--notchSize);
+    border-top-style: solid;
+    border-color: inherit;
+    border-left: var(--notchSize) solid transparent;
+    width: 0;
+}
