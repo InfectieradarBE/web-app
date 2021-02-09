@@ -162,21 +162,21 @@
     "avatarSelectorLabel": "Choose a picture"
   },
   "changeLanguage": {
-    "title": "Talen",
-    "defaultLanguageLabel": "Standaard taal",
-    "info": "U kunt de standaardtaal van de applicatie wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
+    "title": "Languages",
+    "defaultLanguageLabel": "Default language",
+    "info": "You can change the default language here. If availble, also emails will be send in this language.",
     "languages": {
       "nl-be": "Nederlands",
-      "en": "Engels"
+      "en": "English"
     },
-    "cancelBtn": "Annuleer",
-    "confirmBtn": "Update taal",
+    "cancelBtn": "Cancel",
+    "confirmBtn": "Confirm language",
     "errors": {
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "unknown": "Something has gone wrong. Check your information or try again later."
     },
     "successDialog": {
-      "title": "Taal gewijzigd",
-      "content": "Gelukt! Je Taal is gewijzigd.",
+      "title": "Language changed",
+      "content": "Success! The default language has changed.",
       "btn": "Ok"
     }
   },
