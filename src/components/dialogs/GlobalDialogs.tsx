@@ -25,7 +25,6 @@ const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
       <ChangePassword />
       <ManageProfiles />
       <ChangeLanguage
-        availableLanguages={props.config ? props.config.languages : undefined}
         onChangeLanguage={props.onChangeLanguage}
       />
       <ChangeNotifications />
