@@ -1,0 +1,121 @@
+{
+  "title": "Foire aux questions",
+  "accordionControls": {
+    "open": "En savoir plus",
+    "close": "Fermer"
+  },
+  "topCardTitle": "Foire aux questions concernant Infectieradar.be",
+  "topCardContent": "",
+  "signupCard": {
+    "imageAlt": "Participer image",
+    "title": "Participer",
+    "body": "Aidez-nous à surveiller de près l’évolution du coronavirus. Chaque semaine, communiquez-nous si vous ressentez d’éventuels symptômes.",
+    "actionLabel": "Enregistrez-vous"
+  },
+  "faq": [
+    {
+      "title": "Qui a mis sur pied Infectieradar.be ?",
+      "content": "Infectieradar.be fait partie d'Influenzanet, un partenariat européen entre diverses universités et autorités publiques. L'Université de Hasselt fait également partie de ce partenariat. L'objectif d'Influenzanet est de cartographier et de surveiller les symptômes des infections, telles que le nouveau coronavirus (COVID-19), et de la grippe, et ce, auprès de citoyens européens. Ces données seront utilisées à des fins de recherche scientifique dans le cadre des maladies infectieuses. Actuellement, ces données serviront à mieux connaître le nouveau coronavirus."
+    },
+    {
+      "title": "À qui le Infectieradar.be s’adresse-t-il ?",
+      "content": "Toutes les personnes qui résident en Belgique et qui ont accès à Internet peuvent participer à Infectieradar.be, sur une base volontaire, et pour la durée qu’elles souhaitent."
+    },
+    {
+      "title": "Comment puis-je participer à l’étude proposée par Infectieradar.be ?",
+      "content": "Vous pouvez participer en vous inscrivant au moyen d’une adresse électronique et d’un mot de passe personnel."
+    },
+    {
+      "title": "Pourquoi devrais-je participer ?",
+      "content": "En vue d’obtenir une image qui se rapproche le plus de la réalité, il importe que chacun participe, sans tenir compte de ses antécédents ou de ses facteurs de risque. Une personne qui n'est jamais malade peut tout aussi bien tomber malade qu'une personne qui est souvent malade. Dès lors, ces données peuvent également nous aider à comprendre les raisons pour lesquelles certaines personnes contractent moins souvent une infection."
+    },
+    {
+      "title": "Est-ce que Infectieradar.be est identique à l'étude Corona de l'Université d’Anvers (UAntwerp) ?",
+      "content": "Les deux études suivent les symptômes liés à l'épidémie du coronavirus en Belgique. Toutefois, par le biais de Infectieradar.be, nous espérons pouvoir mettre en place un système de surveillance à l’échelle nationale dans le but d’assurer le suivi des plaintes relatives aux maladies infectieuses à long terme, également en ce qui concerne la période postérieure au coronavirus. Par ailleurs, ce travail est réalisé à l’échelle internationale. La recherche est corrélée avec une initiative européenne : Influenzanet. Il s'agit d'un partenariat européen avec diverses universités et autorités publiques. L'objectif d'Influenzanet est de surveiller et de cartographier les symptômes des infections virales, telles que la grippe, et ce, auprès des citoyens des États membres de l'Union européenne. Outre le suivi national, une comparaison des données au niveau européen sera également possible."
+    },
+    {
+      "title": "Je ne suis pas de nationalité belge, mais je vis en Belgique, puis-je participer à Infectieradar.be ?",
+      "content": "Oui, certainement ! Infectieradar.be s'intéresse à la situation en Belgique. Toutes les personnes qui résident en Belgique peuvent donc participer, même si elles possèdent une autre nationalité."
+    },
+    {
+      "title": "Je suis de nationalité belge, mais je vis à l'étranger, puis-je participer ?",
+      "content": "Non. Seules les personnes qui résident en Belgique peuvent participer à cette étude. Toutefois si vous résidez en Allemagne, en Australie, en Autriche, en Suisse, en Belgique, en France, en Italie, au Mexique, au Portugal, en Suède ou au Royaume-Uni, des relevés ou des études similaires existent dans ces pays."
+    },
+    {
+      "title": "J’ai été vacciné contre la grippe cette année. Puis-je participer ?",
+      "content": "L’étude de Infectieradar.be s'adresse à tous les citoyens, indépendamment du fait qu’ils aient été vaccinés contre la grippe ou non."
+    },
+    {
+      "title": "Combien de temps faut-il consacrer pour compléter le questionnaire du Infectieradar.be ?",
+      "content": "5 minutes s’avèrent nécessaires pour s'inscrire et compléter le premier questionnaire. Chaque semaine, il faut ensuite consacrer entre 30 secondes (si vous n'avez pas de plaintes), et quelques minutes (si vous avez des plaintes ou si vous avez eu des plaintes au cours de la semaine écoulée) afin de compléter le questionnaire hebdomadaire."
+    },
+    {
+      "title": "Quelle est la durée de l’étude par l’entremise de Infectieradar.be ?",
+      "content": "Aucune date de fin n’a été définie, mais vous pouvez cesser votre participation à tout moment en vous désabonnant du questionnaire hebdomadaire. Vous pouvez vous réinscrire ultérieurement si vous changez d'avis, et souhaitez participer à nouveau."
+    },
+    {
+      "title": "La participation à l’étude me coûte-t-elle de l'argent ?",
+      "content": "Non, la participation à l'étude est gratuite et s’effectue sur une base volontaire."
+    },
+    {
+      "title": "Que se passe-t-il après mon inscription ?",
+      "content": "Vous allez recevoir un premier questionnaire, dans le cadre duquel serez invité(e) à répondre à des questions préliminaires relatives à votre santé et à votre vie quotidienne. Ce questionnaire ne vous sera soumis qu'une seule fois. Ensuite, vous recevrez un courrier électronique hebdomadaire afin de compléter un questionnaire."
+    },
+    {
+      "title": "Quelles sont les questions qui figurent dans le questionnaire préliminaire ?",
+      "content": "Le questionnaire préliminaire a pour but de connaître un peu mieux chaque utilisateur. Pour la plupart des questions, vous avez la possibilité de ne pas répondre, en choisissant la réponse « Je ne sais pas ». Comptez environ 5 minutes pour compléter le questionnaire préliminaire."
+    },
+    {
+      "title": "Quelles sont les questions qui figurent dans le questionnaire hebdomadaire ?",
+      "content": "Le questionnaire hebdomadaire interroge sur les symptômes que vous avez pu avoir depuis votre dernière participation (le nez qui coule, une toux, de la fièvre, etc.). Si vous n’avez pas eu de symptôme, seules quelques secondes suffisent pour compléter le questionnaire. En revanche, si vous avez eu des symptômes, quelques détails vous seront demandés, afin de savoir quand les symptômes ont commencé, si vous avez vu un médecin, si vous avez eu un arrêt de travail, etc. Le remplissage du questionnaire prend alors quelques minutes."
+    },
+    {
+      "title": "Puis-je remplir le questionnaire pour quelqu'un d'autre, par exemple, pour mon enfant ?",
+      "content": "Oui, c’est possible. Vous pouvez compléter les questionnaires pour votre/vos enfant(s) âgé(s) de moins de 18 ans. Toutefois, les autres membres du ménage âgés de 18 ans ou plus doivent créer leur propre compte."
+    },
+    {
+      "title": "Je ne sais pas si je serai toujours en mesure de compléter le questionnaire hebdomadaire, puis-je participer ?",
+      "content": "Oui, vous pouvez participer. Vous pouvez remplir les questionnaires à la fréquence qui vous convient le mieux. Plus vous participez, plus les données recueillies seront intéressantes. Toutefois, même une personne qui ne participe que toutes les deux semaines est utile pour l'enquête."
+    },
+    {
+      "title": "Mes données sont-elles sécurisées ?",
+      "content": "Nous accordons une très grande importance à la sécurité des données relatives aux participants de l’étude proposée sur le site Infectieradar.be. Le système doit répondre à des exigences strictes, notamment dans le domaine de la vie privée et de la sécurité des informations Le système a fait l’objet de tests rigoureux en termes de sécurité, de confidentialité et de capacité, et ce, par des experts externes à l'université de Hasselt. Ainsi, il a été procédé à une évaluation minutieuse des risques relatifs aux droits et aux libertés des personnes qui font l’objet du traitement de leurs données à caractère personnel."
+    },
+    {
+      "title": "J'ai déjà été contaminé(e) par le nouveau coronavirus, est-ce encore utile de participer ?",
+      "content": "Oui, nous vous conseillons de participer à cette étude, même si vous avez déjà eu le coronavirus. L’étude proposée par Infectieradar.be a été mise sur pied dans le but d’étudier les symptômes ou les plaintes liées à ce nouveau virus, y compris parmi les personnes qui ont déjà été infectées par le nouveau coronavirus. Lorsque vous vous connectez, nous vous demandons d'indiquer si vous avez déjà été infecté(e) par le coronavirus."
+    },
+    {
+      "title": "J'ai oublié mon mot de passe, que dois-je faire ?",
+      "content": "Au niveau de la fenêtre de connexion, cliquez sur « mot de passe oublié ». Introduisez votre adresse électronique, et vous recevrez un courrier électronique afin de pouvoir créer un nouveau mot de passe."
+    },
+    {
+      "title": "Puis-je configurer si je souhaite recevoir des courriers électroniques de la part d'Infectieradar.be ?",
+      "content": "Oui, c'est possible. Au niveau de la barre bleue située dans la partie supérieure droite de l’écran, cliquez sur le nom de votre profil. Accédez aux paramètres. Vous pouvez alors y indiquer si vous souhaitez recevoir des courriers électroniques. Par exemple, un courrier électronique envoyé dans le cadre de l’invitation hebdomadaire en vue de communiquer vos plaintes / symptômes (toutefois, un nouveau questionnaire vous attend chaque semaine sur le site Internet d’Infectieradar.be, même en l’absence du courrier électronique hebdomadaire)."
+    },
+    {
+      "title": "Comment puis-je créer un profil pour mon (mes) enfant(s) ?",
+      "content": "Au niveau de la barre bleue située dans la partie supérieure droite de l’écran, cliquez sur le nom de votre profil. Vous pouvez y ajouter des profils supplémentaires pour votre/vos enfant(s). Lorsque vous sélectionnez le nouveau profil, vous pouvez compléter les informations relatives à votre enfant."
+    },
+    {
+      "title": "Je ne souhaite plus participer, où puis-je me désinscrire ?",
+      "content": "Nous trouvons regrettable que vous ne vouliez plus participer. Nous aurions vraiment besoin de votre aide pour suivre l’évolution du coronavirus. Mais vous pouvez arrêter de compléter le questionnaire hebdomadaire. En outre, vous pouvez également vous désinscrire complètement (et supprimer votre compte). Cette opération peut être réalisée en accédant aux paramètres."
+    },
+    {
+      "title": "Je souhaite modifier mes réponses, est-ce possible ?",
+      "content": "Il est possible de modifier les réponses au cours du questionnaire. Lorsque vous avez cliqué sur le bouton « Envoyer », il n'est plus possible de modifier les réponses. Tel est le cas tant pour le premier questionnaire, que pour les questionnaires hebdomadaires."
+    },
+    {
+      "title": "J'ai des symptômes, vais-je obtenir un diagnostic si je complète le questionnaire ?",
+      "content": "Non, votre participation vous permet de faire le point sur les symptômes que vous avez, mais ne remplace pas une visite chez votre médecin généraliste, lequel sera en mesure de vous apporter une réponse adaptée."
+    },
+    {
+      "title": "J’ai une maladie chronique qui entraîne certains symptômes du questionnaire hebdomadaire, que dois-je compléter ?",
+      "content": "Certaines maladies entraînent de façon chronique des symptômes du questionnaire hebdomadaire : le syndrome de fatigue chronique, la polyarthrite rhumatoïde, etc. Vous ne devez pas cocher systématiquement ces symptômes, sauf si ces derniers ont changé. Ainsi, si vous avez des rhumatismes, ne cochez la case « Douleurs articulaires » que si celles-ci se sont récemment aggravées ou sont différentes de celles que vous ressentez habituellement."
+    },
+    {
+      "title": "Je n'ai eu aucun symptôme cette semaine, dois-je compléter le questionnaire hebdomadaire ?",
+      "content": "Oui. Afin d’obtenir une image fiable de la situation en Belgique, il importe de disposer de données tant sur les personnes malades que sur les personnes qui ne sont pas malades. Si le questionnaire n’est complété que par des personnes malades, il est impossible d'estimer correctement l’évolution du nouveau coronavirus. C’est la raison pour laquelle la participation des personnes qui ne sont pas malades est aussi importante que celle des personnes malades. Si vous n’êtes pas malade, seules quelques secondes suffiront pour compléter le questionnaire."
+    }
+  ]
+}

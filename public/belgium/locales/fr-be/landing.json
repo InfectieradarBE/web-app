@@ -1,0 +1,69 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "Test teaser image",
+    "content": "Une étude dans le cadre de la lutte contre les épidémies"
+  },
+  "loginCard": {
+    "title": "Se connecter",
+    "info": "",
+    "emailInputLabel": "E-mail",
+    "emailInputPlaceholder": "E-mail",
+    "passwordInputLabel": "Mot de passe",
+    "passwordInputPlaceholder": "Mot de passe",
+    "rememberMeLabel": "Mémoriser les données",
+    "btn": "Se connecter",
+    "passwordForgottenBtn": "Vous avez oublié votre mot de passe ?",
+    "signupBtn": "Vous n'avez pas encore de compte ? Enregistrez-vous ici."
+  },
+  "currentResultCard": {
+    "imageAlt": "Les résultats actuels image",
+    "title": "Les résultats actuels",
+    "body": "Infectieradar.be recense les plaintes ou les symptômes des Belges qui pourraient indiquer une éventuelle contamination par le coronavirus.",
+    "actionLabel": "Les résultats actuels"
+  },
+  "signupCard": {
+    "imageAlt": "Participer image",
+    "title": "Participer",
+    "body": "Aidez-nous à surveiller de près l’évolution du coronavirus. Chaque semaine, communiquez-nous si vous ressentez d’éventuels symptômes.",
+    "actionLabel": "Enregistrez-vous"
+  },
+  "aboutCard": {
+    "imageAlt": "À propos d'Infectieradar.be image",
+    "title": "À propos d'Infectieradar",
+    "body": "Infectieradar est un l’un des outils qui permet à l’équipe de chercheurs de suivre la propagation des symptômes, ainsi que du virus dans toute la Belgique.",
+    "actionLabel": "En savoir plus"
+  },
+  "video": {
+    "poster": "",
+    "mp4": "",
+    "mxf": "",
+    "webm": "",
+    "fallbackText": "Votre browser ne prend pas en charge cette vidéo."
+  },
+  "references": {
+    "title": "En savoir plus",
+    "faqLink": "Foire aux questions",
+    "aboutLink": "À propos d'Infectieradar",
+    "resultsLink": "Les résultats actuels"
+  },
+  "settingsReferences": {
+    "title": "Paramètres",
+    "profileSettings": "Profils",
+    "communicationSettings": "E-mail de rappel",
+    "languageSettings": "Langues"
+  },
+  "surveyList": {
+    "requiredSurveys": {
+      "title": "Questionnaires à compléter",
+      "info": "Vous trouverez ci-dessous les différents questionnaires relatifs à l'étude.",
+      "successMsg": "Merci beaucoup ! Vous avez complété tous les questionnaires. Nous vous contacterons à nouveau la semaine prochaine afin de compléter un nouveau questionnaire."
+    },
+    "optionalSurveys": {
+      "title": "Modifier les informations de profil",
+      "info": "En cas de modification de votre situation, vous pouvez à nouveau compléter le(s) questionnaire(s) de profil ci-dessous. Malheureusement, nous ne pouvons pas vous montrer ce que vous avez complété la dernière fois, ni vous permettre de modifier uniquement des questions spécifiques.",
+      "hideBtn": "Fermer",
+      "showBtn": "Vos informations de profil ont-elles changé ?"
+    }
+  }
+}

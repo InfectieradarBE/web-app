@@ -1,0 +1,20 @@
+{
+  "title": "À propos d'Infectieradar.be",
+  "signupCard": {
+    "imageAlt": "Participer image",
+    "title": "Participer",
+    "body": "Aidez-nous à surveiller de près l’évolution du coronavirus. Chaque semaine, communiquez-nous si vous ressentez d’éventuels symptômes.",
+    "actionLabel": "Enregistrez-vous"
+  },
+  "surveyCard": {
+    "imageAlt": "S'inscrire maintenant!",
+    "title": "S'inscrire maintenant!",
+    "body": "Communiquez-nous si vous ressentez d’éventuels symptômes.",
+    "actionLabel": "Questionnaires"
+  },
+  "logoCredits": {
+    "title": "En collaboration avec",
+    "hasseltLogo": "Logo for the University of Hasselt",
+    "epiposeLogo": "Logo for the Epipose Project"
+  }
+}
