@@ -164,19 +164,19 @@
   "changeLanguage": {
     "title": "Talen",
     "defaultLanguageLabel": "Standaard taal",
-    "info": "U kunt de standaardtaal van de applicatie wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
+    "info": "U kunt de standaardtaal hier wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
     "languages": {
       "nl-be": "Nederlands",
-      "en": "Engels"
+      "en": "English"
     },
     "cancelBtn": "Annuleer",
-    "confirmBtn": "Update taal",
+    "confirmBtn": "Wijzig taal",
     "errors": {
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     },
     "successDialog": {
       "title": "Taal gewijzigd",
-      "content": "Gelukt! Je Taal is gewijzigd.",
+      "content": "Gelukt! De taal is gewijzigd.",
       "btn": "Ok"
     }
   },
