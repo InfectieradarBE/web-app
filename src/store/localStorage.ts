@@ -38,7 +38,11 @@ export const loadState = (): RootState => {
 export const saveState = (state: RootState) => {
   try {
     if (state.app.persistState) {
-      const serializedState = JSON.stringify(state);
+      const savedState = clonedeep(state);
+      savedState.config = clonedeep(configState);
+      savedState.dialog = clonedeep(dialogState);
+
+      const serializedState = JSON.stringify(savedState);
       localStorage.setItem(stateKey, serializedState);
     }
     else {

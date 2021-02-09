@@ -1,8 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { AppConfig } from '../types/config/appConfig';
+import { AppConfig, LanguageConfig } from '../types/config/appConfig';
 
 export const initialState: AppConfig = {
   instanceId: 'default',
+  languages: [],
 };
 
 const configSlice = createSlice({
@@ -12,9 +13,12 @@ const configSlice = createSlice({
     reset: (state) => {
       state = initialState;
     },
-    update: (state, action: PayloadAction<AppConfig>) => {
-      state = action.payload;
+    updateInstanceID: (state, action: PayloadAction<string>) => {
+      state.instanceId = action.payload;
     },
+    updateLanguages: (state, action: PayloadAction<Array<LanguageConfig>>) => {
+      state.languages = action.payload;
+    }
   },
 });
 

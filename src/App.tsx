@@ -15,7 +15,6 @@ import ScrollToTop from './components/misc/ScrollToTop';
 import { useTranslation } from 'react-i18next';
 import GlobalDialogs from './components/dialogs/GlobalDialogs';
 import { handleOpenExternalPage } from './utils/routeUtils';
-import { DialogConfig } from './types/config/dialogs';
 import { appConfig } from './store/configSlice';
 import { useDispatch } from 'react-redux';
 
@@ -24,7 +23,6 @@ function App() {
   const [navbarConfig, setNavbarConfig] = useState<NavbarConfig | undefined>();
   const [pagesConfig, setPagesConfig] = useState<PagesConfig | undefined>();
   const [footerConfig, setFooterConfig] = useState<FooterContentConfig | undefined>();
-  const [dialogConfig, setDialogConfig] = useState<DialogConfig | undefined>();
 
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
@@ -54,17 +52,17 @@ function App() {
       .then(value => setFooterConfig(value))
       .catch(error => console.log(error));
 
-    // Dialog Config
-    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/dialogs.json`)
+    // General Config
+    fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/general.json`)
       .then(res => res.json())
-      .then(value => setDialogConfig(value))
+      .then(value => {
+        dispatch(appConfig.updateLanguages(
+          value.languages
+        ))
+      })
       .catch(error => console.log(error));
 
-    dispatch(appConfig.update({
-      instanceId: process.env.REACT_APP_DEFAULT_INSTANCE ? process.env.REACT_APP_DEFAULT_INSTANCE : 'default',
-    }));
-
-
+    dispatch(appConfig.updateInstanceID(process.env.REACT_APP_DEFAULT_INSTANCE ? process.env.REACT_APP_DEFAULT_INSTANCE : 'default'));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -97,7 +95,6 @@ function App() {
         onOpenExternalPage={handleOpenExternalPage}
       />
       <GlobalDialogs
-        config={dialogConfig}
         onChangeLanguage={handleLanguageChange}
       />
     </Router>
