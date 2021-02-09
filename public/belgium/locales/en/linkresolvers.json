@@ -3,39 +3,39 @@
     "title": "Verifying Email Address",
     "content": {
       "info": "You can decide if you need the formatable \n\n### Info box here \n\nLeave simple as an empty string if not wanted.",
-      "success": "Het is gelukt! Je e-mailadres is bevestigd. \n\n Log nu in.",
+      "success": "Success! Your email address has been confirmed. \n\n Log in now.",
       "btn": {
         "successWithAuth": "Home",
         "successWithoutAuth": "Login",
         "errorWithAuth": "Home",
-        "errorWithoutAuth": "Go naar login"
+        "errorWithoutAuth": "Go to login"
       }
     },
     "errors": {
-      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "wrongToken": "Something has gone wrong. Check that you are using the right link, and that you haven’t tried this link before. Request a new email if necessary.",
+      "unknown": "Something has gone wrong. Check your information or try again later."
     }
   },
   "passwordReset": {
     "title": "New Password",
     "content": {
-      "info": "## Welcome back! \n\n You can decide if you need the formatable \n\n Info box here \n\nLeave simple as an empty string if not wanted.",
+      "info": "",
       "emailLabel": "Email",
-      "emailPlaceholder": "",
+      "emailPlaceholder": "Enter Email",
       "newPasswordLabel": "Password",
-      "newPasswordPlaceholder": "Enter new PW",
+      "newPasswordPlaceholder": "Enter new password",
       "confirmPasswordLabel": "Confirm Password",
-      "confirmPasswordPlaceholder": "Enter PW again",
+      "confirmPasswordPlaceholder": "Enter new password again",
       "btn": "Change password",
-      "restartBtn": "Opnieuw",
-      "successMsg": "Wachtwoord gewijzigd",
-      "successBtn": "Open Login"
+      "restartBtn": "Again",
+      "successMsg": "Password changed",
+      "successBtn": "Login"
     },
     "errors": {
-      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
-      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
-      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "passwordRules": "Your password must have at least 8 characters and contain 3 of the following 4 elements: lowercase letters, capital letters, numbers, punctuation marks.",
+      "passwordMatch": "The passwords are not the same",
+      "wrongToken": "Something has gone wrong. Check that you are using the right link, and that you haven’t tried this link before. Request a new email if necessary.",
+      "unknown": "Something has gone wrong. Check your information or try again later."
     }
   },
   "invitation": {
@@ -43,16 +43,16 @@
     "content": {
       "info": "## Welcome! \n\n Before starting to use the system, you need to set a password.",
       "emailLabel": "Email",
-      "emailPlaceholder": "",
+      "emailPlaceholder": "Enter Email",
       "newPasswordLabel": "Password",
-      "newPasswordPlaceholder": "Enter new PW",
+      "newPasswordPlaceholder": "Enter password",
       "confirmPasswordLabel": "Confirm Password",
-      "confirmPasswordPlaceholder": "Enter PW again",
+      "confirmPasswordPlaceholder": "Enter password again",
       "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
       "btn": "Change password",
-      "restartBtn": "Opnieuw",
-      "successMsg": "Wachtwoord gewijzigd",
-      "successBtn": "Open Login"
+      "restartBtn": "Again",
+      "successMsg": "Password changed",
+      "successBtn": "Login"
     },
     "privacyConsent": {
       "title": "Privacy Consent",
@@ -60,10 +60,10 @@
       "cancelBtn": "Cancel"
     },
     "errors": {
-      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
-      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
-      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "passwordRules": "Your password must have at least 8 characters and contain 3 of the following 4 elements: lowercase letters, capital letters, numbers, punctuation marks.",
+      "passwordMatch": "The passwords are not the same",
+      "wrongToken": "Something has gone wrong. Check that you are using the right link, and that you haven’t tried this link before. Request a new email if necessary.",
+      "unknown": "Something has gone wrong. Check your information or try again later."
     }
   },
   "studyLogin": {
@@ -78,7 +78,7 @@
       "rememberMeLabel": "Remember Me",
       "btn": "Login",
       "passwordForgottenBtn": "Password forgotten",
-      "signupBtn": "DOn't have an account? Sign up."
+      "signupBtn": "Don't yet have an account? Sign up."
     }
   }
 }

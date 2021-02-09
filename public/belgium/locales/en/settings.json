@@ -1,32 +1,32 @@
 {
   "title": "Infectieradar Settings",
   "account": {
-    "title": "Account instellingen",
+    "title": "Account settings",
     "email": {
       "title": "E-mailadres",
-      "info": "Wil je een ander e-mailadres gebruiken? Pas je e-mailadres aan door op onderstaande knop te klikken. Let op: pas na bevestiging van het e-mailadres kun je weer herinneringsmails ontvangen."
+      "info": "Do you want to use a different email address? Change your email address by clicking on the button below. Note: you cannot log back in to Infectieradar.be until you have confirmed the email address."
     },
     "password": {
-      "title": "Wachtwoord",
-      "info": "Wil je het wachtwoord wijzigen? Pas je wachtwoord aan door op onderstaande knop te klikken. Let op: je hebt wel je huidige wachtwoord nodig."
+      "title": "Password",
+      "info": "Do you want to change the password? Change your password by clicking on the button below. Note: you will need your current password."
     },
     "profiles": {
-      "title": "Profielen",
-      "info": "Bewerk je eigen profiel of voeg als ouder of wettelijke vertegenwoordiger een profiel toe van je kinderen in de leeftijd tot en met 15 jaar.",
-      "btn": "{{count}} profiel",
-      "btn_plural": "{{count}} profielen"
+      "title": "Profiles",
+      "info": "Edit your own profile or, as a parent or legal representative, add the profile of your child aged up to 17 years.",
+      "btn": "{{count}} profiles",
+      "btn_plural": "{{count}} profiles"
     }
   },
   "communication": {
-    "title": "Communicatie instellingen",
+    "title": "Communication settings",
     "emailReminders": {
-      "title": "Wekelijkse e-mail en nieuwsbrief",
-      "info": "Je kan het ontvangen van de wekelijkse herinneringsmail of de nieuwsbrief uitschakelen.",
-      "btnManageNotifications": "Instellingen aanpassen"
+      "title": "Weekly email and newsletter",
+      "info": "You can opt to stop receiving the weekly reminder email or the newsletter.",
+      "btnManageNotifications": "Change settings"
     },
     "defaultLanguage": {
-      "title": "Taal",
-      "info": "Je kan hier de taal wijzigen.",
+      "title": "Language",
+      "info": "You can change the language here.",
       "languages": {
         "en": "English",
         "nl-be": "Nederlands",
@@ -36,22 +36,22 @@
     }
   },
   "deletion": {
-    "title": "Afmelden Infectieradar.be / intrekken toestemming",
-    "warning": "Afmelden Infectieradar.be/intrekken toestemming houdt in dat je accountgegevens worden verwijderd.\nNa het verwijderen van het account kunnnen wij door jou opgegeven informatie (zoals leeftijd en gezondheidsklachten) niet meer aan je koppelen.",
-    "deleteBtn": "Afmelden"
+    "title": "Unsubscribe from Infectieradar.be / withdraw consent",
+    "warning": "If you unsubscribe from Infectieradar.be / withdraw consent, your account data will be deleted.\nAfter the account has been deleted, we will no longer be able to link information you have provided (such as age and symptoms) to you.",
+    "deleteBtn": "Unsubscribe"
   },
   "references": {
-    "title": "Hulp nodig?",
-    "faqLink": "Vraag en antwoord",
-    "privacyStatementLink": "Privacyverklaring",
+    "title": "In need of assistance?",
+    "faqLink": "FAQ",
+    "privacyStatementLink": "Privacy statement",
     "contactLink": "Contact Infectieradar.be"
   },
   "systemInfo": {
-    "title": "Systeem informatie",
-    "appNameLabel": "Applicatie naam",
+    "title": "System information",
+    "appNameLabel": "Application name",
     "appName": "Infectieradar",
-    "versionLabel": "Versie",
-    "browserNameLabel": "Browsername",
-    "browserVersionLabel": "Browser versie"
+    "versionLabel": "Version",
+    "browserNameLabel": "Browser name",
+    "browserVersionLabel": "Browser version"
   }
 }

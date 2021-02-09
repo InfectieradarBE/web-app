@@ -1,116 +1,148 @@
-### Het onderzoek
-Het RIVM verwerkt persoonsgegevens op een rechtmatige, behoorlijke en transparante manier, conform wet- en regelgeving. Hoe het RIVM met je gegevens omgaat is te lezen in de [algemene privacyverklaring van het RIVM](https://www.rivm.nl/documenten/privacyverklaring-rivm).
 
-In aanvulling op de algemene privacyverklaring van het RIVM lees je in deze privacyverklaring over de gegevensverwerking door Infectieradar, waarvoor het RIVM verwerkersverantwoordelijke is. Door je gegevens met Infectieradar te delen draag je bij aan het onderzoek van het RIVM dat is gericht op de verspreiding van infectieziekten en het nieuwe coronavirus in het bijzonder. Als je deel wilt nemen aan dit onderzoek dan word je wekelijks uitgenodigd om via een vragenlijst recente gezondheidsklachten (zoals koorts en hoesten), die kunnen wijzen op een infectie met het nieuwe coronavirus, door te geven. Het RIVM heeft dit onderzoek in samenwerking met Influenzanet ontwikkeld. Influenzanet is de naam van een samenwerking tussen een aantal Europese universiteiten en overheden. Een overzicht van de deelnemers aan deze samenwerking kun je [hier](http://www.influenzanet.info/) vinden. Infectieradar is de Nederlandse toepassing van bovengenoemd onderzoek.
+### The study
+Infectieradar.be processes personal data in a lawful manner, in accordance with the law and the GDPR regulations. You can read more about this in the [Informed Consent Form](https://infectieradar.be/en/project/). This study has obtained ethical approval from the UZA Ethics Committee and the University of Hasselt Medical Ethics Committee. 
 
-Deelname aan het onderzoek is vrijwillig. Wij willen je er met klem op wijzen dat de vragenlijsten en het gebruik van de website voor jou **geen** medisch doel dienen. Als je zorgen hebt over je gezondheid zoek dan altijd hulp via de gebruikelijke medische instanties.
+In this privacy policy, which supplements the general privacy policy, you can read about how data are processed by Infectieradar.be. By sharing your data with Infectieradar.be, you are contributing to research into the spread of infectious diseases and the new coronavirus in particular. If you want to participate in this study, you will be invited every week to complete a questionnaire to provide information about recent symptoms you have experienced (such as a fever or coughing) that may indicate an infection. This platform has been set up in collaboration with Influenzanet. Influenzanet is the name of a partnership between a number of European universities and governments. An overview of its participants can be found [here](https://infectieradar.be/influenzanet/). Infectieradar.be is the Belgian application of this research study.
 
-### Wat is de grondslag voor het verwerken van je persoonsgegevens?
-De grondslag voor de verwerking van je persoonsgegevens is je toestemming. Dit betekent dat wij je toestemming vragen voor het verwerken van je persoonsgegevens voor dit onderzoek. Alleen met je toestemming kunnen wij je persoonsgegevens verwerken.
+Participation in the study is voluntary. We wish to stress that the questionnaires and the use of the website serve **no** medical purpose for you. If you have any concerns about your health, you should always seek help from the usual medical bodies.
 
-Je kunt je toestemming altijd intrekken. Het intrekken van je toestemming heeft geen terugwerkende kracht. Dit betekent dat het intrekken van je toestemming geen gevolgen heeft voor verwerkingen die zijn gedaan in de periode voorafgaand aan het intrekken van je toestemming.
+---
 
-Het intrekken van je toestemming doe je door je af te melden voor het onderzoek in je persoonlijke instellingen. Deze optie is beschikbaar nadat je bent ingelogd.
+### The study at a glance
+**Why Infectieradar.be?**
+We know that many people who become infected with the new SARS-CoV-2 virus (‘coronavirus’ as it is popularly known) have mild or few symptoms and do not go to the doctor. Also, not everyone is tested. This make it difficult to track how the new coronavirus is spreading in Belgium. It is important to monitor symptoms that are not reported to a doctor.
 
-### Welke persoonsgegevens verwerken wij?
-Wij maken onderscheid tussen je accountgegevens, de onderzoeksgegevens (de ingevulde vragenlijsten), de loggegevens en de onderzoeksresultaten.
+**Who can take part?**
+Anyone who lives in Belgium and is 18 years or older can participate in the study on a voluntary basis. To ensure that information about the spread of infectious diseases is also obtained for children and young people, the parents or guardians of a minor can also complete the questionnaires on behalf of their child. This is not mandatory, but it will contribute to the research. 
 
-#### Accountgegevens:
-* e-mailadres
-* wachtwoord (versleuteld)
+**How does Infectieradar.be work?**
+Participants receive an initial registration form with questions about their background, age and existing diseases and conditions. Following this they receive an email every week with a link to a questionnaire asking what symptoms they have had in the past week: a runny nose, coughing, sneezing, a high temperature and so on. The questionnaire must be completed even if the participant has no symptoms. It takes about 30 seconds to complete the questionnaire if the participant has no symptoms, and about 3 to 5 minutes if he or she has symptoms. 
 
-#### Onderzoeksgegevens:
-* Postcode (alleen eerste 4 cijfers)
-* Geboortejaar en maand
-* Gegevens over levensstijl
-* Gezinssamenstelling
-* Gegevens over medische risicogroep
-* Gegevens over gezondheid (zoals klachten als koorts en hoesten)
-* Gegevens over je testuitslag
-* Gegevens over vaccinatie
+The completion of the questionnaire enables us to monitor how certain symptoms are distributed across Belgium and changes in this pattern over time. These data will be used for scientific research into the spread of the new coronavirus. In the future, that research will also be useful for other viruses and infectious diseases.
 
-#### Loggegevens:
-* Identificatiecode (wordt automatisch gegenereerd bij aanmelden en is gekoppeld aan je e-mailadres)
+**Data**
+The data are collected and processed in the context of scientific research, and exclusively for the following purposes:
 
-#### Onderzoeksresultaten:
-Dit zijn de gegevens die in het kader van het uitvoeren van het onderzoek ontstaan. De onderzoeksresultaten zijn niet aan een specifieke deelnemer aan het onderzoek te koppelen.
+- Carrying out scientific research and statistical analyses on the spread of infectious diseases in Belgium and Europe;
 
-### Met welk doel verwerken wij je persoonsgegevens?
+- Publishing statistical analyses, including graphical representations of the results;
 
-Wij verwerken je persoonsgegevens voor de volgende doelen:
+- Providing you, the user, with information about the survey results (for example: how many registered users in your region have flu or other infectious diseases);
 
-#### Aanmelden voor het onderzoek
-Je kunt je voor het onderzoek aanmelden via de website [www.infectieradar.nl](https://www.infectieradar.nl/). Je registreert je dan als deelnemer door een account aan te maken. Hierdoor ontvang je wekelijks een e-mail met vragenlijsten. Als je niet langer aan het onderzoek wilt deelnemen dan meld je je af. Je kunt gebruik maken van de afmeldoptie in de instellingen. Dan krijg je geen vragenlijsten meer en worden je accountgegevens verwijderd. Wij kunnen dan geen koppeling meer maken tussen je accountgegevens en de onderzoeksgegevens.
+The personal data that we may process for these purposes are: 
 
-#### Deelname aan het onderzoek
-Nadat je je hebt aangemeld voor het onderzoek, nodigen wij je eenmaal per jaar uit voor het invullen van een achtergrondvragenlijst. Daarnaast nodigen wij je wekelijks uit om via een vragenlijst informatie over je gezondheidstoestand (zoals klachten als koorts en hoesten) door te geven. Hiervoor zullen wij je e-mailadres gebruiken. En verder verwerken wij de eerste 4 cijfers van je postcode van je woonplaats, gegevens over je levensstijl, gezinssamenstelling en tot welke voor het onderzoek relevante medische risicogroep je behoort.
+- Year of birth, month of birth, postcode, gender, family composition;
 
-#### Uitvoeren van (wetenschappelijk) onderzoek
-Wij voeren onderzoek uit gericht op het in kaart brengen van gezondheidsklachten en de verspreiding van infectieziekten, en het coronavirus in het bijzonder. Als onderdeel hiervan voeren wij statistische analyses uit over de verspreiding van infectieziekten in Nederland en Europa. Daarvoor zullen wij je geboortejaar, 4 cijfers van je postcode, gegevens over je gezinssamenstelling, tot welke relevante medische risicogroep je behoort, levensstijl en gegevens over gezondheidstoestand verwerken.
+- Background data relevant to the risk of infection, i.e. data about whether you belong to a risk group recommended for flu vaccination, occupation and lifestyle;
+- Data about symptoms provided in the symptoms questionnaire;
 
-#### Publiceren van statistische analyses en resultaten wetenschappelijk onderzoek
-Wij publiceren de onderzoeksresultaten en geven deze grafisch weer. Dit doen wij in (wetenschappelijke) publicaties, als wetenschappelijke ondersteuning voor beleid en wij publiceren onderzoeksresultaten op de website.
+The data obtained in this study will be processed by Hasselt University and the University of Antwerp for the stated purposes. We would also like to inform you that we will process your data in accordance with the applicable laws and regulations and with full respect for your rights and in particular your privacy.
 
-#### Het beschermen van de technische werking van onze computersystemen
-Voor dit doel wordt onder andere gebruik gemaakt van het loggen (bewaren) van activiteit op de website in een zogenaamd logbestand. Wij loggen bijvoorbeeld het aanmaken van accounts op Infectieradar en hierbij verwerken wij een identificatiecode (ID) dat is gekoppeld aan je e-mailadres. Daarnaast maken wij voor de bescherming van de website gebruik van Google Recaptcha.
+**Taking part**
+After registration, you will be sent an email every week inviting you to complete a questionnaire. Your participation in this study is voluntary and you can withdraw from the study at any time without giving a reason. 
 
-#### Communicatie
-Wanneer je contact met ons opneemt (e-mail, brief enz.), registreren en bewaren wij dergelijke correspondentie. Wij bewaren deze correspondentie  niet langer dan noodzakelijk.
+The study is funded by the European Union and has been evaluated by an ethics committee. The fact that it has been funded and approved does not mean that you should feel obliged to participate.
 
-#### Opslag van gegevens
-Alle verwerkingen voor dit onderzoek inclusief de opslag van de gegevens vinden plaats binnen Nederland en de Europese Economische Ruimte (EER).
+---
 
-#### Analyseren van gegevens
-Wij gebruiken statistische analyse technieken voor het onderzoek, waarvan sommige in de categorie "machine-learning" (kunstmatige intelligentie) vallen. Dit houdt in dat wij de computer zelfstandig een verwerking laten doen. Bijvoorbeeld om alleen op basis van de door jou ingevulde vragenlijst in te schatten of je wel of niet geïnfecteerd zou kunnen zijn met het coronavirus. Je accountgegevens worden niet betrokken in deze verwerking en wij kunnen je gegevens niet met andere gegevens uit andere bronnen combineren. Je wordt niet onderworpen aan geautomatiseerde besluitvorming in de zin van de Algemene Verordening Gegevensbescherming.
+#### 1.  What data are collected and processed during the study? 
+    
+The personal data that are collected and processed are data about your health and medical condition, including your medical history, some background information (e.g. your age, gender, etc.) and information about medical care you have sought.
 
-### Hoe lang bewaren wij je (persoons) gegevens?
+#### 2.  How will the researcher treat my personal data?
+    
+The researchers who analyse your data will only have access to non-identifiable data. The data will be encrypted or coded by the following method:
 
-#### Accountgegevens
-De bewaartermijn voor accountgegevens is 2 jaar na de laatste keer dat je op [www.infectieradar.nl](https://www.infectieradar.nl) hebt ingelogd. Na het verstrijken van deze termijn, worden je accountgegevens verwijderd.
+The database administrator will never disclose your identity (email address), and he/she will encrypt your data (i.e. replace your identity in the study with an identification code) before the researchers analyse your data. Your identity will therefore not be used in a scientific publication or presentation. 
 
-Binnen bovengenoemde termijn kun je, wanneer je je niet hebt afgemeld voor dit onderzoek, opnieuw benaderd worden met het verzoek om vragenlijsten in te vullen. Bijvoorbeeld bij een nieuwe uitbraak van een infectieziekte.
+This means that the database administrator, under the responsibility of the study leaders, will be the only person able to link your identity to the data communicated during the study, with the exceptions mentioned in section 6.
 
-#### Onderzoeksgegevens
-De bewaartermijn voor onderzoeksgegevens is in principe 30 jaar na het invullen van de vragenlijsten. Deze bewaartermijn is nodig:
-* Om een vergelijking te kunnen maken tussen de verschillende jaren.
-* Om de onderzoeksgegevens eventueel te kunnen gebruiken voor onderzoek en vergelijkingsmateriaal in het geval van een nieuw uitbraak van infectieziekten of pandemie.
-* Omdat onderzoeksresultaten volgens toepasselijke richtlijnen altijd moeten kunnen worden gecontroleerd
+The data that the researchers analyse will not allow them to identify you.
 
-#### Onderzoeksresultaten
-De onderzoeksresultaten worden gepubliceerd. Hierop is geen bewaartermijn van toepassing.
+#### 3. What will happen to the information about me that is collected during the study?
+    
+Your participation in the study means that your personal data
 
-#### Logbestanden
-De gegevens in de logbestanden worden 6 maanden bewaard.
+-   will be collected, and
 
-### Met wie worden je (persoons) gegevens gedeeld
-Zoals aangegeven in de inleiding draagt Infectieradar bij aan het onderzoek binnen het Europese samenwerkingsverband Influenzanet. Alleen onderzoeksgegevens (dus niet je accountgegevens) kunnen voor wetenschappelijk onderzoek worden gedeeld met de deelnemers aan Influenzanet. Dit betekent dat geen gegevens worden gedeeld aan de hand waarvan jij op directe wijze zou kunnen worden geïdentificeerd. Om ook de mogelijkheid op indirecte identificatie te beperken worden de onderzoeksgegevens verder bewerkt alvorens ze worden gedeeld. Wij vervangen bijvoorbeeld het opgegeven geboortejaar en de vier cijfers van de postcode door een meer algemene “leeftijdscategorie” en “[COROP](https://en.wikipedia.org/wiki/COROP) regio”.
+-   will be used in encrypted form by the researchers.
+    
+The researcher and the sponsor may only use the encrypted personal data for the specific research purposes described earlier.
 
-Op grond van de Algemene Verordening Gegevensbescherming blijven wij als verwerkingsverantwoordelijke, verantwoordelijk voor deze gegevens. Je gegevens worden niet doorverkocht of gebruikt voor commerciële doeleinden en verlaten de Europese Economische Ruimte (EER) niet.
+In addition, the sponsor may grant external researchers (who are not involved in this study) access to the encrypted data. If an external researcher wishes to use the data in research not yet described in this document, this research must be approved by an Ethics Committee.
 
-### Je rechten
-De Algemene Verordening Gegevensbescherming geeft je verschillende rechten als het gaat om controle te houden over je persoonsgegevens. Deze vind je op de website van de Autoriteit persoonsgegevens via [deze link](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/rechten-van-betrokkenen).
+#### 4. How will my data be processed?
+  
+Your study data will be processed in accordance with the General Data Protection Regulation (GDPR) <sup>[1]</sup> and the Belgian data protection law of 30 July 2018 <sup>[2]</sup>. The sponsor is the controller with responsibility for this.
 
-Indien je een beroep wenst te doen op je rechten dan dien je de procedure te volgen die is opgenomen in de [algemene privacy verklaring van het RIVM](https://www.rivm.nl/documenten/privacyverklaring-rivm). Voor bijvoorbeeld het inzien van persoonsgegevens is het onder andere voor de bescherming van je privacy nodig dat je jezelf eerst identificeert. Wij willen niet dat je persoonsgegevens, bij het uitoefenen van je rechten, in verkeerde handen komen.
+The grounds on which we are allowed to process your personal data are that we are conducting scientific research and that you have given your consent.
 
-Je hebt altijd het recht een klacht over de verwerking van je persoonsgegevens in te dienen bij de Autoriteit Persoonsgegevens of bij de rechter. Meer informatie daarover [vind je hier]([https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/gebruik-uw-privacyrechten/klacht-melden-bij-de-ap).
+<small>[1] Regulation 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC.</small> 
 
-### Beveiliging van je persoonsgegevens en softwareleverancier
-Ter bescherming van je gegevens nemen wij passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijzing tegen te gaan. De software is ontwikkeld door de Duitse softwareleverancier Coneno. Deze software wordt door het RIVM zelf beheerd. De leverancier van de software heeft geen toegang tot je gegevens.
+<small>[2] The Belgian law of 30 July 2018 on the protection of natural persons with regard to the processing of personal data.</small>
 
-### Gebruik van Google Recaptcha
-Voor de beveiliging van Infectieradar maken wij  gebruik van Google Recaptcha. Dit is een dienst die wordt geleverd door Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA. Hierna “Google”.
-Deze dienst wordt ingezet voor het vermijden van geautomatiseerde interacties op de website bijvoorbeeld door zogenaamde “bots”.
+#### 5. Can I access and correct my data that have been collected and processed during the study?
+   
+You have the right to ask the researchers what data about you have been collected and what they are used for in this study.
 
-Voor het uitvoeren van deze dienst verwerkt Google de volgende gegevens:
-* IP adres
-* Cookies die Google in de afgelopen 6 maanden heeft geplaatst
-* Inlogstatus Google account
-* Het scroll-gedrag van de bezoeker op Infectieradar.nl
+You have the right to
 
-Google geeft onder de volgende [link] (https://policies.google.com/privacy) informatie over hoe Google omgaat met je gegevens als gebruiker. De grondslag voor de inzet van Google Recaptcha is een gerechtvaardigd belang volgens artikel 6 lid 1 sub f. AVG. Wij hebben een gerechtvaardigd belang om [www.infectieradar.nl](https://www.infectieradar.nl/) te beveiligen.
+-   access and check these data
 
-### Wijziging privacyverklaring
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij de gewijzigde privacyverklaring op [www.infectieradar.nl/privacy](https://www.infectieradar.nl/privacy) publiceren.
+-   have all your data deleted
+
+-   request correction if they are incorrect
+
+-   restrict the processing of your data
+
+-   oppose the processing of your personal data
+
+-   withdraw your consent to the processing of personal data. Your personal data that have already been collected before your withdrawal of consent will be kept to prevent any misinterpretation of the study results.
+
+#### 6. Apart from the researcher and the researcher’s personnel, who else has access to my personal data? 
+    
+In order to check the quality of the study, your non-encrypted personal data or information relevant to this study may be inspected by people other than the study personnel. Any such inspection will take place under the researcher’s supervision, and the people concerned will be bound by professional secrecy or by a confidentiality agreement. They may include:
+
+-   personnel designated by the sponsor (monitors and auditors) and people or organisations providing services to or collaborating with the sponsor. However, they will never pass on your name and contact details to the sponsor.
+    
+-   inspectors from competent health authorities from around the world
+
+-   an independent audit group
+
+-   persons designated by the Ethics Committee.
+    
+If required for the study, the encrypted study data may be sent to other countries within and outside the European Union (EU) and verified by:
+
+-   personnel (other than inspectors) of the competent health authorities of Belgium (the Federal Agency for Medicines and Health Products, FAMHP) or other countries within and outside the EU,
+
+-   the Belgian evaluating Ethics Committee(s),
+
+-   external researchers,
+
+-   the study’s sponsor, personnel designated by the sponsor and people or organisations providing services to or collaborating with the sponsor, and/or
+
+- companies from the sponsor's group in Belgium and in other countries within and outside the EU.
+    
+European regulations and Belgian data protection legislation impose restrictions on the transfer of data to non-EU countries. The sponsor must always ensure that your encrypted study data are equally protected when transferred to a non-EU country. If the sponsor concludes a data protection agreement for this purpose, a copy of this agreement may be obtained from the researcher.
+
+#### 7. What will happen to the results of the study?
+    
+After its completion, a description and the results of the study will be published in specialist medical journals. A copy of the scientific publication will be published on the website and will be available from the researcher or study personnel.
+
+These websites or publications will not contain any information by which you can be identified.
+
+#### 8. Will my data be used for purposes other than the study in which I am participating?
+    
+The results of the study will only be used to answer the scientific questions in this study. Any additional or future research outside the study must always be approved by a recognised Belgian Ethics Committee.
+
+#### 9. For how long will my data be kept?
+    
+After the study, your encrypted data will be kept for at least 25 years to ensure the validity of the study. This will be the case even if you withdraw from the study before its completion.
+
+---
+
+### Modification of privacy policy
+This privacy policy may be modified. If this happens, we will publish the modified [Informed Consent Form](https://infectieradar.be/en/project/).
 
 
-##### Versie 2.0 22-10-2020
+##### Version 2.0 2-10-2020

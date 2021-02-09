@@ -2,29 +2,29 @@
   "title": "Infectieradar",
   "topImage": {
     "title": "",
-    "content": "Door mee te doen aan Infectieradar.be help je mee om de verspreiding van infectieziekten mee in kaart te brengen en zien we snel wat de huidige situatie in België is."
+    "content": "By participating in Infectieradar.be you help map the spread of infectious diseases, allowing us to quickly see the current situation in Belgium."
   },
   "requiredSurveys": {
-    "title": "In te vullen vragenlijsten",
-    "info": "Hieronder staan de verschillende vragenlijsten voor het onderzoek.",
-    "successMsg": "Dank je wel! Je hebt alle vragenlijsten ingevuld. Volgende week vragen we je weer."
+    "title": "Questionnaires to be completed",
+    "info": "The different questionnaires for the study can be found here.",
+    "successMsg": "Thank you! You have completed all questionnaires. We will ask you again next week."
   },
   "optionalSurveys": {
-    "title": "Wijzigen achtergrondinformatie",
-    "info": "Als je situatie veranderd is, kan je hieronder opnieuw de achtergrondvragenlijst(en) invullen. We kunnen helaas niet laten zien wat je de laatste keer hebt ingevuld, of je alleen specifieke vragen laten aanpassen.",
-    "showBtn": "Is je achtergrondinformatie veranderd?",
-    "hideBtn": "Verbergen"
+    "title": "Change background information",
+    "info": "If your situation has changed, you can recomplete the background questionnaire(s) below.  Unfortunately, we cannot show you the information you entered last time, or let you change your answers to specific questions only.",
+    "showBtn": "Has your background information changed?",
+    "hideBtn": "Hide"
   },
   "referencesBox": {
-    "title": "Zie ook",
-    "faqLink": "Vraag en antwoord",
-    "resultsLink": "Actuele resultaten",
-    "aboutLink": "Over Infectierader"
+    "title": "See also",
+    "faqLink": "Frequently Asked Questions",
+    "resultsLink": "Current results",
+    "aboutLink": "About Infectierader"
   },
   "quickSettingsBox": {
-    "title": "Instellingen",
-    "manageProfiles": "Voeg een profiel toe van je kind, of wijzig je profiel",
-    "emailReminders": "Aanpassen van communicatie instellingen",
-    "language": "Taal"
+    "title": "Settings",
+    "manageProfiles": "Add your child’s profile or change your own profile",
+    "emailReminders": "Change communication settings",
+    "language": "Language"
   }
 }
