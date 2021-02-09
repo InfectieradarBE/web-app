@@ -52,5 +52,18 @@
     "profileSettings": "Manage Profiles",
     "communicationSettings": "Email Reminders",
     "languageSettings": "Languages"
+  },
+  "surveyList": {
+    "requiredSurveys": {
+      "title": "Questionnaires to be completed",
+      "info": "The different questionnaires for the study can be found below.",
+      "successMsg": "Thank you! You have completed all questionnaires. We will ask you again next week."
+    },
+    "optionalSurveys": {
+      "title": "Change background information",
+      "info": "If your situation has changed, you can recomplete the background questionnaire(s) below.  Unfortunately, we cannot show you the information you entered last time, or let you change your answers to specific questions only.",
+      "hideBtn": "Hide",
+      "showBtn": "Has your background information changed?"
+    }
   }
 }
