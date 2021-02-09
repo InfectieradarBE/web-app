@@ -14,9 +14,11 @@ interface DialogProps {
   ariaDescribedBy?: string;
 }
 
+const fullScreenBreakPoint = 576;
+
 const Dialog: React.FC<DialogProps> = (props) => {
   const color = props.color ? props.color : 'primary';
-  const fullScreen = useMediaQuery('(max-width:600px)');
+  const fullScreen = useMediaQuery(`(max-width:${fullScreenBreakPoint}px)`);
 
   const isTextColorWhite = ['primary', 'danger'].includes(color);
   return (
@@ -28,8 +30,8 @@ const Dialog: React.FC<DialogProps> = (props) => {
       PaperProps={{
         style: {
           borderRadius: 0,
-          width: 450,
-          maxWidth: 600,
+          width: fullScreen ? fullScreenBreakPoint : 450,
+          maxWidth: fullScreenBreakPoint,
         }
       }}
       classes={{

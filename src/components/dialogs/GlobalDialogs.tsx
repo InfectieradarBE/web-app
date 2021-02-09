@@ -1,8 +1,9 @@
 import React from 'react';
+import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import AlertDialog from './GlobalDialogs/AlertDialog';
 import ChangeEmail from './GlobalDialogs/ChangeEmail';
 import ChangeLanguage from './GlobalDialogs/ChangeLanguage';
-import ChangeEmailReminder from './GlobalDialogs/ChangeNotifications';
+import ChangeNotifications from './GlobalDialogs/ChangeNotifications';
 import ChangePassword from './GlobalDialogs/ChangePassword';
 import DeleteAccount from './GlobalDialogs/DeleteAccount';
 import Login from './GlobalDialogs/Login';
@@ -16,22 +17,29 @@ interface GlobalDialogsProps {
 }
 
 const GlobalDialogs: React.FC<GlobalDialogsProps> = (props) => {
+  const isAuth = useIsAuthenticated();
 
+  const authDialogs = () => {
+    return <React.Fragment>
+      <ChangeEmail />
+      <ChangePassword />
+      <ManageProfiles />
+      <ChangeLanguage
+        availableLanguages={props.config ? props.config.languages : undefined}
+        onChangeLanguage={props.onChangeLanguage}
+      />
+      <ChangeNotifications />
+      <DeleteAccount />
+    </React.Fragment>
+  }
   return (
     <React.Fragment>
       <Login />
       <Signup />
       <SignupSuccess />
       <PasswordForgotten />
-      <DeleteAccount />
       <AlertDialog />
-      <ChangeEmail />
-      <ChangePassword />
-      <ManageProfiles />
-      <ChangeLanguage
-        onChangeLanguage={props.onChangeLanguage}
-      />
-      <ChangeEmailReminder />
+      { isAuth ? authDialogs() : null}
     </React.Fragment>
   );
 };

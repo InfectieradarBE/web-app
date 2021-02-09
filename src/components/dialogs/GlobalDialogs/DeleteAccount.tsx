@@ -36,7 +36,6 @@ const DeleteAccount: React.FC<DeleteAccountProps> = (props) => {
     setLoading(true);
     try {
       await deleteAccountReq(user.currentUser.id);
-      logout();
       dispatch(openAlertDialog({
         type: 'alertDialog',
         payload: {
@@ -46,13 +45,12 @@ const DeleteAccount: React.FC<DeleteAccountProps> = (props) => {
           btn: t('dialogs:deleteAccount.successDialog.btn'),
         }
       }))
+      logout();
     } catch (e) {
       const err = getErrorMsg(e);
       setError(err);
-    } finally {
       setLoading(false);
     }
-
   }
 
   return (
