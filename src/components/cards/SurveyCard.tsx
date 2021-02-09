@@ -42,9 +42,9 @@ const SurveyCard: React.FC<SurveyCardProps> = (props) => {
       </span>
       <span className={
         clsx("ms-1 fw-light", {
-          // "text-primary": props.category === 'normal',
-          // "text-light": props.category === 'prio',
-          // "text-secondary": props.category === 'optional',
+          "text-primary": props.category === 'normal',
+          "text-secondary": props.category === 'prio',
+          "text-grey-7": props.category === 'optional',
         })
       }>
         {localize(props.surveyInfos?.typicalDuration)}
