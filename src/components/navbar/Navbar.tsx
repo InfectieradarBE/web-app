@@ -7,7 +7,7 @@ import { RootState } from '../../store/rootReducer'
 import { useTranslation } from 'react-i18next';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import { useLogout } from '../../hooks/useLogout';
-import { NavLink, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { NavbarConfig } from '../../types/config/navbar'
 import NavbarItem from './NavbarComponents/NavbarItem'
 import Drawer from './NavbarComponents/Drawer';

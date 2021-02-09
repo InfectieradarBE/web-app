@@ -318,7 +318,7 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 const Signup: React.FC = () => {
   const { t, i18n } = useTranslation(['dialogs']);
 
-  const instanceId = useSelector((state: RootState) => state.app.instanceId);
+  const instanceId = useSelector((state: RootState) => state.config.instanceId);
   const dialogState = useSelector((state: RootState) => state.dialog)
   const open = dialogState.config?.type === 'signup';
 

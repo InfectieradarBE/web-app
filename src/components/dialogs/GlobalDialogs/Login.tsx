@@ -279,7 +279,7 @@ const VerificationCodeForm: React.FC<VerificationCodeFormProps> = (props) => {
  * @param props
  */
 const Login: React.FC<LoginProps> = (props) => {
-  const instanceId = useSelector((state: RootState) => state.app.instanceId);
+  const instanceId = useSelector((state: RootState) => state.config.instanceId);
   const persistState = useSelector((state: RootState) => state.app.persistState);
   const dialogState = useSelector((state: RootState) => state.dialog)
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
-import { DialogConfig } from '../../types/config/dialogs';
 import AlertDialog from './GlobalDialogs/AlertDialog';
 import ChangeEmail from './GlobalDialogs/ChangeEmail';
 import ChangeLanguage from './GlobalDialogs/ChangeLanguage';
@@ -14,7 +13,6 @@ import Signup from './GlobalDialogs/Signup';
 import SignupSuccess from './GlobalDialogs/SignupSuccess';
 
 interface GlobalDialogsProps {
-  config?: DialogConfig;
   onChangeLanguage: (code: string) => void;
 }
 

@@ -8,7 +8,6 @@ export interface AuthInfo {
 }
 
 export interface AppState {
-  instanceId: string;
   persistState: boolean;
   auth?: AuthInfo;
   surveyMode: {
@@ -18,7 +17,6 @@ export interface AppState {
 }
 
 export const initialState: AppState = {
-  instanceId: process.env.REACT_APP_DEFAULT_INSTANCE ? process.env.REACT_APP_DEFAULT_INSTANCE : 'default',
   persistState: false,
   auth: undefined,
   surveyMode: {
