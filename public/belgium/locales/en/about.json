@@ -1,16 +1,16 @@
 {
-  "title": "Over Infectieradar",
+  "title": "About Infectieradar",
   "signupCard": {
-    "imageAlt": "Deelnemen afbeelding",
-    "title": "Deelnemen",
-    "body": "Help mee het coronavirus in de gaten te houden. Geef wekelijks door of je klachten hebt.",
-    "actionLabel": "Aanmelden"
+    "imageAlt": "Participate image",
+    "title": "Participate",
+    "body": "Help us keep an eye on coronavirus. Report weekly whether you have any symptoms.",
+    "actionLabel": "Sign up"
   },
   "surveyCard": {
-    "imageAlt": "Registreer nu!",
-    "title": "Registreer nu!",
-    "body": "Geef door of je klachten hebt.",
-    "actionLabel": "Vragenlijsten"
+    "imageAlt": "Register now!",
+    "title": "Register now!",
+    "body": "Report whether you have any symptoms.",
+    "actionLabel": "Questionnaires"
   },
   "logoCredits": {
     "title": "In Collaboration with:",

@@ -1,19 +1,20 @@
 {
-    "services": {
-        "title": "Services",
-        "contact": "Contact",
-        "facebook": "Follow us on Facebook",
-        "linkedIn": "Follow us on LinkedIn"
-    },
-    "about": {
-        "title": "About this page",
-        "privacy": "Privacy Statement",
-        "disclaimer": "Geen medische functie *",
-        "accessibility": "Accessibility"
-    },
-    "languages": {
-        "title": "Languages",
-        "nl-be": "Netherlands",
-        "en": "English"
-    }
+  "services": {
+      "title": "Services",
+      "contact": "Contact",
+      "twitter": "Follow us on Twitter"
+  },
+  "about": {
+      "title": "About this page",
+      "privacy": "Privacy Statement",
+      "disclaimer": "Disclaimer",
+      "accessibility": "Accessibility"
+  },
+  "languages": {
+      "title": "Languages",
+      "en": "English",
+      "nl-be": "Nederlands",
+      "de": "Deutsch",
+      "fr": "Français"
+  }
 }
