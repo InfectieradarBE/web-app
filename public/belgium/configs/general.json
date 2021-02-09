@@ -8,5 +8,11 @@
       "code": "en",
       "itemKey": "en"
     }
+  ],
+  "avatars": [
+    {
+      "avatarId": "default",
+      "url": "/images/avatars/default.png"
+    }
   ]
 }

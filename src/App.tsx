@@ -56,9 +56,8 @@ function App() {
     fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/general.json`)
       .then(res => res.json())
       .then(value => {
-        dispatch(appConfig.updateLanguages(
-          value.languages
-        ))
+        dispatch(appConfig.updateLanguages(value.languages));
+        dispatch(appConfig.updateAvatars(value.avatars));
       })
       .catch(error => console.log(error));
 
