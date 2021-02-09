@@ -16,6 +16,8 @@ import { useTranslation } from 'react-i18next';
 import GlobalDialogs from './components/dialogs/GlobalDialogs';
 import { handleOpenExternalPage } from './utils/routeUtils';
 import { DialogConfig } from './types/config/dialogs';
+import { appConfig } from './store/configSlice';
+import { useDispatch } from 'react-redux';
 
 function App() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig | undefined>();
@@ -25,6 +27,7 @@ function App() {
   const [dialogConfig, setDialogConfig] = useState<DialogConfig | undefined>();
 
   const { i18n } = useTranslation();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     // Header config
@@ -53,9 +56,14 @@ function App() {
 
     // Dialog Config
     fetch(`${process.env.REACT_APP_CONTENT_URL}/configs/dialogs.json`)
-    .then(res => res.json())
-    .then(value => setDialogConfig(value))
-    .catch(error => console.log(error));
+      .then(res => res.json())
+      .then(value => setDialogConfig(value))
+      .catch(error => console.log(error));
+
+    dispatch(appConfig.update({
+      instanceId: process.env.REACT_APP_DEFAULT_INSTANCE ? process.env.REACT_APP_DEFAULT_INSTANCE : 'default',
+    }));
+
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -91,7 +99,7 @@ function App() {
       <GlobalDialogs
         config={dialogConfig}
         onChangeLanguage={handleLanguageChange}
-       />
+      />
     </Router>
   );
 }

@@ -18,7 +18,7 @@ const PasswordForgotten: React.FC = () => {
 
   const dispatch = useDispatch();
 
-  const instanceId = useSelector((state: RootState) => state.app.instanceId);
+  const instanceId = useSelector((state: RootState) => state.config.instanceId);
   const dialogState = useSelector((state: RootState) => state.dialog)
 
   const open = dialogState.config?.type === 'passwordForgotten';
