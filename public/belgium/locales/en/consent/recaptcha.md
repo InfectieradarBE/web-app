@@ -1,11 +1,11 @@
-Infectieradar.be maakt voor de beveiliging van de website gebruik van Google Recaptcha.
-Deze dienst maakt gebruik van zogenaamde “tracking cookies”. Deze Cookies volgen je gedrag gedurende je bezoek aan Infectieradar.be, om uit te sluiten dat geen sprake is van geautomatiseerde handelingen die onder andere de  toegankelijkheid van deze website kunnen beperken. De gegevens die Google door middel van de genoemde tracking cookies verzamelt en analyseert, omvatten onder andere:
+Infectieradar.be uses Google Recaptcha to ensure the security of the website.
+This service uses tracking cookies, which monitor your behaviour during your visit to Infectieradar.be in order to prevent automated actions that could, among other things, limit the website’s accessibility. The data that Google collects and analyses by means of these tracking cookies include:
 
-* IP adres
-* Cookies die Google in de afgelopen 6 maanden heeft geplaatst.
-* Inlog status Google account
-* Het scroll-gedrag van de bezoeker op Infectieradar.be
+* IP address
+* Cookies that Google has installed in the past 6 months.
+* Google account login status
+* The visitor’s browsing behaviour on Infectieradar.be
 
-Zie voor meer informatie over het gebruik van deze dienst en de verwerking van je gegevens de [privacyverklaring](https://www.survey.infectieradar.be/privacy).
+For more information about the use of this service and the processing of your data, see the [privacy policy](https://survey.infectieradar.be/privacy).
 
-Door op “Akkoord” te klikken geef je toestemming voor het plaatsen van de tracking cookies en de verwerking van de genoemde gegevens door Google.
+By clicking on “I agree” you consent to the installation of tracking cookies and the processing of the above-mentioned data by Google.

@@ -1,6 +1,6 @@
 
-Voor vragen en opmerkingen kun je een e-mail sturen naar [infectieradar@uhasselt.be](mailto:infectieradar@uhasselt.be). We proberen binnen vijf werkdagen je e-mail te beantwoorden.
+For questions and comments we can be reached on [infectieradar@uhasselt.be](mailto:infectieradar@uhasselt.be). We will answer as soon as possible.
 
-Voor meer contactinformatie, klik [hier](https://infectieradar.be/contact/).
+For more contact information, please [click here](https://infectieradar.be/en/contact/).
 
-Kijk ook op "[FAQ](https://survey.infectieradar.be/faq/)" voor een mogelijk antwoord op je vraag.
+Please consult our "[FAQ](https://infectieradar.be/en/faq/)" for a possible answer on your question.
