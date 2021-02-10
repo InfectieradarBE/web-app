@@ -17,12 +17,6 @@
     },
     {
       "type": "internal",
-      "url": "/results",
-      "itemKey": "results",
-      "hideWhen": ""
-    },
-    {
-      "type": "internal",
       "url": "/about",
       "itemKey": "about",
       "hideWhen": ""
@@ -31,6 +25,12 @@
       "type": "internal",
       "url": "/faq",
       "itemKey": "faq",
+      "hideWhen": ""
+    },
+    {
+      "type": "internal",
+      "url": "/results",
+      "itemKey": "results",
       "hideWhen": ""
     }
   ],
