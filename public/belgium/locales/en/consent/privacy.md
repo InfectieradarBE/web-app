@@ -1,4 +1,4 @@
-By clicking the “I consent button”, you agree to participate in the infectieradar.be survey and accept that the researchers will process your data for this survey. 
+By clicking the “I consent” button, you agree to participate in the infectieradar.be survey and accept that the researchers will process your data for this survey. 
 
 The survey aims to identify symptoms that may indicate infectious diseases such as the new coronavirus. It is important for determining whether the number of people with symptoms is increasing or decreasing. More information about the purpose of the survey and your rights can be found in the [privacy policy](https://survey.infectieradar.be/privacy).
 
