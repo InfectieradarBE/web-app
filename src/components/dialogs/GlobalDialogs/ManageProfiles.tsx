@@ -11,7 +11,7 @@ import { RootState } from '../../../store/rootReducer';
 import { userActions } from '../../../store/userSlice';
 import DialogBtn from '../../buttons/DialogBtn';
 import AlertBox from '../../displays/AlertBox';
-import AvatarPreview from '../../displays/AvatarPreview';
+import Avatar from '../../displays/Avatar';
 import { dialogPaddingXClass } from '../contants';
 import Dialog from '../Dialog';
 import ConfirmDialog from '../DialogTypes/ConfirmDialog';
@@ -94,14 +94,14 @@ const ManageProfiles: React.FC<ManageProfilesProps> = (props) => {
         }
       )}
     >
-      <AvatarPreview
+      <Avatar
         avatarId={p.avatarId}
         size="28px"
-        className="me-2"
+        className="me-1"
       />
-      <p className="m-0 flex-grow-1 d-flex fs-btn">
+      <p className="m-0 flex-grow-1 d-flex align-items-center fs-btn">
         <span
-          className="d-inline-block text-truncate align-self-center"
+          className="d-inline-block text-truncate"
           style={{ maxWidth: 200 }}
         >
           {p.alias}

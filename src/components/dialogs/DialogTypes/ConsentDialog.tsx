@@ -51,6 +51,7 @@ const ConsentDialog: React.FC<ConsentDialogProps> = (props) => {
             style={{
               maxHeight: fullScreen ? 3000 : '60vh',
             }}
+            tabIndex={0}
           >
             <MarkdownRenderer
               markdown={props.content} />
