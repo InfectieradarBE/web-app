@@ -179,7 +179,7 @@
                       {
                         "linkKey": "communicationSettings",
                         "type": "dialog",
-                        "value": "changeEmailReminder"
+                        "value": "changeNotifications"
                       },
                       {
                         "linkKey": "languageSettings",
