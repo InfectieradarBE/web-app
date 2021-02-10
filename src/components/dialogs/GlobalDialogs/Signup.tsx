@@ -64,7 +64,7 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
   const [showConfirmPasswordError, setShowConfirmPasswordError] = useState(false);
 
   const reCaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITEKEY ? process.env.REACT_APP_RECAPTCHA_SITEKEY : '';
-  const useRecaptcha = reCaptchaSiteKey.length > 0;
+  const useRecaptcha = process.env.REACT_APP_USE_RECAPTCHA === 'true';
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   useEffect(() => {
@@ -280,9 +280,9 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
             </div>
             {
               reCaptchaAccepted ? <div>
-                {process.env.REACT_APP_RECAPTCHA_SITEKEY ?
+                {reCaptchaSiteKey ?
                   <ReCAPTCHA
-                    sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
+                    sitekey={reCaptchaSiteKey}
                     size="invisible"
                     hl={i18n.language}
                     ref={recaptchaRef} />

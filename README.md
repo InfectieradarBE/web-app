@@ -19,6 +19,7 @@ REACT_APP_FALLBACK_LANGUAGE=<language-code>
 
 REACT_APP_CONTENT_URL=<full url of the content hosting>
 
+REACT_APP_USE_RECAPTCHA=true
 REACT_APP_RECAPTCHA_SITEKEY=<you receive the site key from Google>
 
 REACT_APP_TITLE=<Your application name>
