@@ -37,7 +37,7 @@ const TextField: React.FC<TextFieldProps> = (props) => {
           {
             "border-danger": hasError && !props.disabled,
             "border-0": !hasError,
-            "input-padding-custom": !hasError,
+            // "input-padding-custom": !hasError,
             // "border-2 border-grey-2": props.disabled,
 
             // [styles.inputError]: hasError
