@@ -143,12 +143,12 @@ $form-check-input-border-radius: 0 !default;
   height: 44px;
 }
 
-.nav-link:hover,
-.nav-link:focus
+.nav-link:hover:not(.active)
 {
   background-color: darken(map-get($theme-colors, "primary"), 10%) !important;
   text-decoration: underline;
 }
+
 
 $navbar-text-font-size: 1.125rem !default;
 $navbar-text-padding-top: 10px !default;

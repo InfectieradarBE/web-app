@@ -15,19 +15,6 @@
         "width": 250
       }
     },
-    "languages": [
-      {
-        "code": "nl-be",
-        "itemKey": "nl-be"
-      },
-      {
-        "code": "en",
-        "itemKey": "en"
-      },
-      {
-        "code": "fr-be",
-        "itemKey": "fr-be"
-      }
-    ]
+    "useLanguageSelector": true
   }
 }
