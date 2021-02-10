@@ -23,6 +23,10 @@
       {
         "code": "en",
         "itemKey": "en"
+      },
+      {
+        "code": "fr-be",
+        "itemKey": "fr-be"
       }
     ]
   }

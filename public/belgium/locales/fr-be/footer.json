@@ -1,22 +1,22 @@
 {
-    "services": {
-      "title": "Services",
-      "agenda": "Agenda",
-      "follow": "Suivez-nous",
-      "twitter": "Suivez-nous sur Twitter",
-      "contact": "Contactez Infectieradar.be"
-    },
-    "about": {
-      "title": "À propos de ce site",
-      "privacy": "Déclaration de confidentialité",
-      "disclaimer": "Pas de fonction médicale",
-      "accessibility": "Déclaration d'accessibilité"
-    },
-    "languages": {
-      "title": "Langues",
-      "en": "English",
-      "nl-be": "Nederlands",
-      "de": "Deutsch",
-      "fr": "Français"
-    }
+  "services": {
+    "title": "Services",
+    "agenda": "Agenda",
+    "follow": "Suivez-nous",
+    "twitter": "Suivez-nous sur Twitter",
+    "contact": "Contactez Infectieradar.be"
+  },
+  "about": {
+    "title": "À propos de ce site",
+    "privacy": "Déclaration de confidentialité",
+    "disclaimer": "Pas de fonction médicale",
+    "accessibility": "Déclaration d'accessibilité"
+  },
+  "languages": {
+    "title": "Langues",
+    "en": "English",
+    "nl-be": "Nederlands",
+    "de": "Deutsch",
+    "fr-be": "Français"
+  }
 }

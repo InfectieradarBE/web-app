@@ -126,7 +126,7 @@
           "columns": [
             {
               "key": "mainCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-8",
               "items": [
                 {
                   "itemKey": "surveyList",
