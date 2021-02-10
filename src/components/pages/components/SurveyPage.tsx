@@ -94,7 +94,6 @@ const SurveyPage: React.FC<SurveyPageProps> = (props) => {
         studyKey: studyKey,
         profileId: profileID
       });
-      console.log(response.data);
       setSurveyAndContext(response.data);
     } catch (e) {
       const err = getErrorMsg(e);
