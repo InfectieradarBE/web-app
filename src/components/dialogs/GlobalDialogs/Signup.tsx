@@ -63,6 +63,8 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
   const [showPasswordError, setShowPasswordError] = useState(false);
   const [showConfirmPasswordError, setShowConfirmPasswordError] = useState(false);
 
+  const reCaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITEKEY ? process.env.REACT_APP_RECAPTCHA_SITEKEY : '';
+  const useRecaptcha = reCaptchaSiteKey.length > 0;
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   useEffect(() => {
@@ -80,21 +82,25 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 
   const isDisabled = (): boolean => {
     const passwordRuleOk = checkPasswordRules(signupData.password);
-    return !(!props.isLoading && reCaptchaAccepted && acceptedPrivacyPolicy && signupData.email.length > 4 && passwordRuleOk && passwordsMatch());
+    return !(!props.isLoading && (!useRecaptcha || reCaptchaAccepted) && acceptedPrivacyPolicy && signupData.email.length > 4 && passwordRuleOk && passwordsMatch());
   }
 
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!recaptchaRef.current) {
+    if (useRecaptcha && !recaptchaRef.current) {
       console.error('issue with recaptcha');
       // props.onFormError('issue with recaptcha');
       return;
     }
 
     try {
-      recaptchaRef.current?.reset();
-      const token = await recaptchaRef.current?.executeAsync();
-      props.onSubmit({ ...signupData, captchaToken: token ? token : '' });
+      let reCaptchaToken = '';
+      if (useRecaptcha) {
+        recaptchaRef.current?.reset();
+        const captchaResponse = await recaptchaRef.current?.executeAsync();
+        reCaptchaToken = captchaResponse ? captchaResponse : '';
+      }
+      props.onSubmit({ ...signupData, captchaToken: reCaptchaToken });
     } catch (err) {
       // props.onFormError("unexpected error with recaptcha");
     }
@@ -195,28 +201,29 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           </Trans>
         </Checkbox>
 
-        <Checkbox
-          className={marginBottomClass}
-          id="recaptchaConsent"
-          name="recaptchaConsent"
-          checked={reCaptchaAccepted}
-          onClick={() => {
-            if (!reCaptchaAccepted) {
-              setOpenRecaptchaConsent(true);
-            }
-          }}
-          onChange={(checked) => {
-            if (!checked) {
-              setReCaptchaAccepted(checked);
-            }
-          }}
-        >
-          <Trans t={t} i18nKey="signup.reCaptchaCookieCheckbox">
-            {'...'}<span
-              onClick={() => setOpenRecaptchaConsent(true)}
-              className="text-primary text-decoration-none">{'...'}</span>{'...'}
-          </Trans>
-        </Checkbox>
+        {useRecaptcha ?
+          <Checkbox
+            className={marginBottomClass}
+            id="recaptchaConsent"
+            name="recaptchaConsent"
+            checked={reCaptchaAccepted}
+            onClick={() => {
+              if (!reCaptchaAccepted) {
+                setOpenRecaptchaConsent(true);
+              }
+            }}
+            onChange={(checked) => {
+              if (!checked) {
+                setReCaptchaAccepted(checked);
+              }
+            }}
+          >
+            <Trans t={t} i18nKey="signup.reCaptchaCookieCheckbox">
+              {'...'}<span
+                onClick={() => setOpenRecaptchaConsent(true)}
+                className="text-primary text-decoration-none">{'...'}</span>{'...'}
+            </Trans>
+          </Checkbox> : null}
 
         <AlertBox
           className={marginBottomClass}
@@ -249,36 +256,40 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
           >{t('signup.loginLink')}</button>
         </div>
 
-        <div className="mt-2 captcha-badge-alt">
-          <Trans t={t} i18nKey="signup.reCaptchaLinks">
-            Intro Text
-            <TextLink
-              href="https://policies.google.com/privacy"
-              style={{ textDecoration: 'none' }}
-            >
-              Privacy link
-            </TextLink>
-            and
-            <TextLink
-              href="https://policies.google.com/terms"
-              style={{ textDecoration: 'none' }}
-            >
-              Terms of Service
-            </TextLink>
-            apply.
-          </Trans>
-        </div>
-        {
-          reCaptchaAccepted ? <div>
-            {process.env.REACT_APP_RECAPTCHA_SITEKEY ?
-              <ReCAPTCHA
-                sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
-                size="invisible"
-                hl={i18n.language}
-                ref={recaptchaRef} />
-              : null}
-          </div> : null
-        }
+
+        {useRecaptcha ?
+          <React.Fragment>
+            <div className="mt-2 captcha-badge-alt">
+              <Trans t={t} i18nKey="signup.reCaptchaLinks">
+                {'...'}
+                <TextLink
+                  href="https://policies.google.com/privacy"
+                  style={{ textDecoration: 'none' }}
+                >
+                  {'Privacy link'}
+                </TextLink>
+                {'and'}
+                <TextLink
+                  href="https://policies.google.com/terms"
+                  style={{ textDecoration: 'none' }}
+                >
+                  {'Terms of Service'}
+                </TextLink>
+                {'...'}
+              </Trans>
+            </div>
+            {
+              reCaptchaAccepted ? <div>
+                {process.env.REACT_APP_RECAPTCHA_SITEKEY ?
+                  <ReCAPTCHA
+                    sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
+                    size="invisible"
+                    hl={i18n.language}
+                    ref={recaptchaRef} />
+                  : null}
+              </div> : null
+            }
+          </React.Fragment> : null}
 
       </form>
       <ConsentDialog
