@@ -130,49 +130,6 @@ $form-check-input-border-radius: 0 !default;
 // Nav:
 // ---------------------------------------------
 
-@media (max-width: 992px) {
-  .nav-item{
-    width: 100%;
-  }
-
-  .customDropDown{
-    width: 100%;
-    text-align: left !important;
-  }
-
-  .navbar-toggler {
-    border: 0 !important;
-    outline: 0 !important;
-  }
-
-  .navbar-collapse {
-    z-index:1;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 250px !important;
-    height: 100%;
-  }
-
-  .navbar-collapse.collapsing {
-    left: -75%;
-    transition: height 0s ease;
-  }
-
-  .navbar-collapse.show {
-    left: 0;
-    transition: left 500ms ease-in-out;
-  }
-
-  .navbar-toggler.collapsed ~ .navbar-collapse {
-    height: 100%;
-    transition: left 500ms ease-in-out;
-  }
-}
-
 .nav-link:hover{
   background-color: darken($primary,10%);
   text-decoration: underline;
