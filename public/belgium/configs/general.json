@@ -1,0 +1,62 @@
+{
+  "languages": [
+    {
+      "code": "nl-be",
+      "itemKey": "nl-be"
+    },
+    {
+      "code": "en",
+      "itemKey": "en"
+    }
+  ],
+  "avatars": [
+    {
+      "avatarId": "default",
+      "url": "/images/avatars/Unknown_schwarz.png"
+    },
+    {
+      "avatarId": "alpaca",
+      "url": "/images/avatars/Alpaka_schwarz.png"
+    },
+    {
+      "avatarId": "delfin",
+      "url": "/images/avatars/Delfin_schwarz.png"
+    },
+    {
+      "avatarId": "elefant",
+      "url": "/images/avatars/Elefant_schwarz.png"
+    },
+    {
+      "avatarId": "eule",
+      "url": "/images/avatars/Eule_schwarz.png"
+    },
+    {
+      "avatarId": "flamingo",
+      "url": "/images/avatars/Flamingo_schwarz.png"
+    },
+    {
+      "avatarId": "fuchs",
+      "url": "/images/avatars/Fuchs_schwarz.png"
+    },
+    {
+      "avatarId": "geko",
+      "url": "/images/avatars/Geko_schwarz.png"
+    },
+    {
+      "avatarId": "panda",
+      "url": "/images/avatars/Panda_schwarz.png"
+    },
+    {
+      "avatarId": "pinguin",
+      "url": "/images/avatars/Pinguin_schwarz.png"
+    },
+    {
+      "avatarId": "spinne",
+      "url": "/images/avatars/Spinne_schwarz.png"
+    },
+    {
+      "avatarId": "stier",
+      "url": "/images/avatars/Stier_schwarz.png"
+    }
+  ]
+}

@@ -7,12 +7,12 @@ import { RootState } from '../../store/rootReducer'
 import { useTranslation } from 'react-i18next';
 import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import { useLogout } from '../../hooks/useLogout';
-import { NavLink, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { NavbarConfig } from '../../types/config/navbar'
 import NavbarItem from './NavbarComponents/NavbarItem'
 import Drawer from './NavbarComponents/Drawer';
 import { Profile } from '../../api/types/user';
-import AvatarPreview from '../displays/AvatarPreview';
+import Avatar from '../displays/Avatar';
 
 interface NavbarProps {
   loading?: boolean;
@@ -76,14 +76,17 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   const navbarRight = () => {
     if (isLoggedIn) {
-      return <div className="dropdown nav-tabs">
+      return <div className="dropdown nav-tabs d-flex align-items-center">
         <button
           className="btn btn-primary dropdown-toggle text-lightest fs-btn "
           type="button"
           id="DropMenu"
           data-bs-toggle="dropdown"
           aria-expanded="false" >
-          <i className={clsx('fas fa-user', 'me-1')}></i>
+          {currentProfile ? <Avatar
+            className="me-1"
+            avatarId={currentProfile.avatarId}
+          /> : null}
           {currentProfile?.alias}
         </button >
 
@@ -162,7 +165,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             height: 44
           }}>
 
-          <AvatarPreview
+          <Avatar
             avatarId={surveyMode.profile?.avatarId ? surveyMode.profile?.avatarId : 'default'}
             //fontSize="1.8rem"
             className="m-0 me-md-2"

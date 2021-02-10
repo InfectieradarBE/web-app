@@ -6,6 +6,7 @@ import throttle from 'lodash.throttle'
 
 import rootReducer from './rootReducer'
 import { userActions } from './userSlice'
+import { appConfig } from './configSlice'
 
 
 const middleWare = [...getDefaultMiddleware()];
@@ -35,8 +36,8 @@ export default store
 
 export const resetStore = () => {
   // let oldState = store.getState();
-
   store.dispatch(resetAppSlice());
+  store.dispatch(appConfig.reset());
   store.dispatch(resetDialogSlice());
   store.dispatch(userActions.reset());
 }

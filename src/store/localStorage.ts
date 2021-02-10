@@ -2,6 +2,7 @@ import { RootState } from "./rootReducer";
 import { initialState as appState } from './appSlice';
 import { initialState as dialogState } from './dialogSlice';
 import { initialState as userState } from './userSlice';
+import { initialState as configState } from './configSlice';
 
 
 import merge from 'lodash.merge';
@@ -14,6 +15,7 @@ export const loadState = (): RootState => {
     app: clonedeep(appState),
     dialog: clonedeep(dialogState),
     user: clonedeep(userState),
+    config: clonedeep(configState)
   };
   try {
     const serializedState = localStorage.getItem(stateKey);
@@ -36,7 +38,11 @@ export const loadState = (): RootState => {
 export const saveState = (state: RootState) => {
   try {
     if (state.app.persistState) {
-      const serializedState = JSON.stringify(state);
+      const savedState = clonedeep(state);
+      savedState.config = clonedeep(configState);
+      savedState.dialog = clonedeep(dialogState);
+
+      const serializedState = JSON.stringify(savedState);
       localStorage.setItem(stateKey, serializedState);
     }
     else {
