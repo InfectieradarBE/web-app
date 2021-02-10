@@ -1,0 +1,215 @@
+{
+  "loadingMsg": "Loading",
+  "login": {
+    "credentials": {
+      "title": "Se connecter",
+      "info": "",
+      "emailInputLabel": "E-mail",
+      "emailInputPlaceholder": "E-mail",
+      "passwordInputLabel": "Mot de passe",
+      "passwordInputPlaceholder": "Mot de passe",
+      "rememberMeLabel": "Mémoriser les données",
+      "btn": "Se connecter",
+      "passwordForgottenBtn": "Vous avez oublié votre mot de passe ?",
+      "signupBtn": "Vous n'avez pas encore de compte ? Enregistrez-vous ici."
+    },
+    "verificationCode": {
+      "title": "Code de vérification à 6 chiffres",
+      "info": "Entrez le code à 6 chiffres que nous vous avons envoyé. \n Vous n'avez rien reçu ? Vérifiez d'abord votre dossier des courriers indésirables. Le bouton ci-dessous vous permet de demander un nouveau code.",
+      "codeInputLabel": "Code de vérification",
+      "codeInputPlaceholder": "Code de vérification à 6 chiffres",
+      "submitBtn": "Envoyer",
+      "resendBtn": "Demander un nouveau code"
+    },
+    "errors": {
+      "accountOrPassword": "Une erreur s’est produite. Veuillez vérifier votre adresse électronique et votre mot de passe.",
+      "wrongCode": "Code erroné. Vérifiez le code que nous vous avons envoyé par courrier électronique.",
+      "newCodeSent": "Code erroné. Nous vous avons envoyé un nouveau code par courrier électronique.",
+      "rateLimit": "Vous devez attendre un certain temps avant de pouvoir demander un nouveau code.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    }
+  },
+  "signup": {
+    "title": "Enregistrez-vous",
+    "info": "Connectez-vous et aidez à surveiller de près l’évolution du coronavirus.",
+    "emailInputLabel": "E-mail",
+    "emailInputPlaceholder": "E-mail",
+    "passwordInputLabel": "Mot de passe",
+    "passwordInputPlaceholder": "Mot de passe",
+    "confirmPasswordInputLabel": "Confirmez le mot de passe",
+    "confirmPasswordInputPlaceholder": "Confirmez le mot de passed",
+    "informedConsentCheckbox": "Accéder à la <1>déclaration de consentement</1>.*",
+    "reCaptchaCookieCheckbox": "Accéder à la <1>déclaration en matière de cookies</1>.*",
+    "signupBtn": "Enregistrez-vous",
+    "loginLink": "Avez-vous déjà un compte ? Connectez-vous ici.",
+    "reCaptchaLinks": "Ce site utilise reCAPTCHA. Par ailleurs, la déclaration en matière de <1>confidentialité</1> de Google et ses <3>conditions</3> sont d’application.",
+    "errors": {
+      "passwordRules": "Votre mot de passe doit comporter au moins 8 caractères, et contenir 3 des 4 éléments suivants : une minuscule, une majuscule, un chiffre, un signe de ponctuation.",
+      "passwordMatch": "Les mots de passe ne sont pas les mêmes",
+      "invalidEmail": "Votre adresse électronique semble incorrecte",
+      "userCreationFailed": "Une erreur s’est produite.",
+      "unknown": "Une erreur s’est produite."
+    }
+  },
+  "privacyConsent": {
+    "title": "Déclaration de consentement",
+    "acceptBtn": "Je marque mon accord",
+    "cancelBtn": "Je ne marque pas mon accord"
+  },
+  "recaptchaConsent": {
+    "title": "Déclaration en matière de cookies",
+    "cancelBtn": "Annuler",
+    "acceptBtn": "J'accepte"
+  },
+  "signupSuccess": {
+    "title": "Bienvenue !",
+    "successMsg": "Votre inscription sur le site Infectieradar.be est presque terminée ! \n Tout d'abord, veuillez confirmer votre adresse électronique en cliquant sur le lien figurant dans le courrier électronique de confirmation que nous vous avons envoyé. \n Si vous ne trouvez pas le courrier électronique en question, vérifiez d'abord votre dossier des courriers indésirables. Vous pouvez également demander un nouveau courrier électronique ci-dessous.",
+    "emailSentMsg": "Un courrier électronique a été envoyé.",
+    "resendVerificationEmailBtn": "Envoyer à nouveau un courrier électronique de confirmation",
+    "wrongEmailBtn": "Avez-vous utilisé une mauvaise adresse électronique ? Si tel est le cas, vous pouvez la modifier ici.",
+    "errors": {
+      "unknown": "Une erreur s’est produite."
+    }
+  },
+  "passwordForgotten": {
+    "title": "Modifier votre mot de passe",
+    "info": "Saisissez l'adresse électronique de votre compte.",
+    "successMessage": "Suivez le lien qui figure dans le courrier électronique que nous vous avons envoyé à l’adresse ci-dessous. \n Si vous n'avez pas reçu de courrier électronique, veuillez vérifier votre dossier de courriers indésirables ou réessayer ultérieurement lorsque c’est à nouveau possible.",
+    "emailInputLabel": "E-mail",
+    "emailInputPlaceholder": "E-mail",
+    "submitBtn": "Modifier le mot de passe",
+    "errors": {
+      "invalidId": "Une erreur s’est produite. Vérifiez votre adresse électronique ou votre connexion. Vous pouvez réessayer lorsque le bouton est à nouveau visible.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    }
+  },
+  "changeEmail": {
+    "title": "Modifier l’adresse e-mail",
+    "emailInputLabel": "Nouvelle adresse électronique",
+    "emailInputPlaceholder": "Nouvelle adresse électronique",
+    "passwordInputLabel": "Mot de passe",
+    "passwordInputPlaceholder": "Mot de passe",
+    "info": "Souhaitez-vous utiliser une autre adresse électronique ? Modifiez votre adresse électronique en cliquant sur le bouton ci-dessous. Veuillez noter que vous ne pouvez vous connecter à Infectieradar.be qu'après confirmation de votre adresse électronique.",
+    "cancelBtn": "Annuler",
+    "confirmBtn": "Modifier l’adresse e-mail",
+    "errors": {
+      "wrongPasswordOrAccountId": "Une erreur s’est produite. Veuillez vérifier vos informations (l'adresse électronique ou le mot de passe peuvent être incorrects).",
+      "wrongEmailFormat": "Adresse électronique non valide.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    },
+    "warningDialog": {
+      "title": "Confirmez la nouvelle adresse électronique.",
+      "content": "Attention : vous ne pourrez vous reconnecter à Infectieradar.be qu'après confirmation de votre nouvelle adresse électronique par le biais du lien figurant dans le courrier électronique de confirmation que nous vous avons envoyé.",
+      "cancelBtn": "Annuler",
+      "confirmBtn": "Modifier l’adresse e-mail"
+    },
+    "successDialog": {
+      "title": "Adresse électronique modifiée",
+      "content": "Réussi ! Votre adresse électronique a été modifiée.",
+      "btn": "Ok"
+    }
+  },
+  "changePassword": {
+    "title": "Modifier votre mot de passe",
+    "currentPasswordInputLabel": "Mot de passe actuel :",
+    "currentPasswordInputPlaceholder": "Mot de passe actuel :",
+    "newPasswordInputLabel": "Nouveau mot de passe :",
+    "newPasswordInputPlaceholder": "Nouveau mot de passe :",
+    "confirmPasswordInputLabel": "Confirmer le nouveau mot de passe",
+    "confirmPasswordInputPlaceholder": "Confirmer le nouveau mot de passe",
+    "info": "Pour des raisons de sécurité, vous devez d'abord introduire votre mot de passe actuel.",
+    "cancelBtn": "Annuler",
+    "confirmBtn": "Modifier le mot de passe",
+    "errors": {
+      "wrongCurrentPassword": "Mot de passe incorrect",
+      "passwordRules": "Votre mot de passe doit comporter au moins 8 caractères, et contenir 3 des 4 éléments suivants : une minuscule, une majuscule, un chiffre, un signe de ponctuation.",
+      "passwordMatch": "Les mots de passe ne sont pas les mêmes.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    },
+    "successDialog": {
+      "title": "Votre mot de passe a été modifié",
+      "content": "Réussi ! Votre mot de passe a été modifié.",
+      "btn": "Ok"
+    }
+  },
+  "manageProfiles": {
+    "title": "Profils",
+    "mainProfileLabel": "Moi",
+    "cancelBtn": "Annuler",
+    "newProfileBtn": "Nouveau profil pour votre enfant",
+    "warningDialog": {
+      "title": "Suppression du profil",
+      "content": "La suppression du profil {{ alias}} ne peut être annulée",
+      "cancelBtn": "Annuler",
+      "confirmBtn": "Supprimer le profil"
+    }
+  },
+  "editProfile": {
+    "new": {
+      "title": "Nouveau profil",
+      "cancelBtn": "Annuler",
+      "submitBtn": "Créez un profil pour votre enfant"
+    },
+    "edit": {
+      "title": "Modifier le profil",
+      "cancelBtn": "Annuler",
+      "submitBtn": "Enregistrer les modifications"
+    },
+    "aliasInputLabel": "Surnom",
+    "aliasInputPlaceholder": "Surnom",
+    "consentCheckboxLabel": "Autorisation",
+    "consentCheckboxText": "Vous ne pouvez créer un profil et remplir les questionnaires que pour vous-même, ou en tant que parent ou représentant légal de votre enfant qui n'a pas encore atteint l'âge de 18 ans.",
+    "avatarSelectorLabel": "Veuillez choisir une figurine"
+  },
+  "changeLanguage": {
+    "title": "Langues",
+    "defaultLanguageLabel": "Langue par défaut",
+    "info": "Vous pouvez modifier la langue par défaut ici. Si disponible, les e-mails seront également envoyés dans cette langue.",
+    "languages": {
+      "nl-be": "Nederlands",
+      "en": "English"
+    },
+    "cancelBtn": "Annuler",
+    "confirmBtn": "Modifier langue",
+    "errors": {
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    },
+    "successDialog": {
+      "title": "Langue par défaut a été modifié",
+      "content": "Réussi ! Langue par défaut a été modifié.",
+      "btn": "Ok"
+    }
+  },
+  "changeNotifications": {
+    "title": "Courriel de rappel hebdomadaire",
+    "info": "Ici, vous pouvez configurer si vous souhaitez recevoir le courriel de rappel hebdomadaire.",
+    "weeklyReminder": {
+      "label": "Courriel de rappel hebdomadaire",
+      "on": "Oui, je souhaite recevoir le courriel de rappel hebdomadaire.",
+      "off": "Non, je ne souhaite pas recevoir le courriel de rappel hebdomadaire."
+    },
+    "newsletter": {
+      "label": "Courrier électronique à l’attention de tous les participants. Il sera parfois nécessaire d'envoyer un courrier électronique à tous les participants en vue de leur communiquer des informations relatives à l'étude.",
+      "on": "Oui, je souhaite recevoir ces courriers électroniques à l’attention de tous les participants.",
+      "off": "Non, je ne souhaite pas recevoir ces courriers électroniques à l’attention de tous les participants."
+    },
+    "cancelBtn": "Annuler",
+    "submitBtn": "Enregistrer les modifications",
+    "successDialog": {
+      "title": "Les paramètres ont été modifiés.",
+      "content": "Réussi ! Vos paramètres en matière de courriers électroniques ont été modifiés.",
+      "btn": "Ok"
+    }
+  },
+  "deleteAccount": {
+    "title": "Se désabonner de l’étude.",
+    "info": "Êtes-vous certain(e) de vouloir supprimer votre compte ? \n Il s'agit d'une action irréversible.",
+    "cancelBtn": "Annuler",
+    "confirmBtn": "Se désabonner",
+    "successDialog": {
+      "title": "Compte supprimé",
+      "content": "Réussi ! Votre compte a été supprimé. Nous vous remercions pour votre contribution. Vous pouvez toujours vous réinscrire et participer à nouveau à cette étude en créant un nouveau compte.",
+      "btn": "Ok"
+    }
+  }
+}

@@ -53,13 +53,13 @@
   },
   "privacyConsent": {
     "title": "Privacy Consent",
-    "acceptBtn": "I read and accept the above statement.",
-    "cancelBtn": "Cancel"
+    "acceptBtn": "I consent",
+    "cancelBtn": "I do not consent"
   },
   "recaptchaConsent": {
     "title": "ReCaptcha Cookie Consent",
-    "acceptBtn": "I read and accept the above statement.",
-    "cancelBtn": "Cancel"
+    "acceptBtn": "I agree",
+    "cancelBtn": "I don't agree"
   },
   "signupSuccess": {
     "title": "Welcome!",

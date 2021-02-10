@@ -1,0 +1,56 @@
+{
+  "verifyEmail": {
+    "title": "E-mail vérification",
+    "content": {
+      "info": "",
+      "success": "Vous avez réussi ! Votre adresse électronique a été confirmée. \n\n À présent, vous pouvez vous connecter.",
+      "btn": {
+        "successWithAuth": "Ok",
+        "successWithoutAuth": "Aller à la page de connexion.",
+        "errorWithAuth": "Accueil",
+        "errorWithoutAuth": "Aller à la page de connexion."
+      }
+    },
+    "errors": {
+      "wrongToken": "Une erreur s’est produite. Assurez-vous d’utiliser le bon lien, ou de ne pas avoir essayé ce lien auparavant. Veuillez demander un nouveau courrier électronique, le cas échéant.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    }
+  },
+  "passwordReset": {
+    "title": "Modifier votre mot de passe",
+    "content": {
+      "info": "Modifier votre mot de passe",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "E-mail",
+      "newPasswordLabel": "Mot de passe",
+      "newPasswordPlaceholder": "Nouveau mot de passe",
+      "confirmPasswordLabel": "Confirmer le mot de passe",
+      "confirmPasswordPlaceholder": "Confirmer le nouveau mot de passe",
+      "btn": "Modifier le mot de passe",
+      "restartBtn": "Recommencer",
+      "successMsg": "Votre mot de passe a été modifié",
+      "successBtn": "Se connecter"
+    },
+    "errors": {
+      "passwordRules": "Votre mot de passe doit comporter au moins 8 caractères, et contenir 3 des 4 éléments suivants : une minuscule, une majuscule, un chiffre, un signe de ponctuation.",
+      "passwordMatch": "Les mots de passe ne sont pas les mêmes.",
+      "wrongToken": "Une erreur s’est produite. Assurez-vous d’utiliser le bon lien, ou de ne pas avoir essayé ce lien auparavant. Veuillez demander un nouveau courrier électronique, le cas échéant.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    }
+  },
+  "studyLogin": {
+    "title": "Bienvenue !",
+    "content": {
+      "cardTitle": "Se connecter",
+      "info": "",
+      "emailInputLabel": "E-mail",
+      "emailInputPlaceholder": "E-mail",
+      "passwordInputLabel": "Mot de passe",
+      "passwordInputPlaceholder": "Mot de passe",
+      "rememberMeLabel": "Mémoriser les données",
+      "btn": "Se connecter",
+      "passwordForgottenBtn": "Vous avez oublié votre mot de passe ?",
+      "signupBtn": "Vous n'avez pas encore de compte ? Connectez-vous ici."
+    }
+  }
+}

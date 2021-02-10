@@ -1,0 +1,11 @@
+{
+  "title": "Les résultats actuels Infectieradar",
+  "defaultRoute": "cartes",
+  "pages": [
+    {
+      "linkName": "Les résultats actuels",
+      "route": "cartes",
+      "markdown": "results/results-0.md"
+    }
+  ]
+}

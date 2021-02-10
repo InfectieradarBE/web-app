@@ -1,0 +1,16 @@
+{
+  "home": "Accueil",
+  "authhome": "Mon Infectieradar.be",
+  "results": "Les résultats actuels",
+  "about": "À propos d'Infectieradar.be",
+  "faq": "Question et réponse",
+  "login": "Se connecter",
+  "signup": "Enregistrez-vous",
+  "rightMenu": {
+    "settings": "Paramètres",
+    "logout": "Se déconnecter",
+    "verified": "Compte non vérifié"
+  },
+  "exitSurveyMode": "Quitter",
+  "selectedProfilePrefixInSurveyMode": "Répondre aux questions pour :"
+}
