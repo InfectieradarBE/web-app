@@ -1,0 +1,57 @@
+{
+  "title": "Infectieradar Paramètres",
+  "account": {
+    "title": "Paramètres du compte",
+    "email": {
+      "title": "Adresse électronique",
+      "info": "Souhaitez-vous utiliser une autre adresse électronique ? Modifiez votre adresse électronique en cliquant sur le bouton ci-dessous. Veuillez noter que vous ne pouvez recevoir à nouveau des courriers électroniques de rappel qu'après confirmation de votre adresse électronique."
+    },
+    "password": {
+      "title": "Mot de passe",
+      "info": "Souhaitez-vous modifier le mot de passe ? Dans ce cas, cliquez sur le bouton ci-dessous. Veuillez noter que vous aurez besoin de votre mot de passe actuel."
+    },
+    "profiles": {
+      "title": "Profils",
+      "info": "Modifiez votre propre profil, ou ajoutez un profil de vos enfants âgés au maximum de 17 ans, et ce, en votre qualité de parent ou de représentant légal.",
+      "btn": "{{count}} profil",
+      "btn_plural": "{{count}} profils"
+    }
+  },
+  "communication": {
+    "title": "Paramètres de communication",
+    "emailReminders": {
+      "title": "Bulletin d'information et courrier électronique hebdomadaire",
+      "info": "Vous pouvez désactiver la réception du courriel de rappel hebdomadaire ou de la lettre d'information.",
+      "btnManageNotifications": "Modifier les paramètres"
+    },
+    "defaultLanguage": {
+      "title": "Langues",
+      "info": "Vous pouvez modifier la langue ici.",
+      "languages": {
+        "en": "English",
+        "nl-be": "Nederlands",
+        "fr": "Français",
+        "de": "Deutsch"
+      }
+    }
+  },
+  "deletion": {
+    "title": "Se désabonner du site Infectieradar.be / retirer son consentement",
+    "warning": "Se désabonner du site Infectieradar.be / retirer son consentement implique la suppression des informations de votre compte. \n Au terme de la suppression de votre compte, nous ne serons plus en mesure d’associer les informations que vous nous avez fournies (comme votre âge et vos plaintes / symptômes) à votre compte.",
+    "deleteBtn": "Se désabonner"
+  },
+  "references": {
+    "title": "Besoin d’aide ?",
+    "faqLink": "Question et réponse",
+    "privacyStatementLink": "Déclaration de confidentialité",
+    "contactLink": "Contact Infectieradar.be"
+  },
+  "systemInfo": {
+    "title": "Informations relatives au système",
+    "appNameLabel": "Nom de l’application",
+    "appName": "Infectieradar",
+    "versionLabel": "Version",
+    "browserNameLabel": "Nom du navigateur",
+    "browserVersionLabel": "Version du navigateur"
+  }
+}
