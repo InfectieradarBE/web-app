@@ -1,0 +1,30 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "",
+    "content": "En répondant aux questionnaires proposés sur le site Infectieradar.be, vous aidez à identifier la propagation des maladies infectieuses, ce qui nous permet de disposer rapidement d’une vue d'ensemble de la situation actuelle en Belgique."
+  },
+  "requiredSurveys": {
+    "title": "Questionnaires à compléter",
+    "info": "Vous trouverez ci-dessous les différents questionnaires relatifs à l'étude.",
+    "successMsg": "Merci beaucoup ! Vous avez complété tous les questionnaires. Nous vous contacterons à nouveau la semaine prochaine afin de compléter un nouveau questionnaire."
+  },
+  "optionalSurveys": {
+    "title": "Modifier les informations de profil",
+    "info": "En cas de modification de votre situation, vous pouvez à nouveau compléter le(s) questionnaire(s) de profil ci-dessous. Malheureusement, nous ne pouvons pas vous montrer ce que vous avez complété la dernière fois, ni vous permettre de modifier uniquement des questions spécifiques.",
+    "showBtn": "Vos informations de profil ont-elles changé ?",
+    "hideBtn": "Cacher"
+  },
+  "referencesBox": {
+    "title": "Voir aussi",
+    "faqLink": "Question et réponse",
+    "resultsLink": "Les résultats actuels",
+    "aboutLink": "À propos d'Infectieradar"
+  },
+  "quickSettingsBox": {
+    "title": "Paramètres",
+    "manageProfiles": "Ajoutez un profil pour votre enfant, ou modifiez votre profil.",
+    "emailReminders": "Modification des paramètres de communication",
+    "language": "Langue"
+  }
+}

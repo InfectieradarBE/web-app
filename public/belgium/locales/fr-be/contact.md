@@ -4,4 +4,4 @@ Pour des questions et des commentaires, vous pouvez envoyer un e-mail à [infect
 Pour plus d'informations de contact, cliquez [ici](https://infectieradar.be/contact/).
 
 
-Consultez également "[FAQ] (https://survey.infectieradar.be/faq/)" pour une réponse possible à votre question.
+Consultez également "[FAQ](https://survey.infectieradar.be/faq/)" pour une réponse possible à votre question.

@@ -58,8 +58,8 @@
   },
   "recaptchaConsent": {
     "title": "Cookie verklaring",
-    "cancelBtn": "Annuleer",
-    "acceptBtn": "Akkoord"
+    "acceptBtn": "Akkoord",
+    "cancelBtn": "Annuleer"
   },
   "signupSuccess": {
     "title": "Welkom!",

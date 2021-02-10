@@ -1,0 +1,14 @@
+{
+  "exitSurveyWarningDialog": {
+    "title": "Souhaitez-vous quitter le questionnaire ?",
+    "warning": "Toutes les informations complétées seront perdues si vous ne remplissez pas le questionnaire jusqu’au bout. Êtes-vous certain(e) de vouloir arrêter ?",
+    "cancelBtn": "Continuer à compléter le questionnaire",
+    "confirmBtn": "Quitter le questionnaire"
+  },
+  "noSurveyLoaded": "Erreur. Actualiser cette page",
+  "submittingSurveyResponsesMsg": "Soumettre le questionnaire",
+  "notValidQuestion": "Choisissez une réponse valable pour toutes les questions",
+  "backBtn": "Précédent",
+  "nextBtn": "Suivant",
+  "submitBtn": "Envoyer"
+}
