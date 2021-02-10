@@ -167,7 +167,8 @@
     "info": "You can change the default language here. If availble, also emails will be send in this language.",
     "languages": {
       "nl-be": "Nederlands",
-      "en": "English"
+      "en": "English",
+      "fr-be": "Français"
     },
     "cancelBtn": "Cancel",
     "confirmBtn": "Confirm language",
