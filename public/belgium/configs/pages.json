@@ -366,9 +366,9 @@
                     "className": "mb-2",
                     "images": [
                       {
-                        "key": "uhasselt",
-                        "altKey": "hasseltLogo",
-                        "url": "images/uhasselt.png",
+                        "key": "uantwerpen",
+                        "altKey": "uantwerpenLogo",
+                        "url": "images/uantwerpen.png",
                         "width": 260
                       },
                       {
@@ -376,6 +376,12 @@
                         "altKey": "epiposeLogo",
                         "url": "images/epipose.jpg",
                         "className": "",
+                        "width": 260
+                      },
+                      {
+                        "key": "uhasselt",
+                        "altKey": "hasseltLogo",
+                        "url": "images/uhasselt.jpg",
                         "width": 260
                       }
                     ]
