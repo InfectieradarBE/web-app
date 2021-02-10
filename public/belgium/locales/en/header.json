@@ -1,8 +1,8 @@
 {
-    "languages": {
-        "nl-be": "NL",
-        "en": "EN",
-        "fr-be": "FR"
-    },
-    "logoAlt": "Logo image"
+  "languages": {
+    "nl-be": "NL",
+    "en": "EN",
+    "fr-be": "FR"
+  },
+  "logoAlt": "Logo image"
 }
