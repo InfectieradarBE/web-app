@@ -31,7 +31,7 @@
   },
   "signup": {
     "title": "Enregistrez-vous",
-    "info": "Connectez-vous et aidez à surveiller de près l’évolution du coronavirus.",
+    "info": "Enregistrez-vous et aidez à surveiller de près l’évolution du coronavirus.",
     "emailInputLabel": "E-mail",
     "emailInputPlaceholder": "E-mail",
     "passwordInputLabel": "Mot de passe",
@@ -111,10 +111,10 @@
   },
   "changePassword": {
     "title": "Modifier votre mot de passe",
-    "currentPasswordInputLabel": "Mot de passe actuel :",
-    "currentPasswordInputPlaceholder": "Mot de passe actuel :",
-    "newPasswordInputLabel": "Nouveau mot de passe :",
-    "newPasswordInputPlaceholder": "Nouveau mot de passe :",
+    "currentPasswordInputLabel": "Mot de passe actuel",
+    "currentPasswordInputPlaceholder": "Mot de passe actuel",
+    "newPasswordInputLabel": "Nouveau mot de passe",
+    "newPasswordInputPlaceholder": "Nouveau mot de passe",
     "confirmPasswordInputLabel": "Confirmer le nouveau mot de passe",
     "confirmPasswordInputPlaceholder": "Confirmer le nouveau mot de passe",
     "info": "Pour des raisons de sécurité, vous devez d'abord introduire votre mot de passe actuel.",
