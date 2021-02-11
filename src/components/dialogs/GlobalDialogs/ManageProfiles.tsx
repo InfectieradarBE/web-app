@@ -148,7 +148,7 @@ const ManageProfiles: React.FC<ManageProfilesProps> = (props) => {
     >
       <div className={clsx(
         dialogPaddingXClass,
-        'py-3',
+        'pb-3 pt-1',
         'bg-grey-1'
       )}>
         {

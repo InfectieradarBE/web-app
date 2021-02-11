@@ -50,10 +50,14 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     if (!props.content) { return null; }
 
     return <React.Fragment>
-      <button className="navbar-toggler nav-link btn h-100" onClick={() => setDrawerOpen(true)}>
-        <i className="fas fa-bars" ></i>
-        <span className="navbar-text  ps-1 text-white ">Menu</span>
-      </button>
+      <div className={clsx("nav nav-tabs", `d-block d-${breakpoint}-none`)}>
+
+        <button className="btn btn-primary fs-btn nav-link nav-link-height" onClick={() => setDrawerOpen(true)}>
+          <i className="fas fa-bars" ></i>
+          <span className="navbar-text ps-1 text-white ">Menu</span>
+        </button>
+
+      </div>
       <div className="collapse navbar-collapse bg-primary no-transition" id="navbarSupportedContent" >
         <ul className="nav nav-tabs" >
           {props.content.leftItems.map(
@@ -78,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     if (isLoggedIn) {
       return <div className="dropdown nav-tabs d-flex align-items-center">
         <button
-          className="btn btn-primary dropdown-toggle text-lightest fs-btn "
+          className="btn btn-primary dropdown-toggle text-lightest fs-btn nav-link-height d-flex align-items-center"
           type="button"
           id="DropMenu"
           data-bs-toggle="dropdown"
@@ -87,10 +91,15 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             className="me-1"
             avatarId={currentProfile.avatarId}
           /> : null}
-          {currentProfile?.alias}
+          <span className="d-none d-sm-inline-block">
+            {currentProfile?.alias}
+          </span>
         </button >
 
         <div className="dropdown-menu dropdown-menu-end text-end ">
+          <div className="d-block d-sm-none border-bottom-2 border-secondary">
+            <span className="dropdown-item disabled">{currentProfile?.alias}</span>
+          </div>
           {
             props.content?.rightItems.map(item =>
               <button
@@ -117,18 +126,18 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     }
     return <div className="row">
       <ul className="nav nav-tabs justify-content-end">
-        <li className="nav item">
-          <button className="nav-link btn" onClick={() => dispatch(openDialogWithoutPayload("login"))} >{t(`${'login'}`)}</button>
+        <li className="nav-item">
+          <button className="nav-link nav-link-height btn btn-primary" onClick={() => dispatch(openDialogWithoutPayload("login"))} >{t(`${'login'}`)}</button>
         </li>
-        <li className="nav item">
-          <button className="nav-link btn " onClick={() => dispatch(openDialogWithoutPayload("signup"))} >{t(`${'signup'}`)}</button>
+        <li className="nav-item">
+          <button className="nav-link nav-link-height btn btn-primary " onClick={() => dispatch(openDialogWithoutPayload("signup"))} >{t(`${'signup'}`)}</button>
         </li>
       </ul>
     </div>
   }
 
   const normalModeHeader = () =>
-    <div className="d-flex align-items-center w-100">
+    <div className="d-flex align-items-end w-100">
       <div className="flex-grow-1">
         {navbarLeft()}
       </div>
@@ -138,18 +147,21 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
 
   const surveyModeHeader = () => <div className="d-flex align-items-center w-100">
-    <button
-      type="button"
-      className="btn nav-link d-flex align-items-center text-decoration-none ps-0"
-      style={{
-        height: 44
-      }}
-      onClick={() =>
-        history.replace('/')
-      }>
-      <span className="material-icons me-1">{'keyboard_backspace'}</span>
-      {t('exitSurveyMode')}
-    </button>
+    <ul className="nav nav-tabs ">
+      <li className="nav-item navlink-container">
+        <button
+          type="button"
+          className="btn nav-link d-flex align-items-center text-decoration-none ps-0 py-2"
+
+          onClick={() =>
+            history.replace('/')
+          }>
+          <span className="material-icons me-1">{'keyboard_backspace'}</span>
+          {t('exitSurveyMode')}
+        </button>
+      </li>
+    </ul>
+
     <div className="flex-grow-1" ></div>
 
     <div className={clsx("d-none d-sm-inline px-2 d-flex align-items-center text-white fs-btn",
@@ -158,12 +170,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       {t('selectedProfilePrefixInSurveyMode')}
     </div>
 
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <div className="nav-link active border-2 border-secondary d-flex align-items-center text-decoration-none"
-          style={{
-            height: 44
-          }}>
+    <ul className="nav nav-tabs h-100  navlink-container">
+      <li className="nav-item navlink-container h-100">
+        <div
+          className="nav-link py-2 active border-2 border-secondary d-flex align-items-center text-decoration-none"
+        >
 
           <Avatar
             avatarId={surveyMode.profile?.avatarId ? surveyMode.profile?.avatarId : 'default'}

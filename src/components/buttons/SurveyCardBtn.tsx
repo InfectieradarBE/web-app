@@ -14,7 +14,7 @@ const SurveyCardBtn: React.FC<SurveyCardBtnProps> = (props) => {
     <button
       className={
         clsx(
-          'btn fw-bold border-0 d-flex align-items-center',
+          'btn fw-bold d-flex align-items-center',
           {
             'btn-secondary': ['prio'].includes(props.category),
             'btn-primary': props.category === 'normal',

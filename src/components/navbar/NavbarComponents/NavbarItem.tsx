@@ -35,7 +35,7 @@ const NavbarItem: React.FC<NavbarItemProps> = (props) => {
         :
         (props.type === 'internal') ?
           <li className="nav-item " >
-            <NavLink className="nav-link" to={props.url}
+            <NavLink className="nav-link nav-link-height" to={props.url}
               data-bs-toggle={collapseOnlyMobile ? "collapse" : null} data-bs-target="#navbarSupportedContent"
               onClick={() => props.onNavigate(props.url, false)}
               activeStyle={{

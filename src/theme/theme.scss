@@ -80,6 +80,8 @@ $enable-negative-margins: true;
 // ---------------------------------------------
 // Form Inputs:
 // ---------------------------------------------
+$input-btn-padding-y: .5625rem !default;
+$input-btn-padding-x: 1.25rem !default;
 
 $input-disabled-bg:                     map-get($theme-colors, "grey-2") !default;
 $input-disabled-border-color:           map-get($theme-colors, "grey-2") !default;
@@ -130,53 +132,23 @@ $form-check-input-border-radius: 0 !default;
 // Nav:
 // ---------------------------------------------
 
-@media (max-width: 992px) {
-  .nav-item{
-    width: 100%;
-  }
-
-  .customDropDown{
-    width: 100%;
-    text-align: left !important;
-  }
-
-  .navbar-toggler {
-    border: 0 !important;
-    outline: 0 !important;
-  }
-
-  .navbar-collapse {
-    z-index:1;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 250px !important;
-    height: 100%;
-  }
-
-  .navbar-collapse.collapsing {
-    left: -75%;
-    transition: height 0s ease;
-  }
-
-  .navbar-collapse.show {
-    left: 0;
-    transition: left 500ms ease-in-out;
-  }
-
-  .navbar-toggler.collapsed ~ .navbar-collapse {
-    height: 100%;
-    transition: left 500ms ease-in-out;
-  }
+.navlink-container {
+  display: flex;
+  align-items: center;
+  max-height: 44px;
+  overflow: hidden;
 }
 
-.nav-link:hover{
-  background-color: darken($primary,10%);
+.nav-link-height {
+  height: 44px;
+}
+
+.nav-link:hover:not(.active)
+{
+  background-color: darken(map-get($theme-colors, "primary"), 10%) !important;
   text-decoration: underline;
 }
+
 
 $navbar-text-font-size: 1.125rem !default;
 $navbar-text-padding-top: 10px !default;
@@ -185,7 +157,7 @@ $nav-link-font-size: 1.125rem !default;
 $nav-link-hover-color: white !default;
 $nav-tabs-border-width: 0px !default;
 $navbar-toggler-border-radius: 0px !default;
-$nav-tabs-link-active-bg: $secondary !default;
+$nav-tabs-link-active-bg: map-get($theme-colors, "secondary") !default;
 
 // ---------------------------------------------
 // Other:

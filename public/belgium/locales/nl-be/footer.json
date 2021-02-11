@@ -1,22 +1,22 @@
 {
-    "services": {
-      "title": "Services",
-      "agenda": "Agenda",
-      "follow": "Volg ons op",
-      "twitter": "Volg ons op Twitter",
-      "contact": "Contact Infectieradar"
-    },
-    "about": {
-      "title": "Over deze site",
-      "privacy": "Privacyverklaring",
-      "disclaimer": "Geen medische functie",
-      "accessibility": "Toegankelijksheidsverklaring"
-    },
-    "languages": {
-      "title": "Talen",
-      "en": "English",
-      "nl-be": "Nederlands",
-      "de": "Deutsch",
-      "fr": "Français"
-    }
+  "services": {
+    "title": "Services",
+    "agenda": "Agenda",
+    "follow": "Volg ons op",
+    "twitter": "Volg ons op Twitter",
+    "contact": "Contact Infectieradar"
+  },
+  "about": {
+    "title": "Over deze site",
+    "privacy": "Privacyverklaring",
+    "disclaimer": "Geen medische functie",
+    "accessibility": "Toegankelijksheidsverklaring"
+  },
+  "languages": {
+    "title": "Talen",
+    "en": "English",
+    "nl-be": "Nederlands",
+    "de": "Deutsch",
+    "fr-be": "Français"
+  }
 }

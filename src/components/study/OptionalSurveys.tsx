@@ -27,7 +27,7 @@ const OptionalSurveys: React.FC<OptionalSurveysProps> = (props) => {
       <div className="border-top-2 border-primary mt-2 pt-2">
         {props.surveys.length > 0 ?
           <button
-            className="btn btn-secondary text-primary d-flex align-items-center"
+            className="btn btn-secondary text-primary d-flex align-items-center text-start"
             onClick={() => setShowOptional(prev => !prev)}
           >
             {showOptional ? props.hideBtn : props.showBtn + ` (${props.surveys.length})`}

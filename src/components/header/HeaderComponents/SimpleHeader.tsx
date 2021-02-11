@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import LanguageDropdown from './LanguageDropdown';
 import clsx from 'clsx';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../store/rootReducer';
 
 
 interface SimpleHeaderProps {
@@ -14,6 +16,7 @@ interface SimpleHeaderProps {
 
 const SimpleHeader: React.FC<SimpleHeaderProps> = (props) => {
   const { t, i18n } = useTranslation(['header']);
+  const languages = useSelector((state: RootState) => state.config.languages);
 
   const renderLanguageSelector = (languages: Array<{ code: string; itemKey: string; }>) => <LanguageDropdown
     selectedLanguage={i18n.language}
@@ -48,16 +51,16 @@ const SimpleHeader: React.FC<SimpleHeaderProps> = (props) => {
           />
         </div>
         {
-          props.config.languages ? <React.Fragment>
+          props.config.useLanguageSelector ? <React.Fragment>
             <div
               // for large screens
               className="position-absolute d-none d-sm-flex top-0 end-0 h-100  align-items-center">
-              {renderLanguageSelector(props.config.languages)}
+              {renderLanguageSelector(languages)}
             </div>
             <div
               // for small screens
               className="ps-1 d-sm-none align-items-center">
-              {renderLanguageSelector(props.config.languages)}
+              {renderLanguageSelector(languages)}
             </div>
 
           </React.Fragment>
