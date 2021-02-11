@@ -1,6 +1,6 @@
 En cliquant sur le bouton “Je marque mon accord”, vous acceptez de participer à l'étude proposée par le site Infectieradar.be. Par ailleurs, vous acceptez que les chercheurs traitent vos données dans le cadre de la présente étude. 
 
-Cette étude vise à identifier les plaintes / symptômes qui pourraient être le signe de maladies infectieuses, telles que le nouveau coronavirus. Cette étude est importante afin d'examiner si le nombre de personnes présentant des plaintes ou des symptômes augmente ou diminue. Vous trouverez de plus amples informations relatives à l'objectif de l'étude, ainsi qu’à vos droits au niveau de la [déclaration de confidentialité](https://www.survey.infectieradar.be/privacy).
+Cette étude vise à identifier les plaintes / symptômes qui pourraient être le signe de maladies infectieuses, telles que le nouveau coronavirus. Cette étude est importante afin d'examiner si le nombre de personnes présentant des plaintes ou des symptômes augmente ou diminue. Vous trouverez de plus amples informations relatives à l'objectif de l'étude, ainsi qu’à vos droits au niveau de la [déclaration de confidentialité](https://survey.infectieradar.be/privacy).
 
 #### LES CONDITIONS PRÉALABLES À VOTRE PARTICIPATION À L’ÉTUDE
 

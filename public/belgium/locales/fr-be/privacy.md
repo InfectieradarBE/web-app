@@ -8,39 +8,38 @@ La participation à l'étude se fait sur une base volontaire. Nous tenons à sou
 
 ---
 
-### Studie in een oogopslag
-**Waarom Infectieradar.be?**
-We weten dat veel mensen met een besmetting met het nieuwe SARS-CoV-2 virus (“coronavirus” in de volksmond) milde of weinig gezondheidsklachten hebben en niet naar de huisarts gaan. Ook wordt niet iedereen getest. Dit maakt het moeilijk om na te gaan hoe het nieuwe coronavirus zich verspreidt in België. Het is belangrijk om gezondheidsklachten op te volgen die niet bij de huisarts worden gemeld. 
+### L'étude en quelques mots
+**Pourquoi Infectieradar.be ?**
+Nous savons que de nombreuses personnes infectées par le nouveau virus SRASCoV-2 (appelé également « coronavirus ») ne présentent que des symptômes légers, voire pas de symptômes. Par conséquent, ces personnes ne se rendent pas chez le médecin. De plus, tout le monde n'est pas testé. Il est donc difficile de cartographier la propagation du nouveau coronavirus en Belgique. Dès lors, il importe de surveiller les symptômes ou les troubles médicaux qui ne sont pas
+signalés auprès du médecin généraliste.
 
-**Wie kan deelnemen?**
-Iedereen die in België woont en 18 jaar of ouder is, kan op vrijwillige basis deelnemen aan de studie. Om ook informatie te bekomen over de verspreiding van infectieziekten bij kinderen en jongeren, kunnen ouders of voogden van een minderjarig kind de vragenlijsten ook voor hun kinderen invullen. Dit is niet verplicht maar het helpt het onderzoek wel vooruit.
+**Qui peut participer à cette étude ?**
+Toute personne résidant en Belgique et âgée de 18 ans ou plus peut participer à l'étude sur une base volontaire. Afin d'obtenir également des informations relatives à la propagation de maladies infectieuses auprès des enfants et des adolescents, les parents ou les tuteurs d'un enfant mineur peuvent également remplir les questionnaires pour leurs enfants. Il ne s’agit pas d’une obligation, mais cela permet de faciliter l'enquête.
 
-**Hoe werkt Infectieradar.be?**
-Deelnemers ontvangen eerst een registratie met vragen over hun achtergrond, leeftijd, en bestaande ziekten en aandoeningen. Daarna krijgen zij elke week een email met een link naar een vragenlijst met de vraag welke gezondheidsklachten zij in de afgelopen week hadden. Het gaat dan om gezondheidsklachten zoals een loopneus, hoesten, niezen en/of koorts. Ook als de deelnemer geen gezondheidsklachten heeft moet dit ingevuld worden. Het invullen van de vragenlijst duurt ongeveer 30 seconden wanneer de deelnemer geen gezondheidsklachten heeft en ongeveer drie tot vijf minuten indien de deelnemer gezondheidsklachten heeft.
+**Comment Infectieradar.be fonctionne-t-il ?**
+Tout d’abord, les participants reçoivent une demande d’enregistrement comprenant des questions relatives à leurs antécédents, à leur âge, ainsi qu’aux maladies et aux pathologies existantes. Ensuite, les participants reçoivent chaque semaine un courrier électronique contenant un lien vers un questionnaire leur demandant de préciser les symptômes ressentis au cours de la semaine écoulée, comme, par exemple, un écoulement nasal, de la toux, des éternuements et/ou de la fièvre.
+L’absence de symptômes doit également être précisée. Il faut compter environ 30 secondes pour remplir le questionnaire si le participant n’a présenté aucun symptôme au cours de la semaine écoulée, et environ trois à cinq minutes si le participant présente des symptômes.
 
-Door deze vragenlijst in te vullen zullen we volgen hoe bepaalde gezondheidsklachten verspreid zijn in België en hoe deze zich ontwikkelen in de tijd. Deze gegevens zullen gebruikt worden voor wetenschappelijk onderzoek naar de verspreiding van het nieuwe coronavirus. In de toekomst kunnen we dat ook voor andere virussen en infectieziekten gebruiken.
+La participation à ce questionnaire nous permet de suivre la propagation de certains troubles médicaux en Belgique, ainsi que leur évolution au fil du temps. Ces données seront utilisées à des fins de recherche scientifique consacrée à la  propagation du nouveau coronavirus. À l'avenir, nous pourrons également utiliser de telles données pour suivre l’évolution d'autres virus et maladies infectieuses.
 
-**Gegevens**
-De gegevens worden verzameld en verwerkt vanuit het oogpunt van wetenschappelijk onderzoek, uitsluitend voor de volgende doelen:
+**Les données**
+Les données sont collectées et traitées du point de vue de la recherche scientifique, et uniquement aux fins suivantes :
+-   Effectuer des recherches scientifiques et des analyses statistiques sur la propagation des maladies infectieuses en Belgique et en Europe;
+-   Réaliser la publication d'analyses statistiques, y compris des représentations graphiques des résultats;
+-   Être en mesure de vous fournir des informations relatives aux résultats de
+l'enquête (par exemple : combien d'utilisateurs enregistrés au sein de votre région présentent des symptômes tels que la grippe ou d'autres maladies infectieuses);
 
-- Uitvoeren van wetenschappelijk onderzoek en statistische analyses over de verspreiding van infectieziekten in België en Europa
+Les données à caractère personnel que nous pouvons traiter à ces fins sont les suivantes :
+-   L’année et le mois de votre naissance, votre code postal, votre sexe, la composition de votre famille ;
+-   Des données concernant les antécédents pertinents dans le cadre du risque d'infection, à savoir si vous appartenez à un groupe à risque pour le vaccin contre la grippe, votre profession et votre mode de vie ;
+-   Des données relatives aux symptômes indiqués au niveau du questionnaire consacré aux symptômes ;
 
-- Publiceren van statistische analyses, inclusief grafische weergaven van de resultaten;
+Les données obtenues dans le cadre de cette étude seront traitées par l'Université de Hasselt et l'Université d'Anvers, et ce, aux fins mentionnées. Par ailleurs, nous vous informons également que nous traiterons vos données conformément à la législation et aux règlements applicables, et dans le respect total de vos droits et, en particulier, de votre vie privée.
 
-- Het verstrekken van informatie aan u, de gebruiker, over de resultaten van de enquête (bijvoorbeeld: hoeveel geregistreerde  gebruikers in uw regio hebben griep of andere infectieziekten);
+**La participation à l’étude**
+Au terme de votre inscription, vous recevrez un courrier électronique sur une base hebdomadaire, vous invitant à remplir un questionnaire. Votre participation à cette enquête est volontaire. En outre, vous pouvez mettre un terme à votre participation, et ce, à tout moment, et sans devoir vous justifier.
 
-De persoonsgegevens die wij voor deze doelen mogelijk verwerken zijn:
-
-- Geboortejaar, geboortemaand, uw postcode, geslacht, gezinssamenstelling;
-- Gegevens betreffende relevante achtergrond voor het risico op infecties namelijk, gegevens over of u behoort tot een risicogroep voor griepvaccinatie, beroep en levensstijl;
-- Gegevens omtrent symptomen gegeven tijdens de symptomen vragenlijst;
-
-De gegevens verkregen in deze studie zullen worden verwerkt door de Universiteit Hasselt en Universiteit Antwerpen voor de genoemde doelen. Wij informeren u ook dat wij uw gegevens zullen verwerken in overeenstemming met de toepasselijke wetgeving en voorschriften en met volledige eerbiediging van uw rechten en, in het bijzonder, uw privacy.
-
-**Deelname**
-Na registratie, zal je elke week per email uitgenodigd worden om een vragenlijst in te vullen. Jouw deelname aan dit onderzoek is vrijwillig en je kan je op elk moment, zonder opgave van reden, terugtrekken uit het onderzoek.
-
-De studie wordt gefinancierd door de Europese Unie en werd geëvalueerd door een ethisch comité. Hun financiering en goedkeuring betekent niet dat je je verplicht moet voelen om deel te nemen.
+L'étude est financée par l'Union européenne, et a fait l’objet d’une évaluation par un comité d'éthique. Toutefois, leur mode de financement et leur approbation ne doivent pas influencer votre choix en vue d’une éventuelle participation à cette étude. 
 
 ---
 
@@ -140,7 +139,7 @@ Une fois l'étude terminée, vos données pseudonymisées seront conservées pen
 
 ---
 
-### Gebruik van Google Recaptcha
+### Google Recaptcha
 
 Infectieradar.be utilise Google (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA) Recaptcha pour assurer la sécurité du site Internet.
 Ce service utilise des cookies de suivi. Ces cookies suivent votre comportement tout au long de votre visite sur le site Internet Infectieradar.be, et ce, afin de s'assurer qu'aucune action automatisée ne puisse limiter l'accessibilité du présent site Internet. Les données collectées et analysées par Google par le biais des cookies de suivi susmentionnés comprennent, notamment :
