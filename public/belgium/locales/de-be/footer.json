@@ -1,0 +1,22 @@
+{
+  "services": {
+    "title": "Service",
+    "agenda": "Agenda",
+    "follow": "Folgen Sie uns unter",
+    "twitter": "Folgen Sie uns unter Twitter",
+    "contact": "Kontact Infectieradar"
+  },
+  "about": {
+    "title": "Über diese Website",
+    "privacy": "Datenschutz-Erklärung",
+    "disclaimer": "Keine medizinische Funktion",
+    "accessibility": "Zugänglichkeitserklärung"
+  },
+  "languages": {
+    "title": "Sprachen",
+    "en": "English",
+    "nl-be": "Nederlands",
+    "de": "Deutsch",
+    "fr-be": "Français"
+  }
+}
