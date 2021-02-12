@@ -152,7 +152,7 @@ Ce service utilise des cookies de suivi. Ces cookies suivent votre comportement 
 ---
  
 ### Modification de la déclaration de confidentialité 
-La présente déclaration de confidentialité est susceptible d'être modifiée. Dans ce cas, nous publierons la version modifiée [formulaire de consentement éclairé](https://infectieradar.be/project/fr/).
+La présente déclaration de confidentialité est susceptible d'être modifiée. Dans ce cas, nous publierons la version modifiée [formulaire de consentement éclairé](https://infectieradar.be/fr/project/).
 
 
 ##### Version 2.0 2-10-2020

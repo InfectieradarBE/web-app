@@ -1,0 +1,14 @@
+{
+  "exitSurveyWarningDialog": {
+    "title": "Möchten Sie das Fragenformular verlassen?",
+    "warning": "Alle eingetragenen Informationen gehen verloren, wenn Sie die Fragenliste nicht beenden. Wissen Sie sicher, dass/ob Sie stoppen möchten?",
+    "cancelBtn": "Mit Eintragen weitermachen",
+    "confirmBtn": "Verlasse die Fragenliste"
+  },
+  "noSurveyLoaded": "Fehler. Lade die Seite neu.",
+  "submittingSurveyResponsesMsg": "Fragenliste einreichen",
+  "notValidQuestion": "Wählen Sie eine gültige Antwort für alle Fragen",
+  "backBtn": "Zurück",
+  "nextBtn": "Folgende",
+  "submitBtn": "Versenden"
+}

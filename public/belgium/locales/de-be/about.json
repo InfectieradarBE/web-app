@@ -1,0 +1,21 @@
+{
+  "title": "Über Infectieradar",
+  "signupCard": {
+    "imageAlt": "Teilnehmen Bild",
+    "title": "Teilnehmen",
+    "body": "Helfen Sie mit, das Corona-Virus einzudämmen. Geben Sie jede Woche durch, ob Sie Beschwerden haben!",
+    "actionLabel": "Anmelden"
+  },
+  "surveyCard": {
+    "imageAlt": "Jetzt Ausfüllen!",
+    "title": "Jetzt Ausfüllen!",
+    "body": "Geben Sie an, ob Sie Beschwerden haben!",
+    "actionLabel": "Fragelisten"
+  },
+  "logoCredits": {
+    "title": "In Kürze erhältlich",
+    "hasseltLogo": "Logo for the University of Hasselt",
+    "uantwerpenLogo": "Logo for the University of Antwerpen",
+    "epiposeLogo": "Logo for the Epipose Project"
+  }
+}

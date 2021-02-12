@@ -1,0 +1,69 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "Test teaser image",
+    "content": "Eine Untersuchung für den Kampf gegen Epidemien"
+  },
+  "loginCard": {
+    "title": "Einloggen",
+    "info": "",
+    "emailInputLabel": "E-mail",
+    "emailInputPlaceholder": "E-mail",
+    "passwordInputLabel": "Passwort",
+    "passwordInputPlaceholder": "Passwort",
+    "rememberMeLabel": "Daten behalten",
+    "btn": "Einloggen",
+    "passwordForgottenBtn": "Passwort vergessen?",
+    "signupBtn": "Sie haben noch keinen Account? Dann melden Sie sich hier an!"
+  },
+  "currentResultCard": {
+    "imageAlt": "Aktuelle Ergebnisse Bild",
+    "title": "Aktuelle Ergebnisse",
+    "body": "Infectieradar.be zeigt auf, welche Beschwerden Menschen in Belgien haben, Beschwerden, die auf das Corona-Virus hinweisen können.",
+    "actionLabel": "Aktuelle Ergebnisse"
+  },
+  "signupCard": {
+    "imageAlt": "Teilnehmen Bild",
+    "title": "Teilnehmen",
+    "body": "Helfen Sie mit, das Corona-Virus einzudämmen. Geben Sie jede Woche durch, ob Sie Beschwerden haben!",
+    "actionLabel": "Anmelden"
+  },
+  "aboutCard": {
+    "imageAlt": "Über Infectieradar Bild",
+    "title": "Über Infectieradar",
+    "body": "Mit Infectieradar verfolgen wir, welche Gesundheitsbeschwerden über Belgien verteilt sind. Es ist eines der Instrumenten, mit denen das Forschungsteam die Verbreitung des Virus verfolgt.",
+    "actionLabel": "Lesen Sie mehr!"
+  },
+  "video": {
+    "poster": "",
+    "mp4": "",
+    "mxf": "",
+    "webm": "",
+    "fallbackText": "Ihr Browser unterstützt dieses Video nicht."
+  },
+  "references": {
+    "title": "Mehr lesen",
+    "faqLink": "Frage und Antwort (FAQ)",
+    "aboutLink": "Über Infectieradar",
+    "resultsLink": "Aktuelle Ergebnisse"
+  },
+  "settingsReferences": {
+    "title": "Einstellungen",
+    "profileSettings": "Profile",
+    "communicationSettings": "Erinnerungsmail",
+    "languageSettings": "Sprachen"
+  },
+  "surveyList": {
+    "requiredSurveys": {
+      "title": "Auszufüllende Fragelisten",
+      "info": "Im Folgenden finden Sie die verschiedenen Fragenlisten für die Untersuchung.",
+      "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragenlisten ausgefüllt. In der volgenden fragen wir wieder!"
+    },
+    "optionalSurveys": {
+      "title": "Ändern der Hintergrundinformationen",
+      "info": "Wenn sich Ihre Situation verändert hat, können Sie im Folgenden erneut die Liste bzw. Listen der Hintergrundfragen aisfüllen. Wir können leider nicht sehen lassen, was Sie beim letzten Mal eingeführt haben, oder Sie nur spezifische Fragen anpassen lassen.",
+      "hideBtn": "Verbergen",
+      "showBtn": "Haben sich Ihre Hintergrundinformationen verändert?"
+    }
+  }
+}

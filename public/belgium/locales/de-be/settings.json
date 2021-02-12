@@ -1,0 +1,57 @@
+{
+  "title": "Infectieradar Einstellungen",
+  "account": {
+    "title": "Account Einstellungen",
+    "email": {
+      "title": "E-Mail-Adresse",
+      "info": "Sie möchten eine andere E-Mail-Adresse benutzen? Dann passen Sie Ihre E-Mail-Adresse an, indem Sie auf die unten stehende Schaltfläche drücken. Doch aufgepasst: Erst nach Bestätigung der E-Mail-Anschrift können Sie sich wieder einloggen unter Infectieradar.be."
+    },
+    "password": {
+      "title": "Passwort",
+      "info": "Sie möchten das Passwort ändern? Dann passen Sie Ihr Passwort an, indem Sie auf die unten stehende Schaltfläche drücken. Aufgepasst : Sie benötigen jedenfalls das aktuelle Passwort!"
+    },
+    "profiles": {
+      "title": "Profile",
+      "info": "Bearbeiten Sie Ihr eigenes Profil oder fügen Sie als Elternteil oder gesetzlicher Vertreter ein Profil Ihrer Kinder im Alter von bis zu 15 Jahren hinzu.",
+      "btn": "{{count}} Profil",
+      "btn_plural": "{{count}} Profile"
+    }
+  },
+  "communication": {
+    "title": "Kommunikations-Einstellungen",
+    "emailReminders": {
+      "title": "Wöchentliche E-Mail und Newsletter",
+      "info": "Sie können das Empfangen der wöchentlichen Erinnerungsmail oder des Newsletters ausschalten.",
+      "btnManageNotifications": "Einstellungen anpassen"
+    },
+    "defaultLanguage": {
+      "title": "Sprache",
+      "info": "Sie können hier die Sprache ändern.",
+      "languages": {
+        "en": "English",
+        "nl-be": "Nederlands",
+        "fr-be": "Français",
+        "de": "Deutsch"
+      }
+    }
+  },
+  "deletion": {
+    "title": "Abmelden des Infectieradar.be / Widerrufen der Zustimmung",
+    "warning": "Das Abmelden von Infectieradar.be/Wiederrufen der Zustimmung beinhaltet, dass Ihre Account-Daten entfernt werden. \n Nach dem Entfernen des Accounts könnnen wir Ihre angegebenen Informationen (wie zum Beispiel Alter und gesundheitliche Beschwerden) nicht mehr mit Ihnen verknüpfen.",
+    "deleteBtn": "Abmelden"
+  },
+  "references": {
+    "title": "Hilfe erforderlich?",
+    "faqLink": "Frage und Antwort (FAQ)",
+    "privacyStatementLink": "Datenschutz-Erklärung",
+    "contactLink": "Kontact Infectieradar"
+  },
+  "systemInfo": {
+    "title": "System-Informationen",
+    "appNameLabel": "Anwendungsname",
+    "appName": "Infectieradar",
+    "versionLabel": "Version",
+    "browserNameLabel": "Browsername",
+    "browserVersionLabel": "Browserversion"
+  }
+}
