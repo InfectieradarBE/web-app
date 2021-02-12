@@ -1,0 +1,16 @@
+{
+  "home": "Willkommen",
+  "authhome": "Mein Infectieradar",
+  "results": "Aktuelle Ergebnisse",
+  "about": "Über Infectieradar",
+  "faq": "Frage und Antwort (FAQ)",
+  "login": "Einloggen",
+  "signup": "Anmelden",
+  "rightMenu": {
+    "settings": "Einstellungen",
+    "logout": "Ausloggen",
+    "verified": "Account nicht verifiziert"
+  },
+  "exitSurveyMode": "Verlassen",
+  "selectedProfilePrefixInSurveyMode": "Fragen beantworten für:"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "",
+    "content": "Dadurch, dass Sie bei Infectieradar.be mitmachen, tragen Sie dazu bei, die Verbreitung von Infektionskrankheit zu kartieren, und wir sehen schnell, wie die aktuelle Situation in Belgien ist."
+  },
+  "requiredSurveys": {
+    "title": "Auszufüllende Fragelisten",
+    "info": "Im Folgenden finden Sie die verschiedenen Fragenlisten für die Untersuchung.",
+    "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragenlisten ausgefüllt. In der volgenden fragen wir wieder!"
+  },
+  "optionalSurveys": {
+    "title": "Ändern der Hintergrundinformationen",
+    "info": "Wenn sich Ihre Situation verändert hat, können Sie im Folgenden erneut die Liste bzw. Listen der Hintergrundfragen aisfüllen. Wir können leider nicht sehen lassen, was Sie beim letzten Mal eingeführt haben, oder Sie nur spezifische Fragen anpassen lassen.",
+    "showBtn": "Haben sich Ihre Hintergrundinformationen verändert?",
+    "hideBtn": "Verbergen"
+  },
+  "referencesBox": {
+    "title": "Siehe auch",
+    "faqLink": "Frage und Antwort (FAQ)",
+    "resultsLink": "Aktuelle Ergebnisse",
+    "aboutLink": "Über Infectieradar"
+  },
+  "quickSettingsBox": {
+    "title": "Einstellungen",
+    "manageProfiles": "Fügen Sie ein Profil Ihres Kindes hinzu, oder ändern Sie Ihr Profil!",
+    "emailReminders": "Anpassen der Kommunikations-Einstellungen",
+    "language": "Sprache"
+  }
+}
