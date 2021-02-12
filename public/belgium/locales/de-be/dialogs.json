@@ -2,214 +2,214 @@
   "loadingMsg": "Loading",
   "login": {
     "credentials": {
-      "title": "Inloggen",
+      "title": "Einloggen",
       "info": "",
       "emailInputLabel": "E-mail",
       "emailInputPlaceholder": "E-mail",
-      "passwordInputLabel": "Wachtwoord",
-      "passwordInputPlaceholder": "Wachtwoord",
-      "rememberMeLabel": "Gegevens onthouden",
-      "btn": "Inloggen",
-      "passwordForgottenBtn": "Wachtwoord vergeten?",
-      "signupBtn": "Heb je nog geen account? Meld je hier aan."
+      "passwordInputLabel": "Passwort",
+      "passwordInputPlaceholder": "Passwort",
+      "rememberMeLabel": "Daten behalten",
+      "btn": "Einloggen",
+      "passwordForgottenBtn": "Passwort vergessen?",
+      "signupBtn": "Sie haben noch keinen Account? Dann melden Sie sich hier an!"
     },
     "verificationCode": {
-      "title": "6-cijferige verificatiecode",
-      "info": "Voer hier de 6-cijferige code in die we je hebben toegestuurd. \nNiets ontvangen? Kijk eerst in je spam-folder. Via de knop hieronder kan je een nieuwe code aanvragen.",
-      "codeInputLabel": "6-cijferige verificatiecode",
-      "codeInputPlaceholder": "Verificatiecode ingeven",
-      "submitBtn": "Verstuur",
-      "resendBtn": "Aanvragen nieuwe code"
+      "title": "6-Ziffern-Prüfcode",
+      "info": "Tragen Sie hier die 6 Ziffern des Codes ein, den wir Ihnen zugeschickt haben! Haben Sie keine E-Mail erhalten, schauen Sie in Ihr Spam-Verzeichnis oder versuchen Sie es erneut, wenn es wieder geht. Sie können einen neuen Code über die Schaltfläche unten anfordern.",
+      "codeInputLabel": "6-Ziffern-Prüfcode",
+      "codeInputPlaceholder": "6-Ziffern-Prüfcode",
+      "submitBtn": "Abschicken",
+      "resendBtn": "Anfrage nach neuem Code"
     },
     "errors": {
-      "accountOrPassword": "Er gaat iets verkeerd. Controleer je e-mailadres en wachtwoord.",
-      "wrongCode": "Verkeerde code. Controleer de code die we je hebben gemaild",
-      "newCodeSent": "Verkeerde code. We hebben je een nieuwe code gemaild.",
-      "rateLimit": "Je moet even wachten voordat je weer een code kan aanvragen.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "accountOrPassword": "Es ist etwas schief gelaufen. Bitte kontrollieren Sie Ihre E-Mail-Adresse und Ihr Passwort.",
+      "wrongCode": "Verkehrter Code. Kontrollieren Sie den Code, den wir Ihnen gemailt haben.",
+      "newCodeSent": "Verkehrter Code. Wir haben Ihnen einen neuen Code gemailt!",
+      "rateLimit": "Sie müssen kurz warten, bevor Sie wieder einen Code beantragen können.",
+      "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     }
   },
   "signup": {
-    "title": "Aanmelden",
-    "info": "Meld je aan en help mee om het coronavirus in de gaten te houden.",
-    "emailInputLabel": "E-mailadres",
-    "emailInputPlaceholder": "E-mailadres",
-    "passwordInputLabel": "Wachtwoord",
-    "passwordInputPlaceholder": "Wachtwoord",
-    "confirmPasswordInputLabel": "Bevestig wachtwoord",
-    "confirmPasswordInputPlaceholder": "Bevestig wachtwoord",
-    "informedConsentCheckbox": "Naar de <1>toestemmingsverklaring</1>.*",
-    "reCaptchaCookieCheckbox": "Naar de <1>cookie verklaring</1>.*",
-    "signupBtn": "Aanmelden",
-    "loginLink": "Heb je al een account? Log hier in.",
-    "reCaptchaLinks": "Deze site gebruikt reCAPTCHA and the Google privacy verklaring <1>Privacy Policy</1> en voorwaarden gelden <3>Terms of Service</3>.",
+    "title": "Anmelden",
+    "info": "Melden Sie sich an und helfen Sie mit, das Corona-Virus in Schach zu halten.",
+    "emailInputLabel": "E-Mail-Adresse",
+    "emailInputPlaceholder": "E-Mail-Adresse",
+    "passwordInputLabel": "Passwort",
+    "passwordInputPlaceholder": "Passwort",
+    "confirmPasswordInputLabel": "Bestätigung des Passwortes",
+    "confirmPasswordInputPlaceholder": "Bestätigung des Passwortes",
+    "informedConsentCheckbox": "Nach der <1>Zustimmungserklärung</1>*",
+    "reCaptchaCookieCheckbox": "Nach der <1>Cookie-Erklärung</1>*",
+    "signupBtn": "Anmelden",
+    "loginLink": "Sie haben schon einen Account? Melden Sie sich hier an!",
+    "reCaptchaLinks": "Diese Website verwendet reCAPTCHA und die <1>Datenschutz-Erklärung</1> und <3>Bedingungen</3> gelten.",
     "errors": {
-      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
-      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
-      "invalidEmail": "Je e-mailadres lijkt niet correct",
-      "userCreationFailed": "Er gaat iets verkeerd.",
-      "unknown": "Er gaat iets verkeerd."
+      "passwordRules": "Ihr Passwort muss mindestens 8 Zeichen aufweisen und 3 der folgenden 4 Elemente enthalten: Kleinbuchstaben, Großbuchstaben, Zahl, Interpunktions-/Satzzeichen.",
+      "passwordMatch": "Die Passwörter sind nicht dieselben!",
+      "invalidEmail": "Ihre E-Mail-Adresse scheint nicht korrekt zu sein.",
+      "userCreationFailed": "Es läuft etwas verkehrt.",
+      "unknown": "Es läuft etwas verkehrt."
     }
   },
   "privacyConsent": {
-    "title": "Toestemmingsverklaring",
-    "acceptBtn": "Ik geef toestemming",
-    "cancelBtn": "Ik geef geen toestemming"
+    "title": "Zustimmungserklärung",
+    "acceptBtn": "Ich gebe meine Zustimmung",
+    "cancelBtn": "Ich gebe keine Zustimmung"
   },
   "recaptchaConsent": {
-    "title": "Cookie verklaring",
-    "acceptBtn": "Akkoord",
-    "cancelBtn": "Annuleer"
+    "title": "Cookie-Erklärung",
+    "acceptBtn": "Einverstanden",
+    "cancelBtn": "Nicht Einverstanden"
   },
   "signupSuccess": {
-    "title": "Welkom!",
-    "successMsg": "Je bent bijna aangemeld voor Infectieradar! \n\n Bevestig eerst nog je e-mailadres door op de link in de bevestigingsmail te klikken die we je hebben toegezonden \n Kan je de e-mail niet vinden controleer eerst je spam-folder. Je kan hieronder ook een nieuwe e-mail aanvragen.",
-    "emailSentMsg": "E-mail is verstuurd.",
-    "resendVerificationEmailBtn": "Verstuur nogmaals een bevestigingsmail",
-    "wrongEmailBtn": "Heb je een verkeerd e-mailadres gebruikt? Verander deze dan hier.",
+    "title": "Willkommen!",
+    "successMsg": "Sie sind beinahe für Infectieradar.be angemeldet! \n\n Bitte bestätigen Sie zuerst noch Ihre E-Mail-Adresse durch Anklicken des Links in der Bestätigungsmail, die wir Ihnen zusandten! \n Sie können die E-Mail nicht finden? Dann kontrollieren Sie zuerst Ihr Spam-Verzeichnis. Sie können im Folgenden eine neue E-Mail anfordern.",
+    "emailSentMsg": "E-Mail wurde versandt!",
+    "resendVerificationEmailBtn": "Versenden Sie erneut eine Bestätigungsmail",
+    "wrongEmailBtn": "Sie haben eine verkehrte E-Mail-Adresse benutzt? Ändern Sie diese bitte hier!",
     "errors": {
-      "unknown": "Er gaat iets verkeerd."
+      "unknown": "Es läuft etwas verkehrt."
     }
   },
   "passwordForgotten": {
-    "title": "Wachtwoord wijzigen",
-    "info": "Geef het e-mailadres van uw account.",
-    "successMessage": "Volg de link in de e-mail die we u op het onderstaande adres hebben gestuurd.\n Heeft u geen e-mail ontvangen, kijk in uw spam-folder of probeer opnieuw als dit weer kan.",
-    "emailInputLabel": "E-mailadres",
-    "emailInputPlaceholder": "E-mailadres",
-    "submitBtn": "Wijzig wachtwoord",
+    "title": "Passwort ändern",
+    "info": "Geben Sie die E-Mail-Adresse Ihres Accounts an.",
+    "successMessage": "Folgen Sie dem Link in der E-Mail, die wir Ihnen an die unten stehende Adresse gesandt haben.\n Haben Sie keine E-Mail erhalten, schauen Sie in Ihr Spam-Verzeichnis oder versuchen Sie es erneut, wenn es wieder geht.",
+    "emailInputLabel": "E-mail",
+    "emailInputPlaceholder": "E-mail",
+    "submitBtn": "Ändere das Passwort",
     "errors": {
-      "invalidId": "Er gaat iets verkeerd. Controleer je e-mailadres of connectie.\nJe kan het nogmaals proberen wanneer de knop weer zichtbaar is.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "invalidId": "Es läuft etwas verkehrt. Bitte kontrollieren Sie Ihre E-Mail-Adresse oder -Verbindung. \n Sie können es noch einmal probieren, wenn die Schaltfläche wieder sichtbar ist.",
+      "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     }
   },
   "changeEmail": {
-    "title": "E-mailadres wijzigen",
-    "emailInputLabel": "Nieuw e-mailadres",
-    "emailInputPlaceholder": "Nieuwe e-mailadres",
-    "passwordInputLabel": "Wachtwoord",
-    "passwordInputPlaceholder": "Wachtwoord",
-    "info": "Wil je een ander e-mailadres gebruiken? Pas je e-mailadres aan door op onderstaande knop te klikken. Let op: pas na bevestiging van het e-mailadres kun je weer inloggen op Infectieradar.",
-    "cancelBtn": "Annuleer",
-    "confirmBtn": "Wijzig e-mailadres",
+    "title": "E-Mail-Adresse ändern",
+    "emailInputLabel": "Neue E-Mail-Adresse",
+    "emailInputPlaceholder": "Neue E-Mail-Adresse",
+    "passwordInputLabel": "Passwort",
+    "passwordInputPlaceholder": "Passwort",
+    "info": "Sie möchten eine andere E-Mail-Adresse benutzen? Dann passen Sie Ihre E-Mail-Adresse an, indem Sie auf die unten stehende Schaltfläche drücken. Doch aufgepasst: Erst nach Bestätigung der E-Mail-Anschrift können Sie sich wieder einloggen unter Infectieradar.be.",
+    "cancelBtn": "Annullieren",
+    "confirmBtn": "Änderung der E-Mail-Adresse",
     "errors": {
-      "wrongPasswordOrAccountId": "Er gaat iets verkeerd. Controleer je informatie. (e-mailadres of wachtwoord kan fout zijn.)",
-      "wrongEmailFormat": "Geen geldig e-mailadres.",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "wrongPasswordOrAccountId": "Er läuft etwas verkehrt. Kontrollieren Sie die Informationen. (E-Mail-Adresse oder Passwort könnten falsch sein.)",
+      "wrongEmailFormat": "Keine gültige E-Mail-Adresse.",
+      "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     },
     "warningDialog": {
-      "title": "Bevestig nieuwe e-mailadres",
-      "content": "Let op: pas na bevestiging van het nieuwe e-mailadres via de link in de bevestigingsmail die we je hebben gestuurd kun je weer inloggen op Infectieradar",
-      "cancelBtn": "Annuleer",
-      "confirmBtn": "Wijzig e-mailadres"
+      "title": "Bestätigung der neuen E-Mail-Adresse",
+      "content": "Aufgepasst: Erst nach Bestätigung der neuen E-Mail-Adresse über den Link in der Bestätigungsmail, die wir Ihnen gesendet haben, können Sie wieder unter Infectieradar.be einloggen.",
+      "cancelBtn": "Annullieren",
+      "confirmBtn": "Änderung der E-Mail-Adresse"
     },
     "successDialog": {
-      "title": "E-mailadres gewijzigd",
-      "content": "Gelukt! Je e-mailadres is gewijzigd.",
+      "title": "E-Mail-Adresse geändert",
+      "content": "Geglückt! E-Mail-Adresse geändert.",
       "btn": "Ok"
     }
   },
   "changePassword": {
-    "title": "Wachtwoord wijzigen",
-    "currentPasswordInputLabel": "Huidig wachtwoord",
-    "currentPasswordInputPlaceholder": "Huidig wachtwoord",
-    "newPasswordInputLabel": "Nieuw wachtwoord",
-    "newPasswordInputPlaceholder": "Nieuw wachtwoord",
-    "confirmPasswordInputLabel": "Bevestig nieuw wachtwoord",
-    "confirmPasswordInputPlaceholder": "Bevestig nieuw wachtwoord",
-    "info": "Vanwege veiligheid moet je eerst je huidige wachtwoord geven.",
-    "cancelBtn": "Annuleer",
-    "confirmBtn": "Wijzig wachtwoord",
+    "title": "Passwort ändern",
+    "currentPasswordInputLabel": "Aktuelles Passwort",
+    "currentPasswordInputPlaceholder": "Aktuelles Passwort",
+    "newPasswordInputLabel": "Neues Passwort",
+    "newPasswordInputPlaceholder": "Neues Passwort",
+    "confirmPasswordInputLabel": "Neues Passwort bestätigen",
+    "confirmPasswordInputPlaceholder": "Neues Passwort bestätigen",
+    "info": "Aus Sicherheitsgründen müssen Sie zuerst Ihr neues Passwort eingeben.",
+    "cancelBtn": "Annullieren",
+    "confirmBtn": "Ändere das Passwort",
     "errors": {
-      "wrongCurrentPassword": "Verkeerd wachtwoord",
-      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
-      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "wrongCurrentPassword": "Verkehrtes Passwort",
+      "passwordRules": "Ihr Passwort muss mindestens 8 Zeichen aufweisen und 3 der folgenden 4 Elemente enthalten: Kleinbuchstaben, Großbuchstaben, Zahl, Interpunktions-/Satzzeichen.",
+      "passwordMatch": "Die Passwörter sind nicht dieselben!",
+      "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     },
     "successDialog": {
-      "title": "Wachtwoord gewijzigd",
-      "content": "Gelukt! Je wachtwoord is gewijzigd.",
+      "title": "Passwort geändert",
+      "content": "Geglückt! Ihr Passwort wurde geändert.",
       "btn": "Ok"
     }
   },
   "manageProfiles": {
-    "title": "Profielen",
-    "mainProfileLabel": "Ik",
-    "cancelBtn": "Annuleer",
-    "newProfileBtn": "Nieuw profiel voor je kind",
+    "title": "Profile",
+    "mainProfileLabel": "Ich",
+    "cancelBtn": "Annullieren",
+    "newProfileBtn": "Neues Profil für Ihr Kind",
     "warningDialog": {
-      "title": "Verwijderen profiel",
-      "content": "Het verwijderen van het profiel {{ alias }} kan niet ongedaan worden gemaakt.",
-      "cancelBtn": "Annuleer",
-      "confirmBtn": "Verwijder profiel"
+      "title": "Profil entfernen",
+      "content": "Das Entfernen des Profils {{ alias }} kann nicht ungeschehen gemacht werden.",
+      "cancelBtn": "Annullieren",
+      "confirmBtn": "Entferne Profil"
     }
   },
   "editProfile": {
     "new": {
-      "title": "Nieuw profiel",
-      "cancelBtn": "Annuleer",
-      "submitBtn": "Maak een profiel voor je kind"
+      "title": "Neues Profil",
+      "cancelBtn": "Annullieren",
+      "submitBtn": "Erstelle Profil für Ihr Kind"
     },
     "edit": {
-      "title": "Wijzig profiel",
-      "cancelBtn": "Annuleer",
-      "submitBtn": "Wijzigingen Opslaan"
+      "title": "Ändere Profil",
+      "cancelBtn": "Annullieren",
+      "submitBtn": "Änderungen speichern"
     },
-    "aliasInputLabel": "Bijnaam",
-    "aliasInputPlaceholder": "Bijnaam",
-    "consentCheckboxLabel": "Toestemming",
-    "consentCheckboxText": "Je mag uitsluitend van jezelf of als ouder of wettelijk vertegenwoordiger van je kind dat de leeftijd van 18 jaar nog niet heeft bereikt een profiel aanmaken en vragenlijsten invullen",
-    "avatarSelectorLabel": "Kies een plaatje"
+    "aliasInputLabel": "Zuname/Spitzname",
+    "aliasInputPlaceholder": "Zuname/Spitzname",
+    "consentCheckboxLabel": "Zustimmung",
+    "consentCheckboxText": "Sie dürfen nur ein Profil erstellen und Fragelisten für sich selbst oder als Eltern oder als gesetzlicher Vertreter Ihres Kindes ausfüllen, welches das Alter von 18 Jahren noch nicht erreicht hat.",
+    "avatarSelectorLabel": "Wählen Sie eine Figur!"
   },
   "changeLanguage": {
-    "title": "Talen",
-    "defaultLanguageLabel": "Standaard taal",
-    "info": "U kunt de standaardtaal hier wijzigen. Indien beschikbaar worden e-mails ook in deze taal verzonden.",
+    "title": "Sprache",
+    "defaultLanguageLabel": "Standardsprache",
+    "info": "Hier können Sie die Standardsprache ändern.",
     "languages": {
       "nl-be": "Nederlands",
       "en": "English",
       "fr-be": "Français"
     },
-    "cancelBtn": "Annuleer",
-    "confirmBtn": "Wijzig taal",
+    "cancelBtn": "Annullieren",
+    "confirmBtn": "Ändere Sprache",
     "errors": {
-      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+      "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     },
     "successDialog": {
-      "title": "Taal gewijzigd",
-      "content": "Gelukt! De taal is gewijzigd.",
+      "title": "Sprache geändert",
+      "content": "Geglückt! Sprache geändert.",
       "btn": "Ok"
     }
   },
   "changeNotifications": {
-    "title": "Wekelijkse herinneringsmail",
-    "info": "Je kan hier instellen of je de wekelijkse herinneringsmail wilt ontvangen.",
+    "title": "Wöchentliche Erinnerungsmail",
+    "info": "Sie können hier eintragen, ob Sie die wöchentliche Erinnerungsmail erhalten möchten.",
     "weeklyReminder": {
-      "label": "Wekelijkse herinneringsmail",
-      "on": "Wel de wekelijkse herinneringsmail",
-      "off": "Geen wekelijkse herinneringsmail"
+      "label": "Wöchentliche Erinnerungsmail",
+      "on": "Ja, ich bin für die wöchentliche Erinnerungsmail",
+      "off": "Nein, bitte keine wöchentliche Erinnerungsmail"
     },
     "newsletter": {
-      "label": "E-mail naar alle deelnemers. Soms zal het nodig zijn om een e-mail te sturen naar alle deelnemers met informatie over het onderzoek.",
-      "on": "Wel deze e-mails naar alle deelnemers ontvangen",
-      "off": "Niet deze e-mails naar alle deelnemers ontvangen"
+      "label": "E-Mail an alle Teilnehmer. Manchmal wird es nötig sein, eine E-Mail an alle Teilnehmer mit Informationen über die Untersuchung zu senden.",
+      "on": "Diese E-Mails an alle Teilnehmer empfangen.",
+      "off": "Nein, diese E-Mails an alle Teilnehmer nicht empfangen."
     },
-    "cancelBtn": "Annuleer",
-    "submitBtn": "Aanpassen",
+    "cancelBtn": "Annullieren",
+    "submitBtn": "Anpassen",
     "successDialog": {
-      "title": "Instellingen aangepast",
-      "content": "Gelukt! Je e-mail instellingen zijn aangepast.",
+      "title": "Einstellungen wurden angepasst",
+      "content": "Geglückt! Ihre E-Mail-Einstellungen wurden angepasst.",
       "btn": "Ok"
     }
   },
   "deleteAccount": {
-    "title": "Afmelden onderzoek",
-    "info": "Weet je zeker dat je jouw account wilt verwijderen?\nDit is een actie die je niet ongedaan kunt maken.",
-    "cancelBtn": "Annuleer",
-    "confirmBtn": "Afmelden onderzoek",
+    "title": "Abmelden aus der Untersuchung",
+    "info": "Wissen Sie sicher, dass Sie Ihren Account entfernen möchten?\nDas ist eine Aktion, die Sie nicht ungeschehen machen können.",
+    "cancelBtn": "Annullieren",
+    "confirmBtn": "Abmelden aus der Untersuchung",
     "successDialog": {
-      "title": "Account verwijderd",
-      "content": "Gelukt! Je account is verwijderd. Dank voor je bijdrage. Je kunt altijd weer mee doen door een nieuw account aan te maken.",
+      "title": "Account entfernt",
+      "content": "Geglückt! Ihr Account wurde entfernt. Danke für Ihren Beitrag. Sie können immer wieder dadurch mitmachen, dass Sie einen neuen Account erstellen.",
       "btn": "Ok"
     }
   }
