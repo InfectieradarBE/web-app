@@ -53,6 +53,11 @@
           "type": "language",
           "itemKey": "fr-be",
           "languageCode": "fr-be"
+        },
+        {
+          "type": "language",
+          "itemKey": "de-be",
+          "languageCode": "de-be"
         }
       ]
     }

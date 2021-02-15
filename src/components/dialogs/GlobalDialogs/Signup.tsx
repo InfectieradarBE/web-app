@@ -116,13 +116,25 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
 
   return (
     <React.Fragment>
+
       {infoText && infoText.length > 0 ?
         <AlertBox
           type="info"
           className={marginBottomClass}
           content={infoText}
         /> : null}
-
+      {
+        useRecaptcha && reCaptchaAccepted ? <div>
+          {reCaptchaSiteKey ?
+            <ReCAPTCHA
+              sitekey={reCaptchaSiteKey}
+              size="invisible"
+              hl={i18n.language}
+              ref={recaptchaRef}
+            />
+            : null}
+        </div> : null
+      }
       <form onSubmit={submit}>
         <TextField
           id="signupEmail"
@@ -278,17 +290,6 @@ const SignupForm: React.FC<SignupFormProps> = (props) => {
                 {'...'}
               </Trans>
             </div>
-            {
-              reCaptchaAccepted ? <div>
-                {reCaptchaSiteKey ?
-                  <ReCAPTCHA
-                    sitekey={reCaptchaSiteKey}
-                    size="invisible"
-                    hl={i18n.language}
-                    ref={recaptchaRef} />
-                  : null}
-              </div> : null
-            }
           </React.Fragment> : null}
 
       </form>
