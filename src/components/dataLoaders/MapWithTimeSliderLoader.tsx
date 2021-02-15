@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { getExternalOrLocalContentURL } from '../../utils/routeUtils';
 import MapWithTimeSlider, { MapSeriesConfig } from '../charts/MapWithTimeSlider';
 
 interface MapWithTimeSliderLoaderProps {
@@ -11,7 +12,7 @@ const MapWithTimeSliderLoader: React.FC<MapWithTimeSliderLoaderProps> = (props) 
   const [seriesData, setSeriesData] = useState<MapSeriesConfig | undefined>();
 
   useEffect(() => {
-    fetch(props.dataUrl)
+    fetch(getExternalOrLocalContentURL(props.dataUrl))
       .then(res => res.json())
       .then(json => {
         setSeriesData(json);
@@ -21,7 +22,7 @@ const MapWithTimeSliderLoader: React.FC<MapWithTimeSliderLoaderProps> = (props) 
   }, [props.dataUrl]);
 
   useEffect(() => {
-    fetch(props.mapUrl)
+    fetch(getExternalOrLocalContentURL(props.mapUrl))
       .then(res => res.json())
       .then(json => {
         setGeoData(json);

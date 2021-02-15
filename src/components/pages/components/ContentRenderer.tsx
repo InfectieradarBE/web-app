@@ -24,6 +24,7 @@ import MarkdownLoader from '../../dataLoaders/MarkdownLoader';
 import SurveyList from '../../study/SurveyList';
 import LinkList from '../../misc/LinkList';
 import { DefaultRoutes } from '../../../types/config/routing';
+import MapWithTimeSliderLoader from '../../dataLoaders/MapWithTimeSliderLoader';
 
 
 interface ContentRendererProps {
@@ -201,6 +202,12 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           onNavigate={(url) => history.push(url)}
           onOpenExternalPage={handleOpenExternalPage}
           onOpenDialog={dialog => dispatch(openDialogWithoutPayload(dialog))}
+        />
+      case 'mapDataSeries':
+        return <MapWithTimeSliderLoader
+          key={item.itemKey}
+          mapUrl={item.config.mapUrl}
+          dataUrl={item.config.dataUrl}
         />
       case 'surveyList':
         return <SurveyList

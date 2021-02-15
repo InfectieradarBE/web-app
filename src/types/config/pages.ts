@@ -38,7 +38,7 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig | ImageConfig |
   AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
   CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
-  SurveyListConfig | LinkListConfig
+  SurveyListConfig | LinkListConfig | MapDataSeriesConfig
 
 
 export interface MarkdownComponentConfig {
@@ -153,6 +153,12 @@ export interface LogoCreditsConfig {
     height?: number | string;
     className?: string;
   }>;
+}
+
+export interface MapDataSeriesConfig {
+  type: 'mapDataSeries';
+  mapUrl: string;
+  dataUrl: string;
 }
 
 export interface SurveyListConfig {
