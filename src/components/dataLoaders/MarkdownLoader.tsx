@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslatedMarkdown } from '../../hooks/useTranslatedMarkdown';
-import MarkdownRenderer from './MarkdownRenderer';
+import MarkdownRenderer from '../displays/MarkdownRenderer';
 
 interface MarkdownLoaderProps {
   className?: string;

@@ -20,7 +20,7 @@ import VideoPlayer from '../../displays/VideoPlayer';
 import AccountSettings from '../../settings/AccountSettings';
 import CommunicationSettings from '../../settings/CommunicationSettings';
 import DeleteAccount from '../../settings/DeleteAccount';
-import MarkdownLoader from '../../displays/MarkdownLoader';
+import MarkdownLoader from '../../dataLoaders/MarkdownLoader';
 import SurveyList from '../../study/SurveyList';
 import LinkList from '../../misc/LinkList';
 import { DefaultRoutes } from '../../../types/config/routing';
