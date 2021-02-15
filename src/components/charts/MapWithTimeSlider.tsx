@@ -17,8 +17,20 @@ interface MapWithTimeSliderProps {
     hideTicks: boolean;
   },
   series: Array<MapSeriesData>;
-  geoData: any;
+  geoData: GeoData;
   language: string;
+}
+
+export interface GeoData {
+  size: {
+    width: number;
+    height: number;
+  };
+  projection: {
+    rotate: [number, number, number]; // three values
+    scale: number;
+  };
+  topojson: any;
 }
 
 export interface MapSeriesData {
@@ -129,6 +141,7 @@ const MapWithTimeSlider: React.FC<MapWithTimeSliderProps> = (props) => {
           {items}
         </div>
       </div>
+
       {/* For small screens: */}
       <div className="d-block d-sm-none fw-bold text-start" style={{ pointerEvents: 'none', top: 0, fontSize: '0.8rem' }}>
         <div className="w-100 text-start mb-1 px-1">
