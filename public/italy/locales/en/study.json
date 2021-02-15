@@ -1,0 +1,30 @@
+{
+  "title": "Infectieradar",
+  "topImage": {
+    "title": "",
+    "content": "By participating in Infectieradar.be you help map the spread of infectious diseases, allowing us to quickly see the current situation in Belgium."
+  },
+  "requiredSurveys": {
+    "title": "Questionnaires to be completed",
+    "info": "The different questionnaires for the study can be found here.",
+    "successMsg": "Thank you! You have completed all questionnaires. We will ask you again next week."
+  },
+  "optionalSurveys": {
+    "title": "Change background information",
+    "info": "If your situation has changed, you can recomplete the background questionnaire(s) below.  Unfortunately, we cannot show you the information you entered last time, or let you change your answers to specific questions only.",
+    "showBtn": "Has your background information changed?",
+    "hideBtn": "Hide"
+  },
+  "referencesBox": {
+    "title": "See also",
+    "faqLink": "Frequently Asked Questions",
+    "resultsLink": "Current results",
+    "aboutLink": "About Infectierader"
+  },
+  "quickSettingsBox": {
+    "title": "Settings",
+    "manageProfiles": "Add your child’s profile or change your own profile",
+    "emailReminders": "Change communication settings",
+    "language": "Language"
+  }
+}
