@@ -10,6 +10,12 @@ import clsx from 'clsx';
 import Slider from '../inputs/Slider';
 
 interface MapWithTimeSliderProps {
+  seriesData: MapSeriesConfig;
+  geoData: GeoData;
+  language: string;
+}
+
+export interface MapSeriesConfig {
   slider: {
     minLabel: string;
     maxLabel: string;
@@ -17,8 +23,6 @@ interface MapWithTimeSliderProps {
     hideTicks: boolean;
   },
   series: Array<MapSeriesData>;
-  geoData: GeoData;
-  language: string;
 }
 
 export interface GeoData {
@@ -70,8 +74,8 @@ const defaultColorScale = scaleQuantize<string>()
 
 const MapWithTimeSlider: React.FC<MapWithTimeSliderProps> = (props) => {
   const [tooltipContent, setTooltipContent] = useState('');
-  const [dataIndex, setDataIndex] = useState(props.slider.labels.length - 1);
-  const [selectedSeries, setSelectedSeries] = useState<undefined | MapSeriesData>(props.series.length > 0 ? props.series[0] : undefined);
+  const [dataIndex, setDataIndex] = useState(props.seriesData.slider.labels.length - 1);
+  const [selectedSeries, setSelectedSeries] = useState<undefined | MapSeriesData>(props.seriesData.series.length > 0 ? props.seriesData.series[0] : undefined);
 
   const colorScale = selectedSeries ? scaleQuantize<string>()
     .domain([selectedSeries.colorScale.min, selectedSeries.colorScale.max])
@@ -81,7 +85,7 @@ const MapWithTimeSlider: React.FC<MapWithTimeSliderProps> = (props) => {
 
   const seriesSelector = (data: MapWithTimeSliderProps) => <nav aria-label="plot selection">
     <ul className="pagination justify-content-center d-block d-sm-flex">
-      {data.series.map(dt =>
+      {data.seriesData.series.map(dt =>
         <li key={dt.name}
           role="button"
           className={clsx(
@@ -225,13 +229,13 @@ const MapWithTimeSlider: React.FC<MapWithTimeSliderProps> = (props) => {
         <div className="text-center w-100 justify-content-center">
           <div className="px-3 pb-0 mb-0">
             <div className="w-100 text-center text-primary fw-bold">
-              {props.slider.labels[dataIndex]}
+              {props.seriesData.slider.labels[dataIndex]}
             </div>
             <Slider
               id="mapSlider"
               min={0}
-              max={props.slider.labels.length - 1}
-              step={props.slider.hideTicks ? undefined : 1}
+              max={props.seriesData.slider.labels.length - 1}
+              step={props.seriesData.slider.hideTicks ? undefined : 1}
               value={dataIndex}
               onChange={(value) => {
                 setDataIndex(value ? value : 0);
@@ -239,10 +243,10 @@ const MapWithTimeSlider: React.FC<MapWithTimeSliderProps> = (props) => {
             />
             <div className="d-flex">
               <span className="flex-grow-1 text-start">
-                {props.slider.minLabel}
+                {props.seriesData.slider.minLabel}
               </span>
               <span className="">
-                {props.slider.maxLabel}
+                {props.seriesData.slider.maxLabel}
               </span>
             </div>
           </div>
