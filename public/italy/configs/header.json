@@ -1,0 +1,20 @@
+{
+  "layout": "simpleLogo",
+  "config": {
+    "className": "",
+    "image": {
+      "altKey": "logoAlt",
+      "sm": {
+        "url": "/images/logo1.png",
+        "className": "py-2",
+        "width": 226
+      },
+      "lg": {
+        "url": "/images/logo1.png",
+        "className": "py-2",
+        "width": 250
+      }
+    },
+    "useLanguageSelector": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "breakpoint": "xl",
+  "leftItems": [
+    {
+      "type": "internal",
+      "url": "/home",
+      "itemKey": "home",
+      "hideWhen": "auth",
+      "iconClass": "fas fa-home"
+    },
+    {
+      "type": "internal",
+      "url": "/home",
+      "itemKey": "authhome",
+      "hideWhen": "unauth",
+      "iconClass": "fas fa-home"
+    },
+    {
+      "type": "internal",
+      "url": "/about",
+      "itemKey": "about",
+      "hideWhen": ""
+    },
+    {
+      "type": "internal",
+      "url": "/faq",
+      "itemKey": "faq",
+      "hideWhen": ""
+    },
+    {
+      "type": "internal",
+      "url": "/results",
+      "itemKey": "results",
+      "hideWhen": ""
+    }
+  ],
+  "rightItems": [
+    {
+      "type": "internal",
+      "url": "/settings",
+      "itemKey": "settings",
+      "iconClass": "fas fa-cog"
+    }
+  ]
+}

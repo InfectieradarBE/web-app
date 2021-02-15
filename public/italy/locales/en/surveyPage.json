@@ -1,0 +1,14 @@
+{
+  "exitSurveyWarningDialog": {
+    "title": "Do you want to exit the questionnaire?",
+    "warning": "All information entered will be lost if you don’t complete the questionnaire. Are you sure you want to stop?",
+    "cancelBtn": "Continue completing the questionnaire",
+    "confirmBtn": "Exit the questionnaire"
+  },
+  "noSurveyLoaded": "Loading failed. Refresh the page",
+  "submittingSurveyResponsesMsg": "Submitting answers...",
+  "notValidQuestion": "Select a valid answer for all questions.",
+  "backBtn": "Back",
+  "nextBtn": "Next",
+  "submitBtn": "Send"
+}

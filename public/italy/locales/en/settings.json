@@ -1,0 +1,57 @@
+{
+  "title": "Infectieradar Settings",
+  "account": {
+    "title": "Account settings",
+    "email": {
+      "title": "E-mailadres",
+      "info": "Do you want to use a different email address? Change your email address by clicking on the button below. Note: you cannot log back in to Infectieradar.be until you have confirmed the email address."
+    },
+    "password": {
+      "title": "Password",
+      "info": "Do you want to change the password? Change your password by clicking on the button below. Note: you will need your current password."
+    },
+    "profiles": {
+      "title": "Profiles",
+      "info": "Edit your own profile or, as a parent or legal representative, add the profile of your child aged up to 17 years.",
+      "btn": "{{count}} profiles",
+      "btn_plural": "{{count}} profiles"
+    }
+  },
+  "communication": {
+    "title": "Communication settings",
+    "emailReminders": {
+      "title": "Weekly email and newsletter",
+      "info": "You can opt to stop receiving the weekly reminder email or the newsletter.",
+      "btnManageNotifications": "Change settings"
+    },
+    "defaultLanguage": {
+      "title": "Language",
+      "info": "You can change the language here.",
+      "languages": {
+        "en": "English",
+        "nl-be": "Nederlands",
+        "fr-be": "Français",
+        "de-be": "Deutsch"
+      }
+    }
+  },
+  "deletion": {
+    "title": "Unsubscribe from Infectieradar.be / withdraw consent",
+    "warning": "If you unsubscribe from Infectieradar.be / withdraw consent, your account data will be deleted.\nAfter the account has been deleted, we will no longer be able to link information you have provided (such as age and symptoms) to you.",
+    "deleteBtn": "Unsubscribe"
+  },
+  "references": {
+    "title": "In need of assistance?",
+    "faqLink": "FAQ",
+    "privacyStatementLink": "Privacy statement",
+    "contactLink": "Contact Infectieradar.be"
+  },
+  "systemInfo": {
+    "title": "System information",
+    "appNameLabel": "Application name",
+    "appName": "Infectieradar",
+    "versionLabel": "Version",
+    "browserNameLabel": "Browser name",
+    "browserVersionLabel": "Browser version"
+  }
+}
