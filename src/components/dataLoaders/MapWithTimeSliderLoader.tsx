@@ -33,7 +33,7 @@ const MapWithTimeSliderLoader: React.FC<MapWithTimeSliderLoaderProps> = (props) 
 
 
   const loadingContent = () => <div
-    className="d-flex align-items-center bg-secondary justify-content-center h-100"
+    className="d-flex align-items-center bg-secondary justify-content-center my-2"
     style={{ minHeight: 400 }}
   >
     <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">

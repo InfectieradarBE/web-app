@@ -1,11 +1,48 @@
 import React from 'react';
 import { useTranslatedMarkdown } from '../../hooks/useTranslatedMarkdown';
 import MarkdownRenderer from '../displays/MarkdownRenderer';
+import MapWithTimeSliderLoader from './MapWithTimeSliderLoader';
 
 interface MarkdownLoaderProps {
   className?: string;
   markdownUrl: string;
   languageCode: string;
+  flavor?: string;
+}
+
+const customFlavorRenderers = {
+  default: {
+    'inlineCode': (node: any) => <p className="border-primary border-top-2 border-bottom-2 text-grey-6" >{node.children}</p>,
+    'paragraph': (node: any) => node.children[0].type.name === "image" || node.children[0].type.name === "inlineCode" ? (
+      <div {...node} />
+    ) : (
+        <p {...node} />
+      )
+    ,
+  },
+  chartRenderer: {
+    'inlineCode': (node: any) => <p className="border-primary border-top-2 border-bottom-2 text-grey-6" >{node.children}</p>,
+    'paragraph': (node: any) => node.children[0].type.name === "image" || node.children[0].type.name === "inlineCode" ? (
+      <div {...node} />
+    ) : (
+        <p {...node} />
+      )
+    ,
+    'definition': (value: any) => {
+      const id = value.identifier.split(':')[0];
+      // console.log(value);
+      switch (id) {
+        case 'mapchart':
+          const mapUrl = value.identifier.split(':')[1];
+          return <MapWithTimeSliderLoader
+            mapUrl={mapUrl}
+            dataUrl={value.url}
+          />;
+        default:
+          return <p>{'unknown: ' + value.identifier}</p>
+      }
+    },
+  }
 }
 
 const MarkdownLoader: React.FC<MarkdownLoaderProps> = (props) => {
@@ -23,18 +60,17 @@ const MarkdownLoader: React.FC<MarkdownLoaderProps> = (props) => {
   if (!content) {
     return null;
   }
+
+  let renderers = customFlavorRenderers.default;
+  switch (props.flavor) {
+    case 'chart-renderer':
+      renderers = customFlavorRenderers.chartRenderer;
+  }
+
   return <MarkdownRenderer
     className={props.className}
     markdown={content}
-    renderers={{
-      'inlineCode': (node) => <p className="border-primary border-top-2 border-bottom-2" style={{ fontSize: '1.0rem', color: '#696969' }} >{node.children}</p>,
-      'paragraph': (node) => node.children[0].type.name === "image" || node.children[0].type.name === "inlineCode" ? (
-        <div {...node} />
-      ) : (
-          <p {...node} />
-        )
-      ,
-    }}
+    renderers={renderers}
   />
 };
 

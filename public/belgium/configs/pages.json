@@ -492,7 +492,8 @@
                   "className": "",
                   "config": {
                     "type": "markdown",
-                    "markdownUrl": "results/results-0.md"
+                    "markdownUrl": "results/results-0.md",
+                    "flavor": "chart-renderer"
                   }
                 }
               ]

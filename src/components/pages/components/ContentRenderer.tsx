@@ -60,6 +60,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           className={item.className}
           languageCode={i18n.language}
           markdownUrl={item.config.markdownUrl}
+          flavor={item.config.flavor}
         />
       case 'teaserImage':
         return <TeaserImage

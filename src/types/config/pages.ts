@@ -44,6 +44,7 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
 export interface MarkdownComponentConfig {
   type: 'markdown';
   markdownUrl: string;
+  flavor?: 'chart-renderer';
 }
 
 export interface ImageConfig {
