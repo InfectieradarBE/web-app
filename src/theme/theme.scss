@@ -159,6 +159,89 @@ $nav-tabs-border-width: 0px !default;
 $navbar-toggler-border-radius: 0px !default;
 $nav-tabs-link-active-bg: map-get($theme-colors, "secondary") !default;
 
+
+// ---------------------------------------------
+// Customized Range Input
+// ---------------------------------------------
+$form-range-thumb-width:          1rem !default;
+$form-range-thumb-height:          $form-range-thumb-width !default;
+$form-range-track-height:         .5rem !default;
+
+$custom-range-tick-height:         $form-range-track-height;
+$custom-range-tick-width:         $form-range-track-height / 2;
+
+
+//Some range styling.
+//Using mixins because each major browser needs a separate selector to style parts of the range input, combining selectors would invalidate the whole selector on each browser
+@mixin range-track {
+  -webkit-appearance: none;
+  width: 100%;
+  color: transparent;
+  background: none;
+  border-radius: 999px;
+  cursor: pointer;
+  border: none;
+}
+
+@mixin range-thumb {
+  border-radius: 50%;
+  z-index: 1000;
+  background: map-get($theme-colors, "primary");
+}
+input[type=range] {
+  -webkit-appearance: none;
+  display: block;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  @include range-track();
+}
+input[type=range]::-moz-range-track {
+  @include range-track();
+}
+input[type=range]::-ms-track {
+  @include range-track();
+}
+input[type=range]::-ms-fill-lower {
+  display: none;
+}
+input[type=range]::-ms-fill-upper {
+  display: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  @include range-thumb();
+}
+input[type=range]::-moz-range-thumb {
+  @include range-thumb();
+}
+input[type=range]::-ms-thumb {
+  @include range-thumb();
+}
+
+
+//And now the ticks
+.ticks {
+  z-index: -1;
+  //We need left & right padding that's half the width of the range thumb, so all ticks align with the center of the thumb
+  padding: $form-range-thumb-width/2 $form-range-thumb-height/2;
+}
+
+.range-track {
+  background-color: map-get($theme-colors, "secondary");
+  height: $form-range-track-height;
+  width: 100%;
+}
+
+.tick {
+  pointer-events: none;
+  background: map-get($theme-colors, "grey-6");
+  width: $custom-range-tick-width;
+  height: $custom-range-tick-height;
+}
+
+
 // ---------------------------------------------
 // Other:
 // ---------------------------------------------
