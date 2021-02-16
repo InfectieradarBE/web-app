@@ -1,11 +1,3 @@
 {
-  "title": "Aktuelle Ergebnisse Infectieradar",
-  "defaultRoute": "Karten",
-  "pages": [
-    {
-      "linkName": "Aktuelle Ergebnisse",
-      "route": "Karten",
-      "markdown": "results/results-0.md"
-    }
-  ]
+  "title": "Aktuelle Ergebnisse Infectieradar"
 }

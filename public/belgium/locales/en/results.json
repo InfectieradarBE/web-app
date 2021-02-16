@@ -1,11 +1,3 @@
 {
-  "title": "Current results Infectieradar",
-  "defaultRoute": "cards",
-  "pages": [
-    {
-      "linkName": "Current results",
-      "route": "cards",
-      "markdown": "results/results-0.md"
-    }
-  ]
+  "title": "Current results Infectieradar"
 }
