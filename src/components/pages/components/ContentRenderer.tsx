@@ -25,6 +25,7 @@ import SurveyList from '../../study/SurveyList';
 import LinkList from '../../misc/LinkList';
 import { DefaultRoutes } from '../../../types/config/routing';
 import MapWithTimeSliderLoader from '../../dataLoaders/MapWithTimeSliderLoader';
+import ComposedLineAndScatterChartLoader from '../../dataLoaders/ComposedLineAndScatterChartLoader';
 
 
 interface ContentRendererProps {
@@ -208,6 +209,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
         return <MapWithTimeSliderLoader
           key={item.itemKey}
           mapUrl={item.config.mapUrl}
+          dataUrl={item.config.dataUrl}
+        />
+      case 'lineWithScatterChart':
+        return <ComposedLineAndScatterChartLoader
+          key={item.itemKey}
           dataUrl={item.config.dataUrl}
         />
       case 'surveyList':

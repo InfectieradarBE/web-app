@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslatedMarkdown } from '../../hooks/useTranslatedMarkdown';
 import MarkdownRenderer from '../displays/MarkdownRenderer';
+import ComposedLineAndScatterChartLoader from './ComposedLineAndScatterChartLoader';
 import MapWithTimeSliderLoader from './MapWithTimeSliderLoader';
 
 interface MarkdownLoaderProps {
@@ -38,6 +39,10 @@ const customFlavorRenderers = {
             mapUrl={mapUrl}
             dataUrl={value.url}
           />;
+        case 'line-and-scatter-chart':
+          return <ComposedLineAndScatterChartLoader
+            dataUrl={value.url}
+          />
         default:
           return <p>{'unknown: ' + value.identifier}</p>
       }

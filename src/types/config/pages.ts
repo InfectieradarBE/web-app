@@ -38,7 +38,7 @@ type PageItemConfig = TeaserImageConfig | RouterComponentConfig |
   MarkdownComponentConfig | ImageCardConfig | LoginCardConfig | VideoConfig | ImageConfig |
   AccordionListConfig | SimpleCard | SystemInfoConfig | AccountSettingsConfig |
   CommunicationSettingsConfig | DeleteAccountConfig | LogoCreditsConfig |
-  SurveyListConfig | LinkListConfig | MapDataSeriesConfig
+  SurveyListConfig | LinkListConfig | MapDataSeriesConfig | LineWithScatterChartConfig
 
 
 export interface MarkdownComponentConfig {
@@ -159,6 +159,11 @@ export interface LogoCreditsConfig {
 export interface MapDataSeriesConfig {
   type: 'mapDataSeries';
   mapUrl: string;
+  dataUrl: string;
+}
+
+export interface LineWithScatterChartConfig {
+  type: 'lineWithScatterChart';
   dataUrl: string;
 }
 
