@@ -29,7 +29,8 @@ const appSlice = createSlice({
   initialState: initialState,
   reducers: {
     reset: (state) => {
-      state = initialState;
+      state = { ...initialState };
+      return state;
     },
     setPersistState: (state, action: PayloadAction<boolean>) => {
       state.persistState = action.payload;

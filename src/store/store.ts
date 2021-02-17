@@ -37,7 +37,7 @@ export default store
 export const resetStore = () => {
   // let oldState = store.getState();
   store.dispatch(resetAppSlice());
-  store.dispatch(appConfig.reset());
+  // store.dispatch(appConfig.reset());
   store.dispatch(resetDialogSlice());
   store.dispatch(userActions.reset());
 }

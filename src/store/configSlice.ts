@@ -12,7 +12,8 @@ const configSlice = createSlice({
   initialState: initialState,
   reducers: {
     reset: (state) => {
-      state = initialState;
+      state = { ...initialState };
+      return state;
     },
     updateInstanceID: (state, action: PayloadAction<string>) => {
       state.instanceId = action.payload;

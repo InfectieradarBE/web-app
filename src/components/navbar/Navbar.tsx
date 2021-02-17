@@ -13,6 +13,7 @@ import NavbarItem from './NavbarComponents/NavbarItem'
 import Drawer from './NavbarComponents/Drawer';
 import { Profile } from '../../api/types/user';
 import Avatar from '../displays/Avatar';
+import { useAuthTokenCheck } from '../../hooks/useAuthTokenCheck';
 
 interface NavbarProps {
   loading?: boolean;
@@ -25,6 +26,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
   const history = useHistory();
   const dispatch = useDispatch();
 
+  const hasAuthTokens = useAuthTokenCheck();
   const isLoggedIn = useIsAuthenticated();
   const logout = useLogout();
 
@@ -79,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
   }
 
   const navbarRight = () => {
-    if (isLoggedIn) {
+    if (hasAuthTokens) {
       return <div className="dropdown nav-tabs d-flex align-items-center">
         <button
           className="btn btn-primary dropdown-toggle text-lightest fs-btn nav-link-height d-flex align-items-center"
@@ -100,21 +102,30 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           <div className="d-block d-sm-none border-bottom-2 border-secondary">
             <span className="dropdown-item disabled">{currentProfile?.alias}</span>
           </div>
-          {
-            props.content?.rightItems.map(item =>
-              <button
-                key={item.itemKey}
-                className="dropdown-item" type="button"
-                onClick={() => {
-                  history.push(item.url);
-                }}
-              >
-                {t(`rightMenu.${item.itemKey}`)}
-                <i className={clsx(item.iconClass, 'ms-1')}></i>
-              </button>
-            )
+          {isLoggedIn ? <React.Fragment>
+            {
+              props.content?.rightItems.map(item =>
+                <button
+                  key={item.itemKey}
+                  className="dropdown-item" type="button"
+                  onClick={() => {
+                    history.push(item.url);
+                  }}
+                >
+                  {t(`rightMenu.${item.itemKey}`)}
+                  <i className={clsx(item.iconClass, 'ms-1')}></i>
+                </button>
+              )
+            }
+          </React.Fragment> : <button
+            className="dropdown-item" type="button"
+            onClick={() => {
+              dispatch(openDialogWithoutPayload("signupSuccess"))
+            }}
+          >
+              {t('rightMenu.verified')}
+            </button>
           }
-
           <button
             className="dropdown-item"
             onClick={() => logout()} >
