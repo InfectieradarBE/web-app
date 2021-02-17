@@ -37,7 +37,8 @@ const dialogSlice = createSlice({
   initialState,
   reducers: {
     reset(state) {
-      state = initialState
+      state = { ...initialState };
+      return state;
     },
     closeDialog(state) {
       state.config = undefined
