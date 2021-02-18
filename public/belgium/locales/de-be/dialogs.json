@@ -168,7 +168,8 @@
     "languages": {
       "nl-be": "Nederlands",
       "en": "English",
-      "fr-be": "Français"
+      "fr-be": "Français",
+      "de-be": "Deutsch"
     },
     "cancelBtn": "Annullieren",
     "confirmBtn": "Ändere Sprache",
