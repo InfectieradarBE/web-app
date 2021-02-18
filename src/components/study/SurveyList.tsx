@@ -171,7 +171,7 @@ const SurveyList: React.FC<SurveyListProps> = (props) => {
   </div>
 
   const loadingContent = () => <div
-    className="d-flex align-items-center my-3 bg-secondary justify-content-center h-100"
+    className="d-flex align-items-center bg-secondary justify-content-center h-100"
     style={{ minHeight: 300 }}>
     <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">
       <span className="visually-hidden">Loading...</span>
@@ -180,7 +180,9 @@ const SurveyList: React.FC<SurveyListProps> = (props) => {
 
 
   return (
-    loading ? loadingContent() : renderContent()
+    <React.Fragment>
+      {loading ? loadingContent() : renderContent()}
+    </React.Fragment>
   );
 };
 

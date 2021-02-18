@@ -301,7 +301,7 @@ const Login: React.FC<LoginProps> = (props) => {
 
   const dispatch = useDispatch();
 
-  const { t } = useTranslation(['dialogs']);
+  const { t, i18n } = useTranslation(['dialogs']);
 
   useEffect(() => {
     setResetEnabled(false);
@@ -361,13 +361,20 @@ const Login: React.FC<LoginProps> = (props) => {
       } else {
         response.user.account.accountConfirmedAt = +response.user.account.accountConfirmedAt
         setAuthState(response.token, response.user);
-        handleClose();
-        if (history) {
-          history.push('/');
+
+
+        const currentLangauge = i18n.language;
+        if (response.user.account.preferredLanguage && response.user.account.preferredLanguage !== currentLangauge) {
+          i18n.changeLanguage(response.user.account.preferredLanguage);
         }
+
         if (!response.user.account.accountConfirmedAt || response.user.account.accountConfirmedAt <= 0) {
           dispatch(openDialogWithoutPayload('signupSuccess'));
         }
+        if (history) {
+          history.push('/');
+        }
+        handleClose();
       }
     } catch (e) {
       const errMsg = getErrorMsg(e);

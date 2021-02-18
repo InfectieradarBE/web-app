@@ -109,7 +109,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   key={item.itemKey}
                   className="dropdown-item" type="button"
                   onClick={() => {
-                    history.push(item.url);
+                    if (item.type === 'dialog') {
+                      dispatch(openDialogWithoutPayload(item.url))
+                    } else {
+                      history.push(item.url);
+                    }
                   }}
                 >
                   {t(`rightMenu.${item.itemKey}`)}
