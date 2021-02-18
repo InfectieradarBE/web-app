@@ -1,6 +1,5 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { reset as resetAppSlice } from './appSlice'
-import { reset as resetDialogSlice } from './dialogSlice'
 import { loadState, saveState } from './localStorage'
 import throttle from 'lodash.throttle'
 
@@ -36,6 +35,5 @@ export default store
 export const resetStore = () => {
   // let oldState = store.getState();
   store.dispatch(resetAppSlice());
-  store.dispatch(resetDialogSlice());
   store.dispatch(userActions.reset());
 }
