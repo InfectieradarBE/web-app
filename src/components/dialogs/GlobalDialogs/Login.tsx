@@ -362,7 +362,6 @@ const Login: React.FC<LoginProps> = (props) => {
         response.user.account.accountConfirmedAt = +response.user.account.accountConfirmedAt
         setAuthState(response.token, response.user);
 
-
         const currentLangauge = i18n.language;
         if (response.user.account.preferredLanguage && response.user.account.preferredLanguage !== currentLangauge) {
           i18n.changeLanguage(response.user.account.preferredLanguage);
