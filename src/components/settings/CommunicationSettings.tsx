@@ -30,9 +30,9 @@ const CommunicationSettings: React.FC<CommunicationSettingsProps> = (props) => {
       </h2>
 
       {/** email reminders*/}
-      <h3 className="fw-bold mt-2">
+      <h4 className="fw-bold mt-2">
         {t(`${props.itemKey}.emailReminders.title`)}
-      </h3>
+      </h4>
       <p className="mb-1 text-grey-7">
         {t(`${props.itemKey}.emailReminders.info`)}
       </p>
@@ -43,9 +43,9 @@ const CommunicationSettings: React.FC<CommunicationSettingsProps> = (props) => {
       </EditBtn>
 
       {/** language*/}
-      <h3 className="fw-bold mt-2">
+      <h4 className="fw-bold mt-2">
         {t(`${props.itemKey}.defaultLanguage.title`)}
-      </h3>
+      </h4>
       <p className="mb-1 text-grey-7">
         {t(`${props.itemKey}.defaultLanguage.info`)}
       </p>

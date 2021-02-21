@@ -32,9 +32,9 @@ const AccountSettings: React.FC<AccountSettingsProps> = (props) => {
       </h2>
 
       {/** email */}
-      <h3 className="fw-bold mt-2">
+      <h4 className="fw-bold mt-2">
         {t(`${props.itemKey}.email.title`)}
-      </h3>
+      </h4>
       <p className="mb-1 text-grey-7">
         {t(`${props.itemKey}.email.info`)}
       </p>
@@ -45,9 +45,9 @@ const AccountSettings: React.FC<AccountSettingsProps> = (props) => {
       </EditBtn>
 
       {/** password */}
-      <h3 className="fw-bold mt-2">
+      <h4 className="fw-bold mt-2">
         {t(`${props.itemKey}.password.title`)}
-      </h3>
+      </h4>
       <p className="mb-1 text-grey-7">
         {t(`${props.itemKey}.password.info`)}
       </p>
@@ -58,9 +58,9 @@ const AccountSettings: React.FC<AccountSettingsProps> = (props) => {
       </EditBtn>
 
       {/** profiles */}
-      <h3 className="fw-bold mt-2">
+      <h4 className="fw-bold mt-2">
         {t(`${props.itemKey}.profiles.title`)}
-      </h3>
+      </h4>
       <p className="mb-1 text-grey-7">
         {t(`${props.itemKey}.profiles.info`)}
       </p>
