@@ -17,6 +17,8 @@ import { closeSurveyMode, openSurveyMode } from '../../../store/appSlice';
 import ConfirmDialog from '../../dialogs/DialogTypes/ConfirmDialog';
 import AlertBox from '../../displays/AlertBox';
 import SurveyView from '../../survey/SurveyView/SurveyView';
+import { containerClassName } from '../../../constants';
+import clsx from 'clsx';
 
 
 interface SurveyPageProps {
@@ -196,7 +198,7 @@ const SurveyPage: React.FC<SurveyPageProps> = (props) => {
         content={currentSurveyName}
         showAlways={true}
       />
-      <div className="container py-3">
+      <div className={clsx(containerClassName, "py-3")}>
         <div className="row">
           <div className="col-12 col-lg-8 offset-lg-2"
             style={{ minHeight: '60vh' }}

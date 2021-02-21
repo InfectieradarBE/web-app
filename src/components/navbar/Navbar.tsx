@@ -14,6 +14,7 @@ import Drawer from './NavbarComponents/Drawer';
 import { Profile } from '../../api/types/user';
 import Avatar from '../displays/Avatar';
 import { useAuthTokenCheck } from '../../hooks/useAuthTokenCheck';
+import { containerClassName } from '../../constants';
 
 interface NavbarProps {
   loading?: boolean;
@@ -54,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     return <React.Fragment>
       <div className={clsx("nav nav-tabs", `d-block d-${breakpoint}-none`)}>
 
-        <button className="btn btn-primary fs-btn nav-link nav-link-height" onClick={() => setDrawerOpen(true)}>
+        <button className="btn btn-primary fs-btn nav-link nav-link-height text-nowrap" onClick={() => setDrawerOpen(true)}>
           <i className="fas fa-bars" ></i>
           <span className="navbar-text ps-1 text-white ">Menu</span>
         </button>
@@ -98,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           </span>
         </button >
 
-        <div className="dropdown-menu dropdown-menu-end text-end ">
+        <div className="dropdown-menu shadow border-0 dropdown-menu-end text-end bg-secondary">
           <div className="d-block d-sm-none border-bottom-2 border-secondary">
             <span className="dropdown-item disabled">{currentProfile?.alias}</span>
           </div>
@@ -222,7 +223,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         />
       </div>
       <nav className={`navbar navbar-expand-${breakpoint} bg-primary p-0`}>
-        <div className="container">
+        <div className={containerClassName}>
           {surveyMode.active ? surveyModeHeader() : normalModeHeader()}
         </div>
       </nav>

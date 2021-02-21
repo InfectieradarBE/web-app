@@ -82,6 +82,7 @@ $enable-negative-margins: true;
 // ---------------------------------------------
 $input-btn-padding-y: .5625rem !default;
 $input-btn-padding-x: 1.25rem !default;
+$input-padding-x:  0.75rem !default;
 
 $input-disabled-bg:                     map-get($theme-colors, "grey-2") !default;
 $input-disabled-border-color:           map-get($theme-colors, "grey-2") !default;

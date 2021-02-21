@@ -1,4 +1,5 @@
 import React from 'react';
+import { containerClassName } from '../../constants';
 import { useTranslatedMarkdown } from '../../hooks/useTranslatedMarkdown';
 import MarkdownRenderer from '../displays/MarkdownRenderer';
 import ComposedLineAndScatterChartLoader from './ComposedLineAndScatterChartLoader';
@@ -54,7 +55,7 @@ const MarkdownLoader: React.FC<MarkdownLoaderProps> = (props) => {
   const { content, loading } = useTranslatedMarkdown(props.markdownUrl);
 
   if (loading) {
-    return <div className="container">
+    return <div className={containerClassName}>
       <div className="d-flex align-items-center my-3 bg-secondary justify-content-center h-100" style={{ minHeight: 300 }}>
         <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">
           <span className="visually-hidden">Loading...</span>

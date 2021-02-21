@@ -19,6 +19,7 @@ import DialogBtn from '../../../../buttons/DialogBtn';
 import Checkbox from '../../../../inputs/Checkbox';
 import { useTranslatedMarkdown } from '../../../../../hooks/useTranslatedMarkdown';
 import ConsentDialog from '../../../../dialogs/DialogTypes/ConsentDialog';
+import { containerClassName } from '../../../../../constants';
 
 
 
@@ -337,7 +338,7 @@ const Invitation: React.FC<InvitationProps> = (props) => {
       <TitleBar
         content={t(`${translationRootKey}.title`)}
       />
-      <div className="container">
+      <div className={containerClassName}>
         <div className="d-flex align-items-center my-3 justify-content-center h-100" style={{ minHeight: '60vh' }}>
           {infoLoading ? loadingContent :
             success ? successMessage() :

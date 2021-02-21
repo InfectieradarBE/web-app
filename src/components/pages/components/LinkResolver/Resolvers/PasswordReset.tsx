@@ -16,6 +16,7 @@ import { closeDialog, openDialogWithoutPayload, openLoginDialog } from '../../..
 import TextField from '../../../../inputs/TextField';
 import { checkPasswordRules } from '../../../../../utils/passwordRules';
 import DialogBtn from '../../../../buttons/DialogBtn';
+import { containerClassName } from '../../../../../constants';
 
 
 interface PasswordResetProps {
@@ -272,7 +273,7 @@ const PasswordReset: React.FC<PasswordResetProps> = (props) => {
       <TitleBar
         content={t(`${translationRootKey}.title`)}
       />
-      <div className="container">
+      <div className={containerClassName}>
         <div className="d-flex align-items-center my-3 justify-content-center h-100" style={{ minHeight: '60vh' }}>
           {infoLoading ? loadingContent :
             success ? successMessage() :

@@ -26,6 +26,7 @@ import LinkList from '../../misc/LinkList';
 import { DefaultRoutes } from '../../../types/config/routing';
 import MapWithTimeSliderLoader from '../../dataLoaders/MapWithTimeSliderLoader';
 import ComposedLineAndScatterChartLoader from '../../dataLoaders/ComposedLineAndScatterChartLoader';
+import { containerClassName } from '../../../constants';
 
 
 interface ContentRendererProps {
@@ -260,7 +261,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
           key={row.key}
           className={clsx(
             {
-              "container": !row.fullWidth,
+              [containerClassName]: !row.fullWidth,
               "container-fluid": row.fullWidth
             },
             row.className)}

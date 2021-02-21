@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { getExternalOrLocalContentURL } from '../../../utils/routeUtils';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store/rootReducer';
+import { containerClassName } from '../../../constants';
 
 
 interface SimpleHeaderProps {
@@ -31,7 +32,7 @@ const SimpleHeader: React.FC<SimpleHeaderProps> = (props) => {
 
 
   return (
-    <div className="container">
+    <div className={containerClassName}>
       <div className={clsx("position-relative d-flex align-items-center", props.config.className)}>
         <img
           className={clsx('d-none d-sm-inline-block', props.config.image.lg.className)}

@@ -1,4 +1,6 @@
+import clsx from 'clsx';
 import React from 'react';
+import { containerClassName } from '../../constants';
 
 interface TitleBarProps {
   content?: string;
@@ -11,7 +13,7 @@ const TitleBar: React.FC<TitleBarProps> = (props) => {
   }
   return (
     <div className="bg-secondary" style={{ minHeight: 49 }}>
-      <div className="container py-1">
+      <div className={clsx(containerClassName, "py-1")}>
         <h1 className="m-0">{props.content}</h1>
       </div>
     </div>

@@ -17,6 +17,7 @@ import { userActions } from '../../../../../store/userSlice';
 import AlertBox from '../../../../displays/AlertBox';
 import { getErrorMsg } from '../../../../../api/utils';
 import { openLoginDialog } from '../../../../../store/dialogSlice';
+import { containerClassName } from '../../../../../constants';
 
 interface ContactVerificationProps {
   defaultRoutes: DefaultRoutes;
@@ -178,7 +179,7 @@ const ContactVerification: React.FC<ContactVerificationProps> = (props) => {
       <TitleBar
         content={t(`${translationRootKey}.title`)}
       />
-      <div className="container">
+      <div className={containerClassName}>
         <div className="d-flex align-items-center my-3 justify-content-center h-100" style={{ minHeight: '60vh' }}>
           {loading ? loadingContent : resolvedContent}
         </div>

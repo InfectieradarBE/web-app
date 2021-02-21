@@ -13,6 +13,7 @@ import { getErrorMsg } from '../../../../../api/utils';
 import { openDialogWithoutPayload, openLoginDialog } from '../../../../../store/dialogSlice';
 import { useAuthTokenCheck } from '../../../../../hooks/useAuthTokenCheck';
 import LoginCard from '../../../../cards/LoginCard';
+import { containerClassName } from '../../../../../constants';
 
 interface StudyLoginProps {
   defaultRoutes: DefaultRoutes;
@@ -123,7 +124,7 @@ const StudyLogin: React.FC<StudyLoginProps> = (props) => {
       <TitleBar
         content={t(`${translationRootKey}.title`)}
       />
-      <div className="container">
+      <div className={containerClassName}>
         <div className="d-flex align-items-center my-3 justify-content-center h-100" style={{ minHeight: '60vh' }}>
           {loading ? loadingContent : resolvedContent()}
         </div>

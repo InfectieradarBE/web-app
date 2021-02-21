@@ -7,6 +7,7 @@ import { useIsAuthenticated } from '../../hooks/useIsAuthenticated';
 import LinkResolver, { linkResolverRootUrl } from './components/LinkResolver/LinkResolver';
 import { DefaultRoutes } from '../../types/config/routing';
 import SurveyPage from './components/SurveyPage';
+import { containerClassName } from '../../constants';
 
 
 interface PagesProps {
@@ -19,7 +20,7 @@ const Pages: React.FC<PagesProps> = (props) => {
 
   if (!props.config) {
     // Loading page:
-    return <div className="container">
+    return <div className={containerClassName}>
       <div className="d-flex align-items-center my-3 bg-secondary justify-content-center" style={{ minHeight: '60vh' }}>
         <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">
           <span className="visually-hidden">Loading...</span>
