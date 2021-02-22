@@ -42,8 +42,8 @@
     "title": "Welcome!",
     "content": {
       "info": "## Welcome! \n\n Before starting to use the system, you need to set a password.",
-      "emailLabel": "Email",
-      "emailPlaceholder": "Enter Email",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "Enter E-mail",
       "newPasswordLabel": "Password",
       "newPasswordPlaceholder": "Enter password",
       "confirmPasswordLabel": "Confirm Password",

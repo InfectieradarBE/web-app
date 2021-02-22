@@ -38,6 +38,34 @@
       "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     }
   },
+  "invitation": {
+    "title": "Willkommen!",
+    "content": {
+      "info": "## Willkommen! \n\n Tragen Sie ein Passwort ein, um sich wieder anzumelden.",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "E-mail",
+      "newPasswordLabel": "Passwort",
+      "newPasswordPlaceholder": "Passwort",
+      "confirmPasswordLabel": "Bestätigung des Passwortes",
+      "confirmPasswordPlaceholder": "Bestätigung des Passwortes",
+      "informedConsentCheckbox": "Ich habe die <1>Zustimmungserklärung</1> gelesen und gebe meine Zustimmung.*",
+      "btn": "Ändere das Passwort",
+      "restartBtn": "Erneut",
+      "successMsg": "Passwort geändert",
+      "successBtn": "Einloggen"
+    },
+    "privacyConsent": {
+      "title": "Zustimmungserklärung",
+      "acceptBtn": "Ich gebe meine Zustimmung",
+      "cancelBtn": "Ich gebe keine Zustimmung"
+    },
+    "errors": {
+      "passwordRules": "Ihr Passwort muss mindestens 8 Zeichen aufweisen und 3 der folgenden 4 Elemente enthalten: Kleinbuchstaben, Großbuchstaben, Zahl, Interpunktions-/Satzzeichen",
+      "passwordMatch": "Die Passwörter sind nicht dieselben!",
+      "wrongToken": "Es läuft etwas falsch. Bitte kontrollieren Sie, ob Sie den richtigen Link benutzen, und dass Sie diesen Link nicht früher ausprobiert haben. Beantragen Sie eine nue E-Mail, wenn das nötig sein sollte.",
+      "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
+    }
+  },
   "studyLogin": {
     "title": "Willkommen!",
     "content": {

@@ -38,6 +38,34 @@
       "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
     }
   },
+  "invitation": {
+    "title": "Welkom!",
+    "content": {
+      "info": "## Welkom! \n\n Stel een wachtwoord in om je aan te melden.",
+      "emailLabel": "E-mailadres",
+      "emailPlaceholder": "E-mailadres",
+      "newPasswordLabel": "Wachtwoord",
+      "newPasswordPlaceholder": "Wachtwoord",
+      "confirmPasswordLabel": "Bevestig wachtwoord",
+      "confirmPasswordPlaceholder": "Bevestig wachtwoord",
+      "informedConsentCheckbox": "Ik heb de <1>toestemmingsverklaring</1> gelezen en ga hiermee akkoord.*",
+      "btn": "Wijzig wachtwoord",
+      "restartBtn": "Opnieuw",
+      "successMsg": "Wachtwoord gewijzigd",
+      "successBtn": "Inloggen"
+    },
+    "privacyConsent": {
+      "title": "Toestemmingsverklaring",
+      "acceptBtn": "Ik geef toestemming",
+      "cancelBtn": "Ik geef geen toestemming"
+    },
+    "errors": {
+      "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
+      "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
+      "wrongToken": "Er gaat iets verkeerd. Controleer of je de juiste link gebruikt, of dat je deze link niet eerder hebt geprobeerd. Vraag een nieuwe e-mail aan mocht dit nodig zijn.",
+      "unknown": "Er gaat iets verkeerd. Controleer je informatie of probeer het later opnieuw."
+    }
+  },
   "studyLogin": {
     "title": "Welkom terug!",
     "content": {
