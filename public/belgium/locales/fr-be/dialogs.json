@@ -37,7 +37,7 @@
     "passwordInputLabel": "Mot de passe",
     "passwordInputPlaceholder": "Mot de passe",
     "confirmPasswordInputLabel": "Confirmez le mot de passe",
-    "confirmPasswordInputPlaceholder": "Confirmez le mot de passed",
+    "confirmPasswordInputPlaceholder": "Confirmez le mot de passe",
     "informedConsentCheckbox": "Accéder à la <1>déclaration de consentement</1>.*",
     "reCaptchaCookieCheckbox": "Accéder à la <1>déclaration en matière de cookies</1>.*",
     "signupBtn": "Enregistrez-vous",

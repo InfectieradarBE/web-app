@@ -38,6 +38,34 @@
       "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
     }
   },
+  "invitation": {
+    "title": "Bienvenue!",
+    "content": {
+      "info": "## Bienvenue! \n\n Configurez un mot de passe pour vous connecter.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Email",
+      "newPasswordLabel": "Mot de passe",
+      "newPasswordPlaceholder": "Mot de passe",
+      "confirmPasswordLabel": "Confirmez le mot de passe",
+      "confirmPasswordPlaceholder": "Confirmez le mot de passe",
+      "informedConsentCheckbox": "J'ai lu et j'accepte la <1>déclaration de consentement</1>.*",
+      "btn": "Modifier votre mot de passe",
+      "restartBtn": "Recommencer",
+      "successMsg": "Votre mot de passe a été modifié",
+      "successBtn": "Se connecter"
+    },
+    "privacyConsent": {
+      "title": "Déclaration de consentement",
+      "acceptBtn": "Je marque mon accord",
+      "cancelBtn": "Je ne marque pas mon accord"
+    },
+    "errors": {
+      "passwordRules": "Votre mot de passe doit comporter au moins 8 caractères, et contenir 3 des 4 éléments suivants : une minuscule, une majuscule, un chiffre, un signe de ponctuation.",
+      "passwordMatch": "Les mots de passe ne sont pas les mêmes.",
+      "wrongToken": "Une erreur s’est produite. Assurez-vous d’utiliser le bon lien, ou de ne pas avoir essayé ce lien auparavant. Veuillez demander un nouveau courrier électronique, le cas échéant.",
+      "unknown": "Une erreur s’est produite. Veuillez vérifier vos informations, ou réessayer plus tard."
+    }
+  },
   "studyLogin": {
     "title": "Bienvenue !",
     "content": {
