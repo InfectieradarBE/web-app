@@ -183,8 +183,8 @@
     }
   },
   "changeNotifications": {
-    "title": "Wekelijkse herinneringsmail",
-    "info": "Je kan hier instellen of je de wekelijkse herinneringsmail wilt ontvangen.",
+    "title": "E-mail instellingen",
+    "info": "Je kan het ontvangen van de wekelijkse herinneringsmail of de nieuwsbrief uitschakelen.",
     "weeklyReminder": {
       "label": "Wekelijkse herinneringsmail",
       "on": "Wel de wekelijkse herinneringsmail",

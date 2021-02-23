@@ -3,7 +3,7 @@
   "account": {
     "title": "Account settings",
     "email": {
-      "title": "E-mailadres",
+      "title": "Email address",
       "info": "Do you want to use a different email address? Change your email address by clicking on the button below. Note: you cannot log back in to Infectieradar.be until you have confirmed the email address."
     },
     "password": {

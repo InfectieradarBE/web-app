@@ -183,8 +183,8 @@
     }
   },
   "changeNotifications": {
-    "title": "Courriel de rappel hebdomadaire",
-    "info": "Ici, vous pouvez configurer si vous souhaitez recevoir le courriel de rappel hebdomadaire.",
+    "title": "Paramètres courrier électronique",
+    "info": "Vous pouvez désactiver la réception du courriel de rappel hebdomadaire ou de la lettre d'information.",
     "weeklyReminder": {
       "label": "Courriel de rappel hebdomadaire",
       "on": "Oui, je souhaite recevoir le courriel de rappel hebdomadaire.",

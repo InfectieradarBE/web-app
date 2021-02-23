@@ -184,10 +184,10 @@
     }
   },
   "changeNotifications": {
-    "title": "Weekly reminder email",
-    "info": "You can set here whether you want to receive the weekly reminder email.",
+    "title": "Email settings",
+    "info": "You can opt to stop receiving the weekly reminder email or the newsletter.",
     "weeklyReminder": {
-      "label": "Weekly reminder emai",
+      "label": "Weekly reminder email",
       "on": "Receive the weekly reminder email",
       "off": "Don't receive the weekly reminder email"
     },
