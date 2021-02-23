@@ -13,7 +13,7 @@ const HelpGroup: React.FC<HelpGroupProps> = (props) => {
     <div className="d-flex align-items-center ms-1">
       <button
         type="button"
-        className="btn btn-link text-decoration-none" // p-0 text-center justify-content-center rounded-circle border-2 border-primary d-flex align-items-center text-decoration-none "
+        className="btn btn-link p-0 text-decoration-none" // p-0 text-center justify-content-center rounded-circle border-2 border-primary d-flex align-items-center text-decoration-none "
         aria-label={"Open Infos"}
         id="dropdownMenuButton"
         data-bs-toggle="dropdown"
