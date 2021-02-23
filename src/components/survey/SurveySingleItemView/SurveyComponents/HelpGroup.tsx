@@ -10,7 +10,7 @@ interface HelpGroupProps {
 
 const HelpGroup: React.FC<HelpGroupProps> = (props) => {
   return (
-    <div className="d-flex align-items-center ms-1">
+    <div className="d-flex align-items-center ms-1 ms-sm-2 ms-md-2a">
       <button
         type="button"
         className="btn btn-link p-0 text-decoration-none" // p-0 text-center justify-content-center rounded-circle border-2 border-primary d-flex align-items-center text-decoration-none "
@@ -25,7 +25,7 @@ const HelpGroup: React.FC<HelpGroupProps> = (props) => {
       <div
         id={'info-dropdown'}
         aria-label={'Info Box'}
-        className="dropdown-menu dropdown-menu-end shadow border-none px-2 px-sm-3 py-2a w-75"
+        className="dropdown-menu dropdown-menu-end shadow border-none px-2 px-sm-2a py-2a w-75"
         style={{ maxWidth: 500, border: 'none' }}
       >
         {
