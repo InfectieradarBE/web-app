@@ -177,8 +177,8 @@
       "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
     },
     "successDialog": {
-      "title": "Sprache geändert",
-      "content": "Geglückt! Sprache geändert.",
+      "title": "Standardsprache geändert",
+      "content": "Geglückt! Standardsprache geändert.",
       "btn": "Ok"
     }
   },
