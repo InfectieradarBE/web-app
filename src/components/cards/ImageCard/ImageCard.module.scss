@@ -3,6 +3,10 @@
   cursor: pointer;
 }
 
+.card button {
+  text-decoration: none;
+}
+
 .card:hover {
     // text-decoration: underline;
     transform: scale(1.025);

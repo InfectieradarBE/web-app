@@ -1,5 +1,8 @@
 import clsx from 'clsx';
 import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setPersistState } from '../../store/appSlice';
+import { RootState } from '../../store/rootReducer';
 import AlertBox from '../displays/AlertBox';
 import TextField from '../inputs/TextField';
 
@@ -23,10 +26,13 @@ interface LoginCardProps {
 const LoginCard: React.FC<LoginCardProps> = (props) => {
   const marginBottomClass = "mb-2";
 
+  const persistState = useSelector((state: RootState) => state.app.persistState);
+  const dispatch = useDispatch();
+
   const [loginData, setLoginData] = useState({
     email: props.fixEmailValue ? props.fixEmailValue : '',
     password: '',
-    rememberMe: true,
+    rememberMe: persistState,
   });
 
   useEffect(() => {
@@ -50,6 +56,7 @@ const LoginCard: React.FC<LoginCardProps> = (props) => {
       checked={loginData.rememberMe}
       onChange={(event) => {
         const checked = event.target.checked;
+        dispatch(setPersistState(checked))
         setLoginData(prev => {
           return {
             ...prev,
