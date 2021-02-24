@@ -3,4 +3,4 @@ For questions and comments we can be reached on [infectieradar@uhasselt.be](mail
 
 For more contact information, please [click here](https://infectieradar.be/en/contact/).
 
-Please consult our "[FAQ](https://infectieradar.be/en/faq/)" for a possible answer on your question.
+Please consult our "[FAQ](https://survey.infectieradar.be/faq/)" for a possible answer on your question.

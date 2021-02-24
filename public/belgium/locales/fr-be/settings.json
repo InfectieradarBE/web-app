@@ -4,7 +4,7 @@
     "title": "Paramètres du compte",
     "email": {
       "title": "Adresse électronique",
-      "info": "Souhaitez-vous utiliser une autre adresse électronique ? Modifiez votre adresse électronique en cliquant sur le bouton ci-dessous. Veuillez noter que vous ne pouvez recevoir à nouveau des courriers électroniques de rappel qu'après confirmation de votre adresse électronique."
+      "info": "Souhaitez-vous utiliser une autre adresse électronique ? Modifiez votre adresse électronique en cliquant sur le bouton ci-dessous. Veuillez noter que vous ne pouvez vous connecter à Infectieradar.be qu'après confirmation de votre adresse électronique."
     },
     "password": {
       "title": "Mot de passe",
@@ -20,7 +20,7 @@
   "communication": {
     "title": "Paramètres de communication",
     "emailReminders": {
-      "title": "Bulletin d'information et courrier électronique hebdomadaire",
+      "title": "Courrier électronique hebdomadaire et bulletin d'information",
       "info": "Vous pouvez désactiver la réception du courriel de rappel hebdomadaire ou de la lettre d'information.",
       "btnManageNotifications": "Modifier les paramètres"
     },

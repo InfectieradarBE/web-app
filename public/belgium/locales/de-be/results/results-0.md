@@ -1,4 +1,4 @@
-`Diese Seite wurde zuletzt am geändert: 02.feb.2021 16:00.`
+`Diese Seite wurde zum letzten Mal angepasst am 02.feb.2021 16:00.`
   
 <br />
-Die Ergebnisse werden in Kürze aktualisiert.
+Auf dieser Seite finden Sie die aktuellen Ergebnisse von Infectieradar. Die Ergebnisse werden in Kürze überarbeitet.

@@ -4,7 +4,7 @@
     "title": "Account instellingen",
     "email": {
       "title": "E-mailadres",
-      "info": "Wil je een ander e-mailadres gebruiken? Pas je e-mailadres aan door op onderstaande knop te klikken. Let op: pas na bevestiging van het e-mailadres kun je weer herinneringsmails ontvangen."
+      "info": "Wil je een ander e-mailadres gebruiken? Pas je e-mailadres aan door op onderstaande knop te klikken. Let op: pas na bevestiging van het e-mailadres kun je weer inloggen op Infectieradar.be."
     },
     "password": {
       "title": "Wachtwoord",
@@ -37,7 +37,7 @@
   },
   "deletion": {
     "title": "Afmelden Infectieradar.be / intrekken toestemming",
-    "warning": "Afmelden Infectieradar.be/intrekken toestemming houdt in dat je accountgegevens worden verwijderd.\nNa het verwijderen van het account kunnnen wij door jou opgegeven informatie (zoals leeftijd en gezondheidsklachten) niet meer aan je koppelen.",
+    "warning": "Afmelden /intrekken toestemming Infectieradar.be houdt in dat je accountgegevens worden verwijderd.\nNa het verwijderen van het account kunnnen wij door jou opgegeven informatie (zoals leeftijd en gezondheidsklachten) niet meer aan je koppelen.",
     "deleteBtn": "Afmelden"
   },
   "references": {
