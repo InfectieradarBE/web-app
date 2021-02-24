@@ -25,7 +25,7 @@ This will be rendered as:
 This component can be used to display spatially distributed data that changes over time. With the tabs, you can select different data sources.
 For example:
 
-![map chart example](images/mapChartExample.png)
+<img src="images/mapChartExample.png" alt="map chart example" width="300px"/>
 
 
 ### Data Format
@@ -55,7 +55,8 @@ Relative URLs are interpreted using the "content root url" as a base. Optionally
 
 This component can be used to display a time series as a line or scatter plot, or as a combination, like in this example:
 
-![composed chart example](images/composedChartExample.png)
+<img src="images/composedChartExample.png" alt="composed chart example" width="300px"/>
+
 
 ### Data Format
 - time series with points and line
