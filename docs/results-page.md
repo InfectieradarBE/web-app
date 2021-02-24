@@ -33,7 +33,20 @@ For example:
 - time series
 
 ### Add as page item
-- how to add this component as page item
+
+This component can be added as an individual page item (not localizable then, for localization support include it through a localized markdown).
+
+To include, use a page item with a config:
+
+```
+"config": {
+  "type": "mapDataSeries",
+  "mapUrl": "<relative or absolute path to the geo data json>",
+  "dataUrl": "<relative or absolute path to the time series data json>"
+}
+```
+
+Relative pathes are interpreted using the "content root URL" as a base.
 
 ### Add from markdown
 To reference (include) such a map chart from a markdown, you can use the following definition syntax:
@@ -50,7 +63,6 @@ The json file containing the style definitions and time series data, is defined 
 
 Relative URLs are interpreted using the "content root url" as a base. Optionally, this would also accept absolute URLs starting with "https://" as well.
 
-
 ## Composed Line and Scatter Chart
 
 This component can be used to display a time series as a line or scatter plot, or as a combination, like in this example:
@@ -62,7 +74,18 @@ This component can be used to display a time series as a line or scatter plot, o
 - time series with points and line
 
 ### Add as page item
-- how to add this component as page item
+This component can be added as an individual page item (not localizable then, for localization support include it through a localized markdown).
+
+To include, use a page item with a config:
+
+```
+"config": {
+  "type": "lineWithScatterChart",
+  "dataUrl": "<relative or absolute path to the data json>"
+}
+```
+
+Relative pathes are interpreted using the "content root URL" as a base.
 
 ### Add from markdown
 To reference (include) such a composed chart from a markdown, you can use the following definition syntax:
