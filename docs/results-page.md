@@ -27,10 +27,51 @@ For example:
 
 <img src="images/mapChartExample.png" alt="map chart example" width="70%"/>
 
-
 ### Data Format
-- geo data
-- time series
+To configure this mapchart, two JSON files are required:
+1. Geo Data file
+2. Time Series and Chart Config
+
+#### Geo Data
+This file defines the static map part, including also the geometries, and projection properties.
+The file needs to contain following attributes:
+
+- **size**: define the size of the svg object for the map - aspect ratio will be kept during page resize.
+  - **width** [number]: width of the svg object
+  - **height** [number]: height of the svg object
+- **projection**:
+  - **rotate** [array<number>]: three numbers that define the map's center (rotation) - currently geoAzimuthalEqualArea from the d3 library is used as a projection method.
+  - **scale** [number]: controls the zoom attribute for the map. Increase value to "go closer" or decrease to zoom out.
+- **topojson**: topojson format defining the geometries that will be drawn on the map. Geometry object will be referenced through their "name" attribute. For assigning values to a specific geometry, the name has to match one to one, case-sensitive.
+
+
+#### Time Series and Chart Config
+This files defines the time series data to be visualized over the maps.
+Following attributes needs to be included:
+
+- **slider**:
+  - **minLabel** [string]: label used at the left bottom part of the slider
+  - **maxLabel** [string]: label used at the right bottom part of the slider
+  - **hideTicks** [boolean]: if to show tick markers (grey ticks) for the map
+  - **labels** [array of strings]: List of labels, displayed above the slider when a particular index is selected. This list defines as well how many ticks will be generated. It must not contain more values than any of the sequences for the `series[i].data[j].sequence` arrays, otherwise index can point out of bounds.
+- **series** [array]: list of objects, defining the time series values and visualisation properties (e.g., color scale). For each series a tab will be created in the same order, as they appear in the list.
+  - **name** [string]: this will be used for the tab button, typically a very short but human readable text.
+  - **title** [string]: title that appear on top of the map (belore the navigation tabs).
+  - **colorScale** [object]: for the color scales the `scaleQuantize` method of d3-scales is used.
+    - **min** [number]: minimum value of the color scale.
+    - **max** [number]: maximum value of the color scale.
+    - **hoverStrokeColor** [string]: color code to be used for the geometry border when in "hovered" state.
+    - **colors** [array of strings]: list of color codes that define the stops of the color scale between min and max.
+  - **legend**:
+    - **show** [boolean]: true/false - if to show the color scale legend
+    - **title** [string]: title for the legend component
+    - **position**: positioning of the legend over the map on big screens (on small screens it will be stacked on top of the map)
+      - **x** ["left" | "right"]: horizontal positioning
+      - **x** ["top" | "bottom"]: vertical positioning
+  - **data** [array]: data points for each geometry. Each entry in the array needs to contain:
+    - **name** [string]: Name of the geometry these values are referenced to. Must be exactly the same as used in the topojson definition.
+    - **sequence** [array of nubmers]: array of the datapoints. Numeric values. Should contain at least that many items, as there are possible slider values. (Will be selected by index, based on the slider's position.)
+
 
 ### Add as page item
 
