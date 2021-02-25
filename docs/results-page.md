@@ -71,9 +71,34 @@ This component can be used to display a time series as a line or scatter plot, o
 
 
 ### Data Format
-- time series with points and line
+Data and configuration for this chart can be defined through a single JSON file, with the following structure:
+
+```
+{
+  "propeties": { ... },
+  "series": [ {...}, ... ]
+}
+```
+
+- **properties** object containing the chart configurations. Follow attributes are required:
+  - **title** [string]: Title text above the chart.
+  - **yUnit** [string]:
+  - **yLabel** [string]:
+  - **xLabel** [string]:
+  - **dateToUnixTsFactor** [number]
+
+- **series** array with the data series that should be displayed. Each entry should be an object with the following attributes:
+  - **config** [object]: config for this particular series
+    - **type** ["scatter" | "line"]: display type for the series. Currently supported: scatter (dots) or line.
+    - **name** [string]: Name of the data series, that will be used in the legend (popup on hover).
+    - **color** [string]: line or dot color. Using hex color codes.
+  - **data** [array]: Each entry should be an object with the following attributes:
+    - **date** [number]: numeric date value. This value multiplied by the `dateToUnixTsFactor` value from the properties should result in the posix timestamp value (seconds since 1970).
+    - **value** [number]: numeric value for the y axis.
+
 
 ### Add as page item
+
 This component can be added as an individual page item (not localizable then, for localization support include it through a localized markdown).
 
 To include, use a page item with a config:

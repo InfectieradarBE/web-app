@@ -16,7 +16,7 @@ const ComposedLineAndScatterChartLoader: React.FC<ComposedLineAndScatterChartLoa
     fetch(getExternalOrLocalContentURL(props.dataUrl))
       .then(res => res.json())
       .then(json => {
-        console.log(json)
+        // console.log(json)
         const chartData: ChartConfig = json;
         setData(chartData);
       })
