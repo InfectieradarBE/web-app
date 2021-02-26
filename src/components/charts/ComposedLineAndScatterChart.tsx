@@ -14,17 +14,21 @@ interface ComposedLineAndScatterChartProps {
 }
 
 export interface ChartConfig {
-  infos: ChartProperties;
-  line: Array<{ date: number; value: number; }>;
-  points: Array<{ date: number; value: number; }>;
+  properties: ChartProperties;
+  series: Array<Series>
+}
+
+export interface Series {
+  config: {
+    type: 'scatter' | 'line';
+    color: string;
+    name: string;
+  },
+  data: Array<{ date: number; value: number; }>;
 }
 
 export interface ChartProperties {
   title: string;
-  dotName: string;
-  dotColor: string;
-  lineName: string;
-  lineColor: string;
   yUnit: string;
   yLabel: string;
   xLabel: string;
@@ -35,23 +39,24 @@ const dotSize = 30;
 const dateFmtOptions = { year: 'numeric', month: 'numeric', day: 'numeric' };
 
 const ComposedLineAndScatterChart: React.FC<ComposedLineAndScatterChartProps> = (props) => {
-  console.log(props.chart)
   const dateFormatter = (value: number): string => {
-    const d = new Date(value * props.chart.infos.dateToUnixTsFactor * 1000);
+    const d = new Date(value * props.chart.properties.dateToUnixTsFactor * 1000);
     return d.toLocaleDateString(props.locale, dateFmtOptions);
   }
 
-  const prepareData = (dataObj: ChartConfig): Array<{ date: number; line?: number; dot?: number; }> => {
-    return [
-      ...dataObj.line.map(d => { return { date: d.date, line: d.value } }),
-      ...dataObj.points.map(d => { return { date: d.date, dot: d.value } }),
-    ];
+  const prepareData = (dataObj: ChartConfig): Array<any> => {
+    const formattedData: Array<any> = [];
+    dataObj.series.forEach((series, index) => {
+      const s = series.data.map(d => { return { date: d.date, [index.toString()]: d.value } });
+      formattedData.push(...s);
+    });
+    return formattedData;
   }
 
   return (
     <div className="py-3 px-2" >
       < h5 className="text-center" >
-        {props.chart.infos.title}
+        {props.chart.properties.title}
       </h5 >
       <ResponsiveContainer minHeight={450}>
         <ComposedChart data={prepareData(props.chart)}>
@@ -67,21 +72,21 @@ const ComposedLineAndScatterChart: React.FC<ComposedLineAndScatterChartProps> = 
           >
             <Label
               position="insideBottom"
-              value={props.chart.infos.xLabel}
+              value={props.chart.properties.xLabel}
               style={{ textAnchor: 'middle', fontWeight: 'bold', fontSize: '0.8rem' }}
             />
           </XAxis>
           <YAxis
-            unit={props.chart.infos.yUnit}
-            width={props.chart.infos.yLabel ? 70 : undefined}
+            unit={props.chart.properties.yUnit}
+            width={props.chart.properties.yLabel ? 70 : undefined}
           // domain={['auto', 'auto']}
           //label={{ value: dataObj.infos.yLabel, angle: -90, textAnchor: 'middle', position: 'insideLeft' }}
           >
-            {props.chart.infos.yLabel ? <Label
+            {props.chart.properties.yLabel ? <Label
               angle={-90}
               direction=""
               position="insideLeft"
-              value={props.chart.infos.yLabel}
+              value={props.chart.properties.yLabel}
               style={{ textAnchor: 'middle', fontWeight: 'bold', fontSize: '0.8rem' }}
             /> : null}
           </YAxis>
@@ -92,22 +97,34 @@ const ComposedLineAndScatterChart: React.FC<ComposedLineAndScatterChartProps> = 
             }}
           />
 
-          <Line
-            type="linear"
-            dot={false}
-            dataKey="line"
-            name={props.chart.infos.lineName}
-            strokeWidth={2}
-            stroke={props.chart.infos.lineColor} />
-          <Scatter
-            dataKey="dot"
-            fill={props.chart.infos.dotColor}
-            name={props.chart.infos.dotName}
-          />
+          {
+            props.chart.series.map((series, index) => {
+              switch (series.config.type) {
+                case 'scatter':
+                  return <Scatter
+                    key={index.toString()}
+                    dataKey={index.toString()}
+                    fill={series.config.color}
+                    name={series.config.name}
+                  />
+                case 'line':
+                  return <Line
+                    key={index.toString()}
+                    type="linear"
+                    dot={false}
+                    dataKey={index.toString()}
+                    name={series.config.name}
+                    strokeWidth={2}
+                    stroke={series.config.color} />
+                default:
+                  console.error(`unknown data series type ${series.config.type}`);
+                  return null;
+              }
+            })
+          }
         </ComposedChart>
       </ResponsiveContainer>
     </div>
-
   );
 };
 
