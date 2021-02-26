@@ -2,7 +2,7 @@
   "verifyEmail": {
     "title": "Verifying Email Address",
     "content": {
-      "info": "You can decide if you need the formatable \n\n### Info box here \n\nLeave simple as an empty string if not wanted.",
+      "info": "",
       "success": "Success! Your email address has been confirmed. \n\n Log in now.",
       "btn": {
         "successWithAuth": "Home",
