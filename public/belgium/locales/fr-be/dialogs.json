@@ -39,7 +39,7 @@
     "confirmPasswordInputLabel": "Confirmez le mot de passe",
     "confirmPasswordInputPlaceholder": "Confirmez le mot de passe",
     "informedConsentCheckbox": "Accéder à la <1>déclaration de consentement</1>.*",
-    "reCaptchaCookieCheckbox": "Accéder à la <1>déclaration en matière de cookies</1>.*",
+    "reCaptchaCookieCheckbox": "Accéder à la <1>déclaration reCAPTCHA</1>.*",
     "signupBtn": "Enregistrez-vous",
     "loginLink": "Avez-vous déjà un compte ? Connectez-vous ici.",
     "reCaptchaLinks": "Ce site utilise reCAPTCHA. Par ailleurs, la déclaration en matière de <1>confidentialité</1> de Google et ses <3>conditions</3> sont d’application.",
@@ -57,7 +57,7 @@
     "cancelBtn": "Je ne marque pas mon accord"
   },
   "recaptchaConsent": {
-    "title": "Déclaration en matière de cookies",
+    "title": "Déclaration reCAPTCHA",
     "cancelBtn": "Annuler",
     "acceptBtn": "J'accepte"
   },

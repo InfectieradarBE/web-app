@@ -39,7 +39,7 @@
     "confirmPasswordInputLabel": "Bevestig wachtwoord",
     "confirmPasswordInputPlaceholder": "Bevestig wachtwoord",
     "informedConsentCheckbox": "Naar de <1>toestemmingsverklaring</1>.*",
-    "reCaptchaCookieCheckbox": "Naar de <1>cookie verklaring</1>.*",
+    "reCaptchaCookieCheckbox": "Naar de <1>reCAPTCHA verklaring</1>.*",
     "signupBtn": "Aanmelden",
     "loginLink": "Heb je al een account? Log hier in.",
     "reCaptchaLinks": "Deze site gebruikt reCAPTCHA and the Google privacy verklaring <1>Privacy Policy</1> en voorwaarden gelden <3>Terms of Service</3>.",
@@ -57,7 +57,7 @@
     "cancelBtn": "Ik geef geen toestemming"
   },
   "recaptchaConsent": {
-    "title": "Cookie verklaring",
+    "title": "reCAPTCHA verklaring",
     "acceptBtn": "Akkoord",
     "cancelBtn": "Annuleer"
   },
