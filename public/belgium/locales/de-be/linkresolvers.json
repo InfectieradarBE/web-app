@@ -48,7 +48,7 @@
       "newPasswordPlaceholder": "Passwort",
       "confirmPasswordLabel": "Bestätigung des Passwortes",
       "confirmPasswordPlaceholder": "Bestätigung des Passwortes",
-      "informedConsentCheckbox": "Ich habe die <1>Zustimmungserklärung</1> gelesen und gebe meine Zustimmung.*",
+      "informedConsentCheckbox": "Nach der <1>Zustimmungserklärung</1>*",
       "btn": "Passwort bestätigen",
       "restartBtn": "Erneut",
       "successMsg": "Passwort ist bestätigt",

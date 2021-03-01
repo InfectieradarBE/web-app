@@ -48,7 +48,7 @@
       "newPasswordPlaceholder": "Enter password",
       "confirmPasswordLabel": "Confirm Password",
       "confirmPasswordPlaceholder": "Enter password again",
-      "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
+      "informedConsentCheckbox": "Access the <1>privacy statement</1>.*",
       "btn": "Confirm password",
       "restartBtn": "Again",
       "successMsg": "Password confirmed",
@@ -56,8 +56,8 @@
     },
     "privacyConsent": {
       "title": "Privacy Consent",
-      "acceptBtn": "I read and accept the above statement.",
-      "cancelBtn": "Cancel"
+      "acceptBtn": "I consent",
+      "cancelBtn": "I do not consent"
     },
     "errors": {
       "passwordRules": "Your password must have at least 8 characters and contain 3 of the following 4 elements: lowercase letters, capital letters, numbers, punctuation marks.",
