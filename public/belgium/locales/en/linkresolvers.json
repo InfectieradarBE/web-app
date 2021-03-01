@@ -49,9 +49,9 @@
       "confirmPasswordLabel": "Confirm Password",
       "confirmPasswordPlaceholder": "Enter password again",
       "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
-      "btn": "Change password",
+      "btn": "Confirm password",
       "restartBtn": "Again",
-      "successMsg": "Password changed",
+      "successMsg": "Password confirmed",
       "successBtn": "Login"
     },
     "privacyConsent": {

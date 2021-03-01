@@ -49,9 +49,9 @@
       "confirmPasswordLabel": "Bevestig wachtwoord",
       "confirmPasswordPlaceholder": "Bevestig wachtwoord",
       "informedConsentCheckbox": "Ik heb de <1>toestemmingsverklaring</1> gelezen en ga hiermee akkoord.*",
-      "btn": "Wijzig wachtwoord",
+      "btn": "Bevestig wachtwoord",
       "restartBtn": "Opnieuw",
-      "successMsg": "Wachtwoord gewijzigd",
+      "successMsg": "Wachtwoord is bevestigd",
       "successBtn": "Inloggen"
     },
     "privacyConsent": {
