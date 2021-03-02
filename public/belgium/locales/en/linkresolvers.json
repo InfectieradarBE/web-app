@@ -2,7 +2,7 @@
   "verifyEmail": {
     "title": "Verifying Email Address",
     "content": {
-      "info": "You can decide if you need the formatable \n\n### Info box here \n\nLeave simple as an empty string if not wanted.",
+      "info": "",
       "success": "Success! Your email address has been confirmed. \n\n Log in now.",
       "btn": {
         "successWithAuth": "Home",
@@ -48,16 +48,16 @@
       "newPasswordPlaceholder": "Enter password",
       "confirmPasswordLabel": "Confirm Password",
       "confirmPasswordPlaceholder": "Enter password again",
-      "informedConsentCheckbox": "I have read and accept the <1>privacy statement</1>.*",
-      "btn": "Change password",
+      "informedConsentCheckbox": "Access the <1>privacy statement</1>.*",
+      "btn": "Confirm password",
       "restartBtn": "Again",
-      "successMsg": "Password changed",
+      "successMsg": "Password confirmed",
       "successBtn": "Login"
     },
     "privacyConsent": {
       "title": "Privacy Consent",
-      "acceptBtn": "I read and accept the above statement.",
-      "cancelBtn": "Cancel"
+      "acceptBtn": "I consent",
+      "cancelBtn": "I do not consent"
     },
     "errors": {
       "passwordRules": "Your password must have at least 8 characters and contain 3 of the following 4 elements: lowercase letters, capital letters, numbers, punctuation marks.",
