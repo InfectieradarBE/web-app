@@ -1,5 +1,5 @@
 {
-  "title": "Influenzanet",
+  "title": "Infectieradar",
   "topImage": {
     "title": "Test teaser image",
     "content": "Citizen Science for Infectious Disease Surveillance"
@@ -29,8 +29,8 @@
     "actionLabel": "Sign up"
   },
   "aboutCard": {
-    "imageAlt": "About Influenzanet image",
-    "title": "About Influenzanet",
+    "imageAlt": "About Infectieradar image",
+    "title": "About Infectieradar",
     "body": "With Infectieradar.be, we monitor the spread of  symptoms across Belgium. It is one of the tools the research team uses to monitor the spread of the virus.",
     "actionLabel": "Learn more"
   },
