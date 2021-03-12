@@ -56,8 +56,8 @@
   "surveyList": {
     "requiredSurveys": {
       "title": "Questionnaires to be completed",
-      "info": "The different questionnaires for the study can be found below. You can re-fill them again by waiting a few minutes and refreshing the page if you think of new information",
-      "successMsg": "Thank you! You have completed all questionnaires. You can retake the survey in a few minutes if you think of new information"
+      "info": "The different questionnaires for the study can be found below. You can retake the questionnaires if you think of new information",
+      "successMsg": "Thank you! You have completed all questionnaires. In a few minutes, you can retake the questionnaires if you think of new information"
     },
     "optionalSurveys": {
       "title": "Change background information",
