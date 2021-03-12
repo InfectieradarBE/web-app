@@ -47,11 +47,11 @@
     },
     {
       "title": "Combien de temps faut-il consacrer pour compléter le questionnaire du Infectieradar.be ?",
-      "content": "5 minutes s’avèrent nécessaires pour s'inscrire et compléter le premier questionnaire. Chaque semaine, il faut ensuite consacrer entre 30 secondes (si vous n'avez pas de plaintes), et quelques minutes (si vous avez des plaintes ou si vous avez eu des plaintes au cours de la semaine écoulée) afin de compléter le questionnaire hebdomadaire."
+      "content": "5 minutes s’avèrent nécessaires pour s'inscrire et compléter le premier questionnaire. Chaque semaine, il faut ensuite consacrer entre 30 secondes (si vous n'avez pas de plaintes) et quelques minutes (si vous avez des plaintes ou si vous avez eu des plaintes au cours de la semaine écoulée) afin de compléter le questionnaire hebdomadaire."
     },
     {
       "title": "Quelle est la durée de l’étude par l’entremise de Infectieradar.be ?",
-      "content": "Aucune date de fin n’a été définie, mais vous pouvez cesser votre participation à tout moment en vous désabonnant du questionnaire hebdomadaire. Vous pouvez vous réinscrire ultérieurement si vous changez d'avis, et souhaitez participer à nouveau."
+      "content": "Aucune date de fin n’a été définie, mais vous pouvez cesser votre participation à tout moment en vous désabonnant du questionnaire hebdomadaire. Vous pouvez vous réinscrire ultérieurement si vous changez d'avis et souhaitez participer à nouveau."
     },
     {
       "title": "La participation à l’étude me coûte-t-elle de l'argent ?",
@@ -79,7 +79,7 @@
     },
     {
       "title": "Mes données sont-elles sécurisées ?",
-      "content": "Nous accordons une très grande importance à la sécurité des données relatives aux participants de l’étude proposée sur le site Infectieradar.be. Le système doit répondre à des exigences strictes, notamment dans le domaine de la vie privée et de la sécurité des informations Le système a fait l’objet de tests rigoureux en termes de sécurité, de confidentialité et de capacité, et ce, par des experts externes à l'université de Hasselt. Ainsi, il a été procédé à une évaluation minutieuse des risques relatifs aux droits et aux libertés des personnes qui font l’objet du traitement de leurs données à caractère personnel."
+      "content": "Nous accordons une très grande importance à la sécurité des données relatives aux participants de l’étude proposée sur le site Infectieradar.be. Le système doit répondre à des exigences strictes, notamment dans le domaine de la vie privée et de la sécurité des informations. Le système a fait l’objet de tests rigoureux en termes de sécurité, de confidentialité et de capacité, et ce, par des experts externes à l'université de Hasselt. Ainsi, il a été procédé à une évaluation minutieuse des risques relatifs aux droits et aux libertés des personnes qui font l’objet du traitement de leurs données à caractère personnel."
     },
     {
       "title": "J'ai déjà été contaminé(e) par le nouveau coronavirus, est-ce encore utile de participer ?",
@@ -103,7 +103,7 @@
     },
     {
       "title": "Je souhaite modifier mes réponses, est-ce possible ?",
-      "content": "Il est possible de modifier les réponses au cours du questionnaire. Lorsque vous avez cliqué sur le bouton « Envoyer », il n'est plus possible de modifier les réponses. Tel est le cas tant pour le premier questionnaire, que pour les questionnaires hebdomadaires."
+      "content": "Il est possible de modifier les réponses au cours du questionnaire. Lorsque vous avez cliqué sur le bouton « Envoyer », il n'est plus possible de modifier les réponses. Tel est le cas tant pour le premier questionnaire que pour les questionnaires hebdomadaires."
     },
     {
       "title": "J'ai des symptômes, vais-je obtenir un diagnostic si je complète le questionnaire ?",
