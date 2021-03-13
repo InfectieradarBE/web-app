@@ -22,9 +22,9 @@ Cette étude vise à identifier les plaintes / symptômes qui pourraient être l
 
 &ndash; Outre les conditions susmentionnées, les dispositions suivantes s'appliquent à l'autorisation accordée au nom d'un enfant mineur :
 	 
-   * Si l'autorisation est accordée au nom d'un enfant mineur de moins de 14 ans, je déclare que je suis légalement autorisé(e) à accorder cette autorisation en tant que parent ou tuteur.
+   * Si l'autorisation est accordée au nom d'un enfant mineur de moins de 14 ans, je déclare que je suis légalement autorisé(e) à accorder cette autorisation en tant que parent ou tuteur ;
 	 
-   * Si l'autorisation est accordée au nom d'un enfant mineur âgé entre 14 et 17 ans, je déclare qu'en plus d'être légalement autorisé(e) à accorder cette autorisation en tant que parent ou tuteur, j'ai également convenu de cette autorisation avec l'enfant en question.
+   * Si l'autorisation est accordée au nom d'un enfant mineur âgé entre 14 et 17 ans, je déclare qu'en plus d'être légalement autorisé(e) à accorder cette autorisation en tant que parent ou tuteur, j'ai également convenu de cette autorisation avec l'enfant en question ;
 	 
    * Par souci de clarté, l'autorisation pour les personnes de 18 ans ou plus doit toujours être accordée personnellement par cette personne, et ne peut être accordée par aucune autre personne.
 
