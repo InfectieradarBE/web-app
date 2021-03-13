@@ -39,9 +39,9 @@
     }
   },
   "invitation": {
-    "title": "Bienvenue!",
+    "title": "Bienvenue !",
     "content": {
-      "info": "## Bienvenue! \n\n Configurez un mot de passe pour vous connecter.",
+      "info": "## Bienvenue ! \n\n Configurez un mot de passe pour vous connecter.",
       "emailLabel": "Email",
       "emailPlaceholder": "Email",
       "newPasswordLabel": "Mot de passe",
