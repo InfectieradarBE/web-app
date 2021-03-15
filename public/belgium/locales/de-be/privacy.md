@@ -134,7 +134,7 @@ Die Ergebnisse der Studie werden nur benutzt, um eine Antwort auf die wissenscha
 
 #### 9. Wie lange werden meine Daten aufbewahrt?
     
-Nach Ablauf der Studie werden Ihre kodierten Daten mindestens 25 Jahre aufbewahrt (Ref. ), um die Gültigkeit der Untersuchung abzusichern. Das wird auch der Fall sein, wenn Sie vorzeitig mit Ihrer Teilnahme an der Studie stoppen.
+Nach Ablauf der Studie werden Ihre kodierten Daten mindestens 25 Jahre aufbewahrt, um die Gültigkeit der Untersuchung abzusichern. Das wird auch der Fall sein, wenn Sie vorzeitig mit Ihrer Teilnahme an der Studie stoppen.
 
 ---
 

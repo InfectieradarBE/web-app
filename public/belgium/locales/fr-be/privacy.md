@@ -24,15 +24,21 @@ La participation à ce questionnaire nous permet de suivre la propagation de cer
 
 **Les données**
 Les données sont collectées et traitées du point de vue de la recherche scientifique, et uniquement aux fins suivantes :
--   Effectuer des recherches scientifiques et des analyses statistiques sur la propagation des maladies infectieuses en Belgique et en Europe;
--   Réaliser la publication d'analyses statistiques, y compris des représentations graphiques des résultats;
--   Être en mesure de vous fournir des informations relatives aux résultats de
-l'enquête (par exemple : combien d'utilisateurs enregistrés au sein de votre région présentent des symptômes tels que la grippe ou d'autres maladies infectieuses);
+
+&ndash; Effectuer des recherches scientifiques et des analyses statistiques sur la propagation des maladies infectieuses en Belgique et en Europe ;
+
+&ndash; Réaliser la publication d'analyses statistiques, y compris des représentations graphiques des résultats ;
+
+&ndash; Être en mesure de vous fournir des informations relatives aux résultats de
+l'enquête (par exemple : combien d'utilisateurs enregistrés au sein de votre région présentent des symptômes tels que la grippe ou d'autres maladies infectieuses).
 
 Les données à caractère personnel que nous pouvons traiter à ces fins sont les suivantes :
--   L’année et le mois de votre naissance, votre code postal, votre sexe, la composition de votre famille ;
--   Des données concernant les antécédents pertinents dans le cadre du risque d'infection, à savoir si vous appartenez à un groupe à risque pour le vaccin contre la grippe, votre profession et votre mode de vie ;
--   Des données relatives aux symptômes indiqués au niveau du questionnaire consacré aux symptômes ;
+
+&ndash; L’année et le mois de votre naissance, votre code postal, votre sexe, la composition de votre famille ;
+
+&ndash; Des données concernant les antécédents pertinents dans le cadre du risque d'infection, à savoir si vous appartenez à un groupe à risque pour le vaccin contre la grippe, votre profession et votre mode de vie ;
+
+&ndash; Des données relatives aux symptômes indiqués au niveau du questionnaire consacré aux symptômes.
 
 Les données obtenues dans le cadre de cette étude seront traitées par l'Université de Hasselt et l'Université d'Anvers, et ce, aux fins mentionnées. Par ailleurs, nous vous informons également que nous traiterons vos données conformément à la législation et aux règlements applicables, et dans le respect total de vos droits et, en particulier, de votre vie privée.
 
@@ -61,9 +67,9 @@ Les données analysées par les chercheurs ne leur permettent pas de vous identi
     
 Votre participation à l'étude signifie que vos données à caractère personnel :
 
--   seront collectées, et 
+&ndash; seront collectées, et 
 
--   seront utilisées sous forme cryptée par les chercheurs de l'étude.
+&ndash; seront utilisées sous forme cryptée par les chercheurs de l'étude.
     
 Le chercheur et le promoteur de l’étude ne peuvent utiliser les données à caractère personnel pseudonymisées qu'aux fins de recherche spécifiques décrites ci-dessus.
 
@@ -85,43 +91,43 @@ Vous avez le droit de demander aux chercheurs quelles sont les données collect�
 
 Vous avez le droit de :
 
--   pouvoir accéder à ces données et les consulter ; 
+&ndash; pouvoir accéder à ces données et les consulter ; 
 
--   faire supprimer toutes vos données ;
+&ndash; faire supprimer toutes vos données ;
 
--   demander leur correction si elles sont inexactes ; 
+&ndash; demander leur correction si elles sont inexactes ; 
 
--   restreindre le traitement de vos données ;
+&ndash; restreindre le traitement de vos données ;
 
--   vous opposer au traitement de vos données à caractère personnel. 
+&ndash; vous opposer au traitement de vos données à caractère personnel ; 
 
--   retirer votre consentement au traitement de vos données à caractère personnel. Vos données à caractère personnel, déjà collectées avant le retrait de votre consentement, seront conservées afin d'éviter toute mauvaise interprétation des résultats de l'étude.
+&ndash; retirer votre consentement au traitement de vos données à caractère personnel. Vos données à caractère personnel, déjà collectées avant le retrait de votre consentement, seront conservées afin d'éviter toute mauvaise interprétation des résultats de l'étude.
 
 #### 6. Outre le chercheur et son personnel, quelles autres personnes ont-elles accès à mes données à caractère personnel ?
     
 Afin de vérifier la qualité de l'étude, vos données à caractère personnel non pseudonymisées ou les informations pertinentes dans le cadre de cette étude peuvent être consultées par des personnes autres que le personnel de l'étude. Cette consultation a lieu sous la supervision du chercheur. Par ailleurs, ces personnes sont tenues au secret professionnel ou par un accord de confidentialité. Il peut s’agir des personnes suivantes :
 
--   le personnel désigné par le promoteur de l’étude (des MONITEURS et des VÉRIFICATEURS), ainsi que les personnes ou les organisations qui fournissent des services au promoteur de l’étude, ou qui collaborent avec ce dernier. Toutefois, ces personnes ne divulgueront jamais votre nom et vos coordonnées au promoteur de l’étude.
+&ndash; le personnel désigné par le promoteur de l’étude (des MONITEURS et des VÉRIFICATEURS), ainsi que les personnes ou les organisations qui fournissent des services au promoteur de l’étude, ou qui collaborent avec ce dernier. Toutefois, ces personnes ne divulgueront jamais votre nom et vos coordonnées au promoteur de l’étude ;
 
--   des inspecteurs des autorités sanitaires compétentes dans le monde entier 
+&ndash; des inspecteurs des autorités sanitaires compétentes dans le monde entier ;
 
--   un groupe d'audit indépendant 
+&ndash; un groupe d'audit indépendant ;
 
--   des personnes désignées par le Comité d'éthique.
+&ndash; des personnes désignées par le Comité d'éthique.
 
 Le cas échéant, les données pseudonymisées récoltées dans le cadre de l'étude peuvent être envoyées à d'autres pays au sein et en dehors de l'Union européenne (UE) et examinées par :
 
--   le personnel (autre que les inspecteurs) des autorités sanitaires compétentes en Belgique (l’Agence fédérale des médicaments et des produits de santé, AFMPS) ou dans d'autres pays au sein et en dehors de l'UE, 
+&ndash; le personnel (autre que les inspecteurs) des autorités sanitaires compétentes en Belgique (l’Agence fédérale des médicaments et des produits de santé, AFMPS) ou dans d'autres pays au sein et en dehors de l'UE :
 
--   le(s) comité(s) d'évaluation éthique belge(s), 
+&ndash; le(s) comité(s) d'évaluation éthique belge(s) ;
 
--   les chercheurs externes, 
+&ndash; les chercheurs externes ;
 
--   le promoteur de l'étude, le personnel désigné par le promoteur et les personnes ou les organisations qui fournissent des services au promoteur ou qui collaborent avec ce dernier, et/ou 
+&ndash; le promoteur de l'étude, le personnel désigné par le promoteur et les personnes ou les organisations qui fournissent des services au promoteur ou qui collaborent avec ce dernier, et/ou 
 
--   les sociétés du groupe du promoteur de l’étude en Belgique et dans d'autres pays au sein et en dehors de l'UE.
+&ndash; les sociétés du groupe du promoteur de l’étude en Belgique et dans d'autres pays au sein et en dehors de l'UE.
 
-La réglementation européenne et la législation belge relative à la protection des données imposent des restrictions au transfert de données vers des pays non membres de l'Union européenne. Le promoteur de l’étude doit toujours s'assurer que vos données pseudonymisées sont protégées de la même manière lorsqu'elles sont transférées vers un pays qui n'est pas membre de l'Union européenne. Si le promoteur de l’étude conclut un accord de protection des données à cette fin, une copie dudit accord peut être obtenue auprès du chercheur."
+La réglementation européenne et la législation belge relative à la protection des données imposent des restrictions au transfert de données vers des pays non membres de l'Union européenne. Le promoteur de l’étude doit toujours s'assurer que vos données pseudonymisées sont protégées de la même manière lorsqu'elles sont transférées vers un pays qui n'est pas membre de l'Union européenne. Si le promoteur de l’étude conclut un accord de protection des données à cette fin, une copie dudit accord peut être obtenue auprès du chercheur.
 
 #### 7. Qu'adviendra-t-il des résultats de l'étude ?
     
@@ -135,7 +141,7 @@ Les résultats de l'étude ne seront utilisés que pour répondre aux questions 
 
 #### 9. Combien de temps mes données seront-elles conservées ?
     
-Une fois l'étude terminée, vos données pseudonymisées seront conservées pendant au moins 25 ans (Réf. ) dans le but de garantir la validité de l'étude. Il en sera de même si vous arrêtez prématurément votre participation à l'étude.
+Une fois l'étude terminée, vos données pseudonymisées seront conservées pendant au moins 25 ans dans le but de garantir la validité de l'étude. Il en sera de même si vous arrêtez prématurément votre participation à l'étude.
 
 ---
 
@@ -144,10 +150,13 @@ Une fois l'étude terminée, vos données pseudonymisées seront conservées pen
 Infectieradar.be utilise Google (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA) Recaptcha pour assurer la sécurité du site Internet.
 Ce service utilise des cookies de suivi. Ces cookies suivent votre comportement tout au long de votre visite sur le site Internet Infectieradar.be, et ce, afin de s'assurer qu'aucune action automatisée ne puisse limiter l'accessibilité du présent site Internet. Les données collectées et analysées par Google par le biais des cookies de suivi susmentionnés comprennent, notamment :
 
--   l’adresse IP ;
--   les cookies placés par Google au cours des 6 derniers mois ;
--   le statut de connexion de votre compte Google ;
--   le comportement de défilement du visiteur sur le site Internet Infectieradar.be.
+&ndash; l’adresse IP ;
+
+&ndash; les cookies placés par Google au cours des 6 derniers mois ;
+
+&ndash; le statut de connexion de votre compte Google ;
+
+&ndash; le comportement de défilement du visiteur sur le site Internet Infectieradar.be.
 
 ---
  

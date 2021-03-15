@@ -56,8 +56,8 @@
   "surveyList": {
     "requiredSurveys": {
       "title": "In te vullen vragenlijsten",
-      "info": "Hieronder staan de verschillende vragenlijsten voor het onderzoek.",
-      "successMsg": "Dank je wel! Je hebt alle vragenlijsten ingevuld. Volgende week vragen we je weer."
+      "info": "Hieronder staan de verschillende vragenlijsten voor het onderzoek. Je kan de vragenlijsten opnieuw invullen indien je nieuwe informatie wil doorgeven",
+      "successMsg": "Dank je wel! Je hebt alle vragenlijsten ingevuld. Je kan binnen enkele minuten de vragenlijsten opnieuw invullen indien je nieuwe informatie wil doorgeven"
     },
     "optionalSurveys": {
       "title": "Wijzigen achtergrondinformatie",

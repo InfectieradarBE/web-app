@@ -117,7 +117,7 @@
     "newPasswordInputPlaceholder": "Neues Passwort",
     "confirmPasswordInputLabel": "Neues Passwort bestätigen",
     "confirmPasswordInputPlaceholder": "Neues Passwort bestätigen",
-    "info": "Aus Sicherheitsgründen müssen Sie zuerst Ihr neues Passwort eingeben.",
+    "info": "Aus Sicherheitsgründen müssen Sie zuerst Ihr altes Passwort eingeben.",
     "cancelBtn": "Annullieren",
     "confirmBtn": "Ändere das Passwort",
     "errors": {

@@ -56,8 +56,8 @@
   "surveyList": {
     "requiredSurveys": {
       "title": "Questionnaires à compléter",
-      "info": "Vous trouverez ci-dessous les différents questionnaires relatifs à l'étude.",
-      "successMsg": "Merci beaucoup ! Vous avez complété tous les questionnaires. Nous vous contacterons à nouveau la semaine prochaine afin de compléter un nouveau questionnaire."
+      "info": "Vous trouverez ci-dessous les différents questionnaires relatifs à l'étude. Vous pouvez à nouveau remplir les questionnaires si vous souhaitez transmettre de nouvelles informations",
+      "successMsg": "Merci beaucoup ! Vous avez complété tous les questionnaires. Dans quelques minutes, vous pouvez à nouveau remplir les questionnaires si vous souhaitez transmettre de nouvelles informations"
     },
     "optionalSurveys": {
       "title": "Modifier les informations de profil",
