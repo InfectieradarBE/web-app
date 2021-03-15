@@ -1,7 +1,7 @@
 {
   "exitSurveyWarningDialog": {
     "title": "Möchten Sie das Fragenformular verlassen?",
-    "warning": "Alle eingetragenen Informationen gehen verloren, wenn Sie die Fragenliste nicht beenden. Wissen Sie sicher, dass/ob Sie stoppen möchten?",
+    "warning": "Alle eingetragenen Informationen gehen verloren, wenn Sie die Fragenliste beenden. Wissen Sie sicher, dass/ob Sie stoppen möchten?",
     "cancelBtn": "Mit Eintragen weitermachen",
     "confirmBtn": "Verlasse die Fragenliste"
   },
