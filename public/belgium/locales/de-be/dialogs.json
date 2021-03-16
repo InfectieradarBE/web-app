@@ -183,7 +183,7 @@
     }
   },
   "changeNotifications": {
-    "title": "E-mail einstellungen",
+    "title": "E-mail Einstellungen",
     "info": "Sie können das Empfangen der wöchentlichen Erinnerungsmail oder des Newsletters ausschalten.",
     "weeklyReminder": {
       "label": "Wöchentliche Erinnerungsmail",
