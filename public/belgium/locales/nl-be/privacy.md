@@ -1,6 +1,6 @@
 
 ### Het onderzoek
-Infectieradar.be verwerkt persoonsgegevens op een rechtmatige manier, conform de wet en GDPR regelgeving. Hierover kan je meer lezen in het [Formulier Geïnformeerde Toestemming](https://infectieradar.be/project/). Dit onderzoek heeft ethische goedkeuring verkregen bij Ethisch Comité UZA en Comité voor Medisch Ethiek UHasselt. 
+Infectieradar.be verwerkt persoonsgegevens op een rechtmatige manier, conform de wet en GDPR regelgeving. Hierover kan je meer lezen in het [Formulier Geïnformeerde Toestemming](https://infectieradar.be/project/). Dit onderzoek heeft ethische goedkeuring verkregen bij Ethisch Comité UZA en Comité voor Medische Ethiek UHasselt. 
 
 In aanvulling op de algemene privacyverklaring, lees je in deze privacyverklaring over de gegevensverwerking door Infectieradar.be. Door je gegevens met Infectieradar.be te delen draag je bij aan het onderzoek dat is gericht op de verspreiding van infectieziekten en het nieuwe coronavirus in het bijzonder. Als je deel wilt nemen aan dit onderzoek dan word je wekelijks uitgenodigd om via een vragenlijst recente gezondheidsklachten (zoals koorts en hoesten), die kunnen wijzen op een infectie, door te geven. Dit platform is opgezet in samenwerking met Influenzanet. Influenzanet is de naam van een samenwerking tussen een aantal Europese universiteiten en overheden. Een overzicht van de deelnemers aan deze samenwerking kun je [hier](https://infectieradar.be/influenzanet/) vinden. Infectieradar.be is de Belgische toepassing van bovengenoemd onderzoek.
 
@@ -16,29 +16,29 @@ We weten dat veel mensen met een besmetting met het nieuwe SARS-CoV-2 virus (“
 Iedereen die in België woont en 18 jaar of ouder is, kan op vrijwillige basis deelnemen aan de studie. Om ook informatie te bekomen over de verspreiding van infectieziekten bij kinderen en jongeren, kunnen ouders of voogden van een minderjarig kind de vragenlijsten ook voor hun kinderen invullen. Dit is niet verplicht maar het helpt het onderzoek wel vooruit.
 
 **Hoe werkt Infectieradar.be?**
-Deelnemers ontvangen eerst een registratie met vragen over hun achtergrond, leeftijd, en bestaande ziekten en aandoeningen. Daarna krijgen zij elke week een email met een link naar een vragenlijst met de vraag welke gezondheidsklachten zij in de afgelopen week hadden. Het gaat dan om gezondheidsklachten zoals een loopneus, hoesten, niezen en/of koorts. Ook als de deelnemer geen gezondheidsklachten heeft moet dit ingevuld worden. Het invullen van de vragenlijst duurt ongeveer 30 seconden wanneer de deelnemer geen gezondheidsklachten heeft en ongeveer drie tot vijf minuten indien de deelnemer gezondheidsklachten heeft.
+Deelnemers ontvangen eerst een registratie met vragen over hun achtergrond, leeftijd, en bestaande ziekten en aandoeningen. Daarna krijgen zij elke week een e-mail met een link naar een vragenlijst met de vraag welke gezondheidsklachten zij in de afgelopen week hadden. Het gaat dan om gezondheidsklachten zoals een loopneus, hoesten, niezen en/of koorts. Ook als de deelnemer geen gezondheidsklachten heeft moet dit ingevuld worden. Het invullen van de vragenlijst duurt ongeveer 30 seconden wanneer de deelnemer geen gezondheidsklachten heeft en ongeveer drie tot vijf minuten indien de deelnemer gezondheidsklachten heeft.
 
 Door deze vragenlijst in te vullen zullen we volgen hoe bepaalde gezondheidsklachten verspreid zijn in België en hoe deze zich ontwikkelen in de tijd. Deze gegevens zullen gebruikt worden voor wetenschappelijk onderzoek naar de verspreiding van het nieuwe coronavirus. In de toekomst kunnen we dat ook voor andere virussen en infectieziekten gebruiken.
 
 **Gegevens**
 De gegevens worden verzameld en verwerkt vanuit het oogpunt van wetenschappelijk onderzoek, uitsluitend voor de volgende doelen:
 
-- Uitvoeren van wetenschappelijk onderzoek en statistische analyses over de verspreiding van infectieziekten in België en Europa
+- Uitvoeren van wetenschappelijk onderzoek en statistische analyses over de verspreiding van infectieziekten in België en Europa;
 
 - Publiceren van statistische analyses, inclusief grafische weergaven van de resultaten;
 
-- Het verstrekken van informatie aan u, de gebruiker, over de resultaten van de enquête (bijvoorbeeld: hoeveel geregistreerde  gebruikers in uw regio hebben griep of andere infectieziekten);
+- Verstrekken van informatie aan u, de gebruiker, over de resultaten van de enquête (bijvoorbeeld: hoeveel geregistreerde  gebruikers in uw regio hebben griep of andere infectieziekten).
 
 De persoonsgegevens die wij voor deze doelen mogelijk verwerken zijn:
 
 - Geboortejaar, geboortemaand, uw postcode, geslacht, gezinssamenstelling;
 - Gegevens betreffende relevante achtergrond voor het risico op infecties namelijk, gegevens over of u behoort tot een risicogroep voor griepvaccinatie, beroep en levensstijl;
-- Gegevens omtrent symptomen gegeven tijdens de symptomen vragenlijst;
+- Gegevens omtrent symptomen gegeven tijdens de symptomen vragenlijst.
 
 De gegevens verkregen in deze studie zullen worden verwerkt door de Universiteit Hasselt en Universiteit Antwerpen voor de genoemde doelen. Wij informeren u ook dat wij uw gegevens zullen verwerken in overeenstemming met de toepasselijke wetgeving en voorschriften en met volledige eerbiediging van uw rechten en, in het bijzonder, uw privacy.
 
 **Deelname**
-Na registratie, zal je elke week per email uitgenodigd worden om een vragenlijst in te vullen. Jouw deelname aan dit onderzoek is vrijwillig en je kan je op elk moment, zonder opgave van reden, terugtrekken uit het onderzoek.
+Na registratie, zal je elke week per e-mail uitgenodigd worden om een vragenlijst in te vullen. Jouw deelname aan dit onderzoek is vrijwillig en je kan je op elk moment, zonder opgave van reden, terugtrekken uit het onderzoek.
 
 De studie wordt gefinancierd door de Europese Unie en werd geëvalueerd door een ethisch comité. Hun financiering en goedkeuring betekent niet dat je je verplicht moet voelen om deel te nemen.
 
@@ -153,12 +153,12 @@ Voor het uitvoeren van deze dienst verwerkt Google de volgende gegevens:
 -   Inlogstatus Google account
 -   Het scroll-gedrag van de bezoeker op Infectieradar.nl
 
-Google geeft onder de volgende [link] (https://policies.google.com/privacy) informatie over hoe Google omgaat met je gegevens als gebruiker. De grondslag voor de inzet van Google Recaptcha is een gerechtvaardigd belang volgens artikel 6 lid 1 sub f. AVG. Wij hebben een gerechtvaardigd belang om  www.infectieradar.be  te beveiligen.
+Google geeft onder de volgende [link](https://policies.google.com/privacy) informatie over hoe Google omgaat met je gegevens als gebruiker. De grondslag voor de inzet van Google Recaptcha is een gerechtvaardigd belang volgens artikel 6 lid 1 sub f. AVG. Wij hebben een gerechtvaardigd belang om  www.infectieradar.be  te beveiligen.
 
 ---
  
 ### Wijziging privacyverklaring
-Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij het gewijzigde [Formulier Gïnformeerde Toestemming](https://infectieradar.be/project/) publiceren.
+Deze privacyverklaring kan worden gewijzigd. In dat geval zullen wij het gewijzigde [Formulier Geïnformeerde Toestemming](https://infectieradar.be/project/) publiceren.
 
 
 ##### Versie 2.0 2-10-2020

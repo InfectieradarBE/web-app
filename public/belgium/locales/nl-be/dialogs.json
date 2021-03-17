@@ -42,7 +42,7 @@
     "reCaptchaCookieCheckbox": "Naar de <1>reCAPTCHA verklaring</1>.*",
     "signupBtn": "Aanmelden",
     "loginLink": "Heb je al een account? Log hier in.",
-    "reCaptchaLinks": "Deze site gebruikt reCAPTCHA and the Google privacy verklaring <1>Privacy Policy</1> en voorwaarden gelden <3>Terms of Service</3>.",
+    "reCaptchaLinks": "Deze site gebruikt reCAPTCHA en de Google privacy verklaring <1>Privacy Policy</1> en voorwaarden gelden <3>Terms of Service</3>.",
     "errors": {
       "passwordRules": "Je wachtwoord moet tenminste 8 karakters hebben en 3 van de volgende 4 elementen bevatten: kleine letter, hoofdletter, getal, leesteken",
       "passwordMatch": "Wachtwoorden zijn niet hetzelfde",
