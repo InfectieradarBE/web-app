@@ -1,13 +1,13 @@
-Door de  knop “ik geef toestemming” aan te klikken stem je in met deelname aan het  onderzoek “Infectieradar.be” en ga je akkoord dat de onderzoekers je gegevens voor dit onderzoek zullen verwerken. 
+Door de  knop “ik geef toestemming” aan te klikken stemt u in met deelname aan het  onderzoek “Infectieradar.be” en gaat u akkoord dat de onderzoekers uw gegevens voor dit onderzoek zullen verwerken. 
 
-Het onderzoek is gericht op het in kaart brengen van gezondheidsklachten die kunnen wijzen op infectieziekten, zoals het nieuwe coronavirus. Dit onderzoek is van belang om na te gaan of het aantal mensen met klachten toe- of afneemt. Meer informatie over onder andere het doel van het onderzoek en je rechten kun je vinden in de [privacyverklaring](https://survey.infectieradar.be/privacy).
+Het onderzoek is gericht op het in kaart brengen van gezondheidsklachten die kunnen wijzen op infectieziekten, zoals het nieuwe coronavirus. Dit onderzoek is van belang om na te gaan of het aantal mensen met klachten toe- of afneemt. Meer informatie over onder andere het doel van het onderzoek en uw rechten kunt u vinden in de [privacyverklaring](https://survey.infectieradar.be/privacy).
 
-#### VEREISTEN VOOR JE DEELNAME AAN DE STUDIE
+#### VEREISTEN VOOR UW DEELNAME AAN DE STUDIE
 
 * Ik verklaar dat ik geïnformeerd ben over het doel van de studie, de duur en de gevolgen ervan, mogelijke risico's en ongemakken, en wat van mij verwacht wordt, en dat ik dit alles begrepen heb. 
 * Ik begrijp dat ik vrijwillig en zonder daartoe gedwongen te zijn, zal deelnemen aan deze studie en dat ik op ieder moment mijn deelname aan de studie kan stopzetten. 
 * Ik begrijp dat er gegevens over mij zullen worden verzameld en dat deze vertrouwelijk zullen behandeld worden. 
-* Ik ga ermee akkoord dat mijn persoonsgegevens verwerkt worden zoals beschreven in Hoofdstuk I. 
+* Ik ga ermee akkoord dat mijn persoonsgegevens verwerkt worden zoals beschreven in de privacyverklaring. 
 * Ik begrijp dat de opdrachtgever een verzekering heeft afgesloten voor het geval ik schade zou lijden in verband met mijn deelname aan deze studie. 
 * Ik begrijp dat ik bij deelname aan deze studie geen kosten heb. 
 * Ik begrijp dat mijn deelname aan de studie zonder mijn toestemming kan beëindigd worden. 

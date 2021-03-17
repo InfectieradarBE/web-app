@@ -126,8 +126,9 @@ If required for the study, the encrypted study data may be sent to other countri
 European regulations and Belgian data protection legislation impose restrictions on the transfer of data to non-EU countries. The sponsor must always ensure that your encrypted study data are equally protected when transferred to a non-EU country. If the sponsor concludes a data protection agreement for this purpose, a copy of this agreement may be obtained from the researcher.
 
 #### 7. What will happen to the results of the study?
-    
-After its completion, a description and the results of the study will be published in specialist medical journals. A copy of the scientific publication will be published on the website and will be available from the researcher or study personnel.
+
+Interim results of the study are published regularly on our website.
+Further, during the study results and description of the study will be published in specialized medical journals. A copy of the scientific publication will be published on the website and will be available from the researcher or study personnel.
 
 These websites or publications will not contain any information by which you can be identified.
 
