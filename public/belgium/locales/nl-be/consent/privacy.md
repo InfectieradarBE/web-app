@@ -7,7 +7,7 @@ Het onderzoek is gericht op het in kaart brengen van gezondheidsklachten die kun
 * Ik verklaar dat ik geïnformeerd ben over het doel van de studie, de duur en de gevolgen ervan, mogelijke risico's en ongemakken, en wat van mij verwacht wordt, en dat ik dit alles begrepen heb. 
 * Ik begrijp dat ik vrijwillig en zonder daartoe gedwongen te zijn, zal deelnemen aan deze studie en dat ik op ieder moment mijn deelname aan de studie kan stopzetten. 
 * Ik begrijp dat er gegevens over mij zullen worden verzameld en dat deze vertrouwelijk zullen behandeld worden. 
-* Ik ga ermee akkoord dat mijn persoonsgegevens verwerkt worden zoals beschreven in Hoofdstuk I. 
+* Ik ga ermee akkoord dat mijn persoonsgegevens verwerkt worden zoals beschreven in de privacyverklaring. 
 * Ik begrijp dat de opdrachtgever een verzekering heeft afgesloten voor het geval ik schade zou lijden in verband met mijn deelname aan deze studie. 
 * Ik begrijp dat ik bij deelname aan deze studie geen kosten heb. 
 * Ik begrijp dat mijn deelname aan de studie zonder mijn toestemming kan beëindigd worden. 

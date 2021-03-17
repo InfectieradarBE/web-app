@@ -7,7 +7,7 @@ The survey aims to identify symptoms that may indicate infectious diseases such 
 * I declare that I have been informed of and understand the purpose of the study, its duration and consequences, any risks and inconveniences, and what is expected of me.
 * I understand that I will be participating in this study voluntarily and without being compelled to do so, and that I may stop participating at any time.
 * I understand that data about me will be collected and will be treated confidentially.
-* I agree that my personal data will be processed as described in Chapter I.
+* I agree that my personal data will be processed as described in the privacy policy.
 * I understand that the sponsor of the study has arranged insurance in case I suffer harm in connection with my participation in this study.
 * I understand that participating in this study will not cost me anything.
 * I understand that my participation in the study may be terminated without my consent.
