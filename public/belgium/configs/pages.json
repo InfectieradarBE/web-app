@@ -31,14 +31,6 @@
                       {
                         "urlKey": "mp4",
                         "type": "video/mp4"
-                      },
-                      {
-                        "urlKey": "mxf",
-                        "type": "video/mxf"
-                      },
-                      {
-                        "urlKey": "webm",
-                        "type": "video/webm"
                       }
                     ]
                   }
