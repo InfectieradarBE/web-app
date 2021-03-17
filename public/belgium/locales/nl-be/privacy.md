@@ -127,8 +127,9 @@ Indien nodig voor de studie mogen de gecodeerde studiegegevens naar andere lande
 De Europese regelgeving en de Belgische wetgeving over gegevensbescherming leggen beperkingen op voor de overdracht van gegevens naar niet-EU landen. De opdrachtgever moet altijd verzekeren dat uw gecodeerde studiegegevens gelijkwaardig beschermd worden bij overdracht naar een niet-EU land. Indien de opdrachtgever hiervoor een overeenkomst over databescherming afsluit, kan een kopie van deze overeenkomst worden verkregen via de onderzoeker.
 
 #### 7. Wat zal er gebeuren met de resultaten van de studie?
-    
-Na afsluiting van de studie zal een beschrijving en de resultaten van de studie gepubliceerd worden in gespecialiseerde medische tijdschriften. Een kopie van de wetenschappelijke publicatie zal op de website worden gepubliceerd en is verkrijgbaar via de onderzoeker of het studiepersoneel.
+
+Tussentijds resultaten van de studie zullen worden gepubliceerd op onze website op regelmatige basis.
+Verder zal tijdens de studie resultaten en beschrijvingen van de studie gepubliceerd worden in gespecialiseerde medische tijdschriften. Een kopie van de wetenschappelijke publicatie zal op de website worden gepubliceerd en is verkrijgbaar via de onderzoeker of het studiepersoneel.
 
 Deze websites of publicaties zullen geen informatie bevatten waarmee u te identificeren bent.
 
