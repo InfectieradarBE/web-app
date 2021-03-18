@@ -100,7 +100,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = (props) => {
         />
       case 'video':
         return <VideoPlayer
-          key={item.itemKey}
+          key={item.itemKey + i18n.language}
           className={item.className}
           minHeight={item.config.minHeight}
           posterUrl={item.config.posterUrlKey ? t(`${item.itemKey}.${item.config.posterUrlKey}`) : undefined}
