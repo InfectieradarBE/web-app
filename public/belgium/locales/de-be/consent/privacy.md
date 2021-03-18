@@ -7,7 +7,7 @@ Die Untersuchung richtet sich auf die Erfassung von gesundheitlichen Beschwerden
 * Ich erkläre, dass ich über das Ziel der Studie, ihre Dauer und ihre Folgen, mögliche Risiken und Beschwerden und über das informiert bin, was von mir erwartet wird, und dass ich das alles verstanden habe.
 * Ich verstehe, dass ich freiwillig und ohne dazu gezwungen zu sein an dieser Studie teilnehme und dass ich jederzeit meine Teilnahme an der Studie beenden kann.
 * Ich verstehe, dass Daten über mich gesammelt werden und dass diese vertraulich behandelt werden sollen.
-* Ich bin damit einverstanden, dass meine personengebundenen Daten so verarbeitet werden, wie in Kapitel I beschrieben.
+* Ich bin damit einverstanden, dass meine personengebundenen Daten so verarbeitet werden, wie in Datenschutzerklärung beschrieben.
 * Ich verstehe, dass die Auftraggeber eine Versicherung für den Fall abgeschlossen haben, dass ich im Zusammenhang mit meiner Teilnehme an dieser Studie Schaden erleiden sollte.
 * Ich verstehe, dass mir bei Teilnahme an dieser Studie keine Kosten entstehen.
 * Ich verstehe, dass ich mitarbeiten muss und den Anweisungen des Untersuchers sowie des Studienpersonals in Bezug auf die Studie Folge zu leisten habe.

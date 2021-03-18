@@ -4,11 +4,11 @@
     "title": "Account Einstellungen",
     "email": {
       "title": "E-Mail-Adresse",
-      "info": "Sie möchten eine andere E-Mail-Adresse benutzen? Dann passen Sie Ihre E-Mail-Adresse an, indem Sie auf die unten stehende Schaltfläche drücken. Doch aufgepasst: Erst nach Bestätigung der E-Mail-Anschrift können Sie sich wieder einloggen unter Infectieradar.be."
+      "info": "Sie möchten eine andere E-Mail-Adresse benutzen? Dann passen Sie Ihre E-Mail-Adresse an, indem Sie auf die unten stehende Schaltfläche drücken. Doch aufgepasst: Erst nach Bestätigung der E-Mail-Adresse können Sie sich wieder unter Infectieradar.be einloggen."
     },
     "password": {
       "title": "Passwort",
-      "info": "Sie möchten das Passwort ändern? Dann passen Sie Ihr Passwort an, indem Sie auf die unten stehende Schaltfläche drücken. Aufgepasst : Sie benötigen jedenfalls das aktuelle Passwort!"
+      "info": "Sie möchten das Passwort ändern? Dann passen Sie Ihr Passwort an, indem Sie auf die unten stehende Schaltfläche drücken. Aufgepasst: Sie benötigen jedenfalls das aktuelle Passwort!"
     },
     "profiles": {
       "title": "Profile",

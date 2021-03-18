@@ -15,11 +15,11 @@
   "faq": [
     {
       "title": "Wer hat Infectieradar.be eingerichtet?",
-      "content": "Infectieradar.be ist Teil von Influenzanet, einer europäischen Partnerschaft zwischen verschiedenen Universitäten und Regierungen. Auch die Universität Hasselt ist Teil dieser Partnerschaft. Das Ziel von Influenzanet ist es, die Symptome von Infektionen wie dem neuen Coronavirus (COVID-19) und Grippe bei Menschen in Europa zu kartieren und zu verfolgen. Diese Daten werden für die wissenschaftliche Forschung über Infektionen und derzeit über das neue Coronavirus verwendet."
+      "content": "Infectieradar.be ist Teil von Influenzanet, einer europäischen Partnerschaft zwischen verschiedenen Universitäten und Regierungen. Auch die Universität Hasselt ist Teil dieser Partnerschaft. Das Ziel von Influenzanet ist es, die Symptome von Infektionen wie dem neuen Coronavirus (COVID-19) und Grippe bei Menschen in Europa zu kartieren und zu verfolgen. Diese Daten werden für die wissenschaftliche Forschung über Infektionen und derzeit für das neue Coronavirus verwendet."
     },
     {
       "title": "Für wen ist Infectieradar.be?",
-      "content": "Alle Menschen, die in Belgien leben und einen Internetzugang haben, können freiwillig und so lange teilnehmen, wie sie wollen."
+      "content": "Alle Menschen, die in Belgien leben und einen Internetzugang haben, können freiwillig und so lange teilnehmen wie sie wollen."
     },
     {
       "title": "Wie kann ich an Infectieradar.be teilnehmen?",
@@ -27,11 +27,11 @@
     },
     {
       "title": "Warum sollte ich teilnehmen?",
-      "content": "Um sich ein möglichst aktuelles Bild von der augenblicklichen Situation zu machen, ist es wichtig, dass jeder mitmacht, unabhängig von Hintergrund oder Risikofaktoren. Jemand, der nie krank ist, kann genauso krank werden wie jemand, der oft krank ist. Es kann uns auch helfen, zu verstehen, warum einige Menschen eine Infektion weniger oft bekommen."
+      "content": "Um sich ein möglichst aktuelles Bild von der augenblicklichen Situation zu machen ist es wichtig dass jeder mitmacht, unabhängig von Hintergrund oder Risikofaktoren. Jemand der nie krank ist, kann genauso krank werden wie jemand der oft krank ist. Es kann uns auch helfen zu verstehen, warum einige Menschen eine Infektion weniger oft bekommen."
     },
     {
       "title": "Ist Infectieradar.be das gleiche wie die Corona-Studie der Universität Antwerpen (UAntwerpen)?",
-      "content": "Beide Studien überwachen die Symptomatik der Coronaepidemie in Belgien. Mit Infectieradar.be hoffen wir jedoch, ein nationales Überwachungssystem zum langfristigen Monitoring von Symptomen von Infektionskrankheiten, auch für die Zeit nach COVID, einzurichten, und dies auch im internationalen Kontext. Die Forschung steht im Einklang mit einer europäischen Initiative: Influenzanet. Das ist eine europäische Partnerschaft mit verschiedenen Universitäten und Behörden. Ziel von Influenzanet ist es, Symptome von Virusinfektionen wie Grippe bei Menschen in den EU-Mitgliedstaaten zu überwachen und zu identifizieren. Neben der nationalen Überwachung ist es auch möglich, Daten auf europäischer Ebene zu vergleichen."
+      "content": "Beide Studien überwachen die Symptomatik der Coronaepidemie in Belgien. Mit Infectieradar.be hoffen wir jedoch, ein nationales Überwachungssystem zum langfristigen Monitoring von Symptomen von Infektionskrankheiten auch für die Zeit nach COVID im internationalen Kontext einzurichten. Die Forschung steht im Einklang mit einer europäischen Initiative: Influenzanet. Das ist eine europäische Partnerschaft mit verschiedenen Universitäten und Behörden. Ziel von Influenzanet ist es, Symptome von Virusinfektionen wie Grippe bei Menschen in den EU-Mitgliedstaaten zu überwachen und zu identifizieren. Neben der nationalen Überwachung ist es auch möglich, Daten auf europäischer Ebene zu vergleichen."
     },
     {
       "title": "Ich bin kein Belgier, aber ich lebe in Belgien: Kann ich an Infectieradar.be teilnehmen?",
@@ -39,11 +39,11 @@
     },
     {
       "title": "Ich bin Belgier, lebe aber im Ausland: Kann ich teilnehmen?",
-      "content": "Nein. Nur Menschen, die in Belgien leben, können an dieser Forschung teilnehmen. Aber wenn Sie in Deutschland, Australien, Österreich, der Schweiz, Belgien, Frankreich, Italien, Mexiko, Portugal, dem Vereinigten Königreich oder Schweden leben, gibt es ähnliche Registrierungen in diesen Ländern."
+      "content": "Nein. Nur Menschen die in Belgien leben, können an dieser Forschung teilnehmen. Aber wenn Sie in Deutschland, Australien, Österreich, der Schweiz, Belgien, Frankreich, Italien, Mexiko, Portugal, dem Vereinigten Königreich oder Schweden leben, gibt es ähnliche Registrierungen in diesen Ländern."
     },
     {
       "title": "Ich habe in diesem Jahr die Grippeimpfung erhalten. Kann ich mitmachen?",
-      "content": "Die Forschung von Infectieradar.be richtet sich an alle Menschen. Es spielt keine Rolle, ob sie gegen Grippe geimpft sind oder nicht."
+      "content": "Die Forschung von Infectieradar.be richtet sich an alle Menschen. Es spielt keine Rolle ob sie gegen Grippe geimpft sind oder nicht."
     },
     {
       "title": "Wie lange dauert es, den Fragebogen auf Infectieradar.be auszufüllen?",
@@ -51,43 +51,43 @@
     },
     {
       "title": "Wie lange dauert die Untersuchung auf Infectieradar.be?",
-      "content": "Die Studie hat kein Enddatum, aber Sie können jederzeit mit der Teilnahme aufhören, indem Sie sich vom wöchentlichen Fragebogen abmelden. Sie können sich später registrieren, wenn Sie Ihre Meinung ändern und erneut mitmachen möchten."
+      "content": "Die Studie hat kein Enddatum, aber Sie können jederzeit mit der Teilnahme aufhören, indem Sie sich vom wöchentlichen Fragebogen abmelden. Sie können sich später erneut registrieren, wenn Sie Ihre Meinung ändern und erneut mitmachen möchten."
     },
     {
       "title": "Kostet mich die Teilnahme an der Forschung Geld?",
       "content": "Nein, die Teilnahme an der Studie ist kostenlos und freiwillig."
     },
     {
-      "title": "Was passiert, nachdem ich mich registriert habe?",
-      "content": "Im ersten Fragebogen werden Sie gebeten, Hintergrundfragen zu Ihrer Gesundheit und Ihrem Alltag auszufüllen. Sie erhalten diesen Fragebogen nur einmal. Sie erhalten dann eine wöchentliche E-Mail, um einen Fragebogen auszufüllen."
+      "title": "Was passiert nachdem ich mich registriert habe?",
+      "content": "Im ersten Fragebogen werden Sie gebeten, Hintergrundfragen zu Ihrer Gesundheit und Ihrem Alltag auszufüllen. Sie erhalten diesen Fragebogen nur einmal. Sie erhalten dann eine wöchentliche E-Mail um einen Fragebogen auszufüllen."
     },
     {
       "title": "Welche Fragen werden im Hintergrundfragebogen gestellt?",
-      "content": "Der Zweck des Hintergrundfragebogens ist es, jeden Benutzer ein wenig besser kennen zu lernen. Bei den meisten Fragen haben Sie die Möglichkeit, nicht zu antworten, indem Sie die Antwort „Ich weiß nicht“ wählen. Es dauert etwa 5 Minuten, um diesen Fragebogen auszufüllen."
+      "content": "Der Zweck des Hintergrundfragebogens ist es, jeden Benutzer ein wenig besser kennen zu lernen. Bei den meisten Fragen haben Sie die Möglichkeit nicht zu antworten, indem Sie die Antwort „Ich weiß nicht“ wählen. Es dauert etwa 5 Minuten um diesen Fragebogen auszufüllen."
     },
     {
       "title": "Welche Fragen werden im wöchentlichen Fragebogen gestellt?",
-      "content": "Der wöchentliche Fragebogen fragt nach den Symptomen, die Sie möglicherweise seit Ihrer letzten Teilnahme hatten (laufende Nase, Husten, Fieber, usw.). Wenn Sie keine Beschwerden hatten, dauert das Ausfüllen nur wenige Sekunden. Wenn Sie Symptome haben oder hatten, werden Ihnen Fragen darüber gestellt, wann die Symptome begannen, ob Sie einen Arzt aufgesucht haben und ob Sie krankgeschrieben waren. Es dauert ein paar Minuten, um den Fragebogen auszufüllen."
+      "content": "Der wöchentliche Fragebogen fragt nach den Symptomen, die Sie möglicherweise seit Ihrer letzten Teilnahme hatten (laufende Nase, Husten, Fieber, usw.). Wenn Sie keine Beschwerden hatten, dauert das Ausfüllen nur wenige Sekunden. Wenn Sie Symptome haben oder hatten, werden Ihnen Fragen darüber gestellt, wann die Symptome begannen, ob Sie einen Arzt aufgesucht haben und ob Sie krankgeschrieben waren. Es dauert ein paar Minuten um den Fragebogen auszufüllen."
     },
     {
       "title": "Kann ich den Fragebogen für jemand anderen ausfüllen, z. B. für mein Kind?",
-      "content": "Ja, das geht. Es ist möglich, die Fragenlisten für Ihr Kind (Ihre KInder) im Alter von unter 18 Jahren auszufüllen. Andere Mitglieder Ihres Haushalts im Alter von unter 18 Jahren oder darüber jedoch einen eigenen Account erstellen."
+      "content": "Ja, das geht. Es ist möglich, die Fragen für Ihr Kind (Ihre Kinder) im Alter von unter 18 Jahren auszufüllen. Andere Mitglieder Ihres Haushalts im Alter von 18 Jahren oder darüber müssen jedoch einen eigenen Account erstellen."
     },
     {
       "title": "Ich weiß nicht, ob ich immer den wöchentlichen Fragebogen ausfüllen kann. Darf ich trotzdem teilnehmen?",
-      "content": "Ja, Sie können einfach mitmachen. Sie können die Fragebögen mit der Häufigkeit ausfüllen, die am besten zu Ihnen passt. Je öfter Sie teilnehmen, desto interessanter sind die gesammelten Daten. Aber auch jemand, der nur alle zwei Wochen teilnimmt, ist für die Forschung nützlich."
+      "content": "Ja, Sie können einfach mitmachen. Sie können die Fragebögen mit der Häufigkeit ausfüllen die am besten zu Ihnen passt. Je öfter Sie teilnehmen, desto interessanter sind die gesammelten Daten. Aber auch jemand der nur alle zwei Wochen teilnimmt, ist für die Forschung nützlich."
     },
     {
       "title": "Sind meine Daten denn sicher?",
       "content": "Wir halten die Sicherheit der Daten von Teilnehmern an Infectieradar.be für sehr wichtig. Das System muss strenge Anforderungen erfüllen, zum Beispiel auf dem Gebiet des Datenschutzes und der Informationssicherung. Das System wurde auf den Gebieten der Sicherheit, des Datenschutzes und der Kapazität durch externe Mitarbeiter an der Universität Hasselt sorgfältig geprüft. Gefahren für die Rechte und Freiheiten von denjenigen, deren Personendaten verarbeitet werden, wurden sorgfältig abgewogen."
     },
     {
-      "title": "Ich wurde schon einmal mit dem neuen Corona-Virus infiziert. Hat es noch Sinn, teilzunehmen?",
-      "content": "Ja, bitte machen Sie auch mit, wenn Sie bereits COVID-19 hatten. Infectieradar.be wurde erstellt, um Beschwerden zu untersuchen, auch unter Menschen, die das neue Corona-Virus schon hatten. Wenn  Sie sich anmelden, bitten wir Sie, anzugeben, ob Sie schon infiziert waren."
+      "title": "Ich wurde schon einmal mit dem neuen Corona-Virus infiziert. Hat es noch Sinn teilzunehmen?",
+      "content": "Ja, bitte machen Sie auch mit wenn Sie bereits COVID-19 hatten. Infectieradar.be wurde erstellt um Beschwerden zu untersuchen, auch unter Menschen die das neue Corona-Virus schon hatten. Wenn  Sie sich anmelden bitten wir Sie anzugeben, ob Sie schon infiziert waren."
     },
     {
       "title": "Ich habe mein Passwort vergessen, was nun?",
-      "content": "Klicken Sie beim Anmeldefenster auf 'Passwort vergessen'. Tragen Sie Ihre E-Mail-Adresse ein, und Sie erhalten eine E-Mail, um ein neues Passwort zu erstellen. ."
+      "content": "Klicken Sie beim Anmeldefenster auf 'Passwort vergessen'. Tragen Sie Ihre E-Mail-Adresse ein und Sie erhalten eine E-Mail um ein neues Passwort zu erstellen. ."
     },
     {
       "title": "Kann ich einstellen, ob ich E-Mails von Infectieradar.be erhalten möchte?",
@@ -99,23 +99,23 @@
     },
     {
       "title": "Ich möchte nicht mehr teilnehmen, wo kann ich mich abmelden?",
-      "content": "Es ist jammerschade, dass Sie nicht mehr teilnehmen möchten! Wir können Ihre Hilfe gut gebrauchen, um das Corona-Virus unter Kontrolle zu halten. Aber Sie können einfach mit dem Eintragen der wöchentlichen Fragenliste aufhören. Wenn Sie sich auch vollständig abmelden (und Ihren Account aufheben) möchten, dann ist das natürlich möglich. Es geht über die Einstellungen."
+      "content": "Es ist jammerschade, dass Sie nicht mehr teilnehmen möchten! Wir können Ihre Hilfe gut gebrauchen um das Corona-Virus unter Kontrolle zu halten. Aber Sie können einfach mit dem Eintragen der wöchentlichen Fragenliste aufhören. Wenn Sie sich auch vollständig abmelden (und Ihren Account aufheben) möchten, dann ist das natürlich möglich. Es geht über die Einstellungen."
     },
     {
       "title": "Ich möchte meine Antworten anpassen, geht das?",
-      "content": "Beim Eintragen der Fragenliste ist es möglich, Antworten anzupassen. Sobald Sie auf die Schaltfläche 'Versenden' klicken, ist es nicht mehr möglich, Antworten noch anzupassen. Das gilt sowohl für die erste Fragenliste als auch für die wöchentlichen Fragenlisten."
+      "content": "Beim Eintragen der Fragenliste ist es möglich, Antworten anzupassen. Sobald Sie auf die Schaltfläche 'Versenden' klicken ist es nicht mehr möglich, Antworten noch anzupassen. Das gilt sowohl für die erste Fragenliste als auch für die wöchentlichen Fragen."
     },
     {
-      "title": "Ich habe Beschwerden. Bekomme ich eine Diagnose, wenn ich den Fragebogen ausfülle?",
-      "content": "Nein, der Fragebogen ermöglicht es Ihnen, die Symptome aufzulisten, die Sie haben, aber dies ist absolut kein Ersatz für einen Besuch bei Ihrem Hausarzt, der eine Diagnose stellen kann."
+      "title": "Ich habe Beschwerden. Bekomme ich eine Diagnose wenn ich den Fragebogen ausfülle?",
+      "content": "Nein, der Fragebogen ermöglicht es Ihnen, die Symptome aufzulisten die Sie haben, aber dies ist absolut kein Ersatz für einen Besuch bei Ihrem Hausarzt der eine Diagnose stellen kann."
     },
     {
-      "title": "Ich habe eine chronische Krankheit, aus diesem Grund habe ich oft Symptome, die auch im wöchentlichen Fragebogen stehen. Was soll ich eintragen?",
+      "title": "Ich habe eine chronische Krankheit, aus diesem Grund habe ich oft Symptome die auch im wöchentlichen Fragebogen stehen. Was soll ich eintragen?",
       "content": "Bestimmte Krankheiten führen chronisch zu Symptomen aus dem wöchentlichen Fragebogen: Chronisches Müdigkeitssyndrom, rheumatoide Arthritis und so weiter. Sie müssen diese Symptome nicht jedes Mal überprüfen, es sei denn, die Symptome haben sich geändert. Wenn Sie beispielsweise Rheuma haben, aktivieren Sie das Kästchen „Gelenkschmerzen“ nur, wenn sich diese Symptome in letzter Zeit verschlimmert haben oder sich von den üblichen unterscheiden."
     },
     {
       "title": "Ich habe diese Woche keine Beschwerden gehabt; sollte ich den wöchentlichen Fragebogen ausfüllen?",
-      "content": "Ja, um sich ein verlässliches Bild von der Lage in Belgien zu machen ist es wichtig, Daten über kranke und nicht kranke Menschen zu haben. Wenn nur Menschen mit Beschwerden teilnehmen, können wir die Entwicklung des neuen Coronavirus nicht richtig beurteilen. Daher ist die Beteiligung von Menschen die nicht krank sind, genauso wichtig wie die Teilnahme von Menschen mit Beschwerden. Wenn Sie nicht krank sind dauert das Ausfüllen des Fragebogens nur wenige Sekunden."
+      "content": "Ja, um sich ein verlässliches Bild von der Lage in Belgien zu machen ist es wichtig, Daten über kranke und nicht kranke Menschen zu haben. Wenn nur Menschen mit Beschwerden teilnehmen, können wir die Entwicklung des neuen Coronavirus nicht richtig beurteilen. Daher ist die Beteiligung von Menschen die nicht krank sind genauso wichtig wie die Teilnahme von Menschen mit Beschwerden. Wenn Sie nicht krank sind dauert das Ausfüllen des Fragebogens nur wenige Sekunden."
     }
   ]
 }

@@ -89,8 +89,8 @@
     "emailInputPlaceholder": "Neue E-Mail-Adresse",
     "passwordInputLabel": "Passwort",
     "passwordInputPlaceholder": "Passwort",
-    "info": "Sie möchten eine andere E-Mail-Adresse benutzen? Dann passen Sie Ihre E-Mail-Adresse an, indem Sie auf die unten stehende Schaltfläche drücken. Doch aufgepasst: Erst nach Bestätigung der E-Mail-Anschrift können Sie sich wieder einloggen unter Infectieradar.be.",
-    "cancelBtn": "Annullieren",
+    "info": "Sie möchten eine andere E-Mail-Adresse benutzen? Dann passen Sie Ihre E-Mail-Adresse an, indem Sie auf die unten stehende Schaltfläche drücken. Doch aufgepasst: Erst nach Bestätigung der E-Mail-Adresse können Sie sich wieder unter Infectieradar.be einloggen.",
+    "cancelBtn": "Abbrechen",
     "confirmBtn": "Änderung der E-Mail-Adresse",
     "errors": {
       "wrongPasswordOrAccountId": "Er läuft etwas verkehrt. Kontrollieren Sie die Informationen. (E-Mail-Adresse oder Passwort könnten falsch sein.)",
@@ -100,7 +100,7 @@
     "warningDialog": {
       "title": "Bestätigung der neuen E-Mail-Adresse",
       "content": "Aufgepasst: Erst nach Bestätigung der neuen E-Mail-Adresse über den Link in der Bestätigungsmail, die wir Ihnen gesendet haben, können Sie wieder unter Infectieradar.be einloggen.",
-      "cancelBtn": "Annullieren",
+      "cancelBtn": "Abbrechen",
       "confirmBtn": "Änderung der E-Mail-Adresse"
     },
     "successDialog": {
@@ -118,7 +118,7 @@
     "confirmPasswordInputLabel": "Neues Passwort bestätigen",
     "confirmPasswordInputPlaceholder": "Neues Passwort bestätigen",
     "info": "Aus Sicherheitsgründen müssen Sie zuerst Ihr altes Passwort eingeben.",
-    "cancelBtn": "Annullieren",
+    "cancelBtn": "Abbrechen",
     "confirmBtn": "Ändere das Passwort",
     "errors": {
       "wrongCurrentPassword": "Verkehrtes Passwort",
@@ -135,24 +135,24 @@
   "manageProfiles": {
     "title": "Profile",
     "mainProfileLabel": "Ich",
-    "cancelBtn": "Annullieren",
+    "cancelBtn": "Abbrechen",
     "newProfileBtn": "Neues Profil für Ihr Kind",
     "warningDialog": {
       "title": "Profil entfernen",
       "content": "Das Entfernen des Profils {{ alias }} kann nicht ungeschehen gemacht werden.",
-      "cancelBtn": "Annullieren",
+      "cancelBtn": "Abbrechen",
       "confirmBtn": "Entferne Profil"
     }
   },
   "editProfile": {
     "new": {
       "title": "Neues Profil",
-      "cancelBtn": "Annullieren",
+      "cancelBtn": "Abbrechen",
       "submitBtn": "Erstelle Profil für Ihr Kind"
     },
     "edit": {
       "title": "Ändere Profil",
-      "cancelBtn": "Annullieren",
+      "cancelBtn": "Abbrechen",
       "submitBtn": "Änderungen speichern"
     },
     "aliasInputLabel": "Zuname/Spitzname",
@@ -171,7 +171,7 @@
       "fr-be": "Français",
       "de-be": "Deutsch"
     },
-    "cancelBtn": "Annullieren",
+    "cancelBtn": "Abbrechen",
     "confirmBtn": "Ändere Sprache",
     "errors": {
       "unknown": "Es läuft etwas falsch. Kontrollieren Sie Ihre Informationen und versuchen Sie es später noch einmal."
@@ -183,7 +183,7 @@
     }
   },
   "changeNotifications": {
-    "title": "E-mail einstellungen",
+    "title": "E-mail Einstellungen",
     "info": "Sie können das Empfangen der wöchentlichen Erinnerungsmail oder des Newsletters ausschalten.",
     "weeklyReminder": {
       "label": "Wöchentliche Erinnerungsmail",
@@ -195,7 +195,7 @@
       "on": "Diese E-Mails an alle Teilnehmer empfangen.",
       "off": "Nein, diese E-Mails an alle Teilnehmer nicht empfangen."
     },
-    "cancelBtn": "Annullieren",
+    "cancelBtn": "Abbrechen",
     "submitBtn": "Anpassen",
     "successDialog": {
       "title": "Einstellungen wurden angepasst",
@@ -206,7 +206,7 @@
   "deleteAccount": {
     "title": "Abmelden aus der Untersuchung",
     "info": "Wissen Sie sicher, dass Sie Ihren Account entfernen möchten?\nDas ist eine Aktion, die Sie nicht ungeschehen machen können.",
-    "cancelBtn": "Annullieren",
+    "cancelBtn": "Abbrechen",
     "confirmBtn": "Abmelden aus der Untersuchung",
     "successDialog": {
       "title": "Account entfernt",

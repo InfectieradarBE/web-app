@@ -10,7 +10,7 @@ Cette étude vise à identifier les plaintes / symptômes qui pourraient être l
 
 &ndash; J’ai compris que des données me concernant seront récoltées et que la confidentialité est garantie.
 
-&ndash; J'accepte que mes données à caractère personnel soient traitées comme décrit au Chapitre I.
+&ndash; J'accepte que mes données à caractère personnel soient traitées comme décrit au Déclaration de Confidentialité.
 
 &ndash; Je comprends que le promoteur a souscrit une assurance au cas où je subirais des dommages en rapport avec ma participation à cette étude.
 

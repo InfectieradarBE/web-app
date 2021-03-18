@@ -6,8 +6,8 @@
   },
   "requiredSurveys": {
     "title": "Auszufüllende Fragelisten",
-    "info": "Im Folgenden finden Sie die verschiedenen Fragenlisten für die Untersuchung.",
-    "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragenlisten ausgefüllt. In der volgenden fragen wir wieder!"
+    "info": "Im Folgenden finden Sie die verschiedenen Fragen für die Untersuchung.",
+    "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragen ausgefüllt. In der volgenden fragen wir wieder!"
   },
   "optionalSurveys": {
     "title": "Ändern der Hintergrundinformationen",
