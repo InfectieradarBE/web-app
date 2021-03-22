@@ -158,7 +158,7 @@
     "aliasInputLabel": "Zuname/Spitzname",
     "aliasInputPlaceholder": "Zuname/Spitzname",
     "consentCheckboxLabel": "Zustimmung",
-    "consentCheckboxText": "Sie dürfen nur ein Profil erstellen und Fragelisten für sich selbst oder als Eltern oder als gesetzlicher Vertreter Ihres Kindes ausfüllen, welches das Alter von 18 Jahren noch nicht erreicht hat.",
+    "consentCheckboxText": "Sie dürfen nur ein Profil erstellen und Fragen für sich selbst oder als Eltern oder als gesetzlicher Vertreter Ihres Kindes ausfüllen, welches das Alter von 18 Jahren noch nicht erreicht hat.",
     "avatarSelectorLabel": "Wählen Sie eine Figur!"
   },
   "changeLanguage": {
