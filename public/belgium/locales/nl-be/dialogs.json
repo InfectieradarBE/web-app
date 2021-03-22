@@ -187,12 +187,12 @@
     "info": "Je kan het ontvangen van de wekelijkse herinneringsmail of de nieuwsbrief uitschakelen.",
     "weeklyReminder": {
       "label": "Wekelijkse herinneringsmail",
-      "on": "Wel de wekelijkse herinneringsmail",
+      "on": "Ik ontvang graag de wekelijkse herinneringsmail",
       "off": "Geen wekelijkse herinneringsmail"
     },
     "newsletter": {
       "label": "E-mail naar alle deelnemers. Soms zal het nodig zijn om een e-mail te sturen naar alle deelnemers met informatie over het onderzoek.",
-      "on": "Wel deze e-mails naar alle deelnemers ontvangen",
+      "on": "Ik ontvang graag deze e-mails naar alle deelnemers",
       "off": "Niet deze e-mails naar alle deelnemers ontvangen"
     },
     "cancelBtn": "Annuleer",

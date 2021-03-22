@@ -188,12 +188,12 @@
     "info": "You can opt to stop receiving the weekly reminder email or the newsletter.",
     "weeklyReminder": {
       "label": "Weekly reminder email",
-      "on": "Receive the weekly reminder email",
+      "on": "I would like to receive the weekly reminder email",
       "off": "Don't receive the weekly reminder email"
     },
     "newsletter": {
       "label": "Email to all participants. Sometimes it will be necessary to send an email to all participants with information about the study.",
-      "on": "Receive these emails to all participants",
+      "on": "I would like to receive these emails to all participants",
       "off": "Don’t receive these emails to all participants"
     },
     "cancelBtn": "Cancel",
