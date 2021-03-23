@@ -56,8 +56,8 @@
   "surveyList": {
     "requiredSurveys": {
       "title": "Auszufüllende Fragen",
-      "info": "Im Folgenden finden Sie die verschiedenen Fragen für die Untersuchung. Sie können die Fragen erneut beantworten, wenn Sie an neue Informationen denken",
-      "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragen ausgefüllt. Innerhalb weniger Minuten Sie können, die Fragen erneut beantworten, wenn Sie an neue Informationen denken"
+      "info": "Im Folgenden finden Sie die verschiedenen Fragen für die Untersuchung.",
+      "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragen ausgefüllt."
     },
     "optionalSurveys": {
       "title": "Ändern der Hintergrundinformationen",
