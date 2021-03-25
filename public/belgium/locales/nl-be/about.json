@@ -17,5 +17,12 @@
     "hasseltLogo": "Logo for the University of Hasselt",
     "uantwerpenLogo": "Logo for the University of Antwerpen",
     "epiposeLogo": "Logo for the Epipose Project"
+  },
+  "video": {
+    "poster": "",
+    "mp4": "https://infectieradar.be/wp-content/uploads/2021/03/000_infectieradar_nederlands_18-3-2021.mp4",
+    "mxf": "",
+    "webm": "",
+    "fallbackText": "Jouw browser ondersteunt deze video niet."
   }
 }
