@@ -19,7 +19,7 @@
   "currentResultCard": {
     "imageAlt": "Aktuelle Ergebnisse Bild",
     "title": "Aktuelle Ergebnisse",
-    "body": "Infectieradar.be zeigt auf, welche Beschwerden Menschen in Belgien haben, Beschwerden, die auf das Corona-Virus hinweisen können.",
+    "body": "Infectieradar.be identifiziert, welche Symptome Menschen in Belgien haben, die auf das Coronavirus hinweisen könnten.",
     "actionLabel": "Aktuelle Ergebnisse"
   },
   "signupCard": {
@@ -31,7 +31,7 @@
   "aboutCard": {
     "imageAlt": "Über Infectieradar Bild",
     "title": "Über Infectieradar",
-    "body": "Mit Infectieradar verfolgen wir, welche Gesundheitsbeschwerden über Belgien verteilt sind. Es ist eines der Instrumente, mit denen das Forschungsteam die Verbreitung des Virus verfolgt.",
+    "body": "Mit Infectieradar.be überwachen wir die Ausbreitung der Symptome in ganz Belgien. Es ist eines der Werkzeuge, die das Forschungsteam verwendet, um die Ausbreitung des Virus zu überwachen.",
     "actionLabel": "Lesen Sie mehr!"
   },
   "video": {
@@ -43,7 +43,7 @@
   },
   "references": {
     "title": "Mehr lesen",
-    "faqLink": "Frage und Antwort (FAQ)",
+    "faqLink": "Fragen und Antworten (FAQ)",
     "aboutLink": "Über Infectieradar",
     "resultsLink": "Aktuelle Ergebnisse"
   },
