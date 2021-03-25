@@ -152,6 +152,6 @@ Die Daten, die Google durch die genannten Tracking Cookies sammelt und analysier
 ---
 
 ### Änderung der Datenschutzerklärung
-Diese Datenschutzerklärung kann geändert werden. In diesem Falle werden wir das geänderte [Formular der ïnformierten Zustimmung](https://infectieradar.be/de/project/)veröffentlichen.
+Diese Datenschutzerklärung kann geändert werden. In diesem Falle werden wir das geänderte [Einverständniserklärung](https://infectieradar.be/de/project/)veröffentlichen.
 
 ##### Version 2.0 2-10-2020

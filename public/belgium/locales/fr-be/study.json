@@ -7,7 +7,7 @@
   "requiredSurveys": {
     "title": "Questionnaires à compléter",
     "info": "Vous trouverez ci-dessous les différents questionnaires relatifs à l'étude.",
-    "successMsg": "Merci beaucoup ! Vous avez complété tous les questionnaires. Nous vous contacterons à nouveau la semaine prochaine afin de compléter un nouveau questionnaire."
+    "successMsg": "Merci beaucoup ! Vous avez complété tous les questionnaires."
   },
   "optionalSurveys": {
     "title": "Modifier les informations de profil",

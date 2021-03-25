@@ -38,7 +38,7 @@
     "passwordInputPlaceholder": "Passwort",
     "confirmPasswordInputLabel": "Bestätigung des Passwortes",
     "confirmPasswordInputPlaceholder": "Bestätigung des Passwortes",
-    "informedConsentCheckbox": "Nach der <1>Zustimmungserklärung</1>*",
+    "informedConsentCheckbox": "<1>Allgemeine Bedingungen<1> betrachten*",
     "reCaptchaCookieCheckbox": "Nach der <1>reCAPTCHA-Erklärung</1>*",
     "signupBtn": "Anmelden",
     "loginLink": "Sie haben schon einen Account? Melden Sie sich hier an!",
