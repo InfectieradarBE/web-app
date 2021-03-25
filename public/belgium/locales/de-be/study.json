@@ -7,7 +7,7 @@
   "requiredSurveys": {
     "title": "Auszufüllende Fragen",
     "info": "Im Folgenden finden Sie die verschiedenen Fragen für die Untersuchung.",
-    "successMsg": "Herzlichen Dank! Sie haben sämtliche Fragen ausgefüllt."
+    "successMsg": "Herzlichen Dank! Sie haben alle Fragebögen ausgefüllt. Wir hoffen, nächste Woche wieder von Ihnen zu hören. Falls Sie schon früher neue Informationen zur Verfügung stellen möchten, können Sie den Fragebogen in wenigen Stunden erneut ausfüllen."
   },
   "optionalSurveys": {
     "title": "Ändern der Hintergrundinformationen",

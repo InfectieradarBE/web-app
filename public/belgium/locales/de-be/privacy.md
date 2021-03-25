@@ -124,7 +124,7 @@ Die europäischen Vorschrift und die belgische Gesetzgebung zum Datenschutz erle
 
 #### 7. Was geschieht mit den Ergebnissen der Studie?
     
-Nach Abschluss der Studie werden eine Beschreibung und die Ergebnisse der Studie in medizinischen Fachzeitschriften und sonstigen wissenschaftlichen Publikationen veröffentlicht. Eine Kopie der wissenschaftlichen Publikation wird auf der Website veröffentlicht und ist über den Untersucher oder das Studienpersonal erhältlich.
+Die Zwischenergebnisse der Studie werden regelmäßig auf unserer Website veröffentlicht. Darüber hinaus werden im Laufe der Studie Ergebnisse und Beschreibung der Studie in medizinischen Fachzeitschriften veröffentlicht. Kopien der wissenschaftlichen Publikationen werden auf der Website veröffentlicht und sind beim Forscher oder beim Studienpersonal erhältlich.
 
 Diese Websites oder Publikationen werden keine Informationen enthalten, mit denen Sie zu identifizieren sind.
 

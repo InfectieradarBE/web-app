@@ -131,7 +131,7 @@ La réglementation européenne et la législation belge relative à la protectio
 
 #### 7. Qu'adviendra-t-il des résultats de l'étude ?
     
-À l'issue de l'étude, une description et les résultats de l'étude seront publiés dans des revues médicales spécialisées. Un exemplaire de la publication scientifique sera disponible sur le site Internet, et pourra être obtenu auprès du chercheur ou du personnel de l'étude.
+Les résultats intermédiaires de l'étude seront publiés régulièrement sur notre site internet. De plus, au cours de l'étude, les descriptions et les résultats seront publiés dans des revues médicales spécialisées. Un exemplaire de la publication scientifique sera disponible sur le site Internet et pourra être obtenu auprès du chercheur ou du personnel associé à l'étude.
 
 Les sites Internet ou les publications en question ne contiendront aucune information permettant de vous identifier.
 

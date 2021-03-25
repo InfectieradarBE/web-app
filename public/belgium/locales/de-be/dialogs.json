@@ -155,8 +155,8 @@
       "cancelBtn": "Abbrechen",
       "submitBtn": "Änderungen speichern"
     },
-    "aliasInputLabel": "Zuname/Spitzname",
-    "aliasInputPlaceholder": "Zuname/Spitzname",
+    "aliasInputLabel": "Vorname/Spitzname",
+    "aliasInputPlaceholder": "Vorname/Spitzname",
     "consentCheckboxLabel": "Zustimmung",
     "consentCheckboxText": "Sie dürfen nur ein Profil erstellen und Fragen für sich selbst oder als Eltern oder als gesetzlicher Vertreter Ihres Kindes ausfüllen, welches das Alter von 18 Jahren noch nicht erreicht hat.",
     "avatarSelectorLabel": "Wählen Sie eine Figur!"
@@ -187,7 +187,7 @@
     "info": "Sie können das Empfangen der wöchentlichen Erinnerungsmail oder des Newsletters ausschalten.",
     "weeklyReminder": {
       "label": "Wöchentliche Erinnerungsmail",
-      "on": "Ja, ich bin für die wöchentliche Erinnerungsmail",
+      "on": "Ja, ich möchte die wöchentliche Erinnerungsmail empfangen.",
       "off": "Nein, bitte keine wöchentliche Erinnerungsmail"
     },
     "newsletter": {
