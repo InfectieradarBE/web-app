@@ -153,6 +153,11 @@
                         "linkKey": "faqLink",
                         "type": "internal",
                         "value": "/faq"
+                      },
+                      {
+                        "linkKey": "supportLink",
+                        "type": "external",
+                        "value": "https://infectieradar.be"
                       }
                     ]
                   }
