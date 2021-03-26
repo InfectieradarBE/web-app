@@ -45,14 +45,17 @@
     "title": "Mehr lesen",
     "faqLink": "Fragen und Antworten (FAQ)",
     "aboutLink": "Über Infectieradar",
-    "resultsLink": "Aktuelle Ergebnisse",
-    "supportLink": "Unterstütze uns"
+    "resultsLink": "Aktuelle Ergebnisse"
   },
   "settingsReferences": {
     "title": "Einstellungen",
     "profileSettings": "Profile",
     "communicationSettings": "Erinnerungsmail",
     "languageSettings": "Sprachen"
+  },
+  "supportReferences": {
+    "title": "Unterstütze uns",
+    "supportLink": "Information"
   },
   "surveyList": {
     "requiredSurveys": {

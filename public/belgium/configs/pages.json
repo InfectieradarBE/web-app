@@ -153,11 +153,6 @@
                         "linkKey": "faqLink",
                         "type": "internal",
                         "value": "/faq"
-                      },
-                      {
-                        "linkKey": "supportLink",
-                        "type": "external",
-                        "value": "https://infectieradar.be"
                       }
                     ]
                   }
@@ -182,6 +177,20 @@
                         "linkKey": "languageSettings",
                         "type": "dialog",
                         "value": "changeLanguage"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "itemKey": "supportReferences",
+                  "className": "",
+                  "config": {
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "linkKey": "supportLink",
+                        "type": "external",
+                        "value": "https://infectieradar.be"
                       }
                     ]
                   }

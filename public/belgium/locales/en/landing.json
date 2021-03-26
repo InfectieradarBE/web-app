@@ -45,14 +45,17 @@
     "title": "Read More",
     "faqLink": "FAQ",
     "aboutLink": "About Infectieradar",
-    "resultsLink": "Results",
-    "supportLink": "Support us"
+    "resultsLink": "Results"
   },
   "settingsReferences": {
     "title": "Quick Settings",
     "profileSettings": "Manage Profiles",
     "communicationSettings": "Email Reminders",
     "languageSettings": "Languages"
+  },
+  "supportReferences": {
+    "title": "Support us",
+    "supportLink": "Information"
   },
   "surveyList": {
     "requiredSurveys": {

@@ -44,15 +44,17 @@
   "references": {
     "title": "Lees verder",
     "faqLink": "Vraag en antwoord",
-    "aboutLink": "Over Infectieradar",
-    "resultsLink": "Actuele resultaten",
-    "supportLink": "Steun ons"
+    "aboutLink": "Over Infectieradar"
   },
   "settingsReferences": {
     "title": "Snelle instellingen",
     "profileSettings": "Beheer profielen",
     "communicationSettings": "E-mailherinneringen",
     "languageSettings": "Talen"
+  },
+  "supportReferences": {
+    "title": "Steun ons",
+    "supportLink": "Informatie"
   },
   "surveyList": {
     "requiredSurveys": {
