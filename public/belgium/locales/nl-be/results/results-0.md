@@ -25,7 +25,7 @@ Op 31 maart 2021 hadden we 264 deelnemers. 44.7% van de deelnemers is vrouw, en 
 
 ## Wekelijkse Symptomen
 
-Op 31 maart 2021 hadden we 219 ingevulde wekelijkse symptomen vragenlijsten van 194 deelnemers. In 63.5% van de vragenlijsten werd gerapporteerd dat er geen symptomen waren.
+Op 31 maart 2021 hadden we 219 ingevulde wekelijkse symptomen vragenlijsten van 194 deelnemers. In 63.5% van de vragenlijsten werd gerapporteerd dat er *geen symptomen* waren.
 
 ### Gerapporteerde symptomen
 In de figuur hieronder geven we procentueel aan hoe vaak een bepaald symptoom is gerapporteerd in de vragenlijsten waarbij minstens één symptoom werd doorgegeven.
