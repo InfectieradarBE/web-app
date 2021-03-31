@@ -7,7 +7,7 @@
   "requiredSurveys": {
     "title": "Questionnaires to be completed",
     "info": "The different questionnaires for the study can be found here.",
-    "successMsg": "Thank you! You have completed all questionnaires. We hope to hear from you again next week. In case you want to provide new information sooner, you can retake the questionnaire in few hours."
+    "successMsg": "Thank you! You have completed all questionnaires. We hope to hear from you again next week. In case you want to provide new information sooner, you can retake the questionnaire in a few hours."
   },
   "optionalSurveys": {
     "title": "Change background information",
