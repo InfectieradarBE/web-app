@@ -29,6 +29,6 @@ On April 2, 2021 we had 318 completed weekly symptom questionnaires from 245 par
 
 ### Reported symptoms
 
-In the figure below we present how often (in percentages) a sympom was reported in questionnaires where at least one symptom was reported.
+In the figure below we present how often (in percentages) a symptom was reported in questionnaires where at least one symptom was reported.
 
 <img src="belgium/images/ReportedSymptoms_NL.png" width="100%">
