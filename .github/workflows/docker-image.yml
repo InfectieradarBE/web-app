@@ -23,6 +23,6 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag infectieradarbe/web-app:${{ steps.date.outputs.date }}
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_ORGANIZATION}}/${{secrets.DOCKER_REPO_NAME}}:${{ steps.date.outputs.date }}
     - name: Push Docker image
-      run: docker push infectieradarbe/web-app:${{ steps.date.outputs.date }}
+      run: docker push ${{secrets.DOCKER_ORGANIZATION}}/${{secrets.DOCKER_REPO_NAME}}:${{ steps.date.outputs.date }}
