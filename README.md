@@ -1,5 +1,7 @@
 # Webapp
 
+#NOTE: THIS REPOSITORY IS NOT ARCHIVED, PLEASE CHECK [PARTICIPANT-API](https://github.com/InfectieradarBE/participant-webapp) FOR THE LATEST WEB-APP.
+
 ## Dependencies
 To display some icons this project is using font-awesome free icons.
 
